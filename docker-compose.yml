@@ -37,5 +37,21 @@ services:
       - .:/app
     command: streamlit run ui/app.py --server.port 8501 --server.address 0.0.0.0
 
+  benchmark:
+    build: .
+    profiles: [benchmark]
+    env_file:
+      - .env
+    depends_on:
+      - api
+    volumes:
+      - .:/app
+    command: >
+      python3 data/benchmark/evaluate.py
+      --run-pipeline
+      --verbose
+      --api-url http://api:8000
+      --output data/benchmark/results/baseline_v01.json
+
 volumes:
   qdrant_storage:

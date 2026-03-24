@@ -16,9 +16,70 @@ from datetime import datetime, timezone
 
 import httpx
 import streamlit as st
+import streamlit.components.v1 as components
 
 # ── Page Config ────────────────────────────────────────────────────────────────
 st.set_page_config(page_title="Truthora", page_icon="🔍", layout="wide")
+
+# ── Disable Deploy popup items (visible but non-interactive) ──────────────────
+st.markdown(
+    """
+    <style>
+    /* Keep Streamlit deploy-popup items visible but non-interactive */
+    [data-testid="stDeployButton"] a,
+    [data-testid="stDeployButton"] button:not([data-testid]),
+    a[href*="share.streamlit.io"],
+    a[href*="app.snowflake.com"],
+    a[href*="snowflake.com"],
+    header ul a,
+    header ul button {
+        pointer-events: none !important;
+        opacity: 0.45 !important;
+        cursor: not-allowed !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+components.html(
+    """
+    <script>
+    (function () {
+        var parentDoc = window.parent.document;
+
+        function disableDeployItems() {
+            var selectors = [
+                '[data-testid="stDeployButton"] a',
+                '[data-testid="stDeployButton"] button:not([data-testid])',
+                'a[href*="share.streamlit.io"]',
+                'a[href*="app.snowflake.com"]',
+                'a[href*="snowflake.com"]',
+                'header ul a',
+                'header ul button'
+            ];
+            selectors.forEach(function (sel) {
+                try {
+                    parentDoc.querySelectorAll(sel).forEach(function (el) {
+                        el.style.pointerEvents = 'none';
+                        el.style.opacity = '0.45';
+                        el.style.cursor = 'not-allowed';
+                        el.setAttribute('tabindex', '-1');
+                        if (el.tagName === 'A') {
+                            el.onclick = function (e) { e.preventDefault(); return false; };
+                        }
+                    });
+                } catch (e) {}
+            });
+        }
+
+        disableDeployItems();
+        var observer = new MutationObserver(disableDeployItems);
+        observer.observe(parentDoc.body, { childList: true, subtree: true });
+    })();
+    </script>
+    """,
+    height=0,
+)
 
 API_URL = os.getenv("API_URL", "http://localhost:8000")
 
@@ -349,10 +410,13 @@ with tab_url:
             L["btn_analyze"], key="url_btn", type="primary", use_container_width=True
         )
     if url_analyze and url_input:
-        with st.spinner(L["spinner"]):
-            result = call_analyze_api(url=url_input)
-            if result:
-                st.session_state.analysis_results = result
+        if not url_input.startswith(("http://", "https://")):
+            st.info("ℹ️ Enter a valid URL starting with https://  —  to check a headline or text use the '📝 Headline / Text' tab.")
+        else:
+            with st.spinner(L["spinner"]):
+                result = call_analyze_api(url=url_input)
+                if result:
+                    st.session_state.analysis_results = result
 
 with tab_headline:
     headline_input = st.text_area(

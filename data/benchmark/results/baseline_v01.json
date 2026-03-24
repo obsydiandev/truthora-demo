@@ -2,10 +2,10 @@
   "meta": {
     "version": "v0.1",
     "date": "2026-03-24",
-    "api_url": "http://localhost:8000",
+    "api_url": "http://api:8000",
     "k": 5,
     "concurrency": 5,
-    "elapsed_s": 20.8,
+    "elapsed_s": 12.43,
     "total_pairs": 255
   },
   "targets": {
