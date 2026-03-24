@@ -16,7 +16,7 @@ from core.knowledge_graph import (
     extract_entities,
     kg_signal_to_score,
 )
-from core.matcher import compute_entropy, get_uncertainty_level
+from core.scorer import compute_entropy, get_uncertainty_level
 from core.scorer import (
     SCORE_WEIGHTS,
     compute_final_score,

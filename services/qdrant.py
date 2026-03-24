@@ -57,6 +57,15 @@ class QdrantService:
             )
             logger.info("Created collection: %s", FACT_CHECKS_COLLECTION)
 
+        try:
+            self._client.create_payload_index(
+                collection_name=FACT_CHECKS_COLLECTION,
+                field_name="language",
+                field_schema=models.PayloadSchemaType.KEYWORD,
+            )
+        except Exception:
+            pass  # index already exists
+
         if AUDIT_LOG_COLLECTION not in existing:
             self._client.create_collection(
                 collection_name=AUDIT_LOG_COLLECTION,
@@ -89,11 +98,24 @@ class QdrantService:
         self,
         query_vector: list[float],
         limit: int = 10,
+        language: str | None = None,
     ) -> list[dict[str, Any]]:
         """Search for top-N nearest fact-checks by embedding similarity."""
+        query_filter = None
+        if language:
+            query_filter = models.Filter(
+                must=[
+                    models.FieldCondition(
+                        key="language",
+                        match=models.MatchValue(value=language),
+                    )
+                ]
+            )
+
         results = self._client.query_points(
             collection_name=FACT_CHECKS_COLLECTION,
             query=query_vector,
+            query_filter=query_filter,
             limit=limit,
             with_payload=True,
         )

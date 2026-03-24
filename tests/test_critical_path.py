@@ -22,12 +22,11 @@ from api.schemas import (
 )
 from core.detector import CW_WEIGHTS, _compute_composite
 from core.matcher import (
-    compute_entropy,
     compute_freshness_decay,
     get_freshness_badge,
-    get_uncertainty_level,
 )
 from core.normalizer import has_negation, normalize_text
+from core.scorer import compute_entropy, get_uncertainty_level
 
 
 class TestNormalizeText:

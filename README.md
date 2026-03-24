@@ -36,10 +36,6 @@ docker compose exec api python3 data/seeds/ingest_google_fc.py  # pull ~500 real
 
 
 
-
-## Data Sources
-
-
 ## Benchmark
 
 Truthora ships a Golden Pairs evaluation suite (114 curated pairs: EN 95 / PL 17 / UA 2).
@@ -67,8 +63,9 @@ Results are written to `data/benchmark/results/baseline_v01.json`.
 
 > **Note:** The `--delay` flag (default 2.5s) spaces requests to avoid Groq API
 > rate limits on the free tier. Reduce it if using Ollama or a paid Groq plan.
-> Stance F1 is limited because NLI classification is not yet implemented
-> (stance is always predicted as NEI).
+> NLI stance classification uses `cross-encoder/nli-deberta-v3-small` and
+> reranking uses `BAAI/bge-reranker-v2-m3` (~1.3 GB combined, downloaded on
+> first request and cached in the `hf_cache` volume).
 
 To adjust parameters:
 

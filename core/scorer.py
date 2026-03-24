@@ -7,7 +7,6 @@ import math
 
 from api.schemas import KGSignal
 from core.knowledge_graph import kg_signal_to_score
-from core.matcher import compute_entropy, get_uncertainty_level
 
 logger = logging.getLogger(__name__)
 
@@ -44,14 +43,45 @@ def compute_final_score(
     return max(0.0, min(1.0, score))
 
 
-def compute_uncertainty(top_scores: list[float]) -> tuple[float, str]:
-    """Compute entropy-based uncertainty and level for top-5 scores.
+def compute_entropy(scores: list[float]) -> float:
+    """Compute normalized entropy of a score distribution.
 
-    Returns:
-        Tuple of (entropy, uncertainty_level)
-        entropy: float in [0, 1]
-        uncertainty_level: "LOW" | "MODERATE" | "HIGH"
+    H = -Σ p_i × log2(p_i), normalized to [0, 1].
     """
+    if not scores or len(scores) < 2:
+        return 0.0
+
+    total = sum(scores)
+    if total == 0:
+        return 1.0
+
+    probs = [s / total for s in scores]
+    probs = [p for p in probs if p > 0]
+
+    if len(probs) <= 1:
+        return 0.0
+
+    entropy = -sum(p * math.log2(p) for p in probs)
+    max_entropy = math.log2(len(probs))
+
+    if max_entropy == 0:
+        return 0.0
+
+    return entropy / max_entropy
+
+
+def get_uncertainty_level(entropy: float) -> str:
+    """Map entropy to human-readable uncertainty level."""
+    if entropy < 0.30:
+        return "LOW"
+    elif entropy <= 0.70:
+        return "MODERATE"
+    else:
+        return "HIGH"
+
+
+def compute_uncertainty(top_scores: list[float]) -> tuple[float, str]:
+    """Compute entropy-based uncertainty and level for top-5 scores."""
     entropy = compute_entropy(top_scores)
     level = get_uncertainty_level(entropy)
     return round(entropy, 4), level

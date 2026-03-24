@@ -14,6 +14,8 @@ from api.schemas import (
     FreshnessBadge,
     StanceLabel,
 )
+from core.reranker import Reranker
+from core.scorer import compute_entropy, compute_final_score, get_uncertainty_level
 from services.embeddings import EmbeddingService
 from services.qdrant import QdrantService
 
@@ -21,6 +23,15 @@ logger = logging.getLogger(__name__)
 
 HALF_LIFE_DAYS = 180
 DECAY_LAMBDA = 0.693 / HALF_LIFE_DAYS  # ln(2) / half_life
+
+_LANG_MAP = {"ua": "uk"}  # detector uses "ua", Qdrant payloads use ISO 639-1 "uk"
+
+
+def _map_language(lang: str | None) -> str | None:
+    """Normalize detector language code to Qdrant payload value."""
+    if lang is None:
+        return None
+    return _LANG_MAP.get(lang, lang)
 
 
 def compute_freshness_decay(published_at: Optional[str | datetime]) -> float:
@@ -70,47 +81,6 @@ def get_freshness_badge(published_at: Optional[str | datetime]) -> FreshnessBadg
         return FreshnessBadge.OUTDATED
 
 
-def compute_entropy(scores: list[float]) -> float:
-    """Compute normalized entropy of a score distribution.
-
-    H = -Σ p_i × log2(p_i), normalized to [0, 1].
-
-    H < 0.30 → system confident (one clear match)
-    H 0.30–0.70 → moderate confidence
-    H > 0.70 → ⚠️ mandatory flag — manual review required
-    """
-    if not scores or len(scores) < 2:
-        return 0.0
-
-    total = sum(scores)
-    if total == 0:
-        return 1.0
-
-    probs = [s / total for s in scores]
-    probs = [p for p in probs if p > 0]
-
-    if len(probs) <= 1:
-        return 0.0
-
-    entropy = -sum(p * math.log2(p) for p in probs)
-    max_entropy = math.log2(len(probs))
-
-    if max_entropy == 0:
-        return 0.0
-
-    return entropy / max_entropy
-
-
-def get_uncertainty_level(entropy: float) -> str:
-    """Map entropy to human-readable uncertainty level."""
-    if entropy < 0.30:
-        return "LOW"
-    elif entropy <= 0.70:
-        return "MODERATE"
-    else:
-        return "HIGH"
-
-
 class ClaimMatcher:
     """Match claims against indexed fact-checks using semantic similarity."""
 
@@ -121,6 +91,7 @@ class ClaimMatcher:
     ) -> None:
         self._embeddings = embedding_service or EmbeddingService()
         self._qdrant = qdrant_service or QdrantService()
+        self._reranker = Reranker()
 
     async def match(self, claim: Claim, top_k: int = 10) -> ClaimResult:
         """Find matching fact-checks for a claim.
@@ -146,37 +117,68 @@ class ClaimMatcher:
                 uncertainty_level="HIGH",
             )
 
+        # Map detector language codes to Qdrant payload values
+        lang = _map_language(getattr(claim, "language", None))
+
         try:
-            hits = self._qdrant.search_fact_checks(query_vector, limit=top_k)
+            hits = self._qdrant.search_fact_checks(
+                query_vector, limit=top_k, language=lang,
+            )
         except Exception:
             logger.exception("Qdrant search failed")
             hits = []
 
-        matches: list[FactCheckMatch] = []
-        scores: list[float] = []
+        if not hits:
+            return ClaimResult(
+                claim=claim,
+                matches=[],
+                uncertainty=1.0,
+                uncertainty_level="HIGH",
+            )
 
-        for hit in hits:
+        # Extract texts for reranker
+        hit_texts = [h.get("payload", {}).get("claim_text", "") for h in hits]
+
+        # Rerank (falls back to original order with score 0.5 if model unavailable)
+        reranked = self._reranker.rerank(claim.claim_text, hit_texts, top_k=top_k)
+
+        matches: list[FactCheckMatch] = []
+
+        for orig_idx, reranker_score in reranked:
+            hit = hits[orig_idx]
             payload = hit.get("payload", {})
             similarity = hit.get("score", 0.0)
             published_at = payload.get("published_at")
             decay = compute_freshness_decay(published_at)
             badge = get_freshness_badge(published_at)
+            claim_reviewed = payload.get("claim_text", "")
 
-            final_score = similarity * decay
+            # NLI stance classification
+            stance, nli_confidence = self._reranker.classify_stance(
+                claim.claim_text, claim_reviewed,
+            )
+
+            final_score = compute_final_score(
+                similarity=similarity,
+                reranker_score=reranker_score,
+                nli_confidence=nli_confidence,
+                freshness_decay=decay,
+            )
 
             match = FactCheckMatch(
                 matched_url=payload.get("source_url", ""),
                 source_name=payload.get("source_name", ""),
-                claim_reviewed=payload.get("claim_text", ""),
-                stance=StanceLabel.NEI,
+                claim_reviewed=claim_reviewed,
+                stance=stance,
                 similarity_score=similarity,
+                reranker_score=round(reranker_score, 4),
+                nli_confidence=round(nli_confidence, 4),
                 freshness_decay=decay,
                 freshness_badge=badge,
                 final_score=final_score,
                 published_at=published_at,
             )
             matches.append(match)
-            scores.append(final_score)
 
         matches.sort(key=lambda m: m.final_score, reverse=True)
 
