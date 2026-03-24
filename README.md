@@ -8,12 +8,12 @@ It is open for fact-checking NGOs, newsrooms, blogers and influancers.
 One of main purpose of solution is merging newest technolgy with human-in-the-loop desing.
 
 ## What it does?
+Main purpose is to answer the question if the main claims from input heading or article are true or they are a fake news.
 
 ## Architecture
 
 ## Quick Start
 
-## Quick Start
 
 > **⚠️ First-use note — model download (~2 GB)**
 > The **BGE-M3** multilingual embedding model (~2 GB) is downloaded from Hugging Face
@@ -32,9 +32,9 @@ docker compose exec api python3 data/seeds/seed.py           # triggers BGE-M3 d
 docker compose exec api python3 data/seeds/ingest_google_fc.py  # pull ~500 real fact-checks (recommended)
 ```
 
-Open http://localhost:8501
+## Data Sources
 
-## Configuration
+
 
 
 ## Data Sources
@@ -61,8 +61,8 @@ Results are written to `data/benchmark/results/baseline_v01.json`.
 
 | Metric | Current | Target |
 |---|---|---|
-| Recall@5 | 0.3070 | ≥ 0.74 |
-| MRR | 0.1990 | ≥ 0.60 |
+| Recall@5 | 0.2368 | ≥ 0.74 |
+| MRR | 0.1326 | ≥ 0.60 |
 | Stance F1 (macro) | 0.1732 | ≥ 0.70 |
 
 > **Note:** The `--delay` flag (default 2.5s) spaces requests to avoid Groq API
