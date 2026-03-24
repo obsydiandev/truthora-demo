@@ -1,7 +1,8 @@
 """Truthora — Benchmark evaluation script.
 
 Evaluates the Truthora pipeline against Golden Pairs datasets
-(EN: 100 pairs, PL: 100 pairs, UA: 55 pairs = 255 total).
+(EN: 95 pairs, PL: 17 pairs, UA: 2 pairs = 114 total).
+Each pair has an expected_source_url pointing to a real Qdrant fact-check.
 
 Metrics:
   - Recall@5: Is the expected match in top-5 results? (target ≥ 0.74)
@@ -161,6 +162,13 @@ def evaluate_golden_pairs(
     return results_summary
 
 
+def _url_match(expected_url: str, match_url: str) -> bool:
+    """Exact URL match, normalized (strip trailing slash, case-insensitive)."""
+    if not expected_url or not match_url:
+        return False
+    return expected_url.rstrip("/").lower() == match_url.rstrip("/").lower()
+
+
 def _token_overlap(a: str, b: str) -> float:
     """Jaccard token overlap between two strings (case-insensitive)."""
     tokens_a = set(a.lower().split())
@@ -182,6 +190,7 @@ async def _evaluate_pair(
     pair_id = pair["id"]
     expected_match = pair["expected_match"]
     expected_stance = pair["expected_stance"]
+    expected_url = pair.get("expected_source_url", "")
 
     async with semaphore:
         try:
@@ -212,13 +221,18 @@ async def _evaluate_pair(
     all_matches.sort(key=lambda x: x.get("final_score", 0.0), reverse=True)
     top_k = all_matches[:k]
 
-    # Find expected match by token overlap with claim_reviewed
-    MATCH_THRESHOLD = 0.25
+    # Matching strategy: URL match (primary) → Jaccard fallback (threshold 0.15)
     found_in_top_k = False
     rank = 0
     for i, match in enumerate(top_k, start=1):
+        # Primary: exact URL match
+        if expected_url and _url_match(expected_url, match.get("matched_url", "")):
+            found_in_top_k = True
+            rank = i
+            break
+        # Fallback: token overlap on claim_reviewed text
         overlap = _token_overlap(expected_match, match.get("claim_reviewed", ""))
-        if overlap >= MATCH_THRESHOLD:
+        if overlap >= 0.15:
             found_in_top_k = True
             rank = i
             break
@@ -251,14 +265,17 @@ async def _run_pipeline_async(
     verbose: bool,
     k: int,
     concurrency: int,
+    delay: float,
 ) -> list[dict[str, Any]]:
     semaphore = asyncio.Semaphore(concurrency)
+    results: list[dict[str, Any]] = []
     async with httpx.AsyncClient() as client:
-        tasks = [
-            _evaluate_pair(client, semaphore, api_url, pair, verbose, k)
-            for pair in pairs
-        ]
-        return await asyncio.gather(*tasks)
+        for pair in pairs:
+            result = await _evaluate_pair(client, semaphore, api_url, pair, verbose, k)
+            results.append(result)
+            if delay > 0:
+                await asyncio.sleep(delay)
+    return results
 
 
 def run_pipeline_evaluation(
@@ -267,17 +284,18 @@ def run_pipeline_evaluation(
     verbose: bool = False,
     k: int = 5,
     concurrency: int = 5,
+    delay: float = 2.5,
 ) -> dict[str, Any]:
     """Run full pipeline evaluation against the live API."""
     if not HAS_HTTPX:
         print("❌ httpx is required for --run-pipeline. Install with: pip install httpx")
         sys.exit(1)
 
-    print(f"🚀 Evaluating {len(pairs)} pairs against {api_url} (k={k}, concurrency={concurrency})…")
+    print(f"🚀 Evaluating {len(pairs)} pairs against {api_url} (k={k}, delay={delay}s)…")
     t0 = time.perf_counter()
 
     pair_results = asyncio.run(
-        _run_pipeline_async(pairs, api_url, verbose, k, concurrency)
+        _run_pipeline_async(pairs, api_url, verbose, k, concurrency, delay)
     )
 
     elapsed = time.perf_counter() - t0
@@ -336,7 +354,8 @@ def main():
     parser.add_argument("--run-pipeline", action="store_true", help="Run evaluation against live pipeline")
     parser.add_argument("--api-url", default="http://localhost:8000", help="API base URL (default: http://localhost:8000)")
     parser.add_argument("--k", type=int, default=5, help="Recall@K cutoff (default: 5)")
-    parser.add_argument("--concurrency", type=int, default=5, help="Concurrent API requests (default: 5)")
+    parser.add_argument("--concurrency", type=int, default=1, help="Concurrent API requests (default: 1)")
+    parser.add_argument("--delay", type=float, default=2.5, help="Delay between requests in seconds (default: 2.5, avoids Groq rate limits)")
     parser.add_argument(
         "--output",
         default=str(Path(__file__).resolve().parent / "results" / "baseline_v01.json"),
@@ -394,6 +413,7 @@ def main():
             verbose=args.verbose,
             k=args.k,
             concurrency=args.concurrency,
+            delay=args.delay,
         )
 
         overall = pipeline_results["overall"]

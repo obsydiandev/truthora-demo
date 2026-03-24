@@ -10,6 +10,7 @@ services:
         condition: service_healthy
     volumes:
       - .:/app
+      - hf_cache:/root/.cache/huggingface
     command: uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload
 
   qdrant:
@@ -35,6 +36,7 @@ services:
       - api
     volumes:
       - .:/app
+      - hf_cache:/root/.cache/huggingface
     command: streamlit run ui/app.py --server.port 8501 --server.address 0.0.0.0
 
   benchmark:
@@ -46,12 +48,15 @@ services:
       - api
     volumes:
       - .:/app
+      - hf_cache:/root/.cache/huggingface
     command: >
       python3 data/benchmark/evaluate.py
       --run-pipeline
       --verbose
       --api-url http://api:8000
+      --delay 2.5
       --output data/benchmark/results/baseline_v01.json
 
 volumes:
   qdrant_storage:
+  hf_cache:   # persists BGE-M3 (~4 GB) across container restarts — downloaded once on first use

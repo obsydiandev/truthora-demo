@@ -28,6 +28,11 @@ ENV/
 .DS_Store
 Thumbs.db
 
+# Benchmark temp files
+data/benchmark/_*.py
+data/benchmark/_*.json
+data/benchmark/results/baseline_v01.json
+
 # Docker
 .docker/
 

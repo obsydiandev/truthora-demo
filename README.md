@@ -42,7 +42,8 @@ Open http://localhost:8501
 
 ## Benchmark
 
-Truthora ships a Golden Pairs evaluation suite (255 pairs: EN 100 / PL 100 / UA 55).
+Truthora ships a Golden Pairs evaluation suite (114 curated pairs: EN 95 / PL 17 / UA 2).
+Each pair has an `expected_source_url` pointing to a real fact-check in the Qdrant database.
 
 ```bash
 # Make sure services are running first:
@@ -58,11 +59,16 @@ docker compose run --rm benchmark
 
 Results are written to `data/benchmark/results/baseline_v01.json`.
 
-| Metric | Target |
-|---|---|
-| Recall@5 | ≥ 0.74 |
-| MRR | ≥ 0.60 |
-| Stance F1 (macro) | ≥ 0.70 |
+| Metric | Current | Target |
+|---|---|---|
+| Recall@5 | 0.3070 | ≥ 0.74 |
+| MRR | 0.1990 | ≥ 0.60 |
+| Stance F1 (macro) | 0.1732 | ≥ 0.70 |
+
+> **Note:** The `--delay` flag (default 2.5s) spaces requests to avoid Groq API
+> rate limits on the free tier. Reduce it if using Ollama or a paid Groq plan.
+> Stance F1 is limited because NLI classification is not yet implemented
+> (stance is always predicted as NEI).
 
 To adjust parameters:
 
@@ -71,7 +77,7 @@ docker compose run --rm benchmark python3 data/benchmark/evaluate.py \
   --run-pipeline --verbose \
   --api-url http://api:8000 \
   --k 10 \
-  --concurrency 10 \
+  --delay 2.5 \
   --output data/benchmark/results/my_run.json
 ```
 

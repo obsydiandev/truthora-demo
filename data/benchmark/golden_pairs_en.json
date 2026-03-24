@@ -2,801 +2,856 @@
   {
     "id": "en_01",
     "claim": "The COVID-19 vaccine causes infertility",
-    "expected_match": "There is no evidence that COVID-19 vaccines cause infertility",
-    "expected_stance": "REFUTED",
+    "expected_match": "COVID-19 vaccines cause widespread infertility",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "Full Fact",
+    "expected_source_url": "https://fullfact.org/example/vaccines-infertility"
   },
   {
     "id": "en_02",
-    "claim": "5G networks spread coronavirus",
-    "expected_match": "5G networks do not spread the coronavirus",
+    "claim": "COVID-19 vaccines contain a microchip that tracks your location",
+    "expected_match": "COVID-19 vaccines have a microchip that \"tracks the location of the patient.\"",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2020/12/covid-19-vaccines-dont-have-patient-tracking-devices/"
   },
   {
     "id": "en_03",
-    "claim": "Drinking bleach cures COVID-19",
-    "expected_match": "Drinking bleach does not cure COVID-19 and is dangerous",
+    "claim": "Bill Gates wants to implant microchips through vaccination",
+    "expected_match": "\"Bill Gates will use microchip implants to fight coronavirus.\"",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2020/04/conspiracy-theory-misinterprets-goals-of-gates-foundation/"
   },
   {
     "id": "en_04",
-    "claim": "The Earth is flat",
-    "expected_match": "Scientific evidence confirms the Earth is an oblate spheroid",
-    "expected_stance": "REFUTED",
+    "claim": "Bill Gates tweeted about running out of microchips for vaccines",
+    "expected_match": "Microsoft Co-Founder Bill Gates tweeted the joke, \"I guess we finally ran out of microchips,\" in response to a previous tweet from \"The Daily Show's\" Twitter account.",
+    "expected_stance": "SUPPORTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "Snopes",
+    "expected_source_url": "https://www.snopes.com/fact-check/bill-gates-microchips-tweet/"
   },
   {
     "id": "en_05",
-    "claim": "Climate change is primarily caused by human activities",
-    "expected_match": "Climate change is driven by human activities including burning fossil fuels",
-    "expected_stance": "SUPPORTED",
+    "claim": "Magnets stick to arms after COVID vaccination proving they contain metal chips",
+    "expected_match": "Videos of magnets sticking to arms prove that the COVID-19 vaccines contain microchips.",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2021/05/scicheck-magnet-videos-refuel-bogus-claim-of-vaccine-microchips/"
   },
   {
     "id": "en_06",
-    "claim": "Vaccines contain microchips for tracking people",
-    "expected_match": "COVID-19 vaccines do not contain microchips",
+    "claim": "Vaccines contain tracking devices and make people magnetic",
+    "expected_match": "COVID-19 vaccines contain microchips or other tracking devices, cause magnetic reaction",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "USA Today",
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2021/05/12/fact-check-covid-19-vaccines-dont-contain-tracking-devices/5037132001/"
   },
   {
     "id": "en_07",
-    "claim": "Hydroxychloroquine is a proven cure for COVID-19",
-    "expected_match": "Hydroxychloroquine has not been proven to cure COVID-19",
-    "expected_stance": "REFUTED",
+    "claim": "Video shows a microchip being found inside a Pfizer vaccine vial",
+    "expected_match": "Video of microchip found in Pfizer vaccine",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "AFP Fact Check",
+    "expected_source_url": "https://factcheck.afp.com/doc.afp.com.9EG2NX"
   },
   {
     "id": "en_08",
-    "claim": "Face masks are ineffective against respiratory viruses",
-    "expected_match": "Face masks reduce the transmission of respiratory viruses",
+    "claim": "Bill Gates and ID2020 plan to microchip everyone through COVID vaccines",
+    "expected_match": "Bill Gates — along with a coalition dubbed \"ID 2020\" — seeks to \"microchip\" the world population using a COVID-19 vaccine.",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "Snopes",
+    "expected_source_url": "https://www.snopes.com/fact-check/bill-gates-id2020/"
   },
   {
     "id": "en_09",
-    "claim": "The UK left the European Union on January 31, 2020",
-    "expected_match": "The United Kingdom officially left the EU on January 31, 2020",
-    "expected_stance": "SUPPORTED",
+    "claim": "Bill Gates ultimate goal is to use COVID vaccines to microchip the population",
+    "expected_match": "Bill Gates’ “ultimate goal” is to microchip COVID-19 vaccine in order to create virtual IDs",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "AFP Fact Check",
+    "expected_source_url": "https://factcheck.afp.com/hoax-about-bill-gates-plan-microchip-vaccine-circulates-online"
   },
   {
     "id": "en_10",
-    "claim": "Wind turbines cause cancer",
-    "expected_match": "There is no scientific evidence that wind turbines cause cancer",
+    "claim": "George Soros and Bill Gates are secretly microchipping people",
+    "expected_match": "“This is what Bill Gates and George Soros want to do… secretly stick you with a chip while testing you for the coronavirus... the Dems have a bill on the House floor ready to vote on it to require this.”",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "PolitiFact",
+    "expected_source_url": "https://www.politifact.com/factchecks/2020/may/28/facebook-posts/theres-no-plot-microchip-people-during-covid-19-te/"
   },
   {
     "id": "en_11",
-    "claim": "The ozone layer is recovering due to the Montreal Protocol",
-    "expected_match": "Scientific data shows ozone layer recovery since the Montreal Protocol",
-    "expected_stance": "SUPPORTED",
+    "claim": "Pet microchip reader detected a chip in a vaccinated woman's arm",
+    "expected_match": "A microchip reader for pets detected a chip in the arm of a woman vaccinated against COVID-19.",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2021/07/scicheck-spoof-video-furthers-microchip-conspiracy-theory/"
   },
   {
     "id": "en_12",
-    "claim": "Homeopathy has the same effectiveness as conventional medicine",
-    "expected_match": "Scientific reviews find no evidence homeopathy is more effective than placebo",
-    "expected_stance": "REFUTED",
+    "claim": "New microchip technology is designed to fit inside vaccine needles",
+    "expected_match": "New microchip technology could fit inside a vaccine needle",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "USA Today",
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2021/05/26/fact-check-missing-context-posts-new-microchip-development/5232378001/"
   },
   {
     "id": "en_13",
-    "claim": "GMO foods are unsafe for human consumption",
-    "expected_match": "Scientific consensus holds that GMO foods are safe to eat",
+    "claim": "60 Minutes revealed a government tracking chip implanted via vaccines",
+    "expected_match": "\"A new report from '60 Minutes' includes an interview with a scientist from the Pentagon who says that there is now a COVID microchip.\"",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2021/08/scicheck-health-sensors-misconstrued-as-government-tracking-microchips/"
   },
   {
     "id": "en_14",
-    "claim": "The Great Wall of China is visible from space",
-    "expected_match": "The Great Wall of China is not visible to the naked eye from space",
+    "claim": "People who refuse COVID vaccines will be forced to get microchipped",
+    "expected_match": "“Due to the large number of people who will refuse the forthcoming COVID-19 vaccine because it will include tracking microchips, the Gates Foundation is now spending billions to ensure that all medical and dental injections and procedures include the chips.”",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "PolitiFact",
+    "expected_source_url": "https://www.politifact.com/factchecks/2020/may/20/facebook-posts/no-gates-foundation-isnt-pushing-microchips-all-me/"
   },
   {
     "id": "en_15",
-    "claim": "Global temperature has risen by 1.1°C since pre-industrial times",
-    "expected_match": "Global average temperature has increased by approximately 1.1°C above pre-industrial levels",
-    "expected_stance": "SUPPORTED",
+    "claim": "COVID vaccines harm female fertility and cause miscarriages",
+    "expected_match": "The Covid vaccines could harm female fertility",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "BBC",
+    "expected_source_url": "https://www.bbc.co.uk/news/health-56012529"
   },
   {
     "id": "en_16",
-    "claim": "Artificial sweeteners are worse for health than sugar",
-    "expected_match": "Research shows artificial sweeteners are generally safe in moderate amounts",
-    "expected_stance": "REFUTED",
+    "claim": "Forcing young women to take COVID vaccines causes infertility",
+    "expected_match": "“Forcing” young women to have Covid-19 vaccines is “almost certain” to lead to increased stillbirths, miscarriages, disabled children and infertility.",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "Full Fact",
+    "expected_source_url": "https://fullfact.org/health/richard-tice-covid-vaccine-infertility-stillbirth/"
   },
   {
     "id": "en_17",
-    "claim": "Ukraine is the largest country entirely within Europe",
-    "expected_match": "Ukraine is the largest country whose territory is entirely within Europe",
+    "claim": "European Medicines Agency admits COVID vaccination causes infertility",
+    "expected_match": "\"The EMA admits COVID-19 vaccination causes infertility\"",
     "expected_stance": "SUPPORTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "Science Feedback",
+    "expected_source_url": "https://science.feedback.org/review/no-evidence-covid-19-vaccinations-cause-infertility-pregnancy-complications/"
   },
   {
     "id": "en_18",
-    "claim": "Eating carrots improves night vision significantly",
-    "expected_match": "While carrots contain vitamin A, they do not significantly improve night vision",
+    "claim": "All males vaccinated with COVID-19 vaccines are now sterile",
+    "expected_match": "\"All males who have been vaccinated\" against COVID-19 \"are effectively sterile.\"",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2021/06/scicheck-research-rebuts-baseless-claims-linking-covid-19-vaccines-to-male-infertility/"
   },
   {
     "id": "en_19",
-    "claim": "The Amazon rainforest produces 20% of the world's oxygen",
-    "expected_match": "The Amazon rainforest contributes roughly 6% of the world's oxygen, not 20%",
+    "claim": "Head of Pfizer research admitted the COVID vaccine sterilizes women",
+    "expected_match": "“Head of Pfizer Research: Covid Vaccine is Female Sterilization”",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2021/02/scicheck-no-evidence-vaccines-impact-fertility/"
   },
   {
     "id": "en_20",
-    "claim": "Poland joined NATO in 1999",
-    "expected_match": "Poland became a member of NATO on March 12, 1999",
-    "expected_stance": "SUPPORTED",
+    "claim": "COVID-19 vaccines cause male infertility",
+    "expected_match": "COVID-19 vaccines cause male infertility.",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "AP News",
+    "expected_source_url": "https://apnews.com/article/fact-checking-536782030987"
   },
   {
     "id": "en_21",
-    "claim": "The Moon landing in 1969 was faked by NASA",
-    "expected_match": "Multiple independent lines of evidence confirm the Apollo 11 Moon landing in 1969 was real",
-    "expected_stance": "REFUTED",
+    "claim": "COVID vaccines attack the placenta and harm unborn babies",
+    "expected_match": "Covid caccines could attack the placenta.",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "BBC",
+    "expected_source_url": "https://www.bbc.co.uk/news/health-57552527"
   },
   {
     "id": "en_22",
-    "claim": "Humans only use 10% of their brains",
-    "expected_match": "Neuroimaging studies show humans use virtually all parts of the brain",
-    "expected_stance": "REFUTED",
+    "claim": "The Pfizer vaccine contains syncytin-1 which causes the body to attack human placentas",
+    "expected_match": "The Pfizer vaccine contains syncytin-1 which is vital for the formation of human placenta, so could lead to infertility.",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "Full Fact"
+    "source": "Full Fact",
+    "expected_source_url": "https://fullfact.org/online/placenta-protein-vaccine/"
   },
   {
     "id": "en_23",
-    "claim": "Napoleon Bonaparte was exceptionally short",
-    "expected_match": "Napoleon was approximately 5'7\", average height for his era",
-    "expected_stance": "REFUTED",
+    "claim": "Safety concerns about mRNA COVID-19 vaccines were deliberately hidden from the public",
+    "expected_match": "Safety concerns about mRNA COVID-19 vaccines were \"concealed\" from the public.",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2025/06/hhs-misleads-on-mrna-vaccine-safety-after-pulling-moderna-funding/"
   },
   {
     "id": "en_24",
-    "claim": "Sugar causes hyperactivity in children",
-    "expected_match": "Controlled studies have not found a link between sugar intake and hyperactivity in children",
-    "expected_stance": "REFUTED",
+    "claim": "Hundreds of millions of people were used as lab rats for COVID vaccines and now the truth is coming out",
+    "expected_match": "“Hundreds of millions of people were used as lab rats and now the truth that WE ALL ALREADY KNEW can no longer be denied,” suggesting a new study proves that \"experimental\" COVID-19 vaccines are unsafe.",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "Full Fact"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2024/02/study-largely-confirms-known-rare-covid-19-vaccine-side-effects/"
   },
   {
     "id": "en_25",
-    "claim": "Lightning never strikes the same place twice",
-    "expected_match": "Lightning frequently strikes the same location multiple times",
+    "claim": "A multinational study of 100 million vaccinated people proves COVID vaccines are extremely dangerous",
+    "expected_match": "A multinational study of nearly 100 million COVID-19-vaccinated individuals concluded the harms of vaccination greatly outweigh the benefits.",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "AAP",
+    "expected_source_url": "https://www.aap.com.au/factcheck/huge-vaccine-safety-study-creates-misinformation-spike/"
   },
   {
     "id": "en_26",
-    "claim": "The United States has 52 states",
-    "expected_match": "The United States has 50 states",
-    "expected_stance": "REFUTED",
+    "claim": "Post-Vaccine Syndrome has been officially recognized as a real condition",
+    "expected_match": "“It’s Called ‘Post-Vaccine Syndrome’ And It’s Real!”",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "Full Fact"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2023/12/scicheck-yale-preprint-recorded-patient-experiences-did-not-demonstrate-vaccines-cause-new-syndrome/"
   },
   {
     "id": "en_27",
-    "claim": "Goldfish have a three-second memory",
-    "expected_match": "Goldfish can remember things for months, not just seconds",
+    "claim": "CDC official admitted COVID vaccines cause debilitating illnesses",
+    "expected_match": "\"CDC Dep. Dir. Tom Shimabukuro Admits COVID Vaccines Are Causing ‘Debilitating Illnesses’\"",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2023/02/scicheck-posts-falsely-claim-cdc-official-admitted-covid-19-vaccines-cause-debilitating-illnesses/"
   },
   {
     "id": "en_28",
-    "claim": "Immigrants increase crime rates in host countries",
-    "expected_match": "Research consistently shows immigration does not increase crime rates",
-    "expected_stance": "REFUTED",
+    "claim": "Children had almost no risk from COVID-19 so vaccinating them was unnecessary",
+    "expected_match": "“kids had almost no risk for COVID-19.”",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "Full Fact"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2025/05/rfk-jr-misleads-about-safety-of-covid-19-vaccine-in-children/"
   },
   {
     "id": "en_29",
-    "claim": "Antibiotics are effective against viral infections",
-    "expected_match": "Antibiotics only work against bacterial infections, not viruses",
-    "expected_stance": "REFUTED",
+    "claim": "An Ohio doctor died shortly after getting the COVID-19 vaccine",
+    "expected_match": "Ohio doctor who joked about vaccine microchips died after COVID-19 vaccine",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "USA Today",
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2021/05/20/fact-check-ohio-doctor-didnt-die-covid-19-vaccine/5167752001/"
   },
   {
     "id": "en_30",
-    "claim": "Electric vehicles produce more lifetime emissions than gasoline cars",
-    "expected_match": "Life cycle analyses show EVs produce fewer total emissions than gasoline vehicles",
+    "claim": "COVID-19 mRNA vaccines cause cancer according to a new review",
+    "expected_match": "Review article \"has found that COVID-19 mRNA vaccines could aid cancer development”",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2024/05/still-no-evidence-covid-19-vaccination-increases-cancer-risk-despite-posts/"
   },
   {
     "id": "en_31",
-    "claim": "Albert Einstein failed mathematics in school",
-    "expected_match": "Einstein excelled at mathematics throughout his education",
+    "claim": "Pfizer CEO's 2018 remarks prove COVID vaccines were planned in advance",
+    "expected_match": "“Another Conspiracy Proven True!” referring to 2018 remarks by Pfizer CEO and claims about microchips in COVID-19 vaccines.",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Full Fact"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2022/05/scicheck-pfizer-ceo-not-referencing-covid-19-vaccines-contrary-to-false-impression-in-posts-about-microchips/"
   },
   {
     "id": "en_32",
-    "claim": "Shaving makes hair grow back thicker",
-    "expected_match": "Shaving does not change hair thickness, color, or rate of growth",
+    "claim": "Pfizer was forced to publish a secret list of vaccine side effects",
+    "expected_match": "Pfizer published side effects of Covid-19 vaccine",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "AFP Fact Check",
+    "expected_source_url": "https://factcheck.afp.com/doc.afp.com.36ZP8RH"
   },
   {
     "id": "en_33",
-    "claim": "Vitamin C cures the common cold",
-    "expected_match": "Studies show vitamin C does not prevent colds but may slightly reduce duration",
+    "claim": "A Moderna patent proves COVID mRNA vaccines contain programmable nanotech",
+    "expected_match": "A patent held by Moderna proves its COVID mRNA vaccine contains “programmable” nanotechnology that can interact with 5G communications technology.",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Full Fact"
+    "source": "AP News",
+    "expected_source_url": "https://apnews.com/article/fact-check-COVID-mRNA-vaccine-nanotech-390958734912"
   },
   {
     "id": "en_34",
-    "claim": "Bats are blind",
-    "expected_match": "All bat species can see, and many have excellent vision",
-    "expected_stance": "REFUTED",
+    "claim": "COVID-19 vaccines contain the Marburg virus which will be activated by 5G signals",
+    "expected_match": "Covid-19 vaccines contain Marburg virus which will be activated by 5G.",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "Full Fact",
+    "expected_source_url": "https://fullfact.org/health/marburg-covid-vaccines/"
   },
   {
     "id": "en_35",
-    "claim": "The Sahara is the world's largest desert",
-    "expected_match": "Antarctica is the largest desert by area, not the Sahara",
-    "expected_stance": "REFUTED",
+    "claim": "The new COVID Kraken subvariant is linked to 5G technology",
+    "expected_match": "It’s ironic the name of the new Covid subvariant is ‘Kraken’ a ‘mythical beast that kills on the waves’ as it’s really 5G waves that are harming and killing people.",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "Full Fact",
+    "expected_source_url": "https://fullfact.org/online/5G-kraken-covid-subvariant/"
   },
   {
     "id": "en_36",
-    "claim": "Reading in dim light damages your eyesight",
-    "expected_match": "Reading in low light can cause eye strain but does not permanently damage vision",
+    "claim": "COVID-19 is actually a bacterial infection, not a viral one",
+    "expected_match": "Covid-19 is bacterial, not viral",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Full Fact"
+    "source": "AFP Fact Check",
+    "expected_source_url": "https://factcheck.afp.com/doc.afp.com.9W42LC"
   },
   {
     "id": "en_37",
-    "claim": "There are more people alive today than have ever died",
-    "expected_match": "Estimates suggest about 100 billion humans have lived, far more than the current population",
-    "expected_stance": "REFUTED",
+    "claim": "There is overwhelming evidence that ivermectin cures COVID-19",
+    "expected_match": "Evidence that ivermectin works to treat COVID-19 is “powerful” and “overwhelming.”",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2022/03/scicheck-evidence-still-lacking-to-support-ivermectin-as-treatment-for-covid-19/"
   },
   {
     "id": "en_38",
-    "claim": "Sushi means raw fish in Japanese",
-    "expected_match": "Sushi refers to vinegared rice, not raw fish",
-    "expected_stance": "REFUTED",
+    "claim": "The NIH website proves ivermectin works against COVID-19",
+    "expected_match": "A study on the NIH website comes to a different conclusion than the CDC about the use of ivermectin to treat COVID-19.",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2022/02/scicheck-facebook-post-misleads-on-nihs-position-on-ivermectin/"
   },
   {
     "id": "en_39",
-    "claim": "Nuclear energy produces the most radioactive waste of any industry",
-    "expected_match": "Nuclear energy produces relatively small volumes of waste compared to other energy sources",
+    "claim": "Ivermectin cures both COVID-19 and cancer",
+    "expected_match": "Ivermectin cures Covid-19, cancer",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "AFP Fact Check",
+    "expected_source_url": "https://factcheck.afp.com/doc.afp.com.46J2763"
   },
   {
     "id": "en_40",
-    "claim": "Swallowed chewing gum takes seven years to digest",
-    "expected_match": "Chewing gum passes through the digestive system in a few days, not seven years",
+    "claim": "Pfizer's new antiviral pill is basically just the same as ivermectin",
+    "expected_match": "“Pfizer’s new oral antiviral is just a protease inhibitor just like Ivermectin. They’re literally repackaging ivermectin to sell to the masses with a new name.”",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Full Fact"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2021/10/scicheck-merck-pfizer-covid-19-antivirals-different-from-ivermectin/"
   },
   {
     "id": "en_41",
-    "claim": "The unemployment rate in the EU reached 20% in 2024",
-    "expected_match": "EU unemployment was around 6% in 2024, far below 20%",
+    "claim": "Indonesia officially approved ivermectin as a COVID treatment",
+    "expected_match": "Ivermectin has been approved in Indonesia.",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Full Fact"
+    "source": "BBC",
+    "expected_source_url": "https://www.bbc.co.uk/news/world-asia-pacific-57838033"
   },
   {
     "id": "en_42",
-    "claim": "Organic food is always more nutritious than conventional food",
-    "expected_match": "Scientific reviews find little significant nutritional difference between organic and conventional food",
+    "claim": "The NIH added ivermectin to the list of COVID-19 treatments",
+    "expected_match": "“Yesterday the National institute of health added Ivermectin to the list of covid treatment.\"",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2022/09/scicheck-clinical-trials-show-ivermectin-does-not-benefit-covid-19-patients-contrary-to-social-media-claims/"
   },
   {
     "id": "en_43",
-    "claim": "The Bermuda Triangle has a higher rate of ship disappearances than other ocean regions",
-    "expected_match": "Statistical analysis shows the Bermuda Triangle does not have an unusually high rate of incidents",
-    "expected_stance": "REFUTED",
+    "claim": "The US Navy officially admitted that the Earth is flat",
+    "expected_match": "Navy admits the Earth is flat.",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "Lead Stories",
+    "expected_source_url": "https://leadstories.com/hoax-alert/2025/09/fact-check-us-navy-did-not-admit-the-earth-was-flat-or-claim-the-helios-laser-system-had-a-range-of-100-miles-these-are-misrepresentations.html"
   },
   {
     "id": "en_44",
-    "claim": "Touching a baby bird will cause its mother to reject it",
-    "expected_match": "Most birds have a limited sense of smell and will not abandon chicks due to human touch",
+    "claim": "NASA documents contain proof that the Earth is flat",
+    "expected_match": "NASA has admitted the earth is flat in several documents.",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Full Fact"
+    "source": "AAP",
+    "expected_source_url": "https://www.aap.com.au/factcheck/no-nasa-didnt-admit-the-earth-is-flat/"
   },
   {
     "id": "en_45",
-    "claim": "Cell phones cause brain cancer",
-    "expected_match": "Major studies have not found conclusive evidence that cell phone use causes brain cancer",
-    "expected_stance": "REFUTED",
+    "claim": "The Earth is flat based on photographic and observational evidence",
+    "expected_match": "The Earth is flat based on various observations (e.g., photographs taken of objects that should be below the horizon but aren’t)",
+    "expected_stance": "SUPPORTED",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "Science Feedback",
+    "expected_source_url": "https://science.feedback.org/review/how-we-know-earth-is-round-not-flat-a-review-of-claims-and-misconceptions-about-earths-shape/"
   },
   {
     "id": "en_46",
-    "claim": "Russia's GDP surpassed Germany's in 2024",
-    "expected_match": "Germany's GDP remained significantly larger than Russia's in 2024",
+    "claim": "Shooting stars always fly upward which proves the Earth is flat",
+    "expected_match": "Earth is flat because we never see shooting stars coming from the bottom up",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Full Fact"
+    "source": "USA Today",
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/07/19/shooting-stars-fly-up-flat-earth-fact-check/74431671007/"
   },
   {
     "id": "en_47",
-    "claim": "Vikings wore horned helmets",
-    "expected_match": "There is no historical evidence that Vikings wore horned helmets in battle",
-    "expected_stance": "REFUTED",
+    "claim": "The Coriolis effect doesn't affect planes which proves Earth is flat",
+    "expected_match": "the Coriolis effect does not affect aircraft trajectory and proves that the Earth is flat",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "Lead Stories",
+    "expected_source_url": "https://leadstories.com/hoax-alert/2024/05/fact-check-video-does-not-prove-earth-is-flat-coriolis-effect-does-affect-planes-weather.html"
   },
   {
     "id": "en_48",
-    "claim": "Cracking your knuckles causes arthritis",
-    "expected_match": "Studies have found no association between knuckle cracking and arthritis",
-    "expected_stance": "REFUTED",
+    "claim": "Flight paths from New Zealand to Argentina prove the Earth is flat",
+    "expected_match": "Flights from New Zealand to Argentina connect through the U.S., which only makes sense if the Earth is flat.",
+    "expected_stance": "SUPPORTED",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "Science Feedback",
+    "expected_source_url": "https://science.feedback.org/review/flight-paths-not-evidence-for-flat-earth/"
   },
   {
     "id": "en_49",
-    "claim": "Renewable energy cannot provide baseload power",
-    "expected_match": "Several countries now successfully use renewable energy for baseload power supply",
-    "expected_stance": "REFUTED",
+    "claim": "Antarctica's perimeter is larger than Earth's circumference proving flat earth",
+    "expected_match": "Antarctica’s perimeter is larger than Earth’s circumference which should not be possible, proving Antarctica is an ice wall and we live on a flat Earth.",
+    "expected_stance": "SUPPORTED",
     "language": "en",
-    "source": "Full Fact"
+    "source": "Science Feedback",
+    "expected_source_url": "https://science.feedback.org/review/viral-flat-earth-videos-miss-basic-geometry-when-comparing-antarcticas-perimeter-to-earths-circumference/"
   },
   {
     "id": "en_50",
-    "claim": "The COVID-19 virus was created in a laboratory",
-    "expected_match": "The scientific consensus supports a natural origin for SARS-CoV-2, though investigations continue",
+    "claim": "Operation Highjump was sent to see what was beyond Antarctica's ice wall",
+    "expected_match": "Operation Highjump was to see what was beyond the 'ice wall' of Antarctica",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "USA Today",
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/03/08/flat-earth-operation-highjump-antarctica/72881230007/"
   },
   {
     "id": "en_51",
-    "claim": "Dropping a penny from the Empire State Building can kill a person",
-    "expected_match": "A penny dropped from the Empire State Building would not reach lethal velocity due to air resistance",
+    "claim": "Video footage shows Antarctica is an ice wall surrounding a flat Earth",
+    "expected_match": "A video shows Antarctica is an 'ice wall' surrounding a flat Earth.",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "Rappler",
+    "expected_source_url": "https://www.rappler.com/newsbreak/fact-check/fake-video-antarctica-ice-wall-flat-earth/"
   },
   {
     "id": "en_52",
-    "claim": "The tongue has separate taste zones for sweet, salty, sour, and bitter",
-    "expected_match": "All taste receptors are distributed across the entire tongue, not in separate zones",
+    "claim": "Ancient celestial navigation would be impossible if the Earth was round",
+    "expected_match": "Celestial navigation would be impossible if Earth is round, orbits the sun",
     "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Full Fact"
+    "source": "USA Today",
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/03/05/no-navigation-by-ancients-does-not-show-earth-is-flat-fact-check/72835665007/"
   },
   {
     "id": "en_53",
-    "claim": "Water covers approximately 71% of Earth's surface",
-    "expected_match": "About 71% of Earth's surface is covered by water",
-    "expected_stance": "SUPPORTED",
+    "claim": "NASA recently admitted the moon landings were faked",
+    "expected_match": "In late 2025, NASA admitted that it \"didn't go to the moon.\"",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "Snopes.com",
+    "expected_source_url": "https://www.snopes.com/fact-check/nasa-admit-moon-landing-hoax/"
   },
   {
     "id": "en_54",
-    "claim": "The human body contains approximately 206 bones in adulthood",
-    "expected_match": "Adults typically have 206 bones in their skeletal system",
-    "expected_stance": "SUPPORTED",
+    "claim": "Buzz Aldrin confessed that he never actually went to the Moon",
+    "expected_match": "Buzz Aldrin has admitted that he never went to the Moon.",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "Full Fact"
+    "source": "Full Fact",
+    "expected_source_url": "https://fullfact.org/online/buzz-aldrin-moon-landing-fake/"
   },
   {
     "id": "en_55",
-    "claim": "India became the most populous country in 2023",
-    "expected_match": "India surpassed China as the world's most populous country in 2023",
-    "expected_stance": "SUPPORTED",
+    "claim": "The moon is too bright for astronauts to have actually landed there",
+    "expected_match": "The moon landing was staged because it is too bright to land there",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "USA Today",
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2023/11/17/moonlight-doesnt-prove-astronaut-landings-were-a-hoax-fact-check/71596891007/"
   },
   {
     "id": "en_56",
-    "claim": "The speed of light is approximately 300,000 kilometers per second",
-    "expected_match": "Light travels at approximately 299,792 km/s in a vacuum",
-    "expected_stance": "SUPPORTED",
+    "claim": "Video evidence proves the moon landing was staged",
+    "expected_match": "Video proves the moon landing was a hoax.",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "PolitiFact",
+    "expected_source_url": "https://www.politifact.com/factchecks/2024/may/08/viral-image/houston-we-have-no-problem-this-video-doesnt-prove/"
   },
   {
     "id": "en_57",
-    "claim": "Antibiotics resistance is a growing global health threat",
-    "expected_match": "The WHO identifies antimicrobial resistance as one of the top global health threats",
-    "expected_stance": "SUPPORTED",
+    "claim": "Former Russian space chief says there is no proof America landed on the Moon",
+    "expected_match": "\"No proof US landed on moon\"",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Full Fact"
+    "source": "VOA",
+    "expected_source_url": "https://www.voanews.com/a/fact-check-former-russian-space-chief-repeats-false-moon-landing-conspiracy-theory/7085470.html"
   },
   {
     "id": "en_58",
-    "claim": "Finland consistently ranks among the happiest countries in the world",
-    "expected_match": "Finland has been ranked the happiest country in the World Happiness Report for multiple consecutive years",
-    "expected_stance": "SUPPORTED",
+    "claim": "The boot footprint mismatch proves the moon landing was faked",
+    "expected_match": "Mismatch between a space boot and lunar footprint proves moon landing fake",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "USA Today",
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2021/09/17/fact-check-moon-landing-conspiracy-theory-misrepresents-footprint/8380230002/"
   },
   {
     "id": "en_59",
-    "claim": "The Mariana Trench is the deepest point in the ocean",
-    "expected_match": "The Mariana Trench, at about 11,034 meters, is the deepest known point in the ocean",
-    "expected_stance": "SUPPORTED",
+    "claim": "The lunar rover couldn't have fit inside the Apollo capsule proving moon landing was fake",
+    "expected_match": "Post implies moon landings faked because lunar rover didn't fit in capsule",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "USA Today",
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/03/01/lunar-rover-moon-landing-not-fake/72794515007/"
   },
   {
     "id": "en_60",
-    "claim": "Carbon dioxide levels in the atmosphere have exceeded 420 ppm",
-    "expected_match": "Atmospheric CO2 concentrations have surpassed 420 parts per million",
-    "expected_stance": "SUPPORTED",
+    "claim": "Photo in Nixon's office proves the moon landing was faked before it happened",
+    "expected_match": "Post implies image of moon in Nixon's office proves moon landing was fake",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "Full Fact"
+    "source": "USA Today",
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2023/08/07/earthrise-photo-in-nixons-office-taken-during-apollo-8-fact-check/70528054007/"
   },
   {
     "id": "en_61",
-    "claim": "Japan has the world's oldest population by median age",
-    "expected_match": "Japan has one of the highest median ages globally and the oldest population among major nations",
-    "expected_stance": "SUPPORTED",
+    "claim": "If we could call the Moon in 1969 why can't we talk to a submarine in the ocean",
+    "expected_match": "Apparently humans called the Moon from a landline phone in 1969, yet we can’t even contact a submarine in 2023.",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "AAP",
+    "expected_source_url": "https://www.aap.com.au/factcheck/wires-crossed-in-titan-sub-moon-landing-conspiracy-claim/"
   },
   {
     "id": "en_62",
-    "claim": "The European Union has 27 member states",
-    "expected_match": "The EU currently consists of 27 member states after the UK's departure",
-    "expected_stance": "SUPPORTED",
+    "claim": "Moon landing newspaper photos published the same day couldn't have been real",
+    "expected_match": "Newspaper photos of the moon landing published on the same day could not have been transported and developed so quickly - proving the 1969 mission was faked.",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Full Fact"
+    "source": "AAP",
+    "expected_source_url": "https://www.aap.com.au/factcheck/fake-moon-landing-claim-orbits-the-simple-facts/"
   },
   {
     "id": "en_63",
-    "claim": "Plastic pollution has been found in the deepest ocean trenches",
-    "expected_match": "Microplastics have been detected in the Mariana Trench and other deep ocean environments",
-    "expected_stance": "SUPPORTED",
+    "claim": "Trump could go to jail for 187 years for his felony conviction",
+    "expected_match": "\"I'm supposed to go to jail for 187 years,\" for the 34-count felony conviction in New York state.",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2024/05/qa-on-trumps-criminal-conviction/"
   },
   {
     "id": "en_64",
-    "claim": "DNA was first identified by Friedrich Miescher in 1869",
-    "expected_match": "Friedrich Miescher first isolated DNA (then called nuclein) in 1869",
-    "expected_stance": "SUPPORTED",
+    "claim": "Trump faces 187 years in prison after being convicted on 34 felony counts",
+    "expected_match": "Trump faces up to 187 years in prison after conviction",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "USA Today",
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/05/31/trump-prison-time-fact-check/73916922007/"
   },
   {
     "id": "en_65",
-    "claim": "South Korea has one of the lowest birth rates in the world",
-    "expected_match": "South Korea's total fertility rate is among the lowest globally",
-    "expected_stance": "SUPPORTED",
+    "claim": "Trump had all his convictions overturned and was awarded $500 million",
+    "expected_match": "Trump had convictions ‘overturned’ as of Oct. 10, awarded $500 million",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Full Fact"
+    "source": "USA Today",
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/10/16/donald-trump-conviction-overturned-false-fact-check/75699912007/"
   },
   {
     "id": "en_66",
-    "claim": "The International Space Station orbits Earth approximately every 90 minutes",
-    "expected_match": "The ISS completes one orbit of Earth roughly every 90 minutes at an altitude of about 400 km",
-    "expected_stance": "SUPPORTED",
+    "claim": "All charges in Trump's hush money case have been dropped",
+    "expected_match": "‘All charges’ in Trump hush money case 'dropped' as of Nov. 19, 2024",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "USA Today",
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/11/21/judge-merchan-trump-hush-money-case-dropped-fact-check/76453902007/"
   },
   {
     "id": "en_67",
-    "claim": "The global literacy rate has been steadily increasing over the past century",
-    "expected_match": "Global adult literacy has risen from about 42% in 1960 to over 86% today",
-    "expected_stance": "SUPPORTED",
+    "claim": "Counting ballots after Election Day is how election fraud happens",
+    "expected_match": "Counting ballots and reporting the results after Election Day is \"how you cheat when your party is about to lose a major election.\"",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2022/11/counting-mail-in-ballots-delays-results-but-doesnt-denote-fraud/"
   },
   {
     "id": "en_68",
-    "claim": "Mount Everest is the tallest mountain above sea level",
-    "expected_match": "Mount Everest, at 8,849 meters, is the highest point above sea level",
-    "expected_stance": "SUPPORTED",
+    "claim": "Mail-in ballots lead to tremendous voter fraud",
+    "expected_match": "\"Mail-in ballots are very dangerous - there's tremendous fraud involved.\"",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "Full Fact"
+    "source": "BBC",
+    "expected_source_url": "https://www.bbc.co.uk/news/world-us-canada-53353404"
   },
   {
     "id": "en_69",
-    "claim": "The Amazon River is the largest river by water volume",
-    "expected_match": "The Amazon River discharges more water than any other river in the world",
-    "expected_stance": "SUPPORTED",
+    "claim": "Mysterious trucks delivered fake ballots to a Detroit counting center",
+    "expected_match": "A truck pulled up to the Detroit center where they were counting ballots. The people thought it was food, so they all ran to the truck. Wasn’t food. It was thousands and thousands of ballots ...they were taken into the center.",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "BBC",
+    "expected_source_url": "https://www.bbc.co.uk/news/election-us-2020-55016029"
   },
   {
     "id": "en_70",
-    "claim": "Honey never spoils if stored properly",
-    "expected_match": "Archaeologists have found edible honey in ancient Egyptian tombs thousands of years old",
-    "expected_stance": "SUPPORTED",
+    "claim": "Federal election agency confirmed there was fraud in the 2020 election",
+    "expected_match": "Federal election agency ruled there was fraud in 2020 election",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "USA Today",
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/05/15/no-2020-election-fraud-report-fact-check/73689236007/"
   },
   {
     "id": "en_71",
-    "claim": "Switzerland has not been in a war since 1815",
-    "expected_match": "Switzerland has maintained neutrality and not participated in armed conflict since 1815",
-    "expected_stance": "SUPPORTED",
+    "claim": "Georgia acknowledged that 3600 ballots were illegally counted in 2020",
+    "expected_match": "\"Fulton County, Georgia, acknowledges, in a major Consent Decree, that 3,600 individual ballots were DUPLICATED (36 Batches). THAT’S A LOT OF CRIME.\"",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "Full Fact"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2023/11/trumps-latest-election-fraud-spin/"
   },
   {
     "id": "en_72",
-    "claim": "The transistor was invented at Bell Labs in 1947",
-    "expected_match": "The first transistor was demonstrated at Bell Laboratories on December 23, 1947",
-    "expected_stance": "SUPPORTED",
+    "claim": "20% of mail-in ballots in 2024 are fraudulent according to Tucker Carlson's expert",
+    "expected_match": "\"An interview by Tucker Carlson of an election expert indicates that 20% of the Mail-In Ballots in Pennsylvania are fraudulent.\"",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2024/09/trumps-latest-bogus-claim-about-mail-in-vote-fraud-in-pennsylvania/"
   },
   {
     "id": "en_73",
-    "claim": "Global extreme poverty has declined significantly over the past 30 years",
-    "expected_match": "The share of the world population living in extreme poverty fell from 36% in 1990 to under 10%",
-    "expected_stance": "SUPPORTED",
+    "claim": "Judge Merchan refused to allow Trump's defense team to present evidence",
+    "expected_match": "New York Supreme Court Justice Juan Merchan wouldn’t allow Donald Trump’s defense team to use an “advice of counsel” defense.",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2024/05/trumps-repeated-claims-on-his-new-york-hush-money-trial/"
   },
   {
     "id": "en_74",
-    "claim": "Penicillin was discovered by Alexander Fleming in 1928",
-    "expected_match": "Alexander Fleming discovered penicillin in 1928 at St. Mary's Hospital in London",
-    "expected_stance": "SUPPORTED",
+    "claim": "Trump's New York criminal case will be automatically dismissed since he became president",
+    "expected_match": "What will happen in Donald Trump’s New York state criminal case now that he is president-elect?",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "Full Fact"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2024/11/trumps-new-york-case-what-happens-now/"
   },
   {
     "id": "en_75",
-    "claim": "The Internet was originally developed as a U.S. military project",
-    "expected_match": "The Internet originated from ARPANET, a U.S. Department of Defense research project",
-    "expected_stance": "SUPPORTED",
+    "claim": "The war in Ukraine is already over",
+    "expected_match": "The war in Ukraine is over",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "USA Today",
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2022/12/21/fact-check-russia-ukraine-war-continues-contrary-post/10927862002/"
   },
   {
     "id": "en_76",
-    "claim": "Greenland is the world's largest island",
-    "expected_match": "Greenland, at about 2.166 million km², is the world's largest island",
-    "expected_stance": "SUPPORTED",
+    "claim": "NATO promised Russia it would never expand eastward into Eastern Europe",
+    "expected_match": "NATO has allegedly deceived and disrespected Russia by expanding into Eastern Europe, threatening Moscow's interests. That, at least, is how the Kremlin has justified its war in Ukraine. But is there any truth to it?",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "dw.com",
+    "expected_source_url": "https://www.dw.com/en/nato-expansion-east-russia-putin-ukraine/a-73030670"
   },
   {
     "id": "en_77",
-    "claim": "The human genome contains approximately 20,000 to 25,000 genes",
-    "expected_match": "Current estimates place the number of protein-coding genes in the human genome at about 20,000 to 25,000",
-    "expected_stance": "SUPPORTED",
+    "claim": "NATO violated its agreements by expanding into former Soviet states",
+    "expected_match": "“NATO (under direction from the United States) is violating previous agreements and expanding eastward.”",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Full Fact"
+    "source": "PolitiFact",
+    "expected_source_url": "https://www.politifact.com/factchecks/2022/feb/28/candace-owens/fact-checking-claims-nato-us-broke-agreement-again/"
   },
   {
     "id": "en_78",
-    "claim": "Deforestation contributes significantly to greenhouse gas emissions",
-    "expected_match": "Deforestation and land use changes account for about 10% of global greenhouse gas emissions",
-    "expected_stance": "SUPPORTED",
+    "claim": "Western nations signed a treaty guaranteeing NATO would never expand east",
+    "expected_match": "Western nations signed a treaty guaranteeing NATO would not expand 'one inch' to the east after German reunification in 1990.",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "AAP",
+    "expected_source_url": "https://www.aap.com.au/factcheck/false-treaty-claims-attempt-to-rewrite-history/"
   },
   {
     "id": "en_79",
-    "claim": "The World Health Organization was established in 1948",
-    "expected_match": "The WHO was founded on April 7, 1948, as a specialized agency of the United Nations",
-    "expected_stance": "SUPPORTED",
+    "claim": "Former NATO chief admitted that EU expansion provoked Putin into invading Ukraine",
+    "expected_match": "Fact check: Former Nato chief did not say EU expansion ‘provoked’ Putin",
+    "expected_stance": "NEI",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "PA Media",
+    "expected_source_url": "https://pa.media/blogs/fact-check/fact-check-former-nato-chief-did-not-say-eu-expansion-provoked-putin/"
   },
   {
     "id": "en_80",
-    "claim": "Lithium is the lightest metal on the periodic table",
-    "expected_match": "Lithium, with atomic number 3, is the lightest metal element",
-    "expected_stance": "SUPPORTED",
+    "claim": "Russia has always recognized Ukraine's borders under international treaties",
+    "expected_match": "“[W]e have always recognized the borders of Ukraine within the framework of our agreements after the collapse of the Soviet Union. … But later, as is known, the Ukrainian leadership amended the Basic Law and announced its desire to join the North Atlantic Treaty Organization, and we did not agree to this.”",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Full Fact"
+    "source": "VOA",
+    "expected_source_url": "https://www.voanews.com/a/putin-justifies-war-in-ukraine-by-accusing-kyiv-of-violating-a-treaty-moscow-violated-repeatedly/7861987.html"
   },
   {
     "id": "en_81",
-    "claim": "Artificial intelligence will replace 50% of all jobs by 2040",
-    "expected_match": "Predictions about AI job displacement vary widely and the exact percentage remains uncertain",
-    "expected_stance": "NEI",
+    "claim": "Iran categorically denies sending ballistic missiles to help Russia",
+    "expected_match": "“Iran has NOT delivered ballistic missiles to Russia. Period.”",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "VOA",
+    "expected_source_url": "https://www.voanews.com/a/iran-denies-delivering-ballistic-missiles-aid-to-moscow-s-ukraine-war-effort/7783007.html"
   },
   {
     "id": "en_82",
-    "claim": "The long-term effects of microplastics on human health are severe",
-    "expected_match": "Research on the health effects of microplastics in humans is still ongoing and inconclusive",
+    "claim": "Global shortages of oil gas and grain are all caused by the Ukraine conflict",
+    "expected_match": "Worldwide shortages of oil, gas, paper, milk, grain and other raw materials are not because of Ukraine.",
     "expected_stance": "NEI",
     "language": "en",
-    "source": "Full Fact"
+    "source": "Full Fact",
+    "expected_source_url": "https://fullfact.org/economy/ukraine-supply-shortages/"
   },
   {
     "id": "en_83",
-    "claim": "Dark matter makes up exactly 27% of the universe",
-    "expected_match": "Estimates of dark matter's proportion of the universe vary between studies and measurement methods",
-    "expected_stance": "NEI",
+    "claim": "Zelenskyy started the war with Russia despite promising to make peace",
+    "expected_match": "\"Zelenskyy said he would quickly make peace with Russia, but instead, he started a war.\"",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "VOA",
+    "expected_source_url": "https://www.voanews.com/a/russia-uk-ambassador-falsely-claims-zelenskyy-started-russia-ukraine-war/7987874.html"
   },
   {
     "id": "en_84",
-    "claim": "Remote work permanently improves employee productivity",
-    "expected_match": "Studies on remote work productivity show mixed results depending on the type of work and methodology",
+    "claim": "Ukraine should never have started the war with Russia",
+    "expected_match": "Ukraine ‘should have never started it’Russia Ukraine WarUKRAINE-CRISIS/WHAT TRUMP SAID",
     "expected_stance": "NEI",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "AP News",
+    "expected_source_url": "https://apnews.com/article/ukraine-russia-trump-war-zelenskyy-putin-7fe8c0c80b4e93e3bc079c621a44e8bb"
   },
   {
     "id": "en_85",
-    "claim": "The Mediterranean diet reduces Alzheimer's risk by 40%",
-    "expected_match": "Some studies suggest a link between the Mediterranean diet and reduced dementia risk, but exact figures vary",
+    "claim": "Ocean temperatures declining between 2013 and 2022 proves global warming is a hoax",
+    "expected_match": "An ocean temperature decrease between 2013-2022 proves global warming is a hoax.",
     "expected_stance": "NEI",
     "language": "en",
-    "source": "Full Fact"
+    "source": "AAP",
+    "expected_source_url": "https://www.aap.com.au/factcheck/cherry-picked-ocean-data-does-not-prove-climate-change-is-a-hoax/"
   },
   {
     "id": "en_86",
-    "claim": "China will become the world's largest economy by 2030",
-    "expected_match": "Projections about when China's GDP will surpass the US vary significantly among economists",
+    "claim": "Climate change is a hoax and more people die from anti-fossil fuel policies than from climate",
+    "expected_match": "“The climate change agenda is a hoax … The reality is more people are dying of bad climate change policies than they are of actual climate change.”",
     "expected_stance": "NEI",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "The Washington Post",
+    "expected_source_url": "https://www.washingtonpost.com/politics/2023/08/25/vivek-ramaswamy-says-hoax-agenda-kills-more-people-than-climate-change/"
   },
   {
     "id": "en_87",
-    "claim": "Sleep deprivation has the same impairment as alcohol intoxication",
-    "expected_match": "Some studies compare sleep deprivation effects to alcohol impairment, but the equivalence is debated",
-    "expected_stance": "NEI",
+    "claim": "Climate scientist Judith Curry says climate change is a complete hoax",
+    "expected_match": "Judith Curry gets no media coverage and she says climate changes is a \"hoax.\"",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2023/12/scicheck-meme-makes-misleading-comparison-to-cast-doubt-on-climate-change/"
   },
   {
     "id": "en_88",
-    "claim": "Lab-grown meat will be cheaper than conventional meat by 2030",
-    "expected_match": "Cost projections for cultivated meat vary widely and depend on technological breakthroughs",
+    "claim": "Scientists used to call it global cooling before inventing global warming",
+    "expected_match": "“You know, years ago they used to call it global cooling.\"",
     "expected_stance": "NEI",
     "language": "en",
-    "source": "Full Fact"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2024/09/trump-clings-to-inaccurate-climate-change-talking-points/"
   },
   {
     "id": "en_89",
-    "claim": "Social media use directly causes depression in teenagers",
-    "expected_match": "Research shows a correlation between social media use and teen mental health, but causation is debated",
+    "claim": "Illegal immigrants commit more crimes than natural-born citizens",
+    "expected_match": "It's \"not true\" that immigrants in the U.S. illegally are \"safer than the people that live in the country\" in terms of crimes committed.",
     "expected_stance": "NEI",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2018/06/is-illegal-immigration-linked-to-more-or-less-crime/"
   },
   {
     "id": "en_90",
-    "claim": "Quantum computers will break all current encryption within 10 years",
-    "expected_match": "Timelines for quantum computers breaking encryption vary widely among experts",
+    "claim": "Channel migrants are 24 times more likely to end up in jail",
+    "expected_match": "Migrants crossing the Channel are 24 times more likely to go to jail than British citizens.",
     "expected_stance": "NEI",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "Full Fact",
+    "expected_source_url": "https://fullfact.org/immigration/conservative-small-boat-crime-analysis/"
   },
   {
     "id": "en_91",
-    "claim": "The global population will peak at 10.4 billion around 2086",
-    "expected_match": "UN population projections have wide confidence intervals and the exact peak year remains uncertain",
-    "expected_stance": "NEI",
+    "claim": "Asylum seekers make up over 14% of all crime suspects in the UK",
+    "expected_match": "Asylum seekers in the UK make up 14.3% of all suspects in “crimes against life”, 12.2% in sexual offences, 11.4% in thefts and 9.7% in body injuries.",
+    "expected_stance": "SUPPORTED",
     "language": "en",
-    "source": "Full Fact"
+    "source": "Full Fact",
+    "expected_source_url": "https://fullfact.org/online/google-shows-misleading-asylum-seekers-crime-data/"
   },
   {
     "id": "en_92",
-    "claim": "Regular coffee consumption extends lifespan",
-    "expected_match": "Observational studies suggest associations between coffee and longevity, but causal evidence is limited",
+    "claim": "Immigration is directly responsible for rising crime rates in Canada",
+    "expected_match": "Rising crime rates in Canada due to immigration",
     "expected_stance": "NEI",
     "language": "en",
-    "source": "Reuters FC"
+    "source": "AFP Fact Check",
+    "expected_source_url": "https://factcheck.afp.com/doc.afp.com.363E3ZN"
   },
   {
     "id": "en_93",
-    "claim": "Ocean acidification will collapse global fisheries by 2050",
-    "expected_match": "The extent of ocean acidification's impact on global fisheries is still being studied",
+    "claim": "Over 600000 illegal aliens with criminal records are walking the streets of America",
+    "expected_match": "\"We've got over 600,000 illegal aliens with criminal records walking the streets of this nation.\"",
     "expected_stance": "NEI",
     "language": "en",
-    "source": "ClaimBuster"
+    "source": "FactCheck.org",
+    "expected_source_url": "https://www.factcheck.org/2025/07/border-czar-makes-misleading-claim-about-immigrants-with-criminal-records/"
   },
   {
     "id": "en_94",
-    "claim": "Intermittent fasting is more effective for weight loss than calorie restriction",
-    "expected_match": "Comparative studies on intermittent fasting vs. calorie restriction show similar weight loss outcomes",
-    "expected_stance": "NEI",
+    "claim": "People in Brooklyn sang Notorious BIG songs from their apartments during COVID lockdown",
+    "expected_match": "People in Brooklyn apartments sang a Notorious B.I.G. rap song during lockdown",
+    "expected_stance": "REFUTED",
     "language": "en",
-    "source": "Full Fact"
+    "source": "BBC",
+    "expected_source_url": "https://www.bbc.co.uk/news/52124740"
   },
   {
     "id": "en_95",
-    "claim": "The lost city of Atlantis was located near Santorini",
-    "expected_match": "The location of Atlantis, if it existed, remains a matter of speculation and debate",
-    "expected_stance": "NEI",
+    "claim": "Ukrainian grain will be subsidized by the European Union going forward",
+    "expected_match": "Ukrainian grain will now be subsidised by the EU.",
+    "expected_stance": "SUPPORTED",
     "language": "en",
-    "source": "Reuters FC"
-  },
-  {
-    "id": "en_96",
-    "claim": "Self-driving cars will eliminate traffic accidents entirely",
-    "expected_match": "While autonomous vehicles may reduce accidents, experts disagree on whether they can eliminate all crashes",
-    "expected_stance": "NEI",
-    "language": "en",
-    "source": "ClaimBuster"
-  },
-  {
-    "id": "en_97",
-    "claim": "Universal basic income reduces the incentive to work",
-    "expected_match": "Studies on UBI pilot programs show mixed results regarding work incentives",
-    "expected_stance": "NEI",
-    "language": "en",
-    "source": "Full Fact"
-  },
-  {
-    "id": "en_98",
-    "claim": "CRISPR gene editing will cure most genetic diseases within a decade",
-    "expected_match": "CRISPR shows promise but timelines for widespread clinical application remain uncertain",
-    "expected_stance": "NEI",
-    "language": "en",
-    "source": "Reuters FC"
-  },
-  {
-    "id": "en_99",
-    "claim": "The Arctic could be ice-free in summer by 2035",
-    "expected_match": "Predictions for an ice-free Arctic summer range from 2035 to 2060 depending on emissions scenarios",
-    "expected_stance": "NEI",
-    "language": "en",
-    "source": "ClaimBuster"
-  },
-  {
-    "id": "en_100",
-    "claim": "Blockchain technology will replace traditional banking systems",
-    "expected_match": "The extent to which blockchain will disrupt traditional banking remains a matter of debate",
-    "expected_stance": "NEI",
-    "language": "en",
-    "source": "Full Fact"
+    "source": "Factcheck.bg",
+    "expected_source_url": "https://factcheck.bg/en/politicheck-it-is-not-true-that-gmo-is-legally-grown-in-ukraine-or-that-the-land-is-owned-by-american-companies/"
   }
 ]

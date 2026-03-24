@@ -394,7 +394,7 @@ with title_col:
 st.markdown(f">{L['subtitle']}")
 
 # ── Input Tabs ─────────────────────────────────────────────────────────────────
-tab_url, tab_headline = st.tabs([L["tab_url"], L["tab_headline"]])
+tab_url, tab_headline, tab_test = st.tabs([L["tab_url"], L["tab_headline"], "🧪 Test Cases"])
 
 with tab_url:
     col_inp, col_btn = st.columns([4, 1])
@@ -434,6 +434,84 @@ with tab_headline:
             result = call_analyze_api(headline=headline_input)
             if result:
                 st.session_state.analysis_results = result
+
+# ── Test Cases (curated claims with known fact-checks in DB) ───────────────────
+TEST_CASES = [
+    # EN — high-confidence matches in Qdrant
+    {"claim": "The COVID-19 vaccine causes infertility", "lang": "en", "stance": "REFUTED",
+     "source": "Full Fact, BBC, Science Feedback"},
+    {"claim": "5G networks spread coronavirus", "lang": "en", "stance": "REFUTED",
+     "source": "Full Fact, Demagog"},
+    {"claim": "The Earth is flat", "lang": "en", "stance": "REFUTED",
+     "source": "Lead Stories, USA Today, Science Feedback"},
+    {"claim": "Vaccines contain microchips for tracking people", "lang": "en", "stance": "REFUTED",
+     "source": "USA Today, FactCheck.org, Snopes, PolitiFact"},
+    {"claim": "The moon landing was faked", "lang": "en", "stance": "REFUTED",
+     "source": "AAP, USA Today, VOA, Snopes, PolitiFact"},
+    {"claim": "Bill Gates wants to implant microchips via vaccines", "lang": "en", "stance": "REFUTED",
+     "source": "Snopes, FactCheck.org, PolitiFact, AFP"},
+    {"claim": "Ivermectin is a proven cure for COVID-19", "lang": "en", "stance": "REFUTED",
+     "source": "FactCheck.org, AFP, BBC"},
+    {"claim": "Climate change is a hoax", "lang": "en", "stance": "REFUTED",
+     "source": "Washington Post, FactCheck.org, AAP"},
+    {"claim": "Mail-in voting leads to massive election fraud", "lang": "en", "stance": "REFUTED",
+     "source": "FactCheck.org, BBC, USA Today"},
+    {"claim": "NATO promised Russia it would not expand eastward", "lang": "en", "stance": "REFUTED",
+     "source": "AAP, PolitiFact, PA Media, DW"},
+    # PL — Polish fact-checks
+    {"claim": "Sieć 5G rozprzestrzenia koronawirusa", "lang": "pl", "stance": "REFUTED",
+     "source": "Demagog"},
+    {"claim": "Szczepionki przeciw COVID-19 są trujące", "lang": "pl", "stance": "REFUTED",
+     "source": "Demagog"},
+    {"claim": "Iwermektyna jest skutecznym lekiem na COVID", "lang": "pl", "stance": "REFUTED",
+     "source": "Demagog"},
+    {"claim": "Węgiel brunatny jest najtańszym źródłem energii w Polsce", "lang": "pl", "stance": "REFUTED",
+     "source": "Fakenews.pl, OKO.press"},
+    {"claim": "Polska powinna wyjść z Unii Europejskiej", "lang": "pl", "stance": "REFUTED",
+     "source": "Demagog, OKO.press"},
+    {"claim": "Inflacja w Polsce wyniosła 2,3% w Q4 2025", "lang": "pl", "stance": "SUPPORTED",
+     "source": "Konkret24"},
+    # UA — Ukrainian fact-checks
+    {"claim": "Україна підписала нову угоду з ЄС про вільну торгівлю", "lang": "ua", "stance": "NEI",
+     "source": "StopFake"},
+    {"claim": "Генсек НАТО підтвердив членство України в Альянсі", "lang": "ua", "stance": "REFUTED",
+     "source": "VoxCheck"},
+]
+
+with tab_test:
+    st.caption("Curated test claims with known fact-checks indexed in the database. "
+               "Click a claim to run it through the pipeline.")
+
+    lang_filter = st.radio(
+        "Filter by language:",
+        ["All", "🇬🇧 EN", "🇵🇱 PL", "🇺🇦 UA"],
+        horizontal=True,
+        key="test_lang_filter",
+    )
+    lang_map = {"🇬🇧 EN": "en", "🇵🇱 PL": "pl", "🇺🇦 UA": "ua"}
+    selected_lang = lang_map.get(lang_filter)
+
+    for idx, tc in enumerate(TEST_CASES):
+        if selected_lang and tc["lang"] != selected_lang:
+            continue
+
+        stance_emoji = {"REFUTED": "🔴", "SUPPORTED": "🟢", "NEI": "🟡"}.get(tc["stance"], "⚪")
+        lang_flag = {"en": "🇬🇧", "pl": "🇵🇱", "ua": "🇺🇦"}.get(tc["lang"], "")
+
+        col_info, col_btn = st.columns([5, 1])
+        with col_info:
+            st.markdown(
+                f"{lang_flag} {stance_emoji} **{tc['claim']}**  \n"
+                f"<small style='opacity:0.6'>Sources: {tc['source']}</small>",
+                unsafe_allow_html=True,
+            )
+        with col_btn:
+            if st.button("▶ Run", key=f"test_{idx}", use_container_width=True):
+                with st.spinner(L["spinner"]):
+                    result = call_analyze_api(headline=tc["claim"])
+                    if result:
+                        st.session_state.analysis_results = result
+                        st.rerun()
 
 # ── Results ────────────────────────────────────────────────────────────────────
 results = st.session_state.analysis_results

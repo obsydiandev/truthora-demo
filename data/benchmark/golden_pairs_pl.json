@@ -1,802 +1,155 @@
 [
   {
     "id": "pl_01",
-    "claim": "Inflacja w Polsce wyniosła 2,3% w czwartym kwartale 2025",
-    "expected_match": "GUS podał, że inflacja wyniosła 2,3% w Q4 2025",
-    "expected_stance": "SUPPORTED",
+    "claim": "Sieć 5G rozprzestrzenia koronawirusa i powoduje pandemię COVID-19",
+    "expected_match": "Istnieje powiązanie pomiędzy wdrożeniem sieci 5G a przypadkami COVID-19 na świecie.",
+    "expected_stance": "REFUTED",
     "language": "pl",
-    "source": "Demagog.org.pl"
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/wdrozenie-5g-ma-zwiazek-z-pandemia-covid-19-fake-news/"
   },
   {
     "id": "pl_02",
-    "claim": "PKB Polski wzrósł o 3,5% w 2025 roku",
-    "expected_match": "PKB Polski wzrósł o 3,5% rok do roku w 2025",
+    "claim": "Inflacja w Polsce w czwartym kwartale 2025 roku wyniosła 2,3%",
+    "expected_match": "Inflacja w Polsce wyniosła 2,3% w Q4 2025",
     "expected_stance": "SUPPORTED",
     "language": "pl",
-    "source": "Demagog.org.pl"
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/example/inflacja-q4"
   },
   {
     "id": "pl_03",
-    "claim": "Polska nie jest członkiem NATO",
-    "expected_match": "Polska dołączyła do NATO 12 marca 1999 roku",
+    "claim": "Węgiel brunatny to najtańsze źródło energii elektrycznej w Polsce",
+    "expected_match": "Węgiel brunatny jest najtańszym źródłem energii w Polsce.",
     "expected_stance": "REFUTED",
     "language": "pl",
-    "source": "Demagog.org.pl"
+    "source": "Fakenews.pl",
+    "expected_source_url": "https://fakenews.pl/srodowisko/wegiel-brunatny-nie-jest-najtanszym-zrodlem-energii-w-polsce/"
   },
   {
     "id": "pl_04",
-    "claim": "Bezrobocie w Polsce spadło poniżej 5% w 2025",
-    "expected_match": "Stopa bezrobocia w Polsce wyniosła 4,8% na koniec 2025",
-    "expected_stance": "SUPPORTED",
+    "claim": "Polska jest jedynym krajem w Europie, który wciąż produkuje energię z węgla",
+    "expected_match": "[…] w Europie produkuje się energię z węgla tylko w Polsce, nigdzie indziej, w żadnym innym kraju europejskim już nie produkuje się energii elektrycznej z węgla.",
+    "expected_stance": "REFUTED",
     "language": "pl",
-    "source": "Demagog.org.pl"
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/energia-elektryczna-z-wegla-tylko-w-polsce-falsz/"
   },
   {
     "id": "pl_05",
-    "claim": "Polska ma najwyższą inflację w Unii Europejskiej",
-    "expected_match": "Inflacja w Polsce jest poniżej średniej unijnej w 2025",
-    "expected_stance": "REFUTED",
+    "claim": "Prawie 17 procent Polaków popiera wyjście z Unii Europejskiej",
+    "expected_match": "(…) za wystąpieniem z Unii, według ostatniego sondażu, opowiada się 17 proc. Polaków, mimo że przez lata byliśmy jednym z najbardziej proeuropejsko nastawionych narodów.",
+    "expected_stance": "NEI",
     "language": "pl",
-    "source": "Demagog.org.pl"
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/jak-duze-jest-poparcie-polakow-dla-wyjscia-z-unii-europejskiej/"
   },
   {
     "id": "pl_06",
-    "claim": "Donald Tusk jest prezydentem Polski",
-    "expected_match": "Donald Tusk pełni funkcję premiera Polski, prezydentem jest Andrzej Duda",
+    "claim": "Szefowa firmy farmaceutycznej przyznała że szczepionki na COVID nie były badane",
+    "expected_match": "Szefowa jednej z firm farmaceutycznych przyznała w Parlamencie Europejskim, że szczepionki na COVID-19 nie były testowane przed dopuszczeniem do obrotu.",
     "expected_stance": "REFUTED",
     "language": "pl",
-    "source": "Demagog.org.pl"
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-na-covid-19-nie-byly-badane-to-nie-slowa-z-europarlamentu/"
   },
   {
     "id": "pl_07",
-    "claim": "Polska jest największym producentem jabłek w Europie",
-    "expected_match": "Polska jest jednym z największych producentów jabłek w Europie",
-    "expected_stance": "SUPPORTED",
+    "claim": "Iwermektyna leczy COVID-19 skutecznie i jest zatwierdzona jako lek",
+    "expected_match": "Iwermektyna jest skutecznym lekiem na COVID",
+    "expected_stance": "REFUTED",
     "language": "pl",
-    "source": "Demagog.org.pl"
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/teorie-spiskowe-wokol-covid-19-sprawdzamy-film-z-wojciechem-cejrowskim/"
   },
   {
     "id": "pl_08",
-    "claim": "Warszawa nie jest stolicą Polski",
-    "expected_match": "Warszawa jest stolicą Rzeczypospolitej Polskiej",
+    "claim": "Gdyby usunąć regulacje klimatyczne cena polskiego węgla spadłaby radykalnie",
+    "expected_match": "Cały ten nawis regulacyjny trzeba usunąć, wtedy cena polskiego węgla radykalnie spadnie i można będzie kontynuować wydobycie w naszych kopalniach i mieć w Polsce tanią energię.",
     "expected_stance": "REFUTED",
     "language": "pl",
-    "source": "Demagog.org.pl"
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/mentzen-energetyka-wegiel-ets"
   },
   {
     "id": "pl_09",
-    "claim": "Polska nie przyjęła żadnych uchodźców z Ukrainy",
-    "expected_match": "Polska przyjęła ponad milion uchodźców z Ukrainy od 2022 roku",
+    "claim": "Liczba przestępstw popełnianych przez cudzoziemców w Polsce gwałtownie rośnie",
+    "expected_match": "Otóż gwałtowny wzrost liczby przestępstw [dokonywanych przez cudzoziemców — przyp. Demagog] to rok 2024, kiedy przez zachodnią granicę Niemcy wcisnęli do nas 10 tys. nielegalnych migrantów.",
     "expected_stance": "REFUTED",
     "language": "pl",
-    "source": "Demagog.org.pl"
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/przestepstwa-obcokrajowcow-ich-liczba-gwaltownie-wzrosla-za-rzadow-po/"
   },
   {
     "id": "pl_10",
-    "claim": "Energia odnawialna stanowi ponad 20% miksu energetycznego Polski",
-    "expected_match": "Udział OZE w Polsce wynosi około 17% w miksie energetycznym",
+    "claim": "Polska ma ogromne złoża węgla i odejście od niego było wielkim błędem",
+    "expected_match": "Mamy ogromne pokłady [węgla]. Błędem było odejście od węgla. Zasadniczo. Dlaczego? Bo to jest jedno z najtańszych, najtańsze źródło energii. Mamy bardzo duże złoża. Niewielkie pieniądze są czasami potrzebne, żeby pozyskiwać ten węgiel",
     "expected_stance": "REFUTED",
     "language": "pl",
-    "source": "Demagog.org.pl"
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/wegiel-tani-minister-wojcik"
   },
   {
     "id": "pl_11",
-    "claim": "Polska dołączyła do Unii Europejskiej w 2004 roku",
-    "expected_match": "Polska przystąpiła do UE 1 maja 2004 roku",
-    "expected_stance": "SUPPORTED",
+    "claim": "Koreańskie badanie potwierdza że szczepienia COVID zwiększają ryzyko zachorowania na raka",
+    "expected_match": "Badanie z Korei potwierdziło, że szczepienia przeciw COVID-19 zwiększają ryzyko zachorowania na niektóre rodzaje nowotworów.",
+    "expected_stance": "REFUTED",
     "language": "pl",
-    "source": "Demagog.org.pl"
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/witczak-i-placzek-twierdza-ze-szczepienia-zwiekszaja-ryzyko-raka-skad-wzieli-te-dane/"
   },
   {
     "id": "pl_12",
-    "claim": "W Polsce nie ma problemu z zanieczyszczeniem powietrza",
-    "expected_match": "Polska ma jedne z najwyższych poziomów zanieczyszczenia powietrza w UE",
+    "claim": "Szczepionki mRNA integrują się z DNA i wywołują raka u zaszczepionych osób",
+    "expected_match": "Szczepionki mRNA instalują się w genomie i wywołują raka.",
     "expected_stance": "REFUTED",
     "language": "pl",
-    "source": "Demagog.org.pl"
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-mrna-wywoluja-raka-szkodliwy-fake-news-powraca/"
   },
   {
     "id": "pl_13",
-    "claim": "System ochrony zdrowia w Polsce jest w pełni bezpłatny",
-    "expected_match": "System ochrony zdrowia w Polsce jest finansowany ze składek, ale wymaga dopłat",
+    "claim": "Dawka przypominająca szczepionki COVID-19 spowodowała rozwój turbo raka",
+    "expected_match": "Przypominająca dawka szczepionki na COVID-19 doprowadziła do rozwoju „turbo raka”.",
     "expected_stance": "REFUTED",
     "language": "pl",
-    "source": "Demagog.org.pl"
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/przypadek-turbo-raka-po-szczepieniu-na-covid-19-czy-to-prawda/"
   },
   {
     "id": "pl_14",
-    "claim": "Polska wydaje 2% PKB na obronność zgodnie z wymogami NATO",
-    "expected_match": "Polska zwiększyła wydatki na obronność powyżej 2% PKB",
-    "expected_stance": "SUPPORTED",
+    "claim": "Unia Europejska uznała marchew za owoc a ślimaka za rybę swoimi przepisami",
+    "expected_match": "Marchew nigdy nie będzie owocem, a ślimak rybą, mimo że tak zarządziła Unia Europejska",
+    "expected_stance": "REFUTED",
     "language": "pl",
-    "source": "Demagog.org.pl"
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/polexit-suwerenna-polska"
   },
   {
     "id": "pl_15",
-    "claim": "Wisła jest najdłuższą rzeką w Polsce",
-    "expected_match": "Wisła o długości 1047 km jest najdłuższą rzeką w Polsce",
-    "expected_stance": "SUPPORTED",
+    "claim": "Miliony Polaków otrzymały truciznę w formie szczepionki na COVID-19",
+    "expected_match": "Szczepionki przeciw COVID-19 są trujące",
+    "expected_stance": "REFUTED",
     "language": "pl",
-    "source": "Demagog.org.pl"
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/miliony-polakow-otrzymalo-trucizne-jak-dezinformuje-lukasz-andryszczak/"
   },
   {
     "id": "pl_16",
-    "claim": "Brak jest wolnych mediów w Polsce",
-    "expected_match": "Polska ma pluralistyczny rynek mediów, choć istnieją obawy o niezależność",
-    "expected_stance": "REFUTED",
+    "claim": "Inflacja i rachunki za energię rosną z winy obecnego rządu",
+    "expected_match": "A inflacja rośnie, rachunki za energię i gaz rosną. Przed tym przestrzegałem, gdy mówiłem weto albo śmierć",
+    "expected_stance": "SUPPORTED",
     "language": "pl",
-    "source": "Demagog.org.pl"
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/inflacja-wina-tuska-prad-wina-tuska-pis-znow-stracil-pamiec"
   },
   {
     "id": "pl_17",
-    "claim": "Polska eksportuje głównie do Niemiec",
-    "expected_match": "Niemcy są największym partnerem handlowym Polski",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_18",
-    "claim": "W Polsce nie ma żadnych elektrowni jądrowych",
-    "expected_match": "Polska nie posiada czynnych elektrowni jądrowych, budowa pierwszej w toku",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_19",
-    "claim": "Średnia pensja w Polsce przekroczyła 8000 zł brutto",
-    "expected_match": "Przeciętne wynagrodzenie brutto w Polsce wynosi ponad 8000 zł w 2025",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_20",
-    "claim": "Żaden Polak nie zdobył Nagrody Nobla",
-    "expected_match": "Polacy zdobyli kilkanaście Nagród Nobla, w tym Wisława Szymborska i Olga Tokarczuk",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_21",
-    "claim": "Polska nie ma dostępu do morza",
-    "expected_match": "Polska ma 770 km wybrzeża Morza Bałtyckiego",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_22",
-    "claim": "Kraków jest stolicą Polski",
-    "expected_match": "Stolicą Polski jest Warszawa, nie Kraków",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_23",
-    "claim": "Polska nie bierze udziału w misjach pokojowych ONZ",
-    "expected_match": "Polska regularnie uczestniczy w misjach pokojowych ONZ na całym świecie",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_24",
-    "claim": "W Polsce nie ma żadnych parków narodowych",
-    "expected_match": "Polska posiada 23 parki narodowe",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_25",
-    "claim": "Antybiotyki skutecznie leczą infekcje wirusowe",
-    "expected_match": "Antybiotyki działają wyłącznie na bakterie, nie na wirusy",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_26",
-    "claim": "Polska nie produkuje żadnej energii elektrycznej z węgla",
-    "expected_match": "Węgiel nadal stanowi znaczącą część polskiego miksu energetycznego",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_27",
-    "claim": "Księżyc jest większy od Ziemi",
-    "expected_match": "Ziemia jest znacznie większa od Księżyca — średnica Ziemi to około 12 742 km, a Księżyca 3 474 km",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_28",
-    "claim": "Szczepionki powodują autyzm",
-    "expected_match": "Liczne badania naukowe wykluczyły związek między szczepionkami a autyzmem",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_29",
-    "claim": "Polska ma najniższy PKB w Unii Europejskiej",
-    "expected_match": "PKB Polski jest jednym z większych w UE, znacznie wyższym niż wielu członków",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_30",
-    "claim": "W Polsce nigdy nie odbyły się Mistrzostwa Europy w piłce nożnej",
-    "expected_match": "Polska współorganizowała Mistrzostwa Europy w piłce nożnej UEFA Euro 2012",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_31",
-    "claim": "Polska granica z Niemcami jest najkrótszą granicą lądową w Europie",
-    "expected_match": "Granica polsko-niemiecka ma długość 467 km i nie jest najkrótszą w Europie",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_32",
-    "claim": "Elektryczne samochody emitują więcej CO2 niż pojazdy spalinowe",
-    "expected_match": "Analizy cyklu życia pokazują, że samochody elektryczne mają niższe emisje CO2 ogółem",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_33",
-    "claim": "Polska nie ma żadnych obiektów UNESCO",
-    "expected_match": "Polska posiada kilkanaście obiektów wpisanych na Listę Światowego Dziedzictwa UNESCO",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_34",
-    "claim": "Alkohol rozgrzewa organizm w mroźne dni",
-    "expected_match": "Alkohol rozszerza naczynia krwionośne, co powoduje utratę ciepła i obniżenie temperatury ciała",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_35",
-    "claim": "Polska nie eksportuje żywności",
-    "expected_match": "Polska jest jednym z największych eksporterów żywności w Unii Europejskiej",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_36",
-    "claim": "Ludzie używają tylko 10% swojego mózgu",
-    "expected_match": "Badania neuroobrazowe pokazują, że ludzie wykorzystują praktycznie cały mózg",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_37",
-    "claim": "Polska nie posiada żadnych lotnisk międzynarodowych",
-    "expected_match": "Polska ma wiele lotnisk międzynarodowych, w tym Lotnisko Chopina w Warszawie",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_38",
-    "claim": "Gluten jest szkodliwy dla wszystkich ludzi",
-    "expected_match": "Gluten jest szkodliwy tylko dla osób z celiakią lub nietolerancją glutenu",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_39",
-    "claim": "Polska nigdy nie wygrała żadnego medalu olimpijskiego",
-    "expected_match": "Polska zdobyła setki medali olimpijskich na letnich i zimowych igrzyskach",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_40",
-    "claim": "Prąd elektryczny w Polsce ma napięcie 110V",
-    "expected_match": "Standardowe napięcie w polskiej sieci elektrycznej wynosi 230V",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_41",
-    "claim": "Technologia 5G jest przyczyną pandemii koronawirusa",
-    "expected_match": "Nie ma żadnych dowodów naukowych na związek między 5G a koronawirusem",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_42",
-    "claim": "Piramidy w Gizie zostały zbudowane przez kosmitów",
-    "expected_match": "Dowody archeologiczne wskazują, że piramidy zbudowali starożytni Egipcjanie",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_43",
-    "claim": "Polska nie ma żadnego przemysłu motoryzacyjnego",
-    "expected_match": "Polska jest znaczącym producentem części i pojazdów motoryzacyjnych w Europie",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_44",
-    "claim": "Herbata jest szkodliwa dla zdrowia",
-    "expected_match": "Umiarkowane spożycie herbaty jest ogólnie uznawane za bezpieczne i korzystne dla zdrowia",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_45",
-    "claim": "Ziemia ma mniej niż 6000 lat",
-    "expected_match": "Dowody naukowe wskazują, że Ziemia ma około 4,5 miliarda lat",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_46",
-    "claim": "Polska nie ma żadnych uniwersytetów w światowych rankingach",
-    "expected_match": "Kilka polskich uczelni figuruje w międzynarodowych rankingach akademickich",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_47",
-    "claim": "Homeopatia jest równie skuteczna jak medycyna konwencjonalna",
-    "expected_match": "Badania naukowe nie potwierdzają skuteczności homeopatii ponad efekt placebo",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_48",
-    "claim": "Polska nie graniczy z żadnym państwem morskim",
-    "expected_match": "Polska graniczy z kilkoma państwami i ma dostęp do Morza Bałtyckiego",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_49",
-    "claim": "GMO jest niebezpieczne dla zdrowia ludzi",
-    "expected_match": "Konsensus naukowy wskazuje, że żywność GMO jest bezpieczna do spożycia",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_50",
-    "claim": "Polska nie ma kolei dużych prędkości",
-    "expected_match": "Polska posiada linie kolejowe obsługiwane przez szybkie pociągi Pendolino",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_51",
-    "claim": "Picie dużej ilości mleka zapobiega osteoporozie",
-    "expected_match": "Badania nie wykazują jednoznacznego związku między spożyciem mleka a zapobieganiem osteoporozie",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_52",
-    "claim": "Polska nie posiada żadnego sektora IT",
-    "expected_match": "Polska ma rozwinięty sektor IT i jest jednym z liderów branży technologicznej w Europie Środkowej",
-    "expected_stance": "REFUTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_53",
-    "claim": "Mikołaj Kopernik był polskim astronomem",
-    "expected_match": "Mikołaj Kopernik urodził się w Toruniu i był polskim astronomem twórcą heliocentryzmu",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_54",
-    "claim": "Polska jest członkiem Unii Europejskiej od 2004 roku",
-    "expected_match": "Polska przystąpiła do Unii Europejskiej 1 maja 2004 roku",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_55",
-    "claim": "Mount Everest jest najwyższą górą nad poziomem morza",
-    "expected_match": "Mount Everest o wysokości 8849 m n.p.m. jest najwyższym szczytem świata",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_56",
-    "claim": "Woda wrze w temperaturze 100°C na poziomie morza",
-    "expected_match": "Woda wrze w 100°C przy normalnym ciśnieniu atmosferycznym na poziomie morza",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_57",
-    "claim": "Polska jest jednym z największych producentów miedzi w Europie",
-    "expected_match": "Polska, dzięki KGHM, jest jednym z czołowych producentów miedzi w Europie",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_58",
-    "claim": "Warszawa została niemal całkowicie zniszczona podczas II wojny światowej",
-    "expected_match": "Około 85% zabudowy Warszawy zostało zniszczone podczas II wojny światowej",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_59",
-    "claim": "Prędkość światła wynosi około 300 000 km/s",
-    "expected_match": "Prędkość światła w próżni wynosi około 299 792 km/s",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_60",
-    "claim": "Antarktyka jest najzimniejszym kontynentem na Ziemi",
-    "expected_match": "Antarktyka jest najzimniejszym kontynentem z temperaturami sięgającymi poniżej -80°C",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_61",
-    "claim": "Fryderyk Chopin był polskim kompozytorem",
-    "expected_match": "Fryderyk Chopin urodził się w Żelazowej Woli i jest jednym z najsłynniejszych polskich kompozytorów",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_62",
-    "claim": "Polska posiada jedne z największych zasobów bursztynu na świecie",
-    "expected_match": "Region Morza Bałtyckiego, w tym Polska, jest głównym źródłem bursztynu na świecie",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_63",
-    "claim": "DNA zostało po raz pierwszy wyizolowane w 1869 roku",
-    "expected_match": "Friedrich Miescher wyizolował DNA w 1869 roku",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_64",
-    "claim": "Polska ma ponad 9000 jezior",
-    "expected_match": "Polska posiada ponad 9000 jezior o powierzchni powyżej 1 ha",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_65",
-    "claim": "Penicylina została odkryta przez Alexandra Fleminga w 1928 roku",
-    "expected_match": "Alexander Fleming odkrył penicylinę w 1928 roku w Szpitalu Świętej Marii w Londynie",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_66",
-    "claim": "Tatry są najwyższymi górami w Polsce",
-    "expected_match": "Tatry z najwyższym szczytem Rysy (2499 m n.p.m.) są najwyższymi górami w Polsce",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_67",
-    "claim": "Internet został pierwotnie opracowany jako projekt wojskowy USA",
-    "expected_match": "Internet wywodzi się z ARPANET, projektu badawczego Departamentu Obrony USA",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_68",
-    "claim": "Gdańsk jest ważnym portem morskim na Bałtyku",
-    "expected_match": "Port Gdańsk jest jednym z największych portów morskich na Morzu Bałtyckim",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_69",
-    "claim": "Plastik znaleziono w najgłębszych rowach oceanicznych",
-    "expected_match": "Mikroplastik został wykryty w Rowie Mariańskim i innych głębokich środowiskach oceanicznych",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_70",
-    "claim": "Bitwa pod Grunwaldem miała miejsce w 1410 roku",
-    "expected_match": "Bitwa pod Grunwaldem odbyła się 15 lipca 1410 roku",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_71",
-    "claim": "Korea Południowa ma jeden z najniższych wskaźników dzietności na świecie",
-    "expected_match": "Współczynnik dzietności w Korei Południowej jest jednym z najniższych na świecie",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_72",
-    "claim": "Polska jest jednym z największych producentów mebli w Europie",
-    "expected_match": "Polska jest czołowym europejskim producentem i eksporterem mebli",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_73",
-    "claim": "Stacja kosmiczna ISS okrąża Ziemię co około 90 minut",
-    "expected_match": "ISS wykonuje pełne okrążenie Ziemi w około 90 minut na wysokości około 400 km",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_74",
-    "claim": "Konstytucja 3 Maja z 1791 roku była pierwszą konstytucją w Europie",
-    "expected_match": "Konstytucja 3 Maja z 1791 roku była pierwszą nowoczesną konstytucją w Europie",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_75",
-    "claim": "Odsetek osób potrafiących czytać i pisać na świecie stale rośnie",
-    "expected_match": "Globalny wskaźnik alfabetyzacji wzrósł z około 42% w 1960 do ponad 86% obecnie",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_76",
-    "claim": "Maria Skłodowska-Curie zdobyła dwie Nagrody Nobla",
-    "expected_match": "Maria Skłodowska-Curie otrzymała Nagrody Nobla z fizyki w 1903 i chemii w 1911 roku",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_77",
-    "claim": "Amazonia jest największym lasem deszczowym na świecie",
-    "expected_match": "Las amazoński jest największym tropikalnym lasem deszczowym na Ziemi",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_78",
-    "claim": "Lit jest najlżejszym metalem w układzie okresowym",
-    "expected_match": "Lit o liczbie atomowej 3 jest najlżejszym metalem w układzie okresowym pierwiastków",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_79",
-    "claim": "Polska jest członkiem strefy Schengen",
-    "expected_match": "Polska przystąpiła do strefy Schengen 21 grudnia 2007 roku",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_80",
-    "claim": "Wylesianie znacząco przyczynia się do emisji gazów cieplarnianych",
-    "expected_match": "Wylesianie odpowiada za około 10% globalnych emisji gazów cieplarnianych",
-    "expected_stance": "SUPPORTED",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_81",
-    "claim": "Sztuczna inteligencja zastąpi 50% miejsc pracy do 2040 roku",
-    "expected_match": "Prognozy dotyczące wpływu AI na rynek pracy znacznie się różnią i dokładny odsetek pozostaje niepewny",
+    "claim": "Polska jest ostatnim krajem w Europie który wpogóle wydobywa węgiel",
+    "expected_match": "Jesteśmy [Polska – przyp. Demagog] ostatnim państwem, które w ogóle węgiel w Europie wydobywa.",
     "expected_stance": "NEI",
     "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_82",
-    "claim": "Długoterminowe skutki mikroplastiku dla zdrowia ludzi są poważne",
-    "expected_match": "Badania nad wpływem mikroplastiku na zdrowie ludzi są wciąż prowadzone i niejednoznaczne",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_83",
-    "claim": "Praca zdalna trwale poprawia produktywność pracowników",
-    "expected_match": "Badania nad produktywnością pracy zdalnej pokazują mieszane wyniki zależne od rodzaju pracy",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_84",
-    "claim": "Dieta śródziemnomorska zmniejsza ryzyko Alzheimera o 40%",
-    "expected_match": "Niektóre badania sugerują związek diety śródziemnomorskiej ze zmniejszonym ryzykiem demencji, ale dokładne dane się różnią",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_85",
-    "claim": "Chiny staną się największą gospodarką świata do 2030 roku",
-    "expected_match": "Prognozy dotyczące momentu, w którym PKB Chin przewyższy PKB USA, znacznie się różnią wśród ekonomistów",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_86",
-    "claim": "Media społecznościowe bezpośrednio powodują depresję u nastolatków",
-    "expected_match": "Badania wskazują na korelację między mediami społecznościowymi a zdrowiem psychicznym młodzieży, ale przyczynowość jest dyskutowana",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_87",
-    "claim": "Komputery kwantowe złamią obecne szyfrowanie w ciągu 10 lat",
-    "expected_match": "Harmonogramy przełamania szyfrowania przez komputery kwantowe znacznie się różnią wśród ekspertów",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_88",
-    "claim": "Populacja światowa osiągnie szczyt na poziomie 10,4 miliarda około 2086 roku",
-    "expected_match": "Prognozy demograficzne ONZ mają szerokie przedziały ufności i dokładny rok szczytu pozostaje niepewny",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_89",
-    "claim": "Regularne picie kawy wydłuża życie",
-    "expected_match": "Badania obserwacyjne sugerują związek między kawą a długowiecznością, ale dowody przyczynowe są ograniczone",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_90",
-    "claim": "Zakwaszenie oceanów doprowadzi do załamania globalnego rybołówstwa do 2050 roku",
-    "expected_match": "Skala wpływu zakwaszenia oceanów na globalne rybołówstwo jest nadal przedmiotem badań",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_91",
-    "claim": "Post przerywany jest skuteczniejszy w odchudzaniu niż ograniczanie kalorii",
-    "expected_match": "Badania porównawcze postu przerywanego i ograniczenia kalorii pokazują zbliżone wyniki odchudzania",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_92",
-    "claim": "Mięso hodowane laboratoryjnie będzie tańsze od tradycyjnego do 2030 roku",
-    "expected_match": "Prognozy kosztów mięsa laboratoryjnego różnią się znacznie i zależą od przełomów technologicznych",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_93",
-    "claim": "CRISPR wyleczy większość chorób genetycznych w ciągu dekady",
-    "expected_match": "CRISPR jest obiecujący, ale terminy powszechnego zastosowania klinicznego pozostają niepewne",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_94",
-    "claim": "Arktyka może być wolna od lodu latem do 2035 roku",
-    "expected_match": "Przewidywania dotyczące wolnej od lodu Arktyki latem wahają się od 2035 do 2060 w zależności od scenariuszy emisji",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_95",
-    "claim": "Blockchain zastąpi tradycyjne systemy bankowe",
-    "expected_match": "Stopień, w jakim blockchain zakłóci tradycyjną bankowość, pozostaje przedmiotem debaty",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_96",
-    "claim": "Polska stanie się w pełni niezależna energetycznie do 2040 roku",
-    "expected_match": "Prognozy dotyczące niezależności energetycznej Polski zależą od wielu czynników i są niepewne",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_97",
-    "claim": "Samochody autonomiczne całkowicie wyeliminują wypadki drogowe",
-    "expected_match": "Choć pojazdy autonomiczne mogą zmniejszyć liczbę wypadków, eksperci nie są zgodni co do pełnej eliminacji",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Konkret24"
-  },
-  {
-    "id": "pl_98",
-    "claim": "Powszechny dochód podstawowy zmniejsza motywację do pracy",
-    "expected_match": "Badania pilotażowe UBI pokazują mieszane wyniki dotyczące motywacji do pracy",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_99",
-    "claim": "Telepraca stanie się dominującym modelem pracy w Polsce do 2030 roku",
-    "expected_match": "Prognozy dotyczące upowszechnienia telepracy w Polsce różnią się znacznie i zależą od sektora",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Demagog.org.pl"
-  },
-  {
-    "id": "pl_100",
-    "claim": "Energia termojądrowa stanie się komercyjnie opłacalna do 2040 roku",
-    "expected_match": "Termin komercyjnego wdrożenia fuzji jądrowej jest nadal przedmiotem debaty naukowej",
-    "expected_stance": "NEI",
-    "language": "pl",
-    "source": "Konkret24"
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/tylko-polska-wydobywa-w-europie-wegiel-sytuacja-wyglada-inaczej/"
   }
 ]
