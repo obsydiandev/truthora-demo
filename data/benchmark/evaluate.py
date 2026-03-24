@@ -10,16 +10,28 @@ Metrics:
 
 Usage:
     python data/benchmark/evaluate.py [--verbose]
+    python data/benchmark/evaluate.py --run-pipeline [--api-url http://localhost:8000]
+                                                     [--concurrency 5] [--k 5]
+                                                     [--output data/benchmark/results/baseline_v01.json]
 """
 
 from __future__ import annotations
 
 import argparse
+import asyncio
 import json
 import sys
+import time
 from collections import Counter
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+
+try:
+    import httpx
+    HAS_HTTPX = True
+except ImportError:
+    HAS_HTTPX = False
 
 BENCHMARK_DIR = Path(__file__).resolve().parent
 GOLDEN_PAIRS_FILES = [
@@ -149,9 +161,187 @@ def evaluate_golden_pairs(
     return results_summary
 
 
+def _token_overlap(a: str, b: str) -> float:
+    """Jaccard token overlap between two strings (case-insensitive)."""
+    tokens_a = set(a.lower().split())
+    tokens_b = set(b.lower().split())
+    if not tokens_a or not tokens_b:
+        return 0.0
+    return len(tokens_a & tokens_b) / len(tokens_a | tokens_b)
+
+
+async def _evaluate_pair(
+    client: "httpx.AsyncClient",
+    semaphore: "asyncio.Semaphore",
+    api_url: str,
+    pair: dict[str, Any],
+    verbose: bool,
+    k: int,
+) -> dict[str, Any]:
+    """Call /analyze for a single golden pair and score the result."""
+    pair_id = pair["id"]
+    expected_match = pair["expected_match"]
+    expected_stance = pair["expected_stance"]
+
+    async with semaphore:
+        try:
+            resp = await client.post(
+                f"{api_url}/analyze",
+                json={"headline": pair["claim"]},
+                timeout=60.0,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+        except Exception as exc:
+            if verbose:
+                print(f"  ❌ {pair_id}: API error — {exc}")
+            return {
+                "id": pair_id,
+                "_lang_group": pair.get("_lang_group", "?"),
+                "expected_stance": expected_stance,
+                "predicted_stance": "NEI",
+                "found_in_top_k": False,
+                "rank": 0,
+                "error": str(exc),
+            }
+
+    # Flatten all matches across all detected claims, ranked by final_score
+    all_matches: list[dict[str, Any]] = []
+    for claim_result in data.get("claims", []):
+        all_matches.extend(claim_result.get("matches", []))
+    all_matches.sort(key=lambda x: x.get("final_score", 0.0), reverse=True)
+    top_k = all_matches[:k]
+
+    # Find expected match by token overlap with claim_reviewed
+    MATCH_THRESHOLD = 0.25
+    found_in_top_k = False
+    rank = 0
+    for i, match in enumerate(top_k, start=1):
+        overlap = _token_overlap(expected_match, match.get("claim_reviewed", ""))
+        if overlap >= MATCH_THRESHOLD:
+            found_in_top_k = True
+            rank = i
+            break
+
+    # Predicted stance = top-1 match's stance (or NEI if no matches)
+    predicted_stance = top_k[0].get("stance", "NEI") if top_k else "NEI"
+
+    if verbose:
+        hit_mark = "✅" if found_in_top_k else "❌"
+        lang = pair.get("_lang_group", "?")
+        print(
+            f"  {hit_mark} [{lang}] {pair_id}: "
+            f"rank={rank if found_in_top_k else '-'}, "
+            f"stance exp={expected_stance} pred={predicted_stance}"
+        )
+
+    return {
+        "id": pair_id,
+        "_lang_group": pair.get("_lang_group", "?"),
+        "expected_stance": expected_stance,
+        "predicted_stance": predicted_stance,
+        "found_in_top_k": found_in_top_k,
+        "rank": rank,
+    }
+
+
+async def _run_pipeline_async(
+    pairs: list[dict[str, Any]],
+    api_url: str,
+    verbose: bool,
+    k: int,
+    concurrency: int,
+) -> list[dict[str, Any]]:
+    semaphore = asyncio.Semaphore(concurrency)
+    async with httpx.AsyncClient() as client:
+        tasks = [
+            _evaluate_pair(client, semaphore, api_url, pair, verbose, k)
+            for pair in pairs
+        ]
+        return await asyncio.gather(*tasks)
+
+
+def run_pipeline_evaluation(
+    pairs: list[dict[str, Any]],
+    api_url: str = "http://localhost:8000",
+    verbose: bool = False,
+    k: int = 5,
+    concurrency: int = 5,
+) -> dict[str, Any]:
+    """Run full pipeline evaluation against the live API."""
+    if not HAS_HTTPX:
+        print("❌ httpx is required for --run-pipeline. Install with: pip install httpx")
+        sys.exit(1)
+
+    print(f"🚀 Evaluating {len(pairs)} pairs against {api_url} (k={k}, concurrency={concurrency})…")
+    t0 = time.perf_counter()
+
+    pair_results = asyncio.run(
+        _run_pipeline_async(pairs, api_url, verbose, k, concurrency)
+    )
+
+    elapsed = time.perf_counter() - t0
+
+    # Per-language split
+    by_lang: dict[str, list[dict[str, Any]]] = {}
+    for r in pair_results:
+        lang = r.get("_lang_group", "?")
+        by_lang.setdefault(lang, []).append(r)
+
+    def lang_metrics(results: list[dict[str, Any]]) -> dict[str, Any]:
+        return {
+            "recall_at_k": round(compute_recall_at_k(results, k), 4),
+            "mrr": round(compute_mrr(results), 4),
+            "stance_f1": {k2: round(v, 4) for k2, v in compute_stance_f1(results).items()},
+            "n": len(results),
+            "errors": sum(1 for r in results if "error" in r),
+        }
+
+    overall = lang_metrics(pair_results)
+    per_language = {lang: lang_metrics(res) for lang, res in sorted(by_lang.items())}
+
+    targets = {
+        "recall_at_5": TARGET_RECALL_AT_5,
+        "mrr": TARGET_MRR,
+        "stance_f1": TARGET_STANCE_F1,
+    }
+
+    passed = {
+        "recall_at_5": overall["recall_at_k"] >= TARGET_RECALL_AT_5,
+        "mrr": overall["mrr"] >= TARGET_MRR,
+        "stance_f1": overall["stance_f1"].get("macro_f1", 0.0) >= TARGET_STANCE_F1,
+    }
+
+    return {
+        "meta": {
+            "version": "v0.1",
+            "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+            "api_url": api_url,
+            "k": k,
+            "concurrency": concurrency,
+            "elapsed_s": round(elapsed, 2),
+            "total_pairs": len(pairs),
+        },
+        "targets": targets,
+        "overall": overall,
+        "per_language": per_language,
+        "targets_passed": passed,
+        "pair_results": pair_results,
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description="Truthora Benchmark Evaluation")
     parser.add_argument("--verbose", "-v", action="store_true", help="Verbose output")
+    parser.add_argument("--run-pipeline", action="store_true", help="Run evaluation against live pipeline")
+    parser.add_argument("--api-url", default="http://localhost:8000", help="API base URL (default: http://localhost:8000)")
+    parser.add_argument("--k", type=int, default=5, help="Recall@K cutoff (default: 5)")
+    parser.add_argument("--concurrency", type=int, default=5, help="Concurrent API requests (default: 5)")
+    parser.add_argument(
+        "--output",
+        default=str(Path(__file__).resolve().parent / "results" / "baseline_v01.json"),
+        help="Output JSON file for pipeline results",
+    )
     args = parser.parse_args()
 
     print("=" * 60)
@@ -164,10 +354,9 @@ def main():
     print(f"📊 Loaded {len(pairs)} golden pairs")
     print()
 
-    # Evaluate
+    # Dataset validation (always run)
     summary = evaluate_golden_pairs(pairs, verbose=args.verbose)
 
-    # Report
     print("📋 Dataset Summary:")
     print(f"   Total pairs: {summary['total_pairs']}")
     print(f"   Format valid: {'✅' if summary['format_valid'] else '❌'}")
@@ -196,6 +385,55 @@ def main():
 
     print("✅ All golden pairs validated successfully")
     print()
+
+    # ── Pipeline evaluation ────────────────────────────────────────────────────
+    if args.run_pipeline:
+        pipeline_results = run_pipeline_evaluation(
+            pairs=pairs,
+            api_url=args.api_url,
+            verbose=args.verbose,
+            k=args.k,
+            concurrency=args.concurrency,
+        )
+
+        overall = pipeline_results["overall"]
+        per_lang = pipeline_results["per_language"]
+        passed = pipeline_results["targets_passed"]
+        elapsed = pipeline_results["meta"]["elapsed_s"]
+
+        print()
+        print("=" * 60)
+        print("  Pipeline Results")
+        print("=" * 60)
+        print(f"  Evaluated in {elapsed}s")
+        print()
+        print(f"  Recall@{args.k}:  {overall['recall_at_k']:.4f}  "
+              f"(target ≥ {TARGET_RECALL_AT_5})  {'✅' if passed['recall_at_5'] else '❌'}")
+        print(f"  MRR:       {overall['mrr']:.4f}  "
+              f"(target ≥ {TARGET_MRR})  {'✅' if passed['mrr'] else '❌'}")
+        print(f"  Stance F1: {overall['stance_f1'].get('macro_f1', 0):.4f}  "
+              f"(target ≥ {TARGET_STANCE_F1})  {'✅' if passed['stance_f1'] else '❌'}")
+        print()
+        print("  Per language:")
+        for lang, m in per_lang.items():
+            print(f"    {lang}: Recall@{args.k}={m['recall_at_k']:.4f}  "
+                  f"MRR={m['mrr']:.4f}  F1={m['stance_f1'].get('macro_f1', 0):.4f}  "
+                  f"(n={m['n']}, errors={m['errors']})")
+        print()
+
+        all_passed = all(passed.values())
+        print("🎉 All targets met!" if all_passed else "⚠️  Some targets not yet met.")
+        print()
+
+        # Save results
+        out_path = Path(args.output)
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(pipeline_results, f, indent=2, ensure_ascii=False)
+        print(f"💾 Results saved → {out_path}")
+
+        return 0 if all_passed else 1
+
     print("ℹ️  Full evaluation requires running pipeline:")
     print("   1. Start services: docker-compose up")
     print("   2. Index seed data")
