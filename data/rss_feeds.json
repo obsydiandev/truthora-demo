@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Demagog PL",
+    "country": "PL",
+    "language": "pl",
+    "url": "https://demagog.org.pl/feed/"
+  },
+  {
+    "name": "Konkret24",
+    "country": "PL",
+    "language": "pl",
+    "url": "https://konkret24.tvn24.pl/feed"
+  },
+  {
+    "name": "StopFake UA",
+    "country": "UA",
+    "language": "ua",
+    "url": "https://www.stopfake.org/uk/feed/"
+  },
+  {
+    "name": "VoxCheck UA",
+    "country": "UA",
+    "language": "ua",
+    "url": "https://voxcheck.ua/feed/"
+  },
+  {
+    "name": "Texty UA",
+    "country": "UA",
+    "language": "ua",
+    "url": "https://texty.org.ua/feed/"
+  },
+  {
+    "name": "EFCSN",
+    "country": "EU",
+    "language": "en",
+    "url": "https://efcsn.com/feed/"
+  },
+  {
+    "name": "Full Fact",
+    "country": "GB",
+    "language": "en",
+    "url": "https://fullfact.org/feed/latest/"
+  },
+  {
+    "name": "Reuters Fact Check",
+    "country": "GLOBAL",
+    "language": "en",
+    "url": "https://www.reuters.com/fact-check/rss"
+  }
+]

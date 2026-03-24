@@ -1,0 +1,37 @@
+# Truthora — Python dependencies
+
+# API
+fastapi>=0.115.0,<1.0.0
+uvicorn[standard]>=0.34.0,<1.0.0
+pydantic>=2.0.0,<3.0.0
+pydantic-settings>=2.0.0,<3.0.0
+
+# Vector DB
+qdrant-client>=1.13.0,<1.15.0
+
+# Text extraction
+trafilatura>=2.0.0,<3.0.0
+
+# LLM clients
+groq>=0.18.0,<1.0.0
+httpx>=0.28.0,<1.0.0
+
+# RSS / Data sources
+feedparser>=6.0.0,<7.0.0
+
+# Embeddings (BGE-M3) + Reranking + NLI
+sentence-transformers>=3.3.0,<4.0.0
+transformers>=4.48.0,<5.0.0
+
+# NLP
+unicodedata2>=16.0.0; python_version<"3.15"
+
+# UI
+streamlit>=1.40.0,<2.0.0
+
+# Utilities
+python-dotenv>=1.0.0,<2.0.0
+
+# Testing
+pytest>=8.0.0,<9.0.0
+pytest-asyncio>=0.24.0,<1.0.0

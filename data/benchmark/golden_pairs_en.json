@@ -1,0 +1,802 @@
+[
+  {
+    "id": "en_01",
+    "claim": "The COVID-19 vaccine causes infertility",
+    "expected_match": "There is no evidence that COVID-19 vaccines cause infertility",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_02",
+    "claim": "5G networks spread coronavirus",
+    "expected_match": "5G networks do not spread the coronavirus",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_03",
+    "claim": "Drinking bleach cures COVID-19",
+    "expected_match": "Drinking bleach does not cure COVID-19 and is dangerous",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_04",
+    "claim": "The Earth is flat",
+    "expected_match": "Scientific evidence confirms the Earth is an oblate spheroid",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_05",
+    "claim": "Climate change is primarily caused by human activities",
+    "expected_match": "Climate change is driven by human activities including burning fossil fuels",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_06",
+    "claim": "Vaccines contain microchips for tracking people",
+    "expected_match": "COVID-19 vaccines do not contain microchips",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_07",
+    "claim": "Hydroxychloroquine is a proven cure for COVID-19",
+    "expected_match": "Hydroxychloroquine has not been proven to cure COVID-19",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_08",
+    "claim": "Face masks are ineffective against respiratory viruses",
+    "expected_match": "Face masks reduce the transmission of respiratory viruses",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_09",
+    "claim": "The UK left the European Union on January 31, 2020",
+    "expected_match": "The United Kingdom officially left the EU on January 31, 2020",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_10",
+    "claim": "Wind turbines cause cancer",
+    "expected_match": "There is no scientific evidence that wind turbines cause cancer",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_11",
+    "claim": "The ozone layer is recovering due to the Montreal Protocol",
+    "expected_match": "Scientific data shows ozone layer recovery since the Montreal Protocol",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_12",
+    "claim": "Homeopathy has the same effectiveness as conventional medicine",
+    "expected_match": "Scientific reviews find no evidence homeopathy is more effective than placebo",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_13",
+    "claim": "GMO foods are unsafe for human consumption",
+    "expected_match": "Scientific consensus holds that GMO foods are safe to eat",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_14",
+    "claim": "The Great Wall of China is visible from space",
+    "expected_match": "The Great Wall of China is not visible to the naked eye from space",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_15",
+    "claim": "Global temperature has risen by 1.1°C since pre-industrial times",
+    "expected_match": "Global average temperature has increased by approximately 1.1°C above pre-industrial levels",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_16",
+    "claim": "Artificial sweeteners are worse for health than sugar",
+    "expected_match": "Research shows artificial sweeteners are generally safe in moderate amounts",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_17",
+    "claim": "Ukraine is the largest country entirely within Europe",
+    "expected_match": "Ukraine is the largest country whose territory is entirely within Europe",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_18",
+    "claim": "Eating carrots improves night vision significantly",
+    "expected_match": "While carrots contain vitamin A, they do not significantly improve night vision",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_19",
+    "claim": "The Amazon rainforest produces 20% of the world's oxygen",
+    "expected_match": "The Amazon rainforest contributes roughly 6% of the world's oxygen, not 20%",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_20",
+    "claim": "Poland joined NATO in 1999",
+    "expected_match": "Poland became a member of NATO on March 12, 1999",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_21",
+    "claim": "The Moon landing in 1969 was faked by NASA",
+    "expected_match": "Multiple independent lines of evidence confirm the Apollo 11 Moon landing in 1969 was real",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_22",
+    "claim": "Humans only use 10% of their brains",
+    "expected_match": "Neuroimaging studies show humans use virtually all parts of the brain",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_23",
+    "claim": "Napoleon Bonaparte was exceptionally short",
+    "expected_match": "Napoleon was approximately 5'7\", average height for his era",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_24",
+    "claim": "Sugar causes hyperactivity in children",
+    "expected_match": "Controlled studies have not found a link between sugar intake and hyperactivity in children",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_25",
+    "claim": "Lightning never strikes the same place twice",
+    "expected_match": "Lightning frequently strikes the same location multiple times",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_26",
+    "claim": "The United States has 52 states",
+    "expected_match": "The United States has 50 states",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_27",
+    "claim": "Goldfish have a three-second memory",
+    "expected_match": "Goldfish can remember things for months, not just seconds",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_28",
+    "claim": "Immigrants increase crime rates in host countries",
+    "expected_match": "Research consistently shows immigration does not increase crime rates",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_29",
+    "claim": "Antibiotics are effective against viral infections",
+    "expected_match": "Antibiotics only work against bacterial infections, not viruses",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_30",
+    "claim": "Electric vehicles produce more lifetime emissions than gasoline cars",
+    "expected_match": "Life cycle analyses show EVs produce fewer total emissions than gasoline vehicles",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_31",
+    "claim": "Albert Einstein failed mathematics in school",
+    "expected_match": "Einstein excelled at mathematics throughout his education",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_32",
+    "claim": "Shaving makes hair grow back thicker",
+    "expected_match": "Shaving does not change hair thickness, color, or rate of growth",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_33",
+    "claim": "Vitamin C cures the common cold",
+    "expected_match": "Studies show vitamin C does not prevent colds but may slightly reduce duration",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_34",
+    "claim": "Bats are blind",
+    "expected_match": "All bat species can see, and many have excellent vision",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_35",
+    "claim": "The Sahara is the world's largest desert",
+    "expected_match": "Antarctica is the largest desert by area, not the Sahara",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_36",
+    "claim": "Reading in dim light damages your eyesight",
+    "expected_match": "Reading in low light can cause eye strain but does not permanently damage vision",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_37",
+    "claim": "There are more people alive today than have ever died",
+    "expected_match": "Estimates suggest about 100 billion humans have lived, far more than the current population",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_38",
+    "claim": "Sushi means raw fish in Japanese",
+    "expected_match": "Sushi refers to vinegared rice, not raw fish",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_39",
+    "claim": "Nuclear energy produces the most radioactive waste of any industry",
+    "expected_match": "Nuclear energy produces relatively small volumes of waste compared to other energy sources",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_40",
+    "claim": "Swallowed chewing gum takes seven years to digest",
+    "expected_match": "Chewing gum passes through the digestive system in a few days, not seven years",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_41",
+    "claim": "The unemployment rate in the EU reached 20% in 2024",
+    "expected_match": "EU unemployment was around 6% in 2024, far below 20%",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_42",
+    "claim": "Organic food is always more nutritious than conventional food",
+    "expected_match": "Scientific reviews find little significant nutritional difference between organic and conventional food",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_43",
+    "claim": "The Bermuda Triangle has a higher rate of ship disappearances than other ocean regions",
+    "expected_match": "Statistical analysis shows the Bermuda Triangle does not have an unusually high rate of incidents",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_44",
+    "claim": "Touching a baby bird will cause its mother to reject it",
+    "expected_match": "Most birds have a limited sense of smell and will not abandon chicks due to human touch",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_45",
+    "claim": "Cell phones cause brain cancer",
+    "expected_match": "Major studies have not found conclusive evidence that cell phone use causes brain cancer",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_46",
+    "claim": "Russia's GDP surpassed Germany's in 2024",
+    "expected_match": "Germany's GDP remained significantly larger than Russia's in 2024",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_47",
+    "claim": "Vikings wore horned helmets",
+    "expected_match": "There is no historical evidence that Vikings wore horned helmets in battle",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_48",
+    "claim": "Cracking your knuckles causes arthritis",
+    "expected_match": "Studies have found no association between knuckle cracking and arthritis",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_49",
+    "claim": "Renewable energy cannot provide baseload power",
+    "expected_match": "Several countries now successfully use renewable energy for baseload power supply",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_50",
+    "claim": "The COVID-19 virus was created in a laboratory",
+    "expected_match": "The scientific consensus supports a natural origin for SARS-CoV-2, though investigations continue",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_51",
+    "claim": "Dropping a penny from the Empire State Building can kill a person",
+    "expected_match": "A penny dropped from the Empire State Building would not reach lethal velocity due to air resistance",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_52",
+    "claim": "The tongue has separate taste zones for sweet, salty, sour, and bitter",
+    "expected_match": "All taste receptors are distributed across the entire tongue, not in separate zones",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_53",
+    "claim": "Water covers approximately 71% of Earth's surface",
+    "expected_match": "About 71% of Earth's surface is covered by water",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_54",
+    "claim": "The human body contains approximately 206 bones in adulthood",
+    "expected_match": "Adults typically have 206 bones in their skeletal system",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_55",
+    "claim": "India became the most populous country in 2023",
+    "expected_match": "India surpassed China as the world's most populous country in 2023",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_56",
+    "claim": "The speed of light is approximately 300,000 kilometers per second",
+    "expected_match": "Light travels at approximately 299,792 km/s in a vacuum",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_57",
+    "claim": "Antibiotics resistance is a growing global health threat",
+    "expected_match": "The WHO identifies antimicrobial resistance as one of the top global health threats",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_58",
+    "claim": "Finland consistently ranks among the happiest countries in the world",
+    "expected_match": "Finland has been ranked the happiest country in the World Happiness Report for multiple consecutive years",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_59",
+    "claim": "The Mariana Trench is the deepest point in the ocean",
+    "expected_match": "The Mariana Trench, at about 11,034 meters, is the deepest known point in the ocean",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_60",
+    "claim": "Carbon dioxide levels in the atmosphere have exceeded 420 ppm",
+    "expected_match": "Atmospheric CO2 concentrations have surpassed 420 parts per million",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_61",
+    "claim": "Japan has the world's oldest population by median age",
+    "expected_match": "Japan has one of the highest median ages globally and the oldest population among major nations",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_62",
+    "claim": "The European Union has 27 member states",
+    "expected_match": "The EU currently consists of 27 member states after the UK's departure",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_63",
+    "claim": "Plastic pollution has been found in the deepest ocean trenches",
+    "expected_match": "Microplastics have been detected in the Mariana Trench and other deep ocean environments",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_64",
+    "claim": "DNA was first identified by Friedrich Miescher in 1869",
+    "expected_match": "Friedrich Miescher first isolated DNA (then called nuclein) in 1869",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_65",
+    "claim": "South Korea has one of the lowest birth rates in the world",
+    "expected_match": "South Korea's total fertility rate is among the lowest globally",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_66",
+    "claim": "The International Space Station orbits Earth approximately every 90 minutes",
+    "expected_match": "The ISS completes one orbit of Earth roughly every 90 minutes at an altitude of about 400 km",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_67",
+    "claim": "The global literacy rate has been steadily increasing over the past century",
+    "expected_match": "Global adult literacy has risen from about 42% in 1960 to over 86% today",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_68",
+    "claim": "Mount Everest is the tallest mountain above sea level",
+    "expected_match": "Mount Everest, at 8,849 meters, is the highest point above sea level",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_69",
+    "claim": "The Amazon River is the largest river by water volume",
+    "expected_match": "The Amazon River discharges more water than any other river in the world",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_70",
+    "claim": "Honey never spoils if stored properly",
+    "expected_match": "Archaeologists have found edible honey in ancient Egyptian tombs thousands of years old",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_71",
+    "claim": "Switzerland has not been in a war since 1815",
+    "expected_match": "Switzerland has maintained neutrality and not participated in armed conflict since 1815",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_72",
+    "claim": "The transistor was invented at Bell Labs in 1947",
+    "expected_match": "The first transistor was demonstrated at Bell Laboratories on December 23, 1947",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_73",
+    "claim": "Global extreme poverty has declined significantly over the past 30 years",
+    "expected_match": "The share of the world population living in extreme poverty fell from 36% in 1990 to under 10%",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_74",
+    "claim": "Penicillin was discovered by Alexander Fleming in 1928",
+    "expected_match": "Alexander Fleming discovered penicillin in 1928 at St. Mary's Hospital in London",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_75",
+    "claim": "The Internet was originally developed as a U.S. military project",
+    "expected_match": "The Internet originated from ARPANET, a U.S. Department of Defense research project",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_76",
+    "claim": "Greenland is the world's largest island",
+    "expected_match": "Greenland, at about 2.166 million km², is the world's largest island",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_77",
+    "claim": "The human genome contains approximately 20,000 to 25,000 genes",
+    "expected_match": "Current estimates place the number of protein-coding genes in the human genome at about 20,000 to 25,000",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_78",
+    "claim": "Deforestation contributes significantly to greenhouse gas emissions",
+    "expected_match": "Deforestation and land use changes account for about 10% of global greenhouse gas emissions",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_79",
+    "claim": "The World Health Organization was established in 1948",
+    "expected_match": "The WHO was founded on April 7, 1948, as a specialized agency of the United Nations",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_80",
+    "claim": "Lithium is the lightest metal on the periodic table",
+    "expected_match": "Lithium, with atomic number 3, is the lightest metal element",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_81",
+    "claim": "Artificial intelligence will replace 50% of all jobs by 2040",
+    "expected_match": "Predictions about AI job displacement vary widely and the exact percentage remains uncertain",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_82",
+    "claim": "The long-term effects of microplastics on human health are severe",
+    "expected_match": "Research on the health effects of microplastics in humans is still ongoing and inconclusive",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_83",
+    "claim": "Dark matter makes up exactly 27% of the universe",
+    "expected_match": "Estimates of dark matter's proportion of the universe vary between studies and measurement methods",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_84",
+    "claim": "Remote work permanently improves employee productivity",
+    "expected_match": "Studies on remote work productivity show mixed results depending on the type of work and methodology",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_85",
+    "claim": "The Mediterranean diet reduces Alzheimer's risk by 40%",
+    "expected_match": "Some studies suggest a link between the Mediterranean diet and reduced dementia risk, but exact figures vary",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_86",
+    "claim": "China will become the world's largest economy by 2030",
+    "expected_match": "Projections about when China's GDP will surpass the US vary significantly among economists",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_87",
+    "claim": "Sleep deprivation has the same impairment as alcohol intoxication",
+    "expected_match": "Some studies compare sleep deprivation effects to alcohol impairment, but the equivalence is debated",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_88",
+    "claim": "Lab-grown meat will be cheaper than conventional meat by 2030",
+    "expected_match": "Cost projections for cultivated meat vary widely and depend on technological breakthroughs",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_89",
+    "claim": "Social media use directly causes depression in teenagers",
+    "expected_match": "Research shows a correlation between social media use and teen mental health, but causation is debated",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_90",
+    "claim": "Quantum computers will break all current encryption within 10 years",
+    "expected_match": "Timelines for quantum computers breaking encryption vary widely among experts",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_91",
+    "claim": "The global population will peak at 10.4 billion around 2086",
+    "expected_match": "UN population projections have wide confidence intervals and the exact peak year remains uncertain",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_92",
+    "claim": "Regular coffee consumption extends lifespan",
+    "expected_match": "Observational studies suggest associations between coffee and longevity, but causal evidence is limited",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_93",
+    "claim": "Ocean acidification will collapse global fisheries by 2050",
+    "expected_match": "The extent of ocean acidification's impact on global fisheries is still being studied",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_94",
+    "claim": "Intermittent fasting is more effective for weight loss than calorie restriction",
+    "expected_match": "Comparative studies on intermittent fasting vs. calorie restriction show similar weight loss outcomes",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_95",
+    "claim": "The lost city of Atlantis was located near Santorini",
+    "expected_match": "The location of Atlantis, if it existed, remains a matter of speculation and debate",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_96",
+    "claim": "Self-driving cars will eliminate traffic accidents entirely",
+    "expected_match": "While autonomous vehicles may reduce accidents, experts disagree on whether they can eliminate all crashes",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_97",
+    "claim": "Universal basic income reduces the incentive to work",
+    "expected_match": "Studies on UBI pilot programs show mixed results regarding work incentives",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "Full Fact"
+  },
+  {
+    "id": "en_98",
+    "claim": "CRISPR gene editing will cure most genetic diseases within a decade",
+    "expected_match": "CRISPR shows promise but timelines for widespread clinical application remain uncertain",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "Reuters FC"
+  },
+  {
+    "id": "en_99",
+    "claim": "The Arctic could be ice-free in summer by 2035",
+    "expected_match": "Predictions for an ice-free Arctic summer range from 2035 to 2060 depending on emissions scenarios",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "ClaimBuster"
+  },
+  {
+    "id": "en_100",
+    "claim": "Blockchain technology will replace traditional banking systems",
+    "expected_match": "The extent to which blockchain will disrupt traditional banking remains a matter of debate",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "Full Fact"
+  }
+]

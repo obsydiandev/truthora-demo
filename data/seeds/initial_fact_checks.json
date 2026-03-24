@@ -1,0 +1,42 @@
+[
+  {
+    "claim_text": "Poland's GDP grew by 3.5% in 2025",
+    "source_url": "https://demagog.org.pl/example/gdp-2025",
+    "source_name": "Demagog PL",
+    "language": "en",
+    "review_rating": "SUPPORTED",
+    "published_at": "2026-01-15T12:00:00Z"
+  },
+  {
+    "claim_text": "Inflacja w Polsce wyniosła 2,3% w Q4 2025",
+    "source_url": "https://konkret24.tvn24.pl/example/inflacja-q4",
+    "source_name": "Konkret24",
+    "language": "pl",
+    "review_rating": "SUPPORTED",
+    "published_at": "2026-02-01T10:00:00Z"
+  },
+  {
+    "claim_text": "Ukraine's grain exports exceeded 50 million tonnes in 2025",
+    "source_url": "https://voxcheck.ua/example/grain-exports",
+    "source_name": "VoxCheck UA",
+    "language": "en",
+    "review_rating": "REFUTED",
+    "published_at": "2026-01-20T08:00:00Z"
+  },
+  {
+    "claim_text": "Україна підписала нову угоду з ЄС про вільну торгівлю",
+    "source_url": "https://www.stopfake.org/uk/example/eu-trade",
+    "source_name": "StopFake UA",
+    "language": "ua",
+    "review_rating": "NEI",
+    "published_at": "2026-02-10T14:00:00Z"
+  },
+  {
+    "claim_text": "COVID-19 vaccines cause widespread infertility",
+    "source_url": "https://fullfact.org/example/vaccines-infertility",
+    "source_name": "Full Fact",
+    "language": "en",
+    "review_rating": "REFUTED",
+    "published_at": "2025-12-05T09:00:00Z"
+  }
+]
