@@ -1,4 +1,4 @@
-"""Truthora — GET/PATCH /claims endpoints (review queue)."""
+"""GET/PATCH /claims endpoints (review queue)."""
 
 from __future__ import annotations
 

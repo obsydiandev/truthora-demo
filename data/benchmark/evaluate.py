@@ -1,20 +1,4 @@
-"""Truthora — Benchmark evaluation script.
-
-Evaluates the Truthora pipeline against Golden Pairs datasets
-(EN: 95 pairs, PL: 17 pairs, UA: 2 pairs = 114 total).
-Each pair has an expected_source_url pointing to a real Qdrant fact-check.
-
-Metrics:
-  - Recall@5: Is the expected match in top-5 results? (target ≥ 0.74)
-  - MRR: Mean Reciprocal Rank of expected match (target ≥ 0.60)
-  - Stance F1: F1 score for stance classification (target ≥ 0.70)
-
-Usage:
-    python data/benchmark/evaluate.py [--verbose]
-    python data/benchmark/evaluate.py --run-pipeline [--api-url http://localhost:8000]
-                                                     [--concurrency 5] [--k 5]
-                                                     [--output data/benchmark/results/baseline_v01.json]
-"""
+"""Benchmark evaluation script."""
 
 from __future__ import annotations
 
@@ -41,7 +25,6 @@ GOLDEN_PAIRS_FILES = [
     ("UA", BENCHMARK_DIR / "golden_pairs_ua.json"),
 ]
 
-# Target metrics
 TARGET_RECALL_AT_5 = 0.74
 TARGET_MRR = 0.60
 TARGET_STANCE_F1 = 0.70
@@ -214,30 +197,27 @@ async def _evaluate_pair(
                 "error": str(exc),
             }
 
-    # Flatten all matches across all detected claims, ranked by final_score
+    # Flatten all matches across all detected claims
     all_matches: list[dict[str, Any]] = []
     for claim_result in data.get("claims", []):
         all_matches.extend(claim_result.get("matches", []))
     all_matches.sort(key=lambda x: x.get("final_score", 0.0), reverse=True)
     top_k = all_matches[:k]
 
-    # Matching strategy: URL match (primary) → Jaccard fallback (threshold 0.15)
+    # URL match (primary) → Jaccard fallback (threshold 0.15)
     found_in_top_k = False
     rank = 0
     for i, match in enumerate(top_k, start=1):
-        # Primary: exact URL match
         if expected_url and _url_match(expected_url, match.get("matched_url", "")):
             found_in_top_k = True
             rank = i
             break
-        # Fallback: token overlap on claim_reviewed text
         overlap = _token_overlap(expected_match, match.get("claim_reviewed", ""))
         if overlap >= 0.15:
             found_in_top_k = True
             rank = i
             break
 
-    # Predicted stance = top-1 match's stance (or NEI if no matches)
     predicted_stance = top_k[0].get("stance", "NEI") if top_k else "NEI"
 
     if verbose:

@@ -1,15 +1,4 @@
-"""Truthora — Streamlit Human-in-the-Loop Review Dashboard.
-
-Layer 7 — full implementation:
-  - Language switcher (EN / PL / UA)
-  - URL or headline/text input tabs
-  - Verdict banner (VERIFIED / UNVERIFIED / LIKELY_FALSE / NO_DATA) with confidence bar
-  - Claims with checkworthiness priority, source quotes, KG signals
-  - Top matches with stance labels, scores, freshness badges
-  - Uncertainty bar
-  - Operator review actions (✓ Approve | ✗ Reject | ⚑ Flag | ✎ Note)
-  - Audit log saved to Qdrant
-"""
+"""Streamlit Human-in-the-Loop Review Dashboard."""
 
 import os
 from datetime import datetime, timezone
@@ -18,10 +7,9 @@ import httpx
 import streamlit as st
 import streamlit.components.v1 as components
 
-# ── Page Config ────────────────────────────────────────────────────────────────
 st.set_page_config(page_title="Truthora", page_icon="🔍", layout="wide")
 
-# ── Disable Deploy popup items (visible but non-interactive) ──────────────────
+
 st.markdown(
     """
     <style>
@@ -83,7 +71,6 @@ components.html(
 
 API_URL = os.getenv("API_URL", "http://localhost:8000")
 
-# ── i18n strings ───────────────────────────────────────────────────────────────
 LABELS: dict[str, dict[str, str]] = {
     "en": {
         "title": "🔍 Truthora — Claim Review Dashboard",
@@ -268,7 +255,6 @@ VERDICT_BORDER: dict[str, str] = {
     "NO_DATA": "#95a5a6",
 }
 
-# ── Session State ──────────────────────────────────────────────────────────────
 if "lang" not in st.session_state:
     st.session_state.lang = "en"
 if "analysis_results" not in st.session_state:
@@ -279,7 +265,6 @@ if "audit_log" not in st.session_state:
 L = LABELS[st.session_state.lang]
 
 
-# ── Helper Functions ───────────────────────────────────────────────────────────
 
 def freshness_emoji(badge: str) -> str:
     return {"fresh": "🟢", "aging": "🟡", "outdated": "🔴"}.get(badge, "⚪")
@@ -369,7 +354,6 @@ def render_verdict_banner(verdict: str, confidence: float) -> None:
     )
 
 
-# ── Language Switcher ──────────────────────────────────────────────────────────
 lang_col, _, title_col = st.columns([2, 1, 5])
 with lang_col:
     btn_cols = st.columns(3)
@@ -393,7 +377,6 @@ with title_col:
 
 st.markdown(f">{L['subtitle']}")
 
-# ── Input Tabs ─────────────────────────────────────────────────────────────────
 tab_url, tab_headline, tab_test = st.tabs([L["tab_url"], L["tab_headline"], "🧪 Test Cases"])
 
 with tab_url:
@@ -435,9 +418,7 @@ with tab_headline:
             if result:
                 st.session_state.analysis_results = result
 
-# ── Test Cases (curated claims with known fact-checks in DB) ───────────────────
 TEST_CASES = [
-    # EN — high-confidence matches in Qdrant
     {"claim": "The COVID-19 vaccine causes infertility", "lang": "en", "stance": "REFUTED",
      "source": "Full Fact, BBC, Science Feedback"},
     {"claim": "5G networks spread coronavirus", "lang": "en", "stance": "REFUTED",
@@ -458,7 +439,6 @@ TEST_CASES = [
      "source": "FactCheck.org, BBC, USA Today"},
     {"claim": "NATO promised Russia it would not expand eastward", "lang": "en", "stance": "REFUTED",
      "source": "AAP, PolitiFact, PA Media, DW"},
-    # PL — Polish fact-checks
     {"claim": "Sieć 5G rozprzestrzenia koronawirusa", "lang": "pl", "stance": "REFUTED",
      "source": "Demagog"},
     {"claim": "Szczepionki przeciw COVID-19 są trujące", "lang": "pl", "stance": "REFUTED",
@@ -471,7 +451,6 @@ TEST_CASES = [
      "source": "Demagog, OKO.press"},
     {"claim": "Inflacja w Polsce wyniosła 2,3% w Q4 2025", "lang": "pl", "stance": "SUPPORTED",
      "source": "Konkret24"},
-    # UA — Ukrainian fact-checks
     {"claim": "Україна підписала нову угоду з ЄС про вільну торгівлю", "lang": "ua", "stance": "NEI",
      "source": "StopFake"},
     {"claim": "Генсек НАТО підтвердив членство України в Альянсі", "lang": "ua", "stance": "REFUTED",
@@ -513,18 +492,16 @@ with tab_test:
                         st.session_state.analysis_results = result
                         st.rerun()
 
-# ── Results ────────────────────────────────────────────────────────────────────
+
 results = st.session_state.analysis_results
 
 if results:
     st.divider()
 
-    # ── Verdict Banner ─────────────────────────────────────────────────────────
     verdict = results.get("verdict", "NO_DATA")
     confidence = results.get("confidence", 0.0) or 0.0
     render_verdict_banner(verdict, confidence)
 
-    # ── Article Metadata ───────────────────────────────────────────────────────
     col_meta1, col_meta2, col_meta3 = st.columns(3)
     with col_meta1:
         source_url = results.get("url", "—")
@@ -552,7 +529,6 @@ if results:
             claim_id = claim.get("claim_id", f"claim_{i}")
 
             with st.container(border=True):
-                # Header row
                 col_num, col_priority, col_neg = st.columns([1, 2, 1])
                 with col_num:
                     st.markdown(f"### Claim #{i + 1}")
@@ -562,10 +538,8 @@ if results:
                     if claim.get("has_negation"):
                         st.warning(L["label_negation"])
 
-                # Claim text
                 st.markdown(f"**\"{claim.get('claim_text', '')}\"**")
 
-                # Source quote
                 source_quote = claim.get("source_quote", "")
                 if source_quote:
                     char_start = claim.get("char_start", 0)
@@ -575,7 +549,6 @@ if results:
                         f"[char {char_start}–{char_end}]"
                     )
 
-                # Checkworthiness dimensions
                 with st.expander(L["expand_cw"]):
                     cw_cols = st.columns(5)
                     dims = [
@@ -589,7 +562,6 @@ if results:
                         with col:
                             st.metric(f"{name} (w={weight})", f"{val:.2f}")
 
-                # Matches
                 if matches:
                     st.markdown(f"**{L['label_top_matches']}:**")
                     for j, match in enumerate(matches[:5]):
@@ -629,13 +601,12 @@ if results:
                 else:
                     st.info(L["label_no_matches"])
 
-                # Uncertainty bar
                 st.markdown(f"**{L['label_uncertainty']}:** {uncertainty_level}")
                 st.progress(uncertainty, text=f"H = {uncertainty:.2f}")
                 if uncertainty_level == "HIGH":
                     st.error(L["label_high_unc"])
 
-                # ── Operator Actions ───────────────────────────────────────────
+
                 st.markdown("---")
                 action_cols = st.columns([1, 1, 1, 1, 3])
                 with action_cols[0]:
@@ -686,7 +657,6 @@ if results:
                             st.success("Note saved ✎")
                             st.session_state[f"show_note_{claim_id}"] = False
 
-    # ── Audit Log ──────────────────────────────────────────────────────────────
     if st.session_state.audit_log:
         st.divider()
         st.subheader(L["audit_header"])
@@ -698,6 +668,6 @@ if results:
                 f"**{entry['action'].upper()}** claim `{entry['claim_id']}`{note}"
             )
 
-# ── Footer ─────────────────────────────────────────────────────────────────────
+
 st.divider()
 st.caption(L["footer"])

@@ -1,12 +1,4 @@
-"""Truthora — Knowledge Graph verification via spaCy NER + DBpedia SPARQL.
-
-Implements Layer 3 of the pipeline:
-  1. Extract named entities from claim text using spaCy (PER/ORG/GPE)
-  2. Query DBpedia via one-hop SPARQL to verify entity facts
-  3. Return: KG_FOUND (triples) | KG_NOT_FOUND | KG_MISMATCH ⚠️
-
-KG_NOT_FOUND does not block the pipeline — it's informational only.
-"""
+"""Knowledge Graph verification via spaCy NER + DBpedia SPARQL."""
 
 from __future__ import annotations
 
@@ -24,7 +16,6 @@ logger = logging.getLogger(__name__)
 DBPEDIA_SPARQL_URL = "https://dbpedia.org/sparql"
 SPARQL_TIMEOUT = 10
 
-# spaCy model — lazy loaded
 _nlp = None
 
 

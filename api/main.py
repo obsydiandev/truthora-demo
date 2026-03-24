@@ -1,4 +1,4 @@
-"""Truthora — FastAPI application entry point."""
+"""FastAPI application entry point."""
 
 from fastapi import FastAPI
 

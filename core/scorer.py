@@ -1,21 +1,4 @@
-"""Truthora — Final scoring pipeline (Layer 6).
-
-Computes the composite final_score for each claim-match pair:
-
-    final_score = (
-        similarity     × 0.35
-      + reranker_score × 0.25
-      + nli_confidence × 0.20
-      + freshness_decay × 0.12
-      + kg_signal      × 0.08
-    )
-
-Also computes entropy-based uncertainty for operator flagging:
-    H = -Σ p_i × log2(p_i) [normalized to 0–1]
-    H < 0.30 → LOW (system confident)
-    H 0.30–0.70 → MODERATE
-    H > 0.70 → HIGH (⚠️ mandatory flag)
-"""
+"""Final scoring pipeline."""
 
 from __future__ import annotations
 
@@ -28,7 +11,6 @@ from core.matcher import compute_entropy, get_uncertainty_level
 
 logger = logging.getLogger(__name__)
 
-# Final score component weights (must sum to 1.0)
 SCORE_WEIGHTS = {
     "similarity": 0.35,
     "reranker_score": 0.25,
@@ -59,7 +41,6 @@ def compute_final_score(
         + kg_score * SCORE_WEIGHTS["kg_signal"]
     )
 
-    # Clamp to [0, 1]
     return max(0.0, min(1.0, score))
 
 

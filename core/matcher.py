@@ -1,10 +1,4 @@
-"""Truthora — Semantic claim matcher (BGE-M3 + Qdrant + temporal decay).
-
-Matches extracted claims against indexed fact-checks using:
-  1. BGE-M3 multilingual embeddings → Qdrant top-10 nearest
-  2. Temporal Freshness Decay: weight(t) = exp(-0.693 × days_old / 180)
-  3. Returns ClaimResult with matches and entropy-based uncertainty
-"""
+"""Semantic claim matcher (BGE-M3 + Qdrant + temporal decay)."""
 
 from __future__ import annotations
 
@@ -25,7 +19,6 @@ from services.qdrant import QdrantService
 
 logger = logging.getLogger(__name__)
 
-# Temporal decay half-life in days
 HALF_LIFE_DAYS = 180
 DECAY_LAMBDA = 0.693 / HALF_LIFE_DAYS  # ln(2) / half_life
 
@@ -37,7 +30,7 @@ def compute_freshness_decay(published_at: Optional[str | datetime]) -> float:
     Returns 1.0 for very recent, 0.5 at 180 days, 0.25 at 360 days.
     """
     if published_at is None:
-        return 0.5  # Default to 180-day-old equivalent
+        return 0.5
 
     if isinstance(published_at, str):
         try:
@@ -89,13 +82,11 @@ def compute_entropy(scores: list[float]) -> float:
     if not scores or len(scores) < 2:
         return 0.0
 
-    # Normalize scores to a probability distribution
     total = sum(scores)
     if total == 0:
         return 1.0
 
     probs = [s / total for s in scores]
-    # Filter out zeros (log2(0) is undefined)
     probs = [p for p in probs if p > 0]
 
     if len(probs) <= 1:
@@ -136,7 +127,6 @@ class ClaimMatcher:
 
         Returns a ClaimResult with top matches and uncertainty score.
         """
-        # Generate embedding for the claim
         try:
             query_vector = self._embeddings.embed_single(claim.claim_text)
         except Exception:
@@ -156,14 +146,12 @@ class ClaimMatcher:
                 uncertainty_level="HIGH",
             )
 
-        # Search Qdrant for nearest fact-checks
         try:
             hits = self._qdrant.search_fact_checks(query_vector, limit=top_k)
         except Exception:
             logger.exception("Qdrant search failed")
             hits = []
 
-        # Build match results with freshness decay
         matches: list[FactCheckMatch] = []
         scores: list[float] = []
 
@@ -174,15 +162,13 @@ class ClaimMatcher:
             decay = compute_freshness_decay(published_at)
             badge = get_freshness_badge(published_at)
 
-            # In Faza 3, final_score = similarity × freshness_decay
-            # (reranker_score and nli_confidence added in Faza 5)
             final_score = similarity * decay
 
             match = FactCheckMatch(
                 matched_url=payload.get("source_url", ""),
                 source_name=payload.get("source_name", ""),
                 claim_reviewed=payload.get("claim_text", ""),
-                stance=StanceLabel.NEI,  # NLI classification added in Faza 5
+                stance=StanceLabel.NEI,
                 similarity_score=similarity,
                 freshness_decay=decay,
                 freshness_badge=badge,
@@ -192,7 +178,6 @@ class ClaimMatcher:
             matches.append(match)
             scores.append(final_score)
 
-        # Sort by final score descending
         matches.sort(key=lambda m: m.final_score, reverse=True)
 
         # Compute entropy-based uncertainty

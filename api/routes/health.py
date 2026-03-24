@@ -1,4 +1,4 @@
-"""Truthora — Health check endpoint."""
+"""Health check endpoint."""
 
 from fastapi import APIRouter
 

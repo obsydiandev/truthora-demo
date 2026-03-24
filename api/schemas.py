@@ -1,4 +1,4 @@
-"""Truthora — Pydantic schemas for API request/response models."""
+"""Pydantic schemas for API request/response models."""
 
 from __future__ import annotations
 
@@ -7,9 +7,6 @@ from enum import Enum
 from typing import Optional
 
 from pydantic import BaseModel, Field, HttpUrl
-
-
-# --- Enums ---
 
 
 class StanceLabel(str, Enum):
@@ -31,12 +28,9 @@ class ReviewAction(str, Enum):
 
 
 class FreshnessBadge(str, Enum):
-    FRESH = "fresh"          # 🟢 < 30 days
-    AGING = "aging"          # 🟡 < 1 year
-    OUTDATED = "outdated"    # 🔴 >= 1 year
-
-
-# --- Checkworthiness ---
+    FRESH = "fresh"
+    AGING = "aging"
+    OUTDATED = "outdated"
 
 
 class CheckworthinessScore(BaseModel):
@@ -46,9 +40,6 @@ class CheckworthinessScore(BaseModel):
     specificity: float = Field(ge=0, le=1, description="Factual, not opinion (weight: 0.12)")
     public_interest: float = Field(ge=0, le=1, description="Public decision relevance (weight: 0.08)")
     composite: float = Field(ge=0, le=1, description="Weighted composite score")
-
-
-# --- Claims ---
 
 
 class Claim(BaseModel):
@@ -82,9 +73,6 @@ class ClaimResult(BaseModel):
     matches: list[FactCheckMatch] = Field(default_factory=list)
     uncertainty: float = Field(ge=0, le=1, description="Entropy-based uncertainty (0-1)")
     uncertainty_level: str = Field(description="LOW / MODERATE / HIGH")
-
-
-# --- API Request/Response ---
 
 
 class AnalyzeRequest(BaseModel):

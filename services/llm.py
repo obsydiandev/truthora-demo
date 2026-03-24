@@ -1,11 +1,4 @@
-"""Truthora — LLM client with Groq ↔ Ollama hot-swap.
-
-Configured via environment variables:
-  LLM_PROVIDER = "groq" | "ollama"
-  GROQ_API_KEY = <key>
-  OLLAMA_BASE_URL = http://localhost:11434
-  OLLAMA_MODEL = llama3.1:8b
-"""
+"""LLM client with Groq / Ollama hot-swap."""
 
 from __future__ import annotations
 
@@ -55,17 +48,12 @@ class LLMClient:
     ) -> Any:
         """Send a prompt and parse the LLM response as JSON."""
         raw = await self.generate(prompt, system_prompt, temperature, max_tokens)
-        # Strip markdown code fences if present
         text = raw.strip()
         if text.startswith("```"):
             lines = text.split("\n")
             lines = [ln for ln in lines if not ln.strip().startswith("```")]
             text = "\n".join(lines)
         return json.loads(text)
-
-    # ------------------------------------------------------------------
-    # Groq (OpenAI-compatible API)
-    # ------------------------------------------------------------------
 
     async def _call_groq(
         self,
@@ -96,10 +84,6 @@ class LLMClient:
             resp.raise_for_status()
             data = resp.json()
             return data["choices"][0]["message"]["content"]
-
-    # ------------------------------------------------------------------
-    # Ollama (local)
-    # ------------------------------------------------------------------
 
     async def _call_ollama(
         self,

@@ -1,12 +1,5 @@
 #!/usr/bin/env python3
-"""Truthora — Seed script for loading initial fact-checks into Qdrant.
-
-Loads starter fact-check entries from data/seeds/initial_fact_checks.json
-into the Qdrant vector database so the system has baseline data for matching.
-
-Usage:
-    python data/seeds/seed.py
-"""
+"""Seed script for loading initial fact-checks into Qdrant."""
 
 from __future__ import annotations
 
@@ -17,7 +10,6 @@ from pathlib import Path
 SEEDS_DIR = Path(__file__).resolve().parent
 SEED_FILE = SEEDS_DIR / "initial_fact_checks.json"
 
-# Ensure project root is on sys.path so 'services' is importable
 PROJECT_ROOT = SEEDS_DIR.parent.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))

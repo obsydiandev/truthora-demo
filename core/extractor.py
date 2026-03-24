@@ -1,8 +1,4 @@
-"""Truthora — Text extraction via Trafilatura.
-
-Wraps Trafilatura to extract clean text from a URL,
-returning the article body, title, and detected language.
-"""
+"""Text extraction via Trafilatura."""
 
 from __future__ import annotations
 

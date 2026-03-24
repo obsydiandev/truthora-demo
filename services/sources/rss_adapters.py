@@ -1,10 +1,4 @@
-"""Truthora — RSS feed adapters for regional fact-checkers.
-
-Uses feedparser to poll fact-check articles from RSS feeds:
-  - Demagog PL, Konkret24 (Poland)
-  - StopFake UA, VoxCheck UA, Texty UA (Ukraine)
-  - EFCSN, Full Fact, Reuters FC (Europe / Global)
-"""
+"""RSS feed adapters for regional fact-checkers."""
 
 from __future__ import annotations
 
@@ -19,7 +13,6 @@ import feedparser
 
 logger = logging.getLogger(__name__)
 
-# Default path to the RSS feeds JSON configuration
 DEFAULT_FEEDS_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "rss_feeds.json"
 
 

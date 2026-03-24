@@ -1,4 +1,4 @@
-"""Truthora — POST /analyze endpoint (URL or headline → claims)."""
+"""POST /analyze endpoint (URL or headline → claims)."""
 
 from __future__ import annotations
 
@@ -61,7 +61,6 @@ async def analyze_url(request: AnalyzeRequest) -> AnalyzeResponse:
     if not request.url and not request.headline:
         raise HTTPException(status_code=422, detail="Provide either 'url' or 'headline'")
 
-    # Layer 1+2: Extract text
     if request.headline:
         extraction = {
             "text": request.headline,
@@ -76,21 +75,17 @@ async def analyze_url(request: AnalyzeRequest) -> AnalyzeResponse:
         if extraction is None:
             raise HTTPException(status_code=422, detail=f"Could not extract text from {source_url}")
 
-    # Layer 2: Detect atomic claims via LLM
     detector = ClaimDetector()
     raw_claims = await detector.detect_claims(
         text=extraction["text"],
         language=extraction.get("language", "en"),
     )
 
-    # Normalize claims (Unicode NFC + negation check)
     claims = normalize_claims(raw_claims)
 
-    # Assign unique IDs
     for claim in claims:
         claim.claim_id = uuid.uuid4().hex[:12]
 
-    # Layer 4: Match claims against fact-check database
     matcher = ClaimMatcher()
     results: list[ClaimResult] = []
     for claim in claims:

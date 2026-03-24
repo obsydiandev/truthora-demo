@@ -1,15 +1,4 @@
-"""Truthora — Critical path tests for Faza 1–3.
-
-Tests cover:
-  - API schemas validation
-  - Text normalization + negation detection
-  - Checkworthiness scoring
-  - Temporal freshness decay
-  - Entropy-based uncertainty
-  - Freshness badge classification
-  - RSS feed config loading
-  - FastAPI health endpoint
-"""
+"""Critical path tests for Faza 1–3."""
 
 from __future__ import annotations
 
@@ -39,11 +28,6 @@ from core.matcher import (
     get_uncertainty_level,
 )
 from core.normalizer import has_negation, normalize_text
-
-
-# ======================================================================
-# Normalizer tests
-# ======================================================================
 
 
 class TestNormalizeText:
@@ -94,11 +78,6 @@ class TestNegationDetection:
         assert has_negation("nie dotyczy", "xx") is True
 
 
-# ======================================================================
-# Checkworthiness tests
-# ======================================================================
-
-
 class TestCheckworthiness:
     def test_composite_score_computation(self):
         scores = {
@@ -136,11 +115,6 @@ class TestCheckworthiness:
 
     def test_weights_sum_to_one(self):
         assert sum(CW_WEIGHTS.values()) == pytest.approx(1.0)
-
-
-# ======================================================================
-# Temporal Freshness Decay tests
-# ======================================================================
 
 
 class TestFreshnessDecay:
@@ -185,11 +159,6 @@ class TestFreshnessBadge:
         assert get_freshness_badge(None) == FreshnessBadge.AGING
 
 
-# ======================================================================
-# Entropy / Uncertainty tests
-# ======================================================================
-
-
 class TestEntropy:
     def test_single_dominant(self):
         # One strong match = low entropy
@@ -230,11 +199,6 @@ class TestUncertaintyLevel:
     def test_high(self):
         assert get_uncertainty_level(0.71) == "HIGH"
         assert get_uncertainty_level(1.0) == "HIGH"
-
-
-# ======================================================================
-# Schema validation tests
-# ======================================================================
 
 
 class TestSchemas:
@@ -297,11 +261,6 @@ class TestSchemas:
         assert result.uncertainty == 0.5
 
 
-# ======================================================================
-# RSS feeds config test
-# ======================================================================
-
-
 class TestRSSConfig:
     def test_rss_feeds_json_valid(self):
         feeds_path = Path(__file__).resolve().parent.parent / "data" / "rss_feeds.json"
@@ -328,11 +287,6 @@ class TestRSSConfig:
             assert "claim_text" in seed
             assert "source_url" in seed
             assert "source_name" in seed
-
-
-# ======================================================================
-# FastAPI endpoint tests
-# ======================================================================
 
 
 client = TestClient(app)

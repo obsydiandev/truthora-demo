@@ -1,14 +1,5 @@
 #!/usr/bin/env python3
-"""Truthora — Ingest real fact-checks from Google Fact Check Tools API into Qdrant.
-
-Fetches both topic-based and broad (unpaged) fact-checks across EN/PL/UA languages.
-
-Usage (inside Docker):
-    docker compose exec api python3 data/seeds/ingest_google_fc.py
-
-Usage (locally, requires running Qdrant):
-    python3 data/seeds/ingest_google_fc.py
-"""
+"""Ingest real fact-checks from Google Fact Check Tools API into Qdrant."""
 
 from __future__ import annotations
 
@@ -18,14 +9,12 @@ import sys
 import uuid
 from pathlib import Path
 
-# Ensure project root is on sys.path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-# Topic-based queries (EN/PL/UA) — aligned with example articles in README
 SEED_QUERIES = [
-    # English — disinformation classics
+    # English
     ("covid vaccines safety", "en"),
     ("covid vaccines infertility", "en"),
     ("covid vaccines microchip", "en"),
@@ -54,7 +43,6 @@ SEED_QUERIES = [
     ("Росія Україна дезінформація", "uk"),
 ]
 
-# Broad unpaged fetch per language (latest ~1000 across all topics)
 BROAD_LANGUAGES = ["en", "pl"]
 
 

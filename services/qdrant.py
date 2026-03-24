@@ -1,9 +1,4 @@
-"""Truthora — Qdrant vector database service.
-
-Manages two collections:
-  - fact_checks: embeddings of known fact-checks (for semantic retrieval)
-  - audit_log:   operator review decisions (human-in-the-loop audit trail)
-"""
+"""Qdrant vector database service."""
 
 from __future__ import annotations
 
@@ -19,7 +14,6 @@ from api.schemas import ClaimResult, ReviewAction
 
 logger = logging.getLogger(__name__)
 
-# BGE-M3 produces 1024-dimensional embeddings
 EMBEDDING_DIM = 1024
 
 FACT_CHECKS_COLLECTION = "fact_checks"
@@ -42,20 +36,12 @@ class QdrantService:
             timeout=10,
         )
 
-    # ------------------------------------------------------------------
-    # Health
-    # ------------------------------------------------------------------
-
     async def is_healthy(self) -> bool:
         try:
             self._client.get_collections()
             return True
         except (ResponseHandlingException, Exception):
             return False
-
-    # ------------------------------------------------------------------
-    # Collection management
-    # ------------------------------------------------------------------
 
     def ensure_collections(self) -> None:
         """Create collections if they don't already exist."""
@@ -80,10 +66,6 @@ class QdrantService:
                 ),
             )
             logger.info("Created collection: %s", AUDIT_LOG_COLLECTION)
-
-    # ------------------------------------------------------------------
-    # Fact-check operations
-    # ------------------------------------------------------------------
 
     def upsert_fact_check(
         self,
@@ -124,10 +106,6 @@ class QdrantService:
             for hit in results.points
         ]
 
-    # ------------------------------------------------------------------
-    # Audit log
-    # ------------------------------------------------------------------
-
     def record_audit(
         self,
         point_id: str,
@@ -145,10 +123,6 @@ class QdrantService:
                 )
             ],
         )
-
-    # ------------------------------------------------------------------
-    # Review queue (used by /claims endpoints)
-    # ------------------------------------------------------------------
 
     async def get_pending_claims(
         self,
@@ -180,9 +154,7 @@ class QdrantService:
             "note": note,
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
-        # Use a deterministic point ID based on claim + timestamp
         point_id = f"{claim_id}_{int(datetime.now(timezone.utc).timestamp())}"
-        # Use a zero vector for audit entries (we don't search by similarity)
         zero_vector = [0.0] * EMBEDDING_DIM
         try:
             self.record_audit(point_id, zero_vector, payload)

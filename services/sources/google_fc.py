@@ -1,8 +1,4 @@
-"""Truthora — Google Fact Check Tools API client.
-
-Queries the Google Fact Check Tools API (ClaimReview format)
-to retrieve existing fact-checks for a given claim text.
-"""
+"""Google Fact Check Tools API client."""
 
 from __future__ import annotations
 

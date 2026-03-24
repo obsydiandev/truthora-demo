@@ -1,11 +1,4 @@
-"""Truthora — Claim detection via LLM (atomic claim decomposition).
-
-Uses Llama 3.1 8B (via Groq or Ollama) to:
-  1. Decompose text into atomic, verifiable claims
-  2. Pin each claim to a verbatim source quote with char offsets
-  3. Preserve negation particles (nie/brak/żaden / not/no / не/ні)
-  4. Score each claim on 5 checkworthiness dimensions
-"""
+"""Claim detection via LLM (atomic claim decomposition)."""
 
 from __future__ import annotations
 
@@ -54,7 +47,6 @@ Respond ONLY with valid JSON — an array of claim objects:
 ]
 """
 
-# Checkworthiness dimension weights
 CW_WEIGHTS = {
     "harm_potential": 0.35,
     "virality_potential": 0.25,

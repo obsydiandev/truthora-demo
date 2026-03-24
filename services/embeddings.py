@@ -1,8 +1,4 @@
-"""Truthora — BGE-M3 embeddings service.
-
-Generates multilingual embeddings using BGE-M3 (BAAI/bge-m3)
-via sentence-transformers. Runs on CPU by default for data sovereignty.
-"""
+"""BGE-M3 embeddings service."""
 
 from __future__ import annotations
 
@@ -14,7 +10,6 @@ import numpy as np
 
 logger = logging.getLogger(__name__)
 
-# Lazy-loaded model (avoid import-time downloads)
 _model = None
 _model_name: str = ""
 

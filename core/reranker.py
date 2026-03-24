@@ -1,11 +1,4 @@
-"""Truthora — Reranking + NLI stance classification (Layer 5).
-
-Implements:
-  1. BGE-Reranker-v2-m3: rerank top-10 → top-5 based on query-document relevance
-  2. DeBERTa-v3-MNLI:   classify stance as SUPPORTED / REFUTED / NEI
-
-Both models run on CPU for data sovereignty.
-"""
+"""Reranking + NLI stance classification."""
 
 from __future__ import annotations
 
@@ -19,7 +12,6 @@ from api.schemas import StanceLabel
 
 logger = logging.getLogger(__name__)
 
-# Lazy-loaded models
 _reranker_model = None
 _nli_model = None
 _nli_tokenizer = None
@@ -89,21 +81,17 @@ class Reranker:
         """
         model = _get_reranker()
         if model is None:
-            # Fallback: return original order with neutral scores
             return [(i, 0.5) for i in range(min(top_k, len(documents)))]
 
         if not documents:
             return []
 
-        # Create query-document pairs for cross-encoder
         pairs = [(query, doc) for doc in documents]
 
         try:
             scores = model.predict(pairs)
-            # Normalize scores to [0, 1] using sigmoid
             normalized = 1 / (1 + np.exp(-np.array(scores)))
 
-            # Create (index, score) pairs and sort by score descending
             indexed_scores = list(enumerate(normalized.tolist()))
             indexed_scores.sort(key=lambda x: x[1], reverse=True)
 
@@ -147,12 +135,9 @@ class Reranker:
                 outputs = model(**inputs)
                 logits = outputs.logits.numpy()[0]
 
-            # Softmax to get probabilities
             exp_logits = np.exp(logits - np.max(logits))
             probs = exp_logits / exp_logits.sum()
 
-            # NLI labels: [contradiction, neutral, entailment]
-            # Map to: REFUTED, NEI, SUPPORTED
             label_map = {
                 0: StanceLabel.REFUTED,    # contradiction
                 1: StanceLabel.NEI,        # neutral

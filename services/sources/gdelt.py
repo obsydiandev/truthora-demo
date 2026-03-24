@@ -1,11 +1,4 @@
-"""Truthora — GDELT BigQuery client for real-time news monitoring.
-
-Queries the GDELT Project via BigQuery to discover news articles
-mentioning claims relevant to fact-checking. Covers PL and UA
-with 15-minute update frequency.
-
-Uses BigQuery free tier (1TB/month) — zero cost for MVP.
-"""
+"""GDELT BigQuery client for real-time news monitoring."""
 
 from __future__ import annotations
 
@@ -18,9 +11,6 @@ import httpx
 
 logger = logging.getLogger(__name__)
 
-# GDELT BigQuery public dataset
-# We use the GDELT DOC API (free, no auth) for MVP
-# Full BigQuery integration requires Google Cloud credentials
 GDELT_DOC_API_URL = "https://api.gdeltproject.org/api/v2/doc/doc"
 GDELT_TIMEOUT = 15
 
