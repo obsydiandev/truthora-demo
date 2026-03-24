@@ -57,9 +57,15 @@ Results are written to `data/benchmark/results/baseline_v01.json`.
 
 | Metric | Current | Target |
 |---|---|---|
-| Recall@5 | 0.2368 | ≥ 0.74 |
-| MRR | 0.1326 | ≥ 0.60 |
-| Stance F1 (macro) | 0.1732 | ≥ 0.70 |
+| Recall@5 | **0.8860** ✅ | ≥ 0.74 |
+| MRR | **0.7985** ✅ | ≥ 0.60 |
+| Stance F1 (macro) | 0.1928 | ≥ 0.70 |
+
+| Language | Recall@5 | MRR | Stance F1 | Pairs |
+|---|---|---|---|---|
+| EN | 0.8737 | 0.7811 | 0.2038 | 95 |
+| PL | 1.0000 | 0.9314 | 0.0784 | 17 |
+| UA | 0.5000 | 0.5000 | 0.3333 | 2 |
 
 > **Note:** The `--delay` flag (default 2.5s) spaces requests to avoid Groq API
 > rate limits on the free tier. Reduce it if using Ollama or a paid Groq plan.

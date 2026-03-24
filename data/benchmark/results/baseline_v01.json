@@ -2,10 +2,10 @@
   "meta": {
     "version": "v0.1",
     "date": "2026-03-24",
-    "api_url": "http://localhost:8000",
+    "api_url": "http://api:8000",
     "k": 5,
     "concurrency": 1,
-    "elapsed_s": 360.88,
+    "elapsed_s": 935.4,
     "total_pairs": 114
   },
   "targets": {
@@ -14,45 +14,45 @@
     "stance_f1": 0.7
   },
   "overall": {
-    "recall_at_k": 0.2368,
-    "mrr": 0.1326,
+    "recall_at_k": 0.886,
+    "mrr": 0.7985,
     "stance_f1": {
-      "SUPPORTED": 0.0,
-      "REFUTED": 0.0,
-      "NEI": 0.5195,
-      "macro_f1": 0.1732
+      "SUPPORTED": 0.1081,
+      "REFUTED": 0.0571,
+      "NEI": 0.4132,
+      "macro_f1": 0.1928
     },
     "n": 114,
     "errors": 0
   },
   "per_language": {
     "EN": {
-      "recall_at_k": 0.2316,
-      "mrr": 0.1346,
+      "recall_at_k": 0.8737,
+      "mrr": 0.7811,
       "stance_f1": {
-        "SUPPORTED": 0.0,
-        "REFUTED": 0.0,
-        "NEI": 0.5496,
-        "macro_f1": 0.1832
+        "SUPPORTED": 0.1212,
+        "REFUTED": 0.0702,
+        "NEI": 0.42,
+        "macro_f1": 0.2038
       },
       "n": 95,
       "errors": 0
     },
     "PL": {
-      "recall_at_k": 0.2353,
-      "mrr": 0.1225,
+      "recall_at_k": 1.0,
+      "mrr": 0.9314,
       "stance_f1": {
         "SUPPORTED": 0.0,
         "REFUTED": 0.0,
-        "NEI": 0.2105,
-        "macro_f1": 0.0702
+        "NEI": 0.2353,
+        "macro_f1": 0.0784
       },
       "n": 17,
       "errors": 0
     },
     "UA": {
       "recall_at_k": 0.5,
-      "mrr": 0.125,
+      "mrr": 0.5,
       "stance_f1": {
         "SUPPORTED": 0.0,
         "REFUTED": 0.0,
@@ -64,8 +64,8 @@
     }
   },
   "targets_passed": {
-    "recall_at_5": false,
-    "mrr": false,
+    "recall_at_5": true,
+    "mrr": true,
     "stance_f1": false
   },
   "pair_results": [
@@ -75,15 +75,15 @@
       "expected_stance": "NEI",
       "predicted_stance": "NEI",
       "found_in_top_k": true,
-      "rank": 2
+      "rank": 1
     },
     {
       "id": "en_02",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 2
     },
     {
       "id": "en_03",
@@ -106,24 +106,24 @@
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_06",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_07",
       "_lang_group": "EN",
       "expected_stance": "NEI",
-      "predicted_stance": "NEI",
+      "predicted_stance": "SUPPORTED",
       "found_in_top_k": true,
-      "rank": 2
+      "rank": 1
     },
     {
       "id": "en_08",
@@ -131,23 +131,23 @@
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
       "found_in_top_k": true,
-      "rank": 2
+      "rank": 1
     },
     {
       "id": "en_09",
       "_lang_group": "EN",
       "expected_stance": "NEI",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 3
     },
     {
       "id": "en_10",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 2
     },
     {
       "id": "en_11",
@@ -177,9 +177,9 @@
       "id": "en_14",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_15",
@@ -187,47 +187,47 @@
       "expected_stance": "NEI",
       "predicted_stance": "NEI",
       "found_in_top_k": true,
-      "rank": 5
+      "rank": 1
     },
     {
       "id": "en_16",
       "_lang_group": "EN",
       "expected_stance": "NEI",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_17",
       "_lang_group": "EN",
       "expected_stance": "SUPPORTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 3
     },
     {
       "id": "en_18",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_19",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 3
     },
     {
       "id": "en_20",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_21",
@@ -235,15 +235,15 @@
       "expected_stance": "NEI",
       "predicted_stance": "NEI",
       "found_in_top_k": true,
-      "rank": 5
+      "rank": 1
     },
     {
       "id": "en_22",
       "_lang_group": "EN",
       "expected_stance": "NEI",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_23",
@@ -251,63 +251,63 @@
       "expected_stance": "NEI",
       "predicted_stance": "NEI",
       "found_in_top_k": true,
-      "rank": 4
+      "rank": 1
     },
     {
       "id": "en_24",
       "_lang_group": "EN",
       "expected_stance": "NEI",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_25",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
+      "predicted_stance": "SUPPORTED",
       "found_in_top_k": true,
-      "rank": 5
+      "rank": 3
     },
     {
       "id": "en_26",
       "_lang_group": "EN",
       "expected_stance": "NEI",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_27",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_28",
       "_lang_group": "EN",
       "expected_stance": "NEI",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_29",
       "_lang_group": "EN",
       "expected_stance": "NEI",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_30",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 2
     },
     {
       "id": "en_31",
@@ -315,31 +315,31 @@
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
       "found_in_top_k": true,
-      "rank": 5
+      "rank": 1
     },
     {
       "id": "en_32",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_33",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_34",
       "_lang_group": "EN",
       "expected_stance": "NEI",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_35",
@@ -354,8 +354,8 @@
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_37",
@@ -369,25 +369,25 @@
       "id": "en_38",
       "_lang_group": "EN",
       "expected_stance": "NEI",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_39",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_40",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_41",
@@ -402,14 +402,14 @@
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_43",
       "_lang_group": "EN",
       "expected_stance": "NEI",
-      "predicted_stance": "NEI",
+      "predicted_stance": "SUPPORTED",
       "found_in_top_k": true,
       "rank": 1
     },
@@ -418,14 +418,14 @@
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_45",
       "_lang_group": "EN",
       "expected_stance": "SUPPORTED",
-      "predicted_stance": "NEI",
+      "predicted_stance": "SUPPORTED",
       "found_in_top_k": true,
       "rank": 1
     },
@@ -434,14 +434,14 @@
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_47",
       "_lang_group": "EN",
       "expected_stance": "NEI",
-      "predicted_stance": "NEI",
+      "predicted_stance": "SUPPORTED",
       "found_in_top_k": true,
       "rank": 1
     },
@@ -449,49 +449,49 @@
       "id": "en_48",
       "_lang_group": "EN",
       "expected_stance": "SUPPORTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 2
     },
     {
       "id": "en_49",
       "_lang_group": "EN",
       "expected_stance": "SUPPORTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": true,
-      "rank": 5
+      "found_in_top_k": false,
+      "rank": 0
     },
     {
       "id": "en_50",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_51",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_52",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_53",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
+      "predicted_stance": "SUPPORTED",
       "found_in_top_k": true,
-      "rank": 1
+      "rank": 3
     },
     {
       "id": "en_54",
@@ -506,54 +506,54 @@
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_56",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_57",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_58",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_59",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 2
     },
     {
       "id": "en_60",
       "_lang_group": "EN",
       "expected_stance": "NEI",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_61",
       "_lang_group": "EN",
       "expected_stance": "NEI",
-      "predicted_stance": "NEI",
+      "predicted_stance": "REFUTED",
       "found_in_top_k": false,
       "rank": 0
     },
@@ -562,24 +562,24 @@
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_63",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_64",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_65",
@@ -587,39 +587,39 @@
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
       "found_in_top_k": true,
-      "rank": 3
+      "rank": 1
     },
     {
       "id": "en_66",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_67",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_68",
       "_lang_group": "EN",
       "expected_stance": "NEI",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_69",
       "_lang_group": "EN",
       "expected_stance": "NEI",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_70",
@@ -634,32 +634,32 @@
       "_lang_group": "EN",
       "expected_stance": "NEI",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_72",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_73",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
+      "predicted_stance": "SUPPORTED",
       "found_in_top_k": true,
-      "rank": 4
+      "rank": 1
     },
     {
       "id": "en_74",
       "_lang_group": "EN",
       "expected_stance": "NEI",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 2
     },
     {
       "id": "en_75",
@@ -667,7 +667,7 @@
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
       "found_in_top_k": true,
-      "rank": 4
+      "rank": 1
     },
     {
       "id": "en_76",
@@ -682,32 +682,32 @@
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_78",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_79",
       "_lang_group": "EN",
       "expected_stance": "NEI",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_80",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_81",
@@ -715,15 +715,15 @@
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
       "found_in_top_k": true,
-      "rank": 5
+      "rank": 1
     },
     {
       "id": "en_82",
       "_lang_group": "EN",
       "expected_stance": "NEI",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 2
     },
     {
       "id": "en_83",
@@ -738,14 +738,14 @@
       "_lang_group": "EN",
       "expected_stance": "NEI",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_85",
       "_lang_group": "EN",
       "expected_stance": "NEI",
-      "predicted_stance": "NEI",
+      "predicted_stance": "SUPPORTED",
       "found_in_top_k": true,
       "rank": 1
     },
@@ -753,41 +753,41 @@
       "id": "en_86",
       "_lang_group": "EN",
       "expected_stance": "NEI",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 2
     },
     {
       "id": "en_87",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 3
     },
     {
       "id": "en_88",
       "_lang_group": "EN",
       "expected_stance": "NEI",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_89",
       "_lang_group": "EN",
       "expected_stance": "NEI",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 5
     },
     {
       "id": "en_90",
       "_lang_group": "EN",
       "expected_stance": "NEI",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_91",
@@ -801,9 +801,9 @@
       "id": "en_92",
       "_lang_group": "EN",
       "expected_stance": "NEI",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_93",
@@ -817,25 +817,25 @@
       "id": "en_94",
       "_lang_group": "EN",
       "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "en_95",
       "_lang_group": "EN",
       "expected_stance": "SUPPORTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "pl_01",
       "_lang_group": "PL",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "pl_02",
@@ -849,76 +849,12 @@
       "id": "pl_03",
       "_lang_group": "PL",
       "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "pl_04",
-      "_lang_group": "PL",
-      "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
-    },
-    {
-      "id": "pl_05",
-      "_lang_group": "PL",
-      "expected_stance": "NEI",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
-    },
-    {
-      "id": "pl_06",
-      "_lang_group": "PL",
-      "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": true,
-      "rank": 2
-    },
-    {
-      "id": "pl_07",
-      "_lang_group": "PL",
-      "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
-    },
-    {
-      "id": "pl_08",
-      "_lang_group": "PL",
-      "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": true,
-      "rank": 4
-    },
-    {
-      "id": "pl_09",
-      "_lang_group": "PL",
-      "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
-    },
-    {
-      "id": "pl_10",
-      "_lang_group": "PL",
-      "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
-    },
-    {
-      "id": "pl_11",
-      "_lang_group": "PL",
-      "expected_stance": "REFUTED",
-      "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
-    },
-    {
-      "id": "pl_12",
       "_lang_group": "PL",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
@@ -926,44 +862,108 @@
       "rank": 3
     },
     {
+      "id": "pl_05",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_06",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_07",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_08",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_09",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_10",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 2
+    },
+    {
+      "id": "pl_11",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_12",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
       "id": "pl_13",
       "_lang_group": "PL",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "pl_14",
       "_lang_group": "PL",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "pl_15",
       "_lang_group": "PL",
       "expected_stance": "REFUTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "pl_16",
       "_lang_group": "PL",
       "expected_stance": "SUPPORTED",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "pl_17",
       "_lang_group": "PL",
       "expected_stance": "NEI",
       "predicted_stance": "NEI",
-      "found_in_top_k": false,
-      "rank": 0
+      "found_in_top_k": true,
+      "rank": 1
     },
     {
       "id": "ua_01",
@@ -971,7 +971,7 @@
       "expected_stance": "NEI",
       "predicted_stance": "NEI",
       "found_in_top_k": true,
-      "rank": 4
+      "rank": 1
     },
     {
       "id": "ua_02",
