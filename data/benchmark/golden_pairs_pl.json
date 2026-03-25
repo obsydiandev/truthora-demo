@@ -10,12 +10,12 @@
   },
   {
     "id": "pl_02",
-    "claim": "Inflacja w Polsce w czwartym kwartale 2025 roku wyniosła 2,3%",
-    "expected_match": "Inflacja w Polsce wyniosła 2,3% w Q4 2025",
+    "claim": "Inflacja w Polsce w styczniu 2025 spadła poniżej celu inflacyjnego NBP",
+    "expected_match": "W styczniu 2025 r. inflacja konsumencka w Polsce spadła poniżej 2,5%, czyli celu inflacyjnego NBP",
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/example/inflacja-q4"
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/inflacja-w-styczniu-2025-dane-gus-st8240796"
   },
   {
     "id": "pl_03",
@@ -151,5 +151,752 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/tylko-polska-wydobywa-w-europie-wegiel-sytuacja-wyglada-inaczej/"
+  },
+  {
+    "id": "pl_18",
+    "claim": "Szczepionki przeciw COVID-19 są bardziej niebezpieczne niż sama choroba COVID-19",
+    "expected_match": "Szczepionki przeciw COVID-19 nie są bardziej niebezpieczne niż COVID-19 i zmniejszają ryzyko ciężkiego przebiegu choroby",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-niebezpieczniejsze-niz-covid-19-fake-news/"
+  },
+  {
+    "id": "pl_19",
+    "claim": "Szczepionki przeciw COVID-19 zawierają toksyny",
+    "expected_match": "Szczepionki przeciw COVID-19 nie zawierają toksyn w znaczeniu przedstawianym w dezinformujących przekazach i są uznawane za bezpieczne",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-przeciw-covid-19-nie-zawieraja-toksyn/"
+  },
+  {
+    "id": "pl_20",
+    "claim": "Rządy manipulują statystykami, aby ukryć powikłania po szczepieniach przeciw COVID-19",
+    "expected_match": "Nie ma dowodów, że rządy manipulują statystykami, by ukrywać powikłania po szczepieniach przeciw COVID-19",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/rzady-manipuluja-statystykami-by-ukryc-powiklania-zaszczepionych-falsz/"
+  },
+  {
+    "id": "pl_21",
+    "claim": "Szczepionki przeciw COVID-19 nie są w ogóle szczepionkami",
+    "expected_match": "Preparaty przeciw COVID-19 spełniają definicję szczepionek i nie jest prawdą, że nie są szczepionkami",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-przeciw-covid-19-nie-sa-szczepionkami-fake-news/"
+  },
+  {
+    "id": "pl_22",
+    "claim": "Szczepienia przeciw COVID-19 do 2023 roku były uznawane za eksperyment medyczny",
+    "expected_match": "To fałsz, że szczepienia przeciw COVID-19 były do 2023 roku uznawane za eksperyment medyczny",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/szczepienia-na-covid-19-do-2023-roku-uznawano-za-eksperyment-falsz/"
+  },
+  {
+    "id": "pl_23",
+    "claim": "Szczepionki przeciw COVID-19 są nieprzebadane i niebezpieczne",
+    "expected_match": "Nie jest prawdą, że szczepionki przeciw COVID-19 są nieprzebadane i niebezpieczne w sposób przedstawiany przez dezinformujące materiały",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/czy-szczepionki-sa-nieprzebadane-i-niebezpieczne-fake-news/"
+  },
+  {
+    "id": "pl_24",
+    "claim": "Pandemia COVID-19 była elementem planowanej depopulacji",
+    "expected_match": "Nie ma dowodów, że pandemia COVID-19 była elementem planowanej depopulacji",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/covid-19-to-zaplanowana-depopulacja-fake-news/"
+  },
+  {
+    "id": "pl_25",
+    "claim": "We wrześniu 2024 po raz pierwszy mniej niż połowa energii elektrycznej w Polsce pochodziła z węgla",
+    "expected_match": "We wrześniu 2024 udział węgla w polskiej produkcji energii elektrycznej spadł poniżej 50 procent",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/oze-rekord-wrzesien-wegiel"
+  },
+  {
+    "id": "pl_26",
+    "claim": "Polska należy do państw najszybciej odchodzących od węgla",
+    "expected_match": "Polska odchodzi od węgla szybciej, niż sugeruje część debaty publicznej, choć polityka państwa nadal wspiera wydobycie",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/wegiel-energetyka-doplaty-wzrosna"
+  },
+  {
+    "id": "pl_27",
+    "claim": "Polska może odejść od węgla już w latach 30.",
+    "expected_match": "Eksperci dopuszczają scenariusz odejścia Polski od węgla już w latach 30., choć spór dotyczy źródeł zastępczych",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/polska-od-wegla-juz-w-latach-30"
+  },
+  {
+    "id": "pl_28",
+    "claim": "Maseczki ochronne nie chronią przed wirusami i są nieskuteczne",
+    "expected_match": "Maseczki ochronne zmniejszają ryzyko transmisji wirusów drogą kropelkową, co potwierdzają liczne badania",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/maseczki-nie-chronia-przed-wirusami-to-nieprawda/"
+  },
+  {
+    "id": "pl_29",
+    "claim": "Lockdowny nie miały żadnego wpływu na rozprzestrzenianie się COVID-19",
+    "expected_match": "Wpływ lockdownów na ograniczenie transmisji COVID-19 jest przedmiotem debaty naukowej, ale większość badań wskazuje na ich skuteczność w zmniejszaniu liczby zakażeń",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/zdrowie/lockdowny-a-covid-skutecznosc-ograniczen-st7894521"
+  },
+  {
+    "id": "pl_30",
+    "claim": "WHO ogłosiło koniec stanu zagrożenia zdrowia publicznego z powodu COVID-19 w maju 2023",
+    "expected_match": "5 maja 2023 r. WHO ogłosiło zakończenie stanu zagrożenia zdrowia publicznego o zasięgu międzynarodowym w związku z COVID-19",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/zdrowie/who-koniec-pandemii-covid-19-maj-2023-st7654320"
+  },
+  {
+    "id": "pl_31",
+    "claim": "Polska miała jeden z najwyższych wskaźników nadmiarowych zgonów w UE podczas pandemii COVID-19",
+    "expected_match": "Dane Eurostatu potwierdzają, że Polska należała do krajów UE z najwyższym wskaźnikiem nadmiarowych zgonów w okresie pandemii",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/nadmiarowe-zgony-polska-pandemia-eurostat"
+  },
+  {
+    "id": "pl_32",
+    "claim": "W Polsce zaszczepiono ponad 22 miliony osób przeciwko COVID-19",
+    "expected_match": "Według danych rządowych ponad 22 mln osób w Polsce przyjęło co najmniej jedną dawkę szczepionki przeciw COVID-19",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/zdrowie/szczepienia-covid-polska-statystyki-st7543210"
+  },
+  {
+    "id": "pl_33",
+    "claim": "Naturalna odporność po przejściu COVID jest lepsza i trwalsza niż odporność szczepionkowa",
+    "expected_match": "Porównanie odporności naturalnej i szczepionkowej jest złożone; badania wskazują na różne aspekty obu rodzajów ochrony",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/odpornosc-naturalna-lepsza-od-szczepionkowej-to-uproszczenie/"
+  },
+  {
+    "id": "pl_34",
+    "claim": "Pierwsza elektrownia atomowa w Polsce będzie gotowa do 2033 roku",
+    "expected_match": "Harmonogram budowy elektrowni jądrowej w Polsce był wielokrotnie przesuwany; obecnie zakłada się uruchomienie pierwszego bloku w okolicach 2033-2035 roku",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/elektrownia-jadrowa-polska-harmonogram-st8012345"
+  },
+  {
+    "id": "pl_35",
+    "claim": "Turbiny wiatrowe zabijają miliony ptaków rocznie i stanowią katastrofę ekologiczną",
+    "expected_match": "Turbiny wiatrowe powodują śmierć ptaków, ale w znacznie mniejszej skali niż koty, budynki i linie energetyczne; nie stanowią głównego zagrożenia dla populacji ptaków",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/wiatraki-zabijaja-miliony-ptakow-to-manipulacja/"
+  },
+  {
+    "id": "pl_36",
+    "claim": "Fotowoltaika w Polsce nie ma sensu, bo jest za mało słońca",
+    "expected_match": "Nasłonecznienie w Polsce jest wystarczające do opłacalnej produkcji energii z fotowoltaiki, co potwierdzają rosnące moce zainstalowane",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/fotowoltaika-polska-naslonecznienie-mit"
+  },
+  {
+    "id": "pl_37",
+    "claim": "Energia z odnawialnych źródeł energii jest droższa niż energia z węgla",
+    "expected_match": "Koszt energii z OZE, zwłaszcza z wiatru i słońca, spadł znacząco i w wielu przypadkach jest już niższy niż z nowych elektrowni węglowych",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/oze-tansze-niz-wegiel-koszty-energii"
+  },
+  {
+    "id": "pl_38",
+    "claim": "Niemcy wracają do węgla po zamknięciu elektrowni jądrowych",
+    "expected_match": "Niemcy tymczasowo zwiększyły wykorzystanie węgla po kryzysie gazowym, ale długoterminowa polityka zakłada dalszą redukcję paliw kopalnych",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/swiat/niemcy-wegiel-atom-powrot-st7890123"
+  },
+  {
+    "id": "pl_39",
+    "claim": "Polska emituje najwięcej CO2 na mieszkańca spośród wszystkich krajów UE",
+    "expected_match": "Polska ma jedne z wyższych emisji CO2 per capita w UE, ale nie jest liderem w tej kategorii",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/emisje-co2-per-capita-polska-na-tle-ue/"
+  },
+  {
+    "id": "pl_40",
+    "claim": "Europejski Zielony Ład zniszczy polskie rolnictwo i doprowadzi rolników do bankructwa",
+    "expected_match": "Wpływ Europejskiego Zielonego Ładu na polskie rolnictwo jest przedmiotem debaty; eksperci wskazują zarówno na wyzwania, jak i potencjalne korzyści",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/zielony-lad-rolnictwo-polska-skutki"
+  },
+  {
+    "id": "pl_41",
+    "claim": "Transformacja energetyczna stworzy w Polsce więcej miejsc pracy niż zlikwiduje",
+    "expected_match": "Analizy wskazują, że transformacja energetyczna może stworzyć nowe miejsca pracy, choć wymaga programów przekwalifikowania pracowników sektorów tradycyjnych",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/transformacja-energetyczna-miejsca-pracy"
+  },
+  {
+    "id": "pl_42",
+    "claim": "Rachunki za prąd w Polsce wzrosły o 50 procent w ciągu roku 2024",
+    "expected_match": "Ceny energii elektrycznej w Polsce wzrosły w 2024 roku, ale skala wzrostu zależała od grupy taryfowej i nie we wszystkich przypadkach wynosiła 50%",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/rachunki-za-prad-2024-wzrost-cen-st8123456"
+  },
+  {
+    "id": "pl_43",
+    "claim": "Polska ma największy potencjał geotermalny w Europie Środkowej",
+    "expected_match": "Polska dysponuje znaczącymi zasobami geotermalnymi, jednymi z większych w Europie Środkowej, choć ich wykorzystanie jest wciąż niewielkie",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/potencjal-geotermalny-polski-fakty/"
+  },
+  {
+    "id": "pl_44",
+    "claim": "Farmy wiatrowe powodują infradźwięki szkodliwe dla zdrowia ludzi",
+    "expected_match": "Badania naukowe nie potwierdzają, że infradźwięki generowane przez turbiny wiatrowe stanowią zagrożenie dla zdrowia ludzi",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Fakenews.pl",
+    "expected_source_url": "https://fakenews.pl/zdrowie/infra-dzwieki-z-wiatrakow-nie-szkodza-zdrowiu/"
+  },
+  {
+    "id": "pl_45",
+    "claim": "Europejski pakt klimatyczny jest spiskiem wymierzonym w Polskę",
+    "expected_match": "Twierdzenie, że pakt klimatyczny jest spiskiem przeciwko Polsce, nie ma potwierdzenia w faktach; polityka klimatyczna UE dotyczy wszystkich państw członkowskich",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/pakt-klimatyczny-spisek-przeciw-polsce-falsz/"
+  },
+  {
+    "id": "pl_46",
+    "claim": "Ceny uprawnień do emisji CO2 są główną przyczyną drożejącej energii w Polsce",
+    "expected_match": "Ceny uprawnień do emisji CO2 w systemie ETS mają wpływ na ceny energii, ale nie są jedyną ani główną przyczyną ich wzrostu",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/ets-co2-ceny-energii-polska"
+  },
+  {
+    "id": "pl_47",
+    "claim": "Polska sprowadza coraz więcej gazu z Norwegii zastępując dostawy z Rosji",
+    "expected_match": "Po uruchomieniu Baltic Pipe Polska znacząco zwiększyła import gazu z Norwegii, ograniczając zależność od rosyjskiego gazu",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/baltic-pipe-gaz-norwegia-polska-st8012367"
+  },
+  {
+    "id": "pl_48",
+    "claim": "Wiatraki powodują choroby u ludzi mieszkających w ich najbliższym sąsiedztwie",
+    "expected_match": "Dotychczasowe badania nie potwierdzają bezpośredniego wpływu turbin wiatrowych na zdrowie mieszkańców okolic farm wiatrowych",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/wiatraki-powoduja-choroby-to-nie-jest-potwierdzone/"
+  },
+  {
+    "id": "pl_49",
+    "claim": "Polska może być w pełni samowystarczalna energetycznie dzięki odnawialnym źródłom energii",
+    "expected_match": "Pełna samowystarczalność energetyczna Polski oparta wyłącznie na OZE nie jest obecnie realistyczna bez magazynów energii i stabilnych źródeł bazowych",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/polska-samowystarczalnosc-oze-realne"
+  },
+  {
+    "id": "pl_50",
+    "claim": "Samochodami elektrycznymi nie da się normalnie jeździć po Polsce zimą",
+    "expected_match": "Zasięg samochodów elektrycznych spada w niskich temperaturach, ale jazda zimą jest możliwa przy odpowiednim planowaniu tras i ładowania",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/motoryzacja/samochody-elektryczne-zima-polska-st7654321"
+  },
+  {
+    "id": "pl_51",
+    "claim": "Emisja CO2 przez Polskę stanowi mniej niż 1 procent emisji światowej",
+    "expected_match": "Udział Polski w globalnej emisji CO2 wynosi ok. 0,9%, choć per capita Polska emituje więcej niż średnia światowa",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/emisje-co2-polski-udzial-w-swiatowych-emisjach/"
+  },
+  {
+    "id": "pl_52",
+    "claim": "Polska traci suwerenność przez członkostwo w Unii Europejskiej",
+    "expected_match": "Członkostwo w UE wiąże się z przekazaniem części kompetencji na poziom unijny, ale nie oznacza utraty suwerenności w rozumieniu prawa międzynarodowego",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/analizy_i_raporty/czy-polska-traci-suwerennosc-w-ue/"
+  },
+  {
+    "id": "pl_53",
+    "claim": "Fundusze europejskie trafiają głównie do bogatych krajów Unii Europejskiej",
+    "expected_match": "Polityka spójności UE jest skierowana przede wszystkim do regionów słabiej rozwiniętych; Polska jest jednym z największych beneficjentów funduszy",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/fundusze-europejskie-beneficjenci-ue-st7123456"
+  },
+  {
+    "id": "pl_54",
+    "claim": "Polska jest największym beneficjentem netto funduszy unijnych od 2004 roku",
+    "expected_match": "Od momentu wstąpienia do UE Polska jest jednym z największych beneficjentów netto funduszy europejskich",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/polska-beneficjent-funduszy-ue-od-2004-st7234567"
+  },
+  {
+    "id": "pl_55",
+    "claim": "Trybunał Sprawiedliwości UE nie ma jurysdykcji nad polskim prawem krajowym",
+    "expected_match": "Zgodnie z traktatami UE, TSUE ma jurysdykcję w zakresie prawa unijnego we wszystkich państwach członkowskich, w tym w Polsce",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/tsue-jurysdykcja-nad-polskim-prawem/"
+  },
+  {
+    "id": "pl_56",
+    "claim": "Krajowy Plan Odbudowy dla Polski został odblokowany w 2024 roku",
+    "expected_match": "Komisja Europejska odblokowała wypłaty z KPO dla Polski w 2024 roku po spełnieniu tzw. kamieni milowych",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/kpo-polska-odblokowanie-2024"
+  },
+  {
+    "id": "pl_57",
+    "claim": "Traktat lizboński daje każdemu państwu prawo do jednostronnego wystąpienia z UE",
+    "expected_match": "Artykuł 50 Traktatu o Unii Europejskiej przewiduje procedurę jednostronnego wystąpienia państwa członkowskiego z UE",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/swiat/artykul-50-traktat-lizbon-wystapienie-ue-st7345678"
+  },
+  {
+    "id": "pl_58",
+    "claim": "Większość Polaków opowiada się za referendum w sprawie wyjścia z Unii Europejskiej",
+    "expected_match": "Badania opinii publicznej nie potwierdzają, że większość Polaków chce referendum ws. wystąpienia z UE; poparcie dla członkostwa pozostaje wysokie",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/wiekszosc-polakow-chce-referendum-ws-wyjscia-z-ue-falsz/"
+  },
+  {
+    "id": "pl_59",
+    "claim": "Unia Europejska narzuca Polsce obowiązkowe kwoty relokacji uchodźców",
+    "expected_match": "Mechanizm solidarnościowy UE przewiduje różne formy wsparcia, w tym opcję kontrybucji finansowej zamiast relokacji; kwestia obowiązkowości kwot jest przedmiotem debaty",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/obowiazkowe-kwoty-relokacji-uchodzccow-w-ue/"
+  },
+  {
+    "id": "pl_60",
+    "claim": "Praworządność jest tylko pretekstem do karania Polski przez instytucje UE",
+    "expected_match": "Postępowania wobec Polski w ramach art. 7 i inne mechanizmy dotyczą konkretnych naruszeń zasad praworządności, nie są jedynie pretekstem",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/praworzadnosc-art-7-polska-pretekst"
+  },
+  {
+    "id": "pl_61",
+    "claim": "Polska wpłaca do budżetu UE więcej niż z niego otrzymuje",
+    "expected_match": "Polska od lat jest beneficjentem netto budżetu UE, czyli otrzymuje więcej funduszy niż wpłaca w formie składek",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/polska-skladki-do-ue-beneficjent-netto-st7456789"
+  },
+  {
+    "id": "pl_62",
+    "claim": "TSUE nałożył na Polskę karę milion euro dziennie za niewykonanie orzeczenia ws. Izby Dyscyplinarnej",
+    "expected_match": "TSUE nałożył na Polskę karę w wysokości 1 mln euro dziennie za niewykonanie postanowienia dotyczącego Izby Dyscyplinarnej SN",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/kara-milion-euro-dziennie-tsue-izba-dyscyplinarna/"
+  },
+  {
+    "id": "pl_63",
+    "claim": "Bruksela decyduje o podatkach w Polsce i narzuca stawki VAT",
+    "expected_match": "Polityka podatkowa pozostaje w kompetencji państw członkowskich, choć UE ustala minimalne stawki VAT; Bruksela nie narzuca konkretnych stawek podatkowych",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/bruksela-decyduje-o-podatkach-w-polsce-falsz/"
+  },
+  {
+    "id": "pl_64",
+    "claim": "Nowy Pakt o Migracji i Azylu zmusi Polskę do przyjmowania tysięcy migrantów",
+    "expected_match": "Pakt o Migracji i Azylu przewiduje mechanizm solidarności, ale państwa mogą wybrać między relokacją a wkładem finansowym",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/swiat/pakt-migracyjny-ue-polska-obowiazki-st8234567"
+  },
+  {
+    "id": "pl_65",
+    "claim": "Frekwencja w wyborach parlamentarnych 2023 roku przekroczyła 74 procent",
+    "expected_match": "Frekwencja w wyborach parlamentarnych 15 października 2023 r. wyniosła 74,38% i była najwyższa w historii III RP",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/frekwencja-wybory-2023-rekordowa/"
+  },
+  {
+    "id": "pl_66",
+    "claim": "PKW odmówiła zatwierdzenia sprawozdania finansowego komitetu wyborczego PiS",
+    "expected_match": "Państwowa Komisja Wyborcza odrzuciła sprawozdanie finansowe komitetu wyborczego PiS z wyborów parlamentarnych 2023",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/pkw-sprawozdanie-finansowe-pis-odrzucone-st8345678"
+  },
+  {
+    "id": "pl_67",
+    "claim": "Polscy eurodeputowani mają jedną z najniższych frekwencji w Parlamencie Europejskim",
+    "expected_match": "Frekwencja polskich eurodeputowanych w głosowaniach PE jest zróżnicowana i zależy od frakcji; nie jest jednoznacznie najniższa",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/frekwencja-polskich-eurodeputowanych-w-pe/"
+  },
+  {
+    "id": "pl_68",
+    "claim": "Rząd obiecał obniżkę składki zdrowotnej dla przedsiębiorców ale jej nie zrealizował",
+    "expected_match": "Kwestia reformy składki zdrowotnej jest przedmiotem debaty politycznej; zapowiedzi zmian pojawiały się wielokrotnie",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/skladka-zdrowotna-przedsiebiorcy-obietnice"
+  },
+  {
+    "id": "pl_69",
+    "claim": "Rząd Donalda Tuska zlikwidował instytucje zajmujące się zwalczaniem dezinformacji",
+    "expected_match": "Zmiany instytucjonalne w zakresie zwalczania dezinformacji po zmianie rządu są przedmiotem debaty; nie wszystkie instytucje zostały zlikwidowane",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/dezinformacja-instytucje-rzad-tusk-st8456789"
+  },
+  {
+    "id": "pl_70",
+    "claim": "Niemcy wypchnęli do Polski kilkanaście tysięcy nielegalnych migrantów w 2024 roku",
+    "expected_match": "Dane dotyczące przekazywania migrantów z Niemiec do Polski na mocy umów readmisyjnych nie potwierdzają skali kilkunastu tysięcy osób",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/niemcy-migranci-readmisja-do-polski/"
+  },
+  {
+    "id": "pl_71",
+    "claim": "Na granicy polsko-białoruskiej podczas kryzysu migracyjnego zginęło kilkadziesiąt osób",
+    "expected_match": "Organizacje pozarządowe i media potwierdzają przypadki zgonów na granicy polsko-białoruskiej, choć dokładna liczba jest trudna do zweryfikowania",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/granica-polsko-bialoruska-ofiary-kryzys"
+  },
+  {
+    "id": "pl_72",
+    "claim": "Migranci z Bliskiego Wschodu stanowią bezpośrednie zagrożenie terrorystyczne dla Polski",
+    "expected_match": "Służby bezpieczeństwa oceniają zagrożenie terrorystyczne w Polsce jako niskie; nie ma bezpośredniego związku między migracją a terroryzmem",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/migranci-zagrozenie-terrorystyczne-polska-falsz/"
+  },
+  {
+    "id": "pl_73",
+    "claim": "Straż Graniczna stosowała pushbacki wobec migrantów na granicy z Białorusią",
+    "expected_match": "Doniesienia medialne i raporty organizacji pozarządowych potwierdzają stosowanie pushbacków przez polską Straż Graniczną na granicy z Białorusią",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/pushbacki-granica-bialorus-straz-graniczna"
+  },
+  {
+    "id": "pl_74",
+    "claim": "Nielegalni imigranci w Polsce otrzymują wyższe świadczenia niż polscy emeryci",
+    "expected_match": "Nie jest prawdą, że cudzoziemcy bez legalnego pobytu otrzymują świadczenia wyższe niż emeryci; osoby bez legalnego statusu nie mają prawa do świadczeń socjalnych",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/imigranci-wyzsze-swiadczenia-niz-emeryci-falsz/"
+  },
+  {
+    "id": "pl_75",
+    "claim": "Strefa buforowa przy granicy z Białorusią objęła kilkaset miejscowości",
+    "expected_match": "Rozporządzenie o strefie buforowej przy granicy z Białorusią objęło 183 miejscowości w pasie przygranicznym",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/strefa-buforowa-granica-bialorus-miejscowosci-st7567890"
+  },
+  {
+    "id": "pl_76",
+    "claim": "Kryzys migracyjny na granicy polsko-białoruskiej był operacją hybrydową reżimu Łukaszenki",
+    "expected_match": "Instytucje UE i NATO uznały kryzys na granicy polsko-białoruskiej za element wojny hybrydowej prowadzonej przez reżim Łukaszenki",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/analizy_i_raporty/kryzys-na-granicy-operacja-hybrydowa-lukaszenki/"
+  },
+  {
+    "id": "pl_77",
+    "claim": "Polska przyjęła ponad milion ukraińskich uchodźców w pierwszym miesiącu po inwazji Rosji",
+    "expected_match": "W ciągu pierwszego miesiąca od inwazji Rosji na Ukrainę do Polski przybyło ponad milion uchodźców",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/uchodzcy-ukraina-polska-milion-pierwszy-miesiac-st7678901"
+  },
+  {
+    "id": "pl_78",
+    "claim": "Uchodźcy z Ukrainy masowo korzystają z polskiego systemu opieki społecznej",
+    "expected_match": "Uchodźcy z Ukrainy korzystają z części świadczeń w ramach ustawy o pomocy, ale skala korzystania z systemu opieki społecznej jest zróżnicowana",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/uchodzcy-ukraina-opieka-spoleczna-polska/"
+  },
+  {
+    "id": "pl_79",
+    "claim": "Imigranci zabierają pracę Polakom i obniżają płace na rynku pracy",
+    "expected_match": "Badania ekonomiczne nie potwierdzają, że imigracja prowadzi do istotnego spadku płac lub wzrostu bezrobocia wśród obywateli",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/imigranci-rynek-pracy-polska-mity"
+  },
+  {
+    "id": "pl_80",
+    "claim": "Budowa muru na granicy z Białorusią kosztowała ponad 1,6 miliarda złotych",
+    "expected_match": "Koszt budowy zapory na granicy polsko-białoruskiej wyniósł ponad 1,6 mld zł, co potwierdzają dane rządowe",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/mur-granica-bialorus-koszt-budowy-st7789012"
+  },
+  {
+    "id": "pl_81",
+    "claim": "Polska jest głównie krajem tranzytowym dla migrantów zmierzających do Europy Zachodniej",
+    "expected_match": "Polska pełni zarówno rolę kraju tranzytowego, jak i docelowego dla migrantów; sytuacja ewoluuje w ostatnich latach",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/polska-kraj-tranzytowy-migranci/"
+  },
+  {
+    "id": "pl_82",
+    "claim": "W polskich miastach istnieją islamskie strefy no-go, do których nie wchodzi policja",
+    "expected_match": "W Polsce nie istnieją tzw. strefy no-go kontrolowane przez społeczności muzułmańskie; jest to mit powielany w dezinformacji",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Fakenews.pl",
+    "expected_source_url": "https://fakenews.pl/spoleczenstwo/strefy-no-go-w-polskich-miastach-to-fake-news/"
+  },
+  {
+    "id": "pl_83",
+    "claim": "Liczba wniosków o azyl w Polsce dramatycznie wzrosła w 2024 roku",
+    "expected_match": "Liczba wniosków o ochronę międzynarodową w Polsce wykazuje wahania, ale dane nie potwierdzają dramatycznego skoku",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/wnioski-azylowe-polska-2024-statystyki-st8567890"
+  },
+  {
+    "id": "pl_84",
+    "claim": "Ukraina jest najbardziej skorumpowanym krajem w Europie i nie powinna dostawać pomocy wojskowej",
+    "expected_match": "Choć Ukraina ma problemy z korupcją, twierdzenie że jest najbardziej skorumpowanym krajem w Europie i nie zasługuje na pomoc jest uproszczeniem",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/ukraina-korupcja-pomoc-wojskowa-manipulacja/"
+  },
+  {
+    "id": "pl_85",
+    "claim": "Polska przekazała Ukrainie więcej broni niż jakiekolwiek inne państwo europejskie",
+    "expected_match": "Polska jest jednym z kluczowych europejskich dawców pomocy wojskowej dla Ukrainy, ale różne rankingi pokazują zmienną kolejność krajów",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/polska-pomoc-wojskowa-ukraina-ranking/"
+  },
+  {
+    "id": "pl_86",
+    "claim": "Polscy żołnierze oficjalnie walczą na froncie na Ukrainie",
+    "expected_match": "Nie ma dowodów ani oficjalnych potwierdzeń udziału polskich żołnierzy w walkach na Ukrainie",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/polscy-zolnierze-walcza-na-ukrainie-falsz/"
+  },
+  {
+    "id": "pl_87",
+    "claim": "Spór o Wołyń poważnie zagraża sojuszowi polsko-ukraińskiemu",
+    "expected_match": "Kwestia Wołynia jest wrażliwym tematem w relacjach polsko-ukraińskich, ale nie blokuje współpracy strategicznej i wojskowej",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/wolyn-relacje-polsko-ukrainskie-sojusz"
+  },
+  {
+    "id": "pl_88",
+    "claim": "Rosja nigdy nie zaatakuje kraju należącego do NATO",
+    "expected_match": "Eksperci ds. bezpieczeństwa ostrzegają, że nie można wykluczyć różnych form agresji Rosji wobec państw NATO, w tym działań hybrydowych",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/rosja-atak-nato-prawdopodobienstwo/"
+  },
+  {
+    "id": "pl_89",
+    "claim": "Ukraińskie zboże zalało polski rynek i doprowadziło do ruiny polskich rolników",
+    "expected_match": "Import ukraińskiego zboża wpłynął na polski rynek rolny, ale skala problemu i jego konsekwencje są przedmiotem debaty",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/ukrainskie-zboze-polski-rynek-rolnicy"
+  },
+  {
+    "id": "pl_90",
+    "claim": "Polska wydaje ponad 4 procent PKB na obronność i jest liderem NATO",
+    "expected_match": "Polska zwiększyła wydatki obronne do poziomu powyżej 4% PKB, stając się jednym z liderów NATO pod względem udziału wydatków obronnych w PKB",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/wydatki-obronne-polska-4-procent-pkb/"
+  },
+  {
+    "id": "pl_91",
+    "claim": "Rosyjska dezinformacja aktywnie funkcjonuje w polskich mediach społecznościowych",
+    "expected_match": "Raporty służb i ośrodków badawczych potwierdzają obecność rosyjskiej dezinformacji w polskiej przestrzeni informacyjnej",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/rosyjska-dezinformacja-polska-media-spolecznosciowe"
+  },
+  {
+    "id": "pl_92",
+    "claim": "Polscy przewoźnicy zablokowali kilka przejść granicznych z Ukrainą protestując przeciw konkurencji",
+    "expected_match": "Na przełomie 2023 i 2024 roku polscy przewoźnicy protestowali na przejściach granicznych z Ukrainą, blokując ruch towarowy",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/blokada-granicy-z-ukraina-przewoznicy-protest-st8123457"
+  },
+  {
+    "id": "pl_93",
+    "claim": "Banderowcy z UPA stanowią współczesne zagrożenie dla Polski ze strony Ukrainy",
+    "expected_match": "Twierdzenie o współczesnym zagrożeniu ze strony UPA/banderowców nie ma podstaw; organizacja przestała istnieć dekady temu",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/fake_news/banderowcy-wspolczesne-zagrozenie-dla-polski-falsz/"
+  },
+  {
+    "id": "pl_94",
+    "claim": "Paliwo w Polsce jest najdroższe w całej Europie",
+    "expected_match": "Ceny paliw w Polsce należą do niższych w Europie Zachodniej, choć są wyższe niż w niektórych krajach Europy Wschodniej",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/ceny-paliw-polska-europa-porownanie-st8234568"
+  },
+  {
+    "id": "pl_95",
+    "claim": "Sztuczna inteligencja zabierze pracę większości Polaków w ciągu dekady",
+    "expected_match": "Wpływ AI na rynek pracy jest przedmiotem debaty; prognozy wskazują na transformację, ale nie masowe bezrobocie",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/analizy_i_raporty/sztuczna-inteligencja-rynek-pracy-polska/"
+  },
+  {
+    "id": "pl_96",
+    "claim": "Polska jest jednym z najbezpieczniejszych krajów w Europie pod względem przestępczości",
+    "expected_match": "Według statystyk Eurostatu Polska należy do krajów europejskich o relatywnie niskim wskaźniku przestępczości",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "Demagog",
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/polska-bezpieczenstwo-przestepczosc-w-europie/"
+  },
+  {
+    "id": "pl_97",
+    "claim": "Złoty polski jest najsłabszą walutą w regionie Europy Środkowej",
+    "expected_match": "Złoty polski nie jest najsłabszą walutą w regionie; jego kurs jest stabilny na tle walut innych krajów Europy Środkowej",
+    "expected_stance": "REFUTED",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/zloty-najslabsza-waluta-regionu-falsz-st8345679"
+  },
+  {
+    "id": "pl_98",
+    "claim": "Program 800 plus przyczynia się do istotnego wzrostu dzietności w Polsce",
+    "expected_match": "Wpływ programu 800+ na dzietność jest przedmiotem badań; krótkoterminowy wzrost urodzeń po wprowadzeniu programu nie przełożył się na trwały trend",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "OKO.press",
+    "expected_source_url": "https://oko.press/800-plus-dzietnosc-polska-skutecznosc"
+  },
+  {
+    "id": "pl_99",
+    "claim": "Polska służba zdrowia ma rekordowo długie kolejki do specjalistów na tle Unii Europejskiej",
+    "expected_match": "Czas oczekiwania do specjalistów w Polsce jest jednym z dłuższych w UE, ale porównania międzynarodowe zależą od metodologii",
+    "expected_stance": "NEI",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/zdrowie/kolejki-do-lekarzy-polska-ue-porownanie-st8456790"
+  },
+  {
+    "id": "pl_100",
+    "claim": "Minimalne wynagrodzenie w Polsce przekroczyło 4600 złotych brutto w 2025 roku",
+    "expected_match": "Od stycznia 2025 r. minimalne wynagrodzenie za pracę w Polsce wynosi 4666 zł brutto",
+    "expected_stance": "SUPPORTED",
+    "language": "pl",
+    "source": "Konkret24",
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/wynagrodzenie-minimalne-2025-kwota-st8567891"
   }
 ]

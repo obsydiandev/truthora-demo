@@ -140,8 +140,8 @@ class Reranker:
 
             label_map = {
                 0: StanceLabel.REFUTED,    # contradiction
-                1: StanceLabel.NEI,        # neutral
-                2: StanceLabel.SUPPORTED,  # entailment
+                1: StanceLabel.SUPPORTED,  # entailment
+                2: StanceLabel.NEI,        # neutral
             }
 
             predicted_idx = int(np.argmax(probs))

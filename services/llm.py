@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import asyncio
 import json
 import logging
 import os
@@ -67,23 +68,38 @@ class LLMClient:
             messages.append({"role": "system", "content": system_prompt})
         messages.append({"role": "user", "content": prompt})
 
+        max_retries = 6
+        base_delay = 3.0
+
         async with httpx.AsyncClient(timeout=60) as client:
-            resp = await client.post(
-                f"{self._base_url}/chat/completions",
-                headers={
-                    "Authorization": f"Bearer {self._api_key}",
-                    "Content-Type": "application/json",
-                },
-                json={
-                    "model": self._model,
-                    "messages": messages,
-                    "temperature": temperature,
-                    "max_tokens": max_tokens,
-                },
-            )
-            resp.raise_for_status()
-            data = resp.json()
-            return data["choices"][0]["message"]["content"]
+            for attempt in range(max_retries + 1):
+                resp = await client.post(
+                    f"{self._base_url}/chat/completions",
+                    headers={
+                        "Authorization": f"Bearer {self._api_key}",
+                        "Content-Type": "application/json",
+                    },
+                    json={
+                        "model": self._model,
+                        "messages": messages,
+                        "temperature": temperature,
+                        "max_tokens": max_tokens,
+                    },
+                )
+                if resp.status_code == 429 and attempt < max_retries:
+                    retry_after = resp.headers.get("retry-after")
+                    if retry_after:
+                        wait = float(retry_after)
+                    else:
+                        wait = base_delay * (2 ** attempt)
+                    logger.warning("Groq 429 — retrying in %.1fs (attempt %d/%d)", wait, attempt + 1, max_retries)
+                    await asyncio.sleep(wait)
+                    continue
+                resp.raise_for_status()
+                data = resp.json()
+                return data["choices"][0]["message"]["content"]
+
+        raise httpx.HTTPStatusError("Max retries exceeded", request=resp.request, response=resp)
 
     async def _call_ollama(
         self,

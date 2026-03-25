@@ -45,16 +45,15 @@ services:
     env_file:
       - .env
     depends_on:
-      - api
+      qdrant:
+        condition: service_healthy
     volumes:
       - .:/app
       - hf_cache:/root/.cache/huggingface
     command: >
       python3 data/benchmark/evaluate.py
-      --run-pipeline
+      --direct
       --verbose
-      --api-url http://api:8000
-      --delay 2.5
       --output data/benchmark/results/baseline_v01.json
 
 volumes:

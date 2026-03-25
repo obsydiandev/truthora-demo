@@ -32,18 +32,33 @@ SEED_QUERIES = [
     ("flat earth", "en"),
     # Polish
     ("szczepionki covid", "pl"),
+    ("szczepionki mRNA bezpieczeństwo", "pl"),
     ("inflacja polska 2024", "pl"),
     ("migranci polska przestępczość", "pl"),
     ("węgiel Polska energia", "pl"),
+    ("OZE Polska fotowoltaika wiatr", "pl"),
     ("wybory Polska fałszerstwo", "pl"),
     ("Polska UE Polexit", "pl"),
+    ("Polska fundusze europejskie", "pl"),
+    ("Ukraina Polska pomoc wojskowa", "pl"),
+    ("granica białoruś migranci", "pl"),
+    ("dezinformacja rosyjska Polska", "pl"),
+    ("KPO Krajowy Plan Odbudowy", "pl"),
+    ("elektrownia jądrowa Polska", "pl"),
     # Ukrainian
     ("Україна НАТО", "uk"),
     ("зерно Україна експорт", "uk"),
     ("Росія Україна дезінформація", "uk"),
+    ("Крим анексія референдум", "uk"),
+    ("Україна ЄС вступ кандидат", "uk"),
+    ("біолабораторії Пентагон Україна", "uk"),
+    ("санкції Росія ефективність", "uk"),
+    ("енергетика Україна обстріли", "uk"),
+    ("мобілізація Україна закон", "uk"),
+    ("Зеленський опозиція ЗМІ", "uk"),
 ]
 
-BROAD_LANGUAGES = ["en", "pl"]
+BROAD_LANGUAGES = ["en", "pl", "uk"]
 
 
 async def ingest() -> int:

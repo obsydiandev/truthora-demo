@@ -10,11 +10,443 @@
   },
   {
     "id": "ua_02",
-    "claim": "Україна нещодавно підписала нову угоду про вільну торгівлю з Європейським Союзом",
-    "expected_match": "Україна підписала нову угоду з ЄС про вільну торгівлю",
+    "claim": "Україна продає сільськогосподарські землі іноземним корпораціям",
+    "expected_match": "Закон про ринок землі в Україні забороняє продаж землі іноземцям; твердження про масовий продаж є фейком",
+    "expected_stance": "REFUTED",
+    "language": "ua",
+    "source": "StopFake UA",
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-ukrayina-prodaye-zemlyu-inozemnym-korporatsiyam/"
+  },
+  {
+    "id": "ua_03",
+    "claim": "НАТО розширюється спеціально до кордонів росії та оточило її військовими базами",
+    "expected_match": "Вступ до НАТО є добровільним, і немає стратегії навмисного розширення Альянсу саме до кордонів росії",
+    "expected_stance": "REFUTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/manipulyatsiya-nato-rozshyryuyetsya-do-kordoniv-rosiyi-ta-otochylo-rosiyu-voyennymy-bazamy"
+  },
+  {
+    "id": "ua_04",
+    "claim": "Майбутній канцлер Німеччини виступив проти вступу України до НАТО",
+    "expected_match": "Твердження, що майбутній канцлер Німеччини виступив проти вступу України до НАТО, є маніпуляцією; йшлося про неможливість вступу під час війни",
+    "expected_stance": "REFUTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/manipulyatsiya-majbutnij-kantsler-nimechchyny-vystupyv-proty-vstupu-ukrayiny-do-nato"
+  },
+  {
+    "id": "ua_05",
+    "claim": "Країни НАТО зобов'язались витрачати 5% ВВП саме на закупівлю американської зброї",
+    "expected_match": "Країни НАТО обговорюють витрати на оборону, але не існує вимоги витрачати ці кошти виключно на закупівлю зброї у США",
+    "expected_stance": "REFUTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/manipulyatsiya-krayiny-nato-zobovyazalys-vytrachaty-5-vvp-na-zakupivlyu-zbroyi-ssha"
+  },
+  {
+    "id": "ua_06",
+    "claim": "Україна ніколи не зможе вступити до ЄС через високий рівень корупції",
+    "expected_match": "Корупція є серйозною проблемою, але не є абсолютною перешкодою для вступу до ЄС; реформи тривають",
+    "expected_stance": "REFUTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/ukrayina-ye-zanadto-koruptovanoyu-dlya-vstupu-do-yes-manipulyatsiya"
+  },
+  {
+    "id": "ua_07",
+    "claim": "Європейський Союз повністю відмовився від фінансової підтримки України",
+    "expected_match": "ЄС продовжує надавати фінансову та військову допомогу Україні; твердження про повну відмову є фейком",
+    "expected_stance": "REFUTED",
+    "language": "ua",
+    "source": "StopFake UA",
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-yes-vidmovyvsya-vid-pidtrymky-ukrayiny/"
+  },
+  {
+    "id": "ua_08",
+    "claim": "Безвізовий режим з ЄС дозволяє українцям працювати в Європі без обмежень",
+    "expected_match": "Безвізовий режим дозволяє перебування до 90 днів, але не дає права на працевлаштування без додаткових дозволів",
+    "expected_stance": "NEI",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/bezvizovyj-rezhym-yes-pratsevlashtuvannya-ukrayintsiv"
+  },
+  {
+    "id": "ua_09",
+    "claim": "Захід нав'язує Україні свої цінності та ідеологію в обмін на фінансову допомогу",
+    "expected_match": "Умови фінансової допомоги стосуються реформ та стандартів управління, а не ідеологічного тиску",
+    "expected_stance": "NEI",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/manipulyatsiya-zahid-navyazuye-ukrayini-svoyi-tsinnosti"
+  },
+  {
+    "id": "ua_10",
+    "claim": "Україна отримала офіційний статус кандидата в члени ЄС у червні 2022 року",
+    "expected_match": "23 червня 2022 р. Європейська Рада надала Україні статус кандидата в члени ЄС",
+    "expected_stance": "SUPPORTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/ukrayina-otrymala-status-kandydata-v-chleny-yes"
+  },
+  {
+    "id": "ua_11",
+    "claim": "Угода про асоціацію з ЄС значно збільшила обсяги українського експорту",
+    "expected_match": "Після набуття чинності Угоди про асоціацію обсяги торгівлі між Україною та ЄС зросли",
+    "expected_stance": "SUPPORTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/ugoda-pro-asotsiatsiyu-eksport-ukrayiny-do-yes"
+  },
+  {
+    "id": "ua_12",
+    "claim": "НАТО відмовилось надати Україні план дій щодо членства у 2008 році під тиском Росії",
+    "expected_match": "На саміті в Бухаресті 2008 р. НАТО не надало Україні ПДЧ, але причини включали позиції Німеччини та Франції, а не лише тиск Росії",
+    "expected_stance": "NEI",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/samit-nato-2008-bukarest-ukrayina-pdch"
+  },
+  {
+    "id": "ua_13",
+    "claim": "Абсолютна більшість українців підтримують вступ до Європейського Союзу",
+    "expected_match": "Опитування показують стабільно високу підтримку вступу України до ЄС серед громадян",
+    "expected_stance": "SUPPORTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/pidtrymka-ukrayintsiv-vstup-do-yes-opytuvannya"
+  },
+  {
+    "id": "ua_14",
+    "claim": "Вступ України до НАТО автоматично втягне Альянс у війну з Росією",
+    "expected_match": "Вступ до НАТО не означає автоматичного залучення у поточний конфлікт; стаття 5 стосується нападу на члена Альянсу",
+    "expected_stance": "REFUTED",
+    "language": "ua",
+    "source": "StopFake UA",
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-vstup-ukrayiny-do-nato-avtomatychno-vtyagne-alyans-u-vijnu/"
+  },
+  {
+    "id": "ua_15",
+    "claim": "ЄС виділив Україні 50 мільярдів євро макрофінансової допомоги",
+    "expected_match": "У лютому 2024 р. ЄС ухвалив пакет макрофінансової допомоги Україні на 50 млрд євро",
+    "expected_stance": "SUPPORTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/yes-50-mlrd-yevro-makrofinansova-dopomoha-ukrayini"
+  },
+  {
+    "id": "ua_16",
+    "claim": "Росія була змушена напасти на Україну через загрозу з боку НАТО",
+    "expected_match": "НАТО є оборонним альянсом і не становило загрози для Росії; вторгнення в Україну було актом агресії",
+    "expected_stance": "REFUTED",
+    "language": "ua",
+    "source": "StopFake UA",
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-rosiya-bula-zmushena-napasty-na-ukrayinu-cherez-nato/"
+  },
+  {
+    "id": "ua_17",
+    "claim": "Збройні сили України масово здаються в полон і відмовляються воювати",
+    "expected_match": "Твердження про масову здачу в полон ЗСУ є частиною російської інформаційної кампанії і не відповідає дійсності",
+    "expected_stance": "REFUTED",
+    "language": "ua",
+    "source": "StopFake UA",
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-zsu-masovo-zdayutsya-v-polon/"
+  },
+  {
+    "id": "ua_18",
+    "claim": "Захід постачає зброю Україні лише заради продовження війни та заробітку на конфлікті",
+    "expected_match": "Військова допомога Заходу спрямована на захист суверенітету України; мотиви включають безпеку, а не лише комерційні інтереси",
+    "expected_stance": "NEI",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/manipulyatsiya-zahid-postachaye-zbroyu-zarady-prodovzhennya-vijny"
+  },
+  {
+    "id": "ua_19",
+    "claim": "Санкції проти Росії не працюють і шкодять лише європейській економіці",
+    "expected_match": "Санкції мають обмежений, але реальний вплив на економіку Росії; їх ефективність оцінюється неоднозначно",
+    "expected_stance": "NEI",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/sanktsii-proty-rosiyi-efektyvnist-analiz"
+  },
+  {
+    "id": "ua_20",
+    "claim": "Україна масово використовує касетні боєприпаси проти мирного населення",
+    "expected_match": "Твердження про масове використання Україною касетних боєприпасів проти цивільних є фейком; Україна застосовує їх по військових цілях",
+    "expected_stance": "REFUTED",
+    "language": "ua",
+    "source": "StopFake UA",
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-ukrayina-vykorystovuye-kasetni-boyeprypasy-proty-tsyvilnyh/"
+  },
+  {
+    "id": "ua_21",
+    "claim": "В Україні функціонують секретні біологічні лабораторії Пентагону",
+    "expected_match": "В Україні немає секретних біолабораторій Пентагону; програма Нанна-Лугара є відкритою і спрямована на біобезпеку",
+    "expected_stance": "REFUTED",
+    "language": "ua",
+    "source": "StopFake UA",
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-v-ukrayini-pracyuyut-sekretni-biolaboratoriyi-pentagonu/"
+  },
+  {
+    "id": "ua_22",
+    "claim": "Росія повністю знищила всі стратегічні резерви Збройних сил України",
+    "expected_match": "Заяви про повне знищення резервів ЗСУ є елементом російської пропаганди і не відповідають дійсності",
+    "expected_stance": "REFUTED",
+    "language": "ua",
+    "source": "StopFake UA",
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-rosiya-znyshchyla-vsi-rezervy-zsu/"
+  },
+  {
+    "id": "ua_23",
+    "claim": "Мінські угоди порушувала виключно Україна, а не Росія",
+    "expected_match": "Обидві сторони порушували Мінські угоди; твердження про виключну відповідальність України є маніпуляцією",
+    "expected_stance": "REFUTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/manipulyatsiya-minski-ugody-porushuvala-lyshe-ukrayina"
+  },
+  {
+    "id": "ua_24",
+    "claim": "Крим добровільно і легітимно приєднався до Росії за результатами референдуму 2014 року",
+    "expected_match": "Референдум у Криму 2014 р. був проведений з порушенням міжнародного права і під російською окупацією; він не визнаний міжнародною спільнотою",
+    "expected_stance": "REFUTED",
+    "language": "ua",
+    "source": "StopFake UA",
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-krym-dobrovilno-pryyednavsya-do-rosiyi/"
+  },
+  {
+    "id": "ua_25",
+    "claim": "Україна обстрілює власні міста і звинувачує в цьому Росію",
+    "expected_match": "Незалежні розслідування, супутникові знімки та дані ООН підтверджують, що обстріли цивільних об'єктів здійснює Росія",
+    "expected_stance": "REFUTED",
+    "language": "ua",
+    "source": "StopFake UA",
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-ukrayina-obstrilyuye-vlasni-mista/"
+  },
+  {
+    "id": "ua_26",
+    "claim": "Зеленський заборонив усі опозиційні партії та незалежні ЗМІ в Україні",
+    "expected_match": "Заборонено партії, пов'язані з Росією; інші опозиційні сили та ЗМІ продовжують працювати, хоча є обмеження воєнного часу",
+    "expected_stance": "NEI",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/zelenskyj-zaboronyv-opozytsiyu-ta-zmi-manipulyatsiya"
+  },
+  {
+    "id": "ua_27",
+    "claim": "Західна зброя масово перепродається на чорному ринку з України",
+    "expected_match": "Немає підтверджених доказів масового перепродажу західної зброї з України; контроль здійснюється спільно з партнерами",
+    "expected_stance": "REFUTED",
+    "language": "ua",
+    "source": "StopFake UA",
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-zahidna-zbroya-pereprodayetsya-z-ukrayiny-na-chornomu-rynku/"
+  },
+  {
+    "id": "ua_28",
+    "claim": "Росія заздалегідь попередила мирне населення про початок вторгнення",
+    "expected_match": "Росія не попереджала мирне населення; повномасштабне вторгнення було раптовим для цивільних громадян",
+    "expected_stance": "REFUTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/fejk-rosiya-poperedyla-pro-vtorgnennya"
+  },
+  {
+    "id": "ua_29",
+    "claim": "Україна в результаті російської агресії втратила близько 20 відсотків своєї території",
+    "expected_match": "Після 2022 р. Росія окупує близько 18-20% території України, включаючи Крим та частини Донбасу, Запоріжжя та Херсонщини",
+    "expected_stance": "SUPPORTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/skilky-terytoriyi-ukrayiny-okupovano-rosiyeyu"
+  },
+  {
+    "id": "ua_30",
+    "claim": "Міжнародний кримінальний суд видав ордер на арешт Путіна за воєнні злочини",
+    "expected_match": "У березні 2023 р. МКС видав ордер на арешт Путіна за незаконну депортацію українських дітей",
+    "expected_stance": "SUPPORTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/mks-order-na-aresht-putina-voyenni-zlochyny"
+  },
+  {
+    "id": "ua_31",
+    "claim": "Війна в Україні стала причиною глобальної продовольчої кризи",
+    "expected_match": "Блокування українських портів та знищення зернової інфраструктури вплинули на глобальні ціни на продовольство",
+    "expected_stance": "SUPPORTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/vijna-v-ukrayini-globalna-prodovolcha-kryza"
+  },
+  {
+    "id": "ua_32",
+    "claim": "Зернова угода допомогла знизити світові ціни на продовольство",
+    "expected_match": "Чорноморська зернова ініціатива сприяла зниженню цін на зерно та продовольство на глобальних ринках",
+    "expected_stance": "SUPPORTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/chornomorska-zernova-initsiatyva-efektyvnist"
+  },
+  {
+    "id": "ua_33",
+    "claim": "Росія систематично використовує енергоресурси як геополітичну зброю проти Європи",
+    "expected_match": "Аналіз показує, що Росія неодноразово використовувала газ та нафту як інструмент тиску на європейські країни",
+    "expected_stance": "SUPPORTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/rosiya-energoresursy-geopolitychna-zbroya"
+  },
+  {
+    "id": "ua_34",
+    "claim": "Кількість загиблих серед мирного населення в Україні перевищила 10 тисяч осіб",
+    "expected_match": "ООН підтверджує загибель понад 10 тис. цивільних в Україні, зазначаючи що реальні цифри можуть бути значно вищими",
+    "expected_stance": "SUPPORTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/zhertvy-sered-tsyvilnyh-v-ukrayini-dani-oon"
+  },
+  {
+    "id": "ua_35",
+    "claim": "Росія систематично завдає ударів по цивільній енергетичній інфраструктурі України",
+    "expected_match": "Росія протягом зими 2022-2023 та 2023-2024 цілеспрямовано атакувала енергетичну інфраструктуру України",
+    "expected_stance": "SUPPORTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/rosiya-atakuye-energetychnu-infrastrukturu-ukrayiny"
+  },
+  {
+    "id": "ua_36",
+    "claim": "Інфляція в Україні досягла 26 відсотків у 2022 році",
+    "expected_match": "За даними НБУ, інфляція в Україні у 2022 році становила 26,6%, що є наслідком повномасштабного вторгнення",
+    "expected_stance": "SUPPORTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/inflyatsiya-ukrayina-2022-dani-nbu"
+  },
+  {
+    "id": "ua_37",
+    "claim": "Економіка України скоротилась на третину у 2022 році через війну",
+    "expected_match": "ВВП України скоротився на 29,1% у 2022 році за даними Держстату; масштаби близькі до третини",
+    "expected_stance": "NEI",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/ekonomika-ukrayiny-2022-vvp-spadinnya"
+  },
+  {
+    "id": "ua_38",
+    "claim": "Україна повністю залежна від західної фінансової допомоги і не має власних доходів",
+    "expected_match": "Хоча міжнародна допомога є значною, Україна продовжує збирати податки та має власні бюджетні надходження",
+    "expected_stance": "NEI",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/ukrayina-zalezhna-vid-zahidnoyi-dopomohy-manipulyatsiya"
+  },
+  {
+    "id": "ua_39",
+    "claim": "Середня зарплата в Україні є найнижчою серед усіх європейських країн",
+    "expected_match": "Середня зарплата в Україні є однією з найнижчих у Європі, але не є абсолютно найнижчою",
+    "expected_stance": "NEI",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/serednya-zarplata-ukrayina-yevropejski-krayiny"
+  },
+  {
+    "id": "ua_40",
+    "claim": "Україна має одні з найбільших запасів літію в Європі",
+    "expected_match": "Геологічні дані підтверджують наявність значних запасів літію в Україні, особливо в Донецькій та Запорізькій областях",
+    "expected_stance": "SUPPORTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/zapasy-litiyu-v-ukrayini-resurs-dlya-majbutnoho"
+  },
+  {
+    "id": "ua_41",
+    "claim": "Енергосистема України зруйнована на 80 відсотків внаслідок російських обстрілів",
+    "expected_match": "Масштаби пошкоджень енергосистеми значні, але оцінки коливаються залежно від періоду та джерела даних",
     "expected_stance": "NEI",
     "language": "ua",
     "source": "StopFake UA",
-    "expected_source_url": "https://www.stopfake.org/uk/example/eu-trade"
+    "expected_source_url": "https://www.stopfake.org/uk/energosystema-ukrayiny-masshtaby-ruynuvan/"
+  },
+  {
+    "id": "ua_42",
+    "claim": "Відновлювана енергетика може повністю замінити атомну енергію в Україні",
+    "expected_match": "Повна заміна атомної енергетики на ВДЕ в Україні наразі не є реалістичною без значних інвестицій у зберігання та мережі",
+    "expected_stance": "NEI",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/vidnovlyuvana-energetyka-zamist-atomnoyi-ukrayina"
+  },
+  {
+    "id": "ua_43",
+    "claim": "Транзит російського газу через Україну повністю припинився з 2025 року",
+    "expected_match": "Контракт на транзит газу через Україну завершився 1 січня 2025 р., і транзит фактично припинився",
+    "expected_stance": "SUPPORTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/tranzyt-gazu-cherez-ukrayinu-2025"
+  },
+  {
+    "id": "ua_44",
+    "claim": "Україна є найбільшим виробником соняшникової олії у світі",
+    "expected_match": "Україна та Росія є найбільшими виробниками соняшникової олії у світі; Україна стабільно входить до першої двійки",
+    "expected_stance": "SUPPORTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/ukrayina-vyrobnytstvo-sonyashnykovoyi-oliyi"
+  },
+  {
+    "id": "ua_45",
+    "claim": "Корупція суттєво знижує ефективність іноземної допомоги Україні",
+    "expected_match": "Ризики корупції існують, але міжнародні механізми контролю та аудиту допомагають мінімізувати їх вплив",
+    "expected_stance": "NEI",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/koruptsiya-efektyvnist-inozemnoyi-dopomohy-ukrayini"
+  },
+  {
+    "id": "ua_46",
+    "claim": "Більшість українських біженців не бажають повертатися на батьківщину",
+    "expected_match": "Опитування показують різні результати; значна частина біженців планує повернутися, але багато залежить від безпекової ситуації",
+    "expected_stance": "NEI",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/ukrayinski-bizhentsi-plany-povernennya"
+  },
+  {
+    "id": "ua_47",
+    "claim": "Україна переживає демографічну катастрофу через війну та еміграцію",
+    "expected_match": "Війна та міграція значно вплинули на демографію, але масштаби наслідків ще оцінюються",
+    "expected_stance": "NEI",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/demografichna-kryza-ukrayina-vijna-emihratsiya"
+  },
+  {
+    "id": "ua_48",
+    "claim": "Українська мова є лише діалектом російської мови і не є самостійною",
+    "expected_match": "Українська мова є окремою слов'янською мовою з власною граматикою, лексикою та багатовіковою літературною традицією",
+    "expected_stance": "REFUTED",
+    "language": "ua",
+    "source": "StopFake UA",
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-ukrayinska-mova-tse-dialekt-rosijskoyi/"
+  },
+  {
+    "id": "ua_49",
+    "claim": "Україна є лідером у Європі за рівнем цифровізації державних послуг",
+    "expected_match": "Додаток «Дія» став одним з найуспішніших прикладів цифровізації в Європі, хоча Україна не є абсолютним лідером у всіх показниках",
+    "expected_stance": "SUPPORTED",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/tsyfrovizatsiya-ukrayiny-diya-dosyagnennya"
+  },
+  {
+    "id": "ua_50",
+    "claim": "Закон про мобілізацію грубо порушує права людини в Україні",
+    "expected_match": "Закон про мобілізацію є предметом дискусій; він містить обмеження, але відповідає нормам воєнного стану",
+    "expected_stance": "NEI",
+    "language": "ua",
+    "source": "VoxUkraine",
+    "expected_source_url": "https://voxukraine.org/zakon-pro-mobilizatsiyu-prava-lyudyny-analiz"
   }
 ]

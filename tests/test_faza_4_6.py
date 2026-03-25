@@ -200,7 +200,7 @@ class TestGoldenPairsData:
         path = Path(__file__).resolve().parent.parent / "data" / "benchmark" / "golden_pairs_en.json"
         with open(path, encoding="utf-8") as f:
             pairs = json.load(f)
-        assert len(pairs) == 95
+        assert len(pairs) == 100
         for pair in pairs:
             assert "id" in pair
             assert "claim" in pair
@@ -213,7 +213,7 @@ class TestGoldenPairsData:
         path = Path(__file__).resolve().parent.parent / "data" / "benchmark" / "golden_pairs_pl.json"
         with open(path, encoding="utf-8") as f:
             pairs = json.load(f)
-        assert len(pairs) == 17
+        assert len(pairs) == 100
         for pair in pairs:
             assert pair["language"] == "pl"
             assert pair["expected_stance"] in ("SUPPORTED", "REFUTED", "NEI")
@@ -222,14 +222,14 @@ class TestGoldenPairsData:
         path = Path(__file__).resolve().parent.parent / "data" / "benchmark" / "golden_pairs_ua.json"
         with open(path, encoding="utf-8") as f:
             pairs = json.load(f)
-        assert len(pairs) == 2
+        assert len(pairs) == 50
         for pair in pairs:
             assert pair["language"] == "ua"
             assert pair["expected_stance"] in ("SUPPORTED", "REFUTED", "NEI")
 
     def test_total_pairs_255(self):
         pairs = load_golden_pairs()
-        assert len(pairs) == 114
+        assert len(pairs) == 250
 
 
 class TestBenchmarkMetrics:

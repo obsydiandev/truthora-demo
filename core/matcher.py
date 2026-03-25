@@ -93,6 +93,46 @@ class ClaimMatcher:
         self._qdrant = qdrant_service or QdrantService()
         self._reranker = Reranker()
 
+    # Map fact-checker verdicts to stance labels
+    _RATING_MAP: dict[str, StanceLabel] = {
+        # English
+        "false": StanceLabel.REFUTED,
+        "mostly false": StanceLabel.REFUTED,
+        "pants on fire": StanceLabel.REFUTED,
+        "fake": StanceLabel.REFUTED,
+        "incorrect": StanceLabel.REFUTED,
+        "true": StanceLabel.SUPPORTED,
+        "mostly true": StanceLabel.SUPPORTED,
+        "correct": StanceLabel.SUPPORTED,
+        "misleading": StanceLabel.NEI,
+        "mixture": StanceLabel.NEI,
+        "unproven": StanceLabel.NEI,
+        # Polish
+        "fałsz": StanceLabel.REFUTED,
+        "nieprawda": StanceLabel.REFUTED,
+        "manipulacja": StanceLabel.REFUTED,
+        "prawda": StanceLabel.SUPPORTED,
+        "blisko prawdy": StanceLabel.NEI,
+        "półprawda": StanceLabel.NEI,
+        # Direct stance labels
+        "refuted": StanceLabel.REFUTED,
+        "supported": StanceLabel.SUPPORTED,
+        "nei": StanceLabel.NEI,
+    }
+
+    def _resolve_stance(
+        self,
+        claim_text: str,
+        evidence_text: str,
+        review_rating: str | None,
+    ) -> tuple[StanceLabel, float]:
+        """Determine stance from review_rating if available, else NLI."""
+        if review_rating:
+            key = review_rating.strip().lower()
+            if key in self._RATING_MAP:
+                return self._RATING_MAP[key], 0.9
+        return self._reranker.classify_stance(claim_text, evidence_text)
+
     async def match(self, claim: Claim, top_k: int = 10) -> ClaimResult:
         """Find matching fact-checks for a claim.
 
@@ -153,9 +193,9 @@ class ClaimMatcher:
             badge = get_freshness_badge(published_at)
             claim_reviewed = payload.get("claim_text", "")
 
-            # NLI stance classification
-            stance, nli_confidence = self._reranker.classify_stance(
-                claim.claim_text, claim_reviewed,
+            # Stance: prefer fact-checker's review_rating, fall back to NLI
+            stance, nli_confidence = self._resolve_stance(
+                claim.claim_text, claim_reviewed, payload.get("review_rating"),
             )
 
             final_score = compute_final_score(

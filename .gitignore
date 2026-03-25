@@ -47,3 +47,4 @@ models/
 .pytest_cache/
 htmlcov/
 .coverage
+data/seeds/test_api.py

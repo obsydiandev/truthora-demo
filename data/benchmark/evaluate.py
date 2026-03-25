@@ -18,6 +18,15 @@ try:
 except ImportError:
     HAS_HTTPX = False
 
+try:
+    import sys as _sys
+    _sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
+    from api.schemas import Claim, CheckworthinessScore
+    from core.matcher import ClaimMatcher
+    HAS_DIRECT = True
+except ImportError:
+    HAS_DIRECT = False
+
 BENCHMARK_DIR = Path(__file__).resolve().parent
 GOLDEN_PAIRS_FILES = [
     ("EN", BENCHMARK_DIR / "golden_pairs_en.json"),
@@ -161,6 +170,30 @@ def _token_overlap(a: str, b: str) -> float:
     return len(tokens_a & tokens_b) / len(tokens_a | tokens_b)
 
 
+def _score_matches(
+    top_k_matches: list[dict[str, Any]],
+    expected_match: str,
+    expected_url: str,
+    k: int,
+) -> tuple[bool, int, str]:
+    """Check if expected match is in top-K and return (found, rank, predicted_stance)."""
+    found_in_top_k = False
+    rank = 0
+    for i, match in enumerate(top_k_matches[:k], start=1):
+        if expected_url and _url_match(expected_url, match.get("matched_url", "")):
+            found_in_top_k = True
+            rank = i
+            break
+        overlap = _token_overlap(expected_match, match.get("claim_reviewed", ""))
+        if overlap >= 0.15:
+            found_in_top_k = True
+            rank = i
+            break
+
+    predicted_stance = top_k_matches[0].get("stance", "NEI") if top_k_matches else "NEI"
+    return found_in_top_k, rank, predicted_stance
+
+
 async def _evaluate_pair(
     client: "httpx.AsyncClient",
     semaphore: "asyncio.Semaphore",
@@ -204,21 +237,9 @@ async def _evaluate_pair(
     all_matches.sort(key=lambda x: x.get("final_score", 0.0), reverse=True)
     top_k = all_matches[:k]
 
-    # URL match (primary) → Jaccard fallback (threshold 0.15)
-    found_in_top_k = False
-    rank = 0
-    for i, match in enumerate(top_k, start=1):
-        if expected_url and _url_match(expected_url, match.get("matched_url", "")):
-            found_in_top_k = True
-            rank = i
-            break
-        overlap = _token_overlap(expected_match, match.get("claim_reviewed", ""))
-        if overlap >= 0.15:
-            found_in_top_k = True
-            rank = i
-            break
-
-    predicted_stance = top_k[0].get("stance", "NEI") if top_k else "NEI"
+    found_in_top_k, rank, predicted_stance = _score_matches(
+        top_k, expected_match, expected_url, k,
+    )
 
     if verbose:
         hit_mark = "✅" if found_in_top_k else "❌"
@@ -328,10 +349,138 @@ def run_pipeline_evaluation(
     }
 
 
+def run_direct_evaluation(
+    pairs: list[dict[str, Any]],
+    verbose: bool = False,
+    k: int = 5,
+) -> dict[str, Any]:
+    """Run evaluation directly against the matching pipeline (no LLM/API needed)."""
+    if not HAS_DIRECT:
+        print("❌ Direct mode requires running inside the app container.")
+        sys.exit(1)
+
+    print(f"🚀 Evaluating {len(pairs)} pairs directly (k={k})…")
+    t0 = time.perf_counter()
+
+    matcher = ClaimMatcher()
+    pair_results: list[dict[str, Any]] = []
+
+    for pair in pairs:
+        pair_id = pair["id"]
+        expected_match = pair["expected_match"]
+        expected_stance = pair["expected_stance"]
+        expected_url = pair.get("expected_source_url", "")
+
+        lang = pair.get("language", "en")
+
+        claim = Claim(
+            claim_id=pair_id,
+            claim_text=pair["claim"],
+            source_quote=pair["claim"],
+            char_start=0,
+            char_end=len(pair["claim"]),
+            language=lang,
+            has_negation=False,
+            checkworthiness=CheckworthinessScore(
+                harm_potential=0.5,
+                virality_potential=0.5,
+                verifiability=0.8,
+                specificity=0.7,
+                public_interest=0.5,
+                composite=0.6,
+            ),
+        )
+
+        try:
+            result = asyncio.get_event_loop().run_until_complete(matcher.match(claim, top_k=k * 2))
+        except RuntimeError:
+            result = asyncio.run(matcher.match(claim, top_k=k * 2))
+
+        matches = [
+            {
+                "matched_url": m.matched_url,
+                "claim_reviewed": m.claim_reviewed,
+                "stance": m.stance.value if hasattr(m.stance, "value") else m.stance,
+                "final_score": m.final_score,
+            }
+            for m in result.matches
+        ]
+
+        found_in_top_k, rank, predicted_stance = _score_matches(
+            matches, expected_match, expected_url, k,
+        )
+
+        if verbose:
+            hit_mark = "✅" if found_in_top_k else "❌"
+            lang_group = pair.get("_lang_group", "?")
+            print(
+                f"  {hit_mark} [{lang_group}] {pair_id}: "
+                f"rank={rank if found_in_top_k else '-'}, "
+                f"stance exp={expected_stance} pred={predicted_stance}"
+            )
+
+        pair_results.append({
+            "id": pair_id,
+            "_lang_group": pair.get("_lang_group", "?"),
+            "expected_stance": expected_stance,
+            "predicted_stance": predicted_stance,
+            "found_in_top_k": found_in_top_k,
+            "rank": rank,
+        })
+
+    elapsed = time.perf_counter() - t0
+
+    by_lang: dict[str, list[dict[str, Any]]] = {}
+    for r in pair_results:
+        lang_r = r.get("_lang_group", "?")
+        by_lang.setdefault(lang_r, []).append(r)
+
+    def lang_metrics(results: list[dict[str, Any]]) -> dict[str, Any]:
+        return {
+            "recall_at_k": round(compute_recall_at_k(results, k), 4),
+            "mrr": round(compute_mrr(results), 4),
+            "stance_f1": {k2: round(v, 4) for k2, v in compute_stance_f1(results).items()},
+            "n": len(results),
+            "errors": sum(1 for r in results if "error" in r),
+        }
+
+    overall = lang_metrics(pair_results)
+    per_language = {lang_l: lang_metrics(res) for lang_l, res in sorted(by_lang.items())}
+
+    targets = {
+        "recall_at_5": TARGET_RECALL_AT_5,
+        "mrr": TARGET_MRR,
+        "stance_f1": TARGET_STANCE_F1,
+    }
+
+    passed = {
+        "recall_at_5": overall["recall_at_k"] >= TARGET_RECALL_AT_5,
+        "mrr": overall["mrr"] >= TARGET_MRR,
+        "stance_f1": overall["stance_f1"].get("macro_f1", 0.0) >= TARGET_STANCE_F1,
+    }
+
+    return {
+        "meta": {
+            "version": "v0.1",
+            "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+            "mode": "direct",
+            "k": k,
+            "elapsed_s": round(elapsed, 2),
+            "total_pairs": len(pairs),
+        },
+        "targets": targets,
+        "overall": overall,
+        "per_language": per_language,
+        "targets_passed": passed,
+        "pair_results": pair_results,
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description="Truthora Benchmark Evaluation")
     parser.add_argument("--verbose", "-v", action="store_true", help="Verbose output")
     parser.add_argument("--run-pipeline", action="store_true", help="Run evaluation against live pipeline")
+    parser.add_argument("--direct", action="store_true", help="Run direct evaluation (bypasses API/LLM, tests matching pipeline only)")
     parser.add_argument("--api-url", default="http://localhost:8000", help="API base URL (default: http://localhost:8000)")
     parser.add_argument("--k", type=int, default=5, help="Recall@K cutoff (default: 5)")
     parser.add_argument("--concurrency", type=int, default=1, help="Concurrent API requests (default: 1)")
@@ -386,15 +535,22 @@ def main():
     print()
 
     # ── Pipeline evaluation ────────────────────────────────────────────────────
-    if args.run_pipeline:
-        pipeline_results = run_pipeline_evaluation(
-            pairs=pairs,
-            api_url=args.api_url,
-            verbose=args.verbose,
-            k=args.k,
-            concurrency=args.concurrency,
-            delay=args.delay,
-        )
+    if args.run_pipeline or args.direct:
+        if args.direct:
+            pipeline_results = run_direct_evaluation(
+                pairs=pairs,
+                verbose=args.verbose,
+                k=args.k,
+            )
+        else:
+            pipeline_results = run_pipeline_evaluation(
+                pairs=pairs,
+                api_url=args.api_url,
+                verbose=args.verbose,
+                k=args.k,
+                concurrency=args.concurrency,
+                delay=args.delay,
+            )
 
         overall = pipeline_results["overall"]
         per_lang = pipeline_results["per_language"]

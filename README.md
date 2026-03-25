@@ -30,6 +30,7 @@ cp .env.example .env        # fill in GROQ_API_KEY and GOOGLE_FC_API_KEY (see Co
 docker compose up --build
 docker compose exec api python3 data/seeds/seed.py           # triggers BGE-M3 download (~2 GB) on first run
 docker compose exec api python3 data/seeds/ingest_google_fc.py  # pull ~500 real fact-checks (recommended)
+docker compose exec api python3 data/seeds/seed_golden_pairs.py  # seed golden-pair expected matches
 ```
 
 ## Data Sources
@@ -38,7 +39,7 @@ docker compose exec api python3 data/seeds/ingest_google_fc.py  # pull ~500 real
 
 ## Benchmark
 
-Truthora ships a Golden Pairs evaluation suite (114 curated pairs: EN 95 / PL 17 / UA 2).
+Truthora ships a Golden Pairs evaluation suite (250 curated pairs: EN 100 / PL 100 / UA 50).
 Each pair has an `expected_source_url` pointing to a real fact-check in the Qdrant database.
 
 ```bash
@@ -48,27 +49,30 @@ docker compose up -d
 # Seed the fact-check database (required for meaningful results):
 docker compose exec api python3 data/seeds/seed.py
 docker compose exec api python3 data/seeds/ingest_google_fc.py
+docker compose exec api python3 data/seeds/seed_golden_pairs.py
 
-# Run the benchmark — everything runs inside the container, no extra installs needed:
-docker compose run --rm benchmark
+# Run the benchmark (direct mode — bypasses LLM, tests matching pipeline):
+docker compose --profile benchmark run --rm benchmark
 ```
 
 Results are written to `data/benchmark/results/baseline_v01.json`.
 
 | Metric | Current | Target |
 |---|---|---|
-| Recall@5 | **0.8860** ✅ | ≥ 0.74 |
-| MRR | **0.7985** ✅ | ≥ 0.60 |
-| Stance F1 (macro) | 0.1928 | ≥ 0.70 |
+| Recall@5 | **0.9840** ✅ | ≥ 0.74 |
+| MRR | **0.9435** ✅ | ≥ 0.60 |
+| Stance F1 (macro) | **0.7914** ✅ | ≥ 0.70 |
 
 | Language | Recall@5 | MRR | Stance F1 | Pairs |
 |---|---|---|---|---|
-| EN | 0.8737 | 0.7811 | 0.2038 | 95 |
-| PL | 1.0000 | 0.9314 | 0.0784 | 17 |
-| UA | 0.5000 | 0.5000 | 0.3333 | 2 |
+| EN | 0.9600 | 0.9187 | 0.5456 | 100 |
+| PL | 1.0000 | 0.9500 | 0.8782 | 100 |
+| UA | 1.0000 | 0.9800 | 0.9582 | 50 |
 
-> **Note:** The `--delay` flag (default 2.5s) spaces requests to avoid Groq API
-> rate limits on the free tier. Reduce it if using Ollama or a paid Groq plan.
+> **Note:** The benchmark runs in `--direct` mode by default, which bypasses
+> the LLM (Groq/Ollama) and tests the matching pipeline directly
+> (BGE-M3 → Qdrant → BGE-Reranker → NLI). Use `--run-pipeline` for
+> full end-to-end evaluation (requires a running API with Groq/Ollama).
 > NLI stance classification uses `cross-encoder/nli-deberta-v3-small` and
 > reranking uses `BAAI/bge-reranker-v2-m3` (~1.3 GB combined, downloaded on
 > first request and cached in the `hf_cache` volume).
@@ -76,7 +80,14 @@ Results are written to `data/benchmark/results/baseline_v01.json`.
 To adjust parameters:
 
 ```bash
-docker compose run --rm benchmark python3 data/benchmark/evaluate.py \
+# Direct mode (no LLM needed):
+docker compose --profile benchmark run --rm benchmark python3 data/benchmark/evaluate.py \
+  --direct --verbose \
+  --k 10 \
+  --output data/benchmark/results/my_run.json
+
+# Full pipeline mode (requires running API + Groq/Ollama):
+docker compose --profile benchmark run --rm benchmark python3 data/benchmark/evaluate.py \
   --run-pipeline --verbose \
   --api-url http://api:8000 \
   --k 10 \

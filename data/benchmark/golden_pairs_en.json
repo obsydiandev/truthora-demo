@@ -6,7 +6,7 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "Full Fact",
-    "expected_source_url": "https://fullfact.org/example/vaccines-infertility"
+    "expected_source_url": "https://fullfact.org/health/covid-vaccine-infertility/"
   },
   {
     "id": "en_02",
@@ -853,5 +853,50 @@
     "language": "en",
     "source": "Factcheck.bg",
     "expected_source_url": "https://factcheck.bg/en/politicheck-it-is-not-true-that-gmo-is-legally-grown-in-ukraine-or-that-the-land-is-owned-by-american-companies/"
+  },
+  {
+    "id": "en_96",
+    "claim": "NATO allies have significantly increased their defense spending since Russia invaded Ukraine",
+    "expected_match": "NATO allies have boosted defense spending, with most members now meeting or exceeding the 2% of GDP target after Russia's invasion of Ukraine.",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "Reuters Fact Check",
+    "expected_source_url": "https://www.reuters.com/world/europe/nato-allies-ramp-up-defence-spending-russia-threat-looms-2024-02-14/"
+  },
+  {
+    "id": "en_97",
+    "claim": "Russia uses social media bots to spread disinformation about the war in Ukraine",
+    "expected_match": "Russia has deployed coordinated inauthentic behavior on social media platforms to spread disinformation about the war in Ukraine.",
+    "expected_stance": "SUPPORTED",
+    "language": "en",
+    "source": "AFP Fact Check",
+    "expected_source_url": "https://factcheck.afp.com/doc.afp.com.33TU8BA"
+  },
+  {
+    "id": "en_98",
+    "claim": "Wind turbines kill more birds every year than fossil fuel power plants",
+    "expected_match": "Wind turbines do kill birds, but far fewer than fossil fuel power plants, cats, and buildings.",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Full Fact",
+    "expected_source_url": "https://fullfact.org/environment/wind-turbines-birds/"
+  },
+  {
+    "id": "en_99",
+    "claim": "The European Parliament elections in 2024 saw the highest voter turnout among young people ever recorded",
+    "expected_match": "Youth turnout in the 2024 European Parliament elections rose compared to 2019 but claims of record-high youth participation lack full verification.",
+    "expected_stance": "NEI",
+    "language": "en",
+    "source": "Full Fact",
+    "expected_source_url": "https://fullfact.org/europe/european-parliament-elections-2024-turnout/"
+  },
+  {
+    "id": "en_100",
+    "claim": "Immigrants are responsible for the majority of violent crime in European cities",
+    "expected_match": "The claim that immigrants are responsible for most violent crime in Europe is not supported by available data.",
+    "expected_stance": "REFUTED",
+    "language": "en",
+    "source": "Full Fact",
+    "expected_source_url": "https://fullfact.org/immigration/immigration-and-crime-what-do-we-know/"
   }
 ]
