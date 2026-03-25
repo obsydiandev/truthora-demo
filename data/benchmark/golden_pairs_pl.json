@@ -6,7 +6,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/wdrozenie-5g-ma-zwiazek-z-pandemia-covid-19-fake-news/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/wdrozenie-5g-ma-zwiazek-z-pandemia-covid-19-fake-news/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_02",
@@ -15,7 +16,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/polska/inflacja-w-styczniu-2025-dane-gus-st8240796"
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/inflacja-w-styczniu-2025-dane-gus-st8240796",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_03",
@@ -24,7 +26,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Fakenews.pl",
-    "expected_source_url": "https://fakenews.pl/srodowisko/wegiel-brunatny-nie-jest-najtanszym-zrodlem-energii-w-polsce/"
+    "expected_source_url": "https://fakenews.pl/srodowisko/wegiel-brunatny-nie-jest-najtanszym-zrodlem-energii-w-polsce/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_04",
@@ -33,7 +36,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/energia-elektryczna-z-wegla-tylko-w-polsce-falsz/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/energia-elektryczna-z-wegla-tylko-w-polsce-falsz/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_05",
@@ -42,7 +46,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/jak-duze-jest-poparcie-polakow-dla-wyjscia-z-unii-europejskiej/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/jak-duze-jest-poparcie-polakow-dla-wyjscia-z-unii-europejskiej/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_06",
@@ -51,7 +56,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-na-covid-19-nie-byly-badane-to-nie-slowa-z-europarlamentu/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-na-covid-19-nie-byly-badane-to-nie-slowa-z-europarlamentu/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_07",
@@ -60,7 +66,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/teorie-spiskowe-wokol-covid-19-sprawdzamy-film-z-wojciechem-cejrowskim/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/teorie-spiskowe-wokol-covid-19-sprawdzamy-film-z-wojciechem-cejrowskim/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_08",
@@ -69,7 +76,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/mentzen-energetyka-wegiel-ets"
+    "expected_source_url": "https://oko.press/mentzen-energetyka-wegiel-ets",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_09",
@@ -78,7 +86,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/przestepstwa-obcokrajowcow-ich-liczba-gwaltownie-wzrosla-za-rzadow-po/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/przestepstwa-obcokrajowcow-ich-liczba-gwaltownie-wzrosla-za-rzadow-po/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_10",
@@ -87,7 +96,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/wegiel-tani-minister-wojcik"
+    "expected_source_url": "https://oko.press/wegiel-tani-minister-wojcik",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_11",
@@ -96,7 +106,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/witczak-i-placzek-twierdza-ze-szczepienia-zwiekszaja-ryzyko-raka-skad-wzieli-te-dane/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/witczak-i-placzek-twierdza-ze-szczepienia-zwiekszaja-ryzyko-raka-skad-wzieli-te-dane/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_12",
@@ -105,7 +116,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-mrna-wywoluja-raka-szkodliwy-fake-news-powraca/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-mrna-wywoluja-raka-szkodliwy-fake-news-powraca/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_13",
@@ -114,7 +126,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/przypadek-turbo-raka-po-szczepieniu-na-covid-19-czy-to-prawda/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/przypadek-turbo-raka-po-szczepieniu-na-covid-19-czy-to-prawda/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_14",
@@ -123,7 +136,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/polexit-suwerenna-polska"
+    "expected_source_url": "https://oko.press/polexit-suwerenna-polska",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_15",
@@ -132,7 +146,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/miliony-polakow-otrzymalo-trucizne-jak-dezinformuje-lukasz-andryszczak/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/miliony-polakow-otrzymalo-trucizne-jak-dezinformuje-lukasz-andryszczak/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_16",
@@ -141,7 +156,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/inflacja-wina-tuska-prad-wina-tuska-pis-znow-stracil-pamiec"
+    "expected_source_url": "https://oko.press/inflacja-wina-tuska-prad-wina-tuska-pis-znow-stracil-pamiec",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_17",
@@ -150,7 +166,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/tylko-polska-wydobywa-w-europie-wegiel-sytuacja-wyglada-inaczej/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/tylko-polska-wydobywa-w-europie-wegiel-sytuacja-wyglada-inaczej/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_18",
@@ -159,7 +176,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-niebezpieczniejsze-niz-covid-19-fake-news/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-niebezpieczniejsze-niz-covid-19-fake-news/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_19",
@@ -168,7 +186,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-przeciw-covid-19-nie-zawieraja-toksyn/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-przeciw-covid-19-nie-zawieraja-toksyn/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_20",
@@ -177,7 +196,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/rzady-manipuluja-statystykami-by-ukryc-powiklania-zaszczepionych-falsz/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/rzady-manipuluja-statystykami-by-ukryc-powiklania-zaszczepionych-falsz/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_21",
@@ -186,7 +206,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-przeciw-covid-19-nie-sa-szczepionkami-fake-news/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-przeciw-covid-19-nie-sa-szczepionkami-fake-news/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_22",
@@ -195,7 +216,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/szczepienia-na-covid-19-do-2023-roku-uznawano-za-eksperyment-falsz/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/szczepienia-na-covid-19-do-2023-roku-uznawano-za-eksperyment-falsz/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_23",
@@ -204,7 +226,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/czy-szczepionki-sa-nieprzebadane-i-niebezpieczne-fake-news/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/czy-szczepionki-sa-nieprzebadane-i-niebezpieczne-fake-news/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_24",
@@ -213,7 +236,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/covid-19-to-zaplanowana-depopulacja-fake-news/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/covid-19-to-zaplanowana-depopulacja-fake-news/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_25",
@@ -222,7 +246,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/oze-rekord-wrzesien-wegiel"
+    "expected_source_url": "https://oko.press/oze-rekord-wrzesien-wegiel",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_26",
@@ -231,7 +256,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/wegiel-energetyka-doplaty-wzrosna"
+    "expected_source_url": "https://oko.press/wegiel-energetyka-doplaty-wzrosna",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_27",
@@ -240,7 +266,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/polska-od-wegla-juz-w-latach-30"
+    "expected_source_url": "https://oko.press/polska-od-wegla-juz-w-latach-30",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_28",
@@ -249,7 +276,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/maseczki-nie-chronia-przed-wirusami-to-nieprawda/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/maseczki-nie-chronia-przed-wirusami-to-nieprawda/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_29",
@@ -258,7 +286,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/zdrowie/lockdowny-a-covid-skutecznosc-ograniczen-st7894521"
+    "expected_source_url": "https://konkret24.tvn24.pl/zdrowie/lockdowny-a-covid-skutecznosc-ograniczen-st7894521",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_30",
@@ -267,7 +296,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/zdrowie/who-koniec-pandemii-covid-19-maj-2023-st7654320"
+    "expected_source_url": "https://konkret24.tvn24.pl/zdrowie/who-koniec-pandemii-covid-19-maj-2023-st7654320",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_31",
@@ -276,7 +306,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/nadmiarowe-zgony-polska-pandemia-eurostat"
+    "expected_source_url": "https://oko.press/nadmiarowe-zgony-polska-pandemia-eurostat",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_32",
@@ -285,7 +316,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/zdrowie/szczepienia-covid-polska-statystyki-st7543210"
+    "expected_source_url": "https://konkret24.tvn24.pl/zdrowie/szczepienia-covid-polska-statystyki-st7543210",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_33",
@@ -294,7 +326,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/odpornosc-naturalna-lepsza-od-szczepionkowej-to-uproszczenie/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/odpornosc-naturalna-lepsza-od-szczepionkowej-to-uproszczenie/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_34",
@@ -303,7 +336,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/polska/elektrownia-jadrowa-polska-harmonogram-st8012345"
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/elektrownia-jadrowa-polska-harmonogram-st8012345",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_35",
@@ -312,7 +346,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/wiatraki-zabijaja-miliony-ptakow-to-manipulacja/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/wiatraki-zabijaja-miliony-ptakow-to-manipulacja/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_36",
@@ -321,7 +356,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/fotowoltaika-polska-naslonecznienie-mit"
+    "expected_source_url": "https://oko.press/fotowoltaika-polska-naslonecznienie-mit",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_37",
@@ -330,7 +366,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/oze-tansze-niz-wegiel-koszty-energii"
+    "expected_source_url": "https://oko.press/oze-tansze-niz-wegiel-koszty-energii",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_38",
@@ -339,7 +376,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/swiat/niemcy-wegiel-atom-powrot-st7890123"
+    "expected_source_url": "https://konkret24.tvn24.pl/swiat/niemcy-wegiel-atom-powrot-st7890123",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_39",
@@ -348,7 +386,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/emisje-co2-per-capita-polska-na-tle-ue/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/emisje-co2-per-capita-polska-na-tle-ue/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_40",
@@ -357,7 +396,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/zielony-lad-rolnictwo-polska-skutki"
+    "expected_source_url": "https://oko.press/zielony-lad-rolnictwo-polska-skutki",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_41",
@@ -366,7 +406,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/transformacja-energetyczna-miejsca-pracy"
+    "expected_source_url": "https://oko.press/transformacja-energetyczna-miejsca-pracy",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_42",
@@ -375,7 +416,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/polska/rachunki-za-prad-2024-wzrost-cen-st8123456"
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/rachunki-za-prad-2024-wzrost-cen-st8123456",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_43",
@@ -384,7 +426,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/potencjal-geotermalny-polski-fakty/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/potencjal-geotermalny-polski-fakty/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_44",
@@ -393,7 +436,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Fakenews.pl",
-    "expected_source_url": "https://fakenews.pl/zdrowie/infra-dzwieki-z-wiatrakow-nie-szkodza-zdrowiu/"
+    "expected_source_url": "https://fakenews.pl/zdrowie/infra-dzwieki-z-wiatrakow-nie-szkodza-zdrowiu/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_45",
@@ -402,7 +446,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/pakt-klimatyczny-spisek-przeciw-polsce-falsz/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/pakt-klimatyczny-spisek-przeciw-polsce-falsz/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_46",
@@ -411,7 +456,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/ets-co2-ceny-energii-polska"
+    "expected_source_url": "https://oko.press/ets-co2-ceny-energii-polska",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_47",
@@ -420,7 +466,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/polska/baltic-pipe-gaz-norwegia-polska-st8012367"
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/baltic-pipe-gaz-norwegia-polska-st8012367",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_48",
@@ -429,7 +476,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/wiatraki-powoduja-choroby-to-nie-jest-potwierdzone/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/wiatraki-powoduja-choroby-to-nie-jest-potwierdzone/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_49",
@@ -438,7 +486,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/polska-samowystarczalnosc-oze-realne"
+    "expected_source_url": "https://oko.press/polska-samowystarczalnosc-oze-realne",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_50",
@@ -447,7 +496,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/motoryzacja/samochody-elektryczne-zima-polska-st7654321"
+    "expected_source_url": "https://konkret24.tvn24.pl/motoryzacja/samochody-elektryczne-zima-polska-st7654321",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_51",
@@ -456,7 +506,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/emisje-co2-polski-udzial-w-swiatowych-emisjach/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/emisje-co2-polski-udzial-w-swiatowych-emisjach/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_52",
@@ -465,7 +516,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/analizy_i_raporty/czy-polska-traci-suwerennosc-w-ue/"
+    "expected_source_url": "https://demagog.org.pl/analizy_i_raporty/czy-polska-traci-suwerennosc-w-ue/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_53",
@@ -474,7 +526,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/polska/fundusze-europejskie-beneficjenci-ue-st7123456"
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/fundusze-europejskie-beneficjenci-ue-st7123456",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_54",
@@ -483,7 +536,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/polska/polska-beneficjent-funduszy-ue-od-2004-st7234567"
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/polska-beneficjent-funduszy-ue-od-2004-st7234567",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_55",
@@ -492,7 +546,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/tsue-jurysdykcja-nad-polskim-prawem/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/tsue-jurysdykcja-nad-polskim-prawem/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_56",
@@ -501,7 +556,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/kpo-polska-odblokowanie-2024"
+    "expected_source_url": "https://oko.press/kpo-polska-odblokowanie-2024",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_57",
@@ -510,7 +566,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/swiat/artykul-50-traktat-lizbon-wystapienie-ue-st7345678"
+    "expected_source_url": "https://konkret24.tvn24.pl/swiat/artykul-50-traktat-lizbon-wystapienie-ue-st7345678",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_58",
@@ -519,7 +576,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/wiekszosc-polakow-chce-referendum-ws-wyjscia-z-ue-falsz/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/wiekszosc-polakow-chce-referendum-ws-wyjscia-z-ue-falsz/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_59",
@@ -528,7 +586,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/obowiazkowe-kwoty-relokacji-uchodzccow-w-ue/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/obowiazkowe-kwoty-relokacji-uchodzccow-w-ue/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_60",
@@ -537,7 +596,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/praworzadnosc-art-7-polska-pretekst"
+    "expected_source_url": "https://oko.press/praworzadnosc-art-7-polska-pretekst",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_61",
@@ -546,7 +606,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/polska/polska-skladki-do-ue-beneficjent-netto-st7456789"
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/polska-skladki-do-ue-beneficjent-netto-st7456789",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_62",
@@ -555,7 +616,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/kara-milion-euro-dziennie-tsue-izba-dyscyplinarna/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/kara-milion-euro-dziennie-tsue-izba-dyscyplinarna/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_63",
@@ -564,7 +626,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/bruksela-decyduje-o-podatkach-w-polsce-falsz/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/bruksela-decyduje-o-podatkach-w-polsce-falsz/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_64",
@@ -573,7 +636,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/swiat/pakt-migracyjny-ue-polska-obowiazki-st8234567"
+    "expected_source_url": "https://konkret24.tvn24.pl/swiat/pakt-migracyjny-ue-polska-obowiazki-st8234567",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_65",
@@ -582,7 +646,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/frekwencja-wybory-2023-rekordowa/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/frekwencja-wybory-2023-rekordowa/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_66",
@@ -591,7 +656,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/polska/pkw-sprawozdanie-finansowe-pis-odrzucone-st8345678"
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/pkw-sprawozdanie-finansowe-pis-odrzucone-st8345678",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_67",
@@ -600,7 +666,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/frekwencja-polskich-eurodeputowanych-w-pe/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/frekwencja-polskich-eurodeputowanych-w-pe/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_68",
@@ -609,7 +676,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/skladka-zdrowotna-przedsiebiorcy-obietnice"
+    "expected_source_url": "https://oko.press/skladka-zdrowotna-przedsiebiorcy-obietnice",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_69",
@@ -618,7 +686,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/polska/dezinformacja-instytucje-rzad-tusk-st8456789"
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/dezinformacja-instytucje-rzad-tusk-st8456789",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_70",
@@ -627,7 +696,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/niemcy-migranci-readmisja-do-polski/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/niemcy-migranci-readmisja-do-polski/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_71",
@@ -636,7 +706,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/granica-polsko-bialoruska-ofiary-kryzys"
+    "expected_source_url": "https://oko.press/granica-polsko-bialoruska-ofiary-kryzys",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_72",
@@ -645,7 +716,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/migranci-zagrozenie-terrorystyczne-polska-falsz/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/migranci-zagrozenie-terrorystyczne-polska-falsz/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_73",
@@ -654,7 +726,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/pushbacki-granica-bialorus-straz-graniczna"
+    "expected_source_url": "https://oko.press/pushbacki-granica-bialorus-straz-graniczna",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_74",
@@ -663,7 +736,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/imigranci-wyzsze-swiadczenia-niz-emeryci-falsz/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/imigranci-wyzsze-swiadczenia-niz-emeryci-falsz/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_75",
@@ -672,7 +746,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/polska/strefa-buforowa-granica-bialorus-miejscowosci-st7567890"
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/strefa-buforowa-granica-bialorus-miejscowosci-st7567890",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_76",
@@ -681,7 +756,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/analizy_i_raporty/kryzys-na-granicy-operacja-hybrydowa-lukaszenki/"
+    "expected_source_url": "https://demagog.org.pl/analizy_i_raporty/kryzys-na-granicy-operacja-hybrydowa-lukaszenki/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_77",
@@ -690,7 +766,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/polska/uchodzcy-ukraina-polska-milion-pierwszy-miesiac-st7678901"
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/uchodzcy-ukraina-polska-milion-pierwszy-miesiac-st7678901",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_78",
@@ -699,7 +776,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/uchodzcy-ukraina-opieka-spoleczna-polska/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/uchodzcy-ukraina-opieka-spoleczna-polska/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_79",
@@ -708,7 +786,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/imigranci-rynek-pracy-polska-mity"
+    "expected_source_url": "https://oko.press/imigranci-rynek-pracy-polska-mity",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_80",
@@ -717,7 +796,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/polska/mur-granica-bialorus-koszt-budowy-st7789012"
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/mur-granica-bialorus-koszt-budowy-st7789012",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_81",
@@ -726,7 +806,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/polska-kraj-tranzytowy-migranci/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/polska-kraj-tranzytowy-migranci/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_82",
@@ -735,7 +816,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Fakenews.pl",
-    "expected_source_url": "https://fakenews.pl/spoleczenstwo/strefy-no-go-w-polskich-miastach-to-fake-news/"
+    "expected_source_url": "https://fakenews.pl/spoleczenstwo/strefy-no-go-w-polskich-miastach-to-fake-news/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_83",
@@ -744,7 +826,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/polska/wnioski-azylowe-polska-2024-statystyki-st8567890"
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/wnioski-azylowe-polska-2024-statystyki-st8567890",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_84",
@@ -753,7 +836,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/ukraina-korupcja-pomoc-wojskowa-manipulacja/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/ukraina-korupcja-pomoc-wojskowa-manipulacja/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_85",
@@ -762,7 +846,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/polska-pomoc-wojskowa-ukraina-ranking/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/polska-pomoc-wojskowa-ukraina-ranking/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_86",
@@ -771,7 +856,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/polscy-zolnierze-walcza-na-ukrainie-falsz/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/polscy-zolnierze-walcza-na-ukrainie-falsz/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_87",
@@ -780,7 +866,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/wolyn-relacje-polsko-ukrainskie-sojusz"
+    "expected_source_url": "https://oko.press/wolyn-relacje-polsko-ukrainskie-sojusz",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_88",
@@ -789,7 +876,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/rosja-atak-nato-prawdopodobienstwo/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/rosja-atak-nato-prawdopodobienstwo/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_89",
@@ -798,7 +886,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/ukrainskie-zboze-polski-rynek-rolnicy"
+    "expected_source_url": "https://oko.press/ukrainskie-zboze-polski-rynek-rolnicy",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_90",
@@ -807,7 +896,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/wydatki-obronne-polska-4-procent-pkb/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/wydatki-obronne-polska-4-procent-pkb/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_91",
@@ -816,7 +906,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/rosyjska-dezinformacja-polska-media-spolecznosciowe"
+    "expected_source_url": "https://oko.press/rosyjska-dezinformacja-polska-media-spolecznosciowe",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_92",
@@ -825,7 +916,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/polska/blokada-granicy-z-ukraina-przewoznicy-protest-st8123457"
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/blokada-granicy-z-ukraina-przewoznicy-protest-st8123457",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_93",
@@ -834,7 +926,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/fake_news/banderowcy-wspolczesne-zagrozenie-dla-polski-falsz/"
+    "expected_source_url": "https://demagog.org.pl/fake_news/banderowcy-wspolczesne-zagrozenie-dla-polski-falsz/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_94",
@@ -843,7 +936,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/polska/ceny-paliw-polska-europa-porownanie-st8234568"
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/ceny-paliw-polska-europa-porownanie-st8234568",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_95",
@@ -852,7 +946,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/analizy_i_raporty/sztuczna-inteligencja-rynek-pracy-polska/"
+    "expected_source_url": "https://demagog.org.pl/analizy_i_raporty/sztuczna-inteligencja-rynek-pracy-polska/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_96",
@@ -861,7 +956,8 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Demagog",
-    "expected_source_url": "https://demagog.org.pl/wypowiedzi/polska-bezpieczenstwo-przestepczosc-w-europie/"
+    "expected_source_url": "https://demagog.org.pl/wypowiedzi/polska-bezpieczenstwo-przestepczosc-w-europie/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_97",
@@ -870,7 +966,8 @@
     "expected_stance": "REFUTED",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/polska/zloty-najslabsza-waluta-regionu-falsz-st8345679"
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/zloty-najslabsza-waluta-regionu-falsz-st8345679",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_98",
@@ -879,7 +976,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "OKO.press",
-    "expected_source_url": "https://oko.press/800-plus-dzietnosc-polska-skutecznosc"
+    "expected_source_url": "https://oko.press/800-plus-dzietnosc-polska-skutecznosc",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_99",
@@ -888,7 +986,8 @@
     "expected_stance": "NEI",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/zdrowie/kolejki-do-lekarzy-polska-ue-porownanie-st8456790"
+    "expected_source_url": "https://konkret24.tvn24.pl/zdrowie/kolejki-do-lekarzy-polska-ue-porownanie-st8456790",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "pl_100",
@@ -897,6 +996,7 @@
     "expected_stance": "SUPPORTED",
     "language": "pl",
     "source": "Konkret24",
-    "expected_source_url": "https://konkret24.tvn24.pl/polska/wynagrodzenie-minimalne-2025-kwota-st8567891"
+    "expected_source_url": "https://konkret24.tvn24.pl/polska/wynagrodzenie-minimalne-2025-kwota-st8567891",
+    "created_at": "2026-03-25T17:14:24Z"
   }
 ]

@@ -208,6 +208,7 @@ class TestGoldenPairsData:
             assert "expected_stance" in pair
             assert pair["expected_stance"] in ("SUPPORTED", "REFUTED", "NEI")
             assert pair["language"] == "en"
+            assert "created_at" in pair
 
     def test_pl_pairs_valid(self):
         path = Path(__file__).resolve().parent.parent / "data" / "benchmark" / "golden_pairs_pl.json"
@@ -217,6 +218,7 @@ class TestGoldenPairsData:
         for pair in pairs:
             assert pair["language"] == "pl"
             assert pair["expected_stance"] in ("SUPPORTED", "REFUTED", "NEI")
+            assert "created_at" in pair
 
     def test_ua_pairs_valid(self):
         path = Path(__file__).resolve().parent.parent / "data" / "benchmark" / "golden_pairs_ua.json"
@@ -226,6 +228,7 @@ class TestGoldenPairsData:
         for pair in pairs:
             assert pair["language"] == "ua"
             assert pair["expected_stance"] in ("SUPPORTED", "REFUTED", "NEI")
+            assert "created_at" in pair
 
     def test_total_pairs_255(self):
         pairs = load_golden_pairs()

@@ -5,6 +5,8 @@ from __future__ import annotations
 import argparse
 import asyncio
 import json
+import random
+import re
 import sys
 import time
 from collections import Counter
@@ -485,12 +487,27 @@ def main():
     parser.add_argument("--k", type=int, default=5, help="Recall@K cutoff (default: 5)")
     parser.add_argument("--concurrency", type=int, default=1, help="Concurrent API requests (default: 1)")
     parser.add_argument("--delay", type=float, default=2.5, help="Delay between requests in seconds (default: 2.5, avoids Groq rate limits)")
+    parser.add_argument("--held-out-only", action="store_true",
+        help="Evaluate only on held-out 20%% split (ids ending in _81-_100 per lang)")
+    parser.add_argument("--shuffle-labels", action="store_true",
+        help="Shuffle expected stances (sanity check — should yield ~random F1)")
     parser.add_argument(
         "--output",
-        default=str(Path(__file__).resolve().parent / "results" / "baseline_v01.json"),
-        help="Output JSON file for pipeline results",
+        default=None,
+        help="Output JSON file for pipeline results (auto-generated if not specified)",
     )
     args = parser.parse_args()
+
+    # Auto-generate output filename based on flags
+    if args.output is None:
+        suffix = "baseline_v01"
+        if args.held_out_only:
+            suffix = "baseline_v01_heldout"
+        if args.shuffle_labels:
+            suffix = "baseline_v01_shuffled"
+        if args.held_out_only and args.shuffle_labels:
+            suffix = "baseline_v01_heldout_shuffled"
+        args.output = str(Path(__file__).resolve().parent / "results" / f"{suffix}.json")
 
     print("=" * 60)
     print("  Truthora — Golden Pairs Benchmark Evaluation")
@@ -500,6 +517,24 @@ def main():
     # Load pairs
     pairs = load_golden_pairs()
     print(f"📊 Loaded {len(pairs)} golden pairs")
+
+    # Held-out split: keep only pairs with numeric suffix 81–100
+    if args.held_out_only:
+        def _is_held_out(pair_id: str) -> bool:
+            m = re.search(r'_(\d+)$', pair_id)
+            return m is not None and 81 <= int(m.group(1)) <= 100
+        pairs = [p for p in pairs if _is_held_out(p["id"])]
+        print(f"🔬 Held-out filter: {len(pairs)} pairs (ids *_81 – *_100)")
+
+    # Shuffle labels sanity check
+    if args.shuffle_labels:
+        rng = random.Random(42)
+        stances = [p["expected_stance"] for p in pairs]
+        rng.shuffle(stances)
+        for p, s in zip(pairs, stances):
+            p["expected_stance"] = s
+        print("🔀 Shuffled expected stances (sanity check mode)")
+
     print()
 
     # Dataset validation (always run)

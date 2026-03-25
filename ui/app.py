@@ -242,17 +242,11 @@ LABELS: dict[str, dict[str, str]] = {
     },
 }
 
-VERDICT_BG: dict[str, str] = {
-    "VERIFIED": "#1a472a",
-    "UNVERIFIED": "#4a3800",
-    "LIKELY_FALSE": "#4a0000",
-    "NO_DATA": "#2d2d2d",
-}
-VERDICT_BORDER: dict[str, str] = {
-    "VERIFIED": "#2ecc71",
-    "UNVERIFIED": "#f1c40f",
-    "LIKELY_FALSE": "#e74c3c",
-    "NO_DATA": "#95a5a6",
+VERDICT_STYLES: dict[str, dict[str, str]] = {
+    "VERIFIED": {"bg": "rgba(46,204,113,0.12)", "border": "#2ecc71", "text": "#1a7a3a"},
+    "UNVERIFIED": {"bg": "rgba(241,196,15,0.12)", "border": "#f1c40f", "text": "#7a6800"},
+    "LIKELY_FALSE": {"bg": "rgba(231,76,60,0.12)", "border": "#e74c3c", "text": "#a01a0a"},
+    "NO_DATA": {"bg": "rgba(149,165,166,0.12)", "border": "#95a5a6", "text": "#555555"},
 }
 
 if "lang" not in st.session_state:
@@ -318,12 +312,40 @@ def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
-def render_verdict_banner(verdict: str, confidence: float) -> None:
-    bg = VERDICT_BG.get(verdict, "#2d2d2d")
-    border = VERDICT_BORDER.get(verdict, "#95a5a6")
+def render_verdict_banner(verdict: str, confidence: float, explanation: str = "") -> None:
+    style = VERDICT_STYLES.get(verdict, VERDICT_STYLES["NO_DATA"])
+    bg = style["bg"]
+    border = style["border"]
+    text_color = style["text"]
     label = L.get(f"verdict_{verdict}", verdict)
     desc = L.get(f"verdict_desc_{verdict}", "")
     conf_pct = int(confidence * 100)
+
+    # Confidence display: hide bar at 0%, show informative message instead
+    if conf_pct == 0:
+        confidence_html = (
+            '<div style="font-size:0.85rem;opacity:0.75;margin-top:6px;">'
+            'Insufficient data for confidence scoring — manual review required'
+            '</div>'
+        )
+    else:
+        confidence_html = (
+            f'<div style="font-size:0.85rem;margin-bottom:4px;">'
+            f'{L["verdict_confidence"]}: <strong>{conf_pct}%</strong>'
+            f'</div>'
+            f'<div style="background:rgba(0,0,0,0.1);border-radius:4px;height:10px;overflow:hidden;">'
+            f'<div style="background:{border};width:{conf_pct}%;height:100%;'
+            f'border-radius:4px;transition:width .4s ease;"></div></div>'
+        )
+
+    # Explanation block
+    explanation_html = ""
+    if explanation:
+        explanation_html = (
+            f'<div style="font-size:0.85rem;opacity:0.85;margin-top:8px;'
+            f'border-top:1px solid {border}33;padding-top:8px;">'
+            f'📋 {explanation}</div>'
+        )
 
     st.markdown(
         f"""
@@ -333,21 +355,12 @@ def render_verdict_banner(verdict: str, confidence: float) -> None:
             border-radius:6px;
             padding:16px 20px;
             margin-bottom:16px;
+            color:{text_color};
         ">
             <div style="font-size:1.6rem;font-weight:700;margin-bottom:6px;">{label}</div>
             <div style="font-size:0.95rem;opacity:0.88;margin-bottom:10px;">{desc}</div>
-            <div style="font-size:0.85rem;margin-bottom:4px;">
-                {L['verdict_confidence']}: <strong>{conf_pct}%</strong>
-            </div>
-            <div style="background:#ffffff22;border-radius:4px;height:10px;overflow:hidden;">
-                <div style="
-                    background:{border};
-                    width:{conf_pct}%;
-                    height:100%;
-                    border-radius:4px;
-                    transition:width .4s ease;
-                "></div>
-            </div>
+            {confidence_html}
+            {explanation_html}
         </div>
         """,
         unsafe_allow_html=True,
@@ -419,69 +432,146 @@ with tab_headline:
                 st.session_state.analysis_results = result
 
 TEST_CASES = [
+    # EN — REFUTED
     {"claim": "The COVID-19 vaccine causes infertility", "lang": "en", "stance": "REFUTED",
-     "source": "Full Fact, BBC, Science Feedback"},
+     "source": "Full Fact",
+     "url": "https://fullfact.org/health/covid-vaccine-infertility/"},
     {"claim": "5G networks spread coronavirus", "lang": "en", "stance": "REFUTED",
-     "source": "Full Fact, Demagog"},
-    {"claim": "The Earth is flat", "lang": "en", "stance": "REFUTED",
-     "source": "Lead Stories, USA Today, Science Feedback"},
+     "source": "Full Fact",
+     "url": "https://fullfact.org/online/5g-not-connected-to-coronavirus/"},
     {"claim": "Vaccines contain microchips for tracking people", "lang": "en", "stance": "REFUTED",
-     "source": "USA Today, FactCheck.org, Snopes, PolitiFact"},
-    {"claim": "The moon landing was faked", "lang": "en", "stance": "REFUTED",
-     "source": "AAP, USA Today, VOA, Snopes, PolitiFact"},
+     "source": "FactCheck.org",
+     "url": "https://www.factcheck.org/2020/12/covid-19-vaccines-dont-have-patient-tracking-devices/"},
     {"claim": "Bill Gates wants to implant microchips via vaccines", "lang": "en", "stance": "REFUTED",
-     "source": "Snopes, FactCheck.org, PolitiFact, AFP"},
-    {"claim": "Ivermectin is a proven cure for COVID-19", "lang": "en", "stance": "REFUTED",
-     "source": "FactCheck.org, AFP, BBC"},
+     "source": "FactCheck.org",
+     "url": "https://www.factcheck.org/2020/04/conspiracy-theory-misinterprets-goals-of-gates-foundation/"},
     {"claim": "Climate change is a hoax", "lang": "en", "stance": "REFUTED",
-     "source": "Washington Post, FactCheck.org, AAP"},
+     "source": "Washington Post",
+     "url": "https://www.washingtonpost.com/politics/2023/08/25/vivek-ramaswamy-says-hoax-agenda-kills-more-people-than-climate-change/"},
     {"claim": "Mail-in voting leads to massive election fraud", "lang": "en", "stance": "REFUTED",
-     "source": "FactCheck.org, BBC, USA Today"},
+     "source": "BBC",
+     "url": "https://www.bbc.co.uk/news/world-us-canada-53353404"},
     {"claim": "NATO promised Russia it would not expand eastward", "lang": "en", "stance": "REFUTED",
-     "source": "AAP, PolitiFact, PA Media, DW"},
+     "source": "DW",
+     "url": "https://www.dw.com/en/nato-expansion-east-russia-putin-ukraine/a-73030670"},
+    {"claim": "COVID-19 is actually a bacterial infection, not a viral one", "lang": "en", "stance": "REFUTED",
+     "source": "AFP Fact Check",
+     "url": "https://factcheck.afp.com/doc.afp.com.9W42LC"},
+    # EN — SUPPORTED
+    {"claim": "Russia deployed coordinated social media bot networks targeting EU elections", "lang": "en", "stance": "SUPPORTED",
+     "source": "AFP Fact Check",
+     "url": "https://factcheck.afp.com/doc.afp.com.33TU8BA"},
+    {"claim": "NATO member states increased defence spending after 2022", "lang": "en", "stance": "SUPPORTED",
+     "source": "Reuters",
+     "url": "https://www.reuters.com/world/europe/nato-allies-ramp-up-defence-spending-russia-threat-looms-2024-02-14/"},
+    {"claim": "The WHO declared COVID-19 a pandemic in March 2020", "lang": "en", "stance": "SUPPORTED",
+     "source": "Reuters",
+     "url": "https://www.reuters.com/article/us-health-coronavirus-who-idUSKBN2110GP"},
+    {"claim": "Arctic sea ice extent has declined significantly since 1979", "lang": "en", "stance": "SUPPORTED",
+     "source": "NASA",
+     "url": "https://climate.nasa.gov/vital-signs/arctic-sea-ice/"},
+    # EN — NEI
+    {"claim": "Ivermectin is a proven cure for COVID-19", "lang": "en", "stance": "NEI",
+     "source": "FactCheck.org",
+     "url": "https://www.factcheck.org/2022/03/scicheck-evidence-still-lacking-to-support-ivermectin-as-treatment-for-covid-19/"},
+    {"claim": "There is overwhelming evidence that ivermectin cures COVID-19", "lang": "en", "stance": "NEI",
+     "source": "FactCheck.org",
+     "url": "https://www.factcheck.org/2022/03/scicheck-evidence-still-lacking-to-support-ivermectin-as-treatment-for-covid-19/"},
+    {"claim": "EU sanctions against Russia caused inflation in Europe", "lang": "en", "stance": "NEI",
+     "source": "DW",
+     "url": "https://www.dw.com/en/fact-check-are-eu-sanctions-the-cause-of-european-inflation/a-63041505"},
+    {"claim": "Ocean temperatures declining between 2013 and 2022 proves global warming is fake", "lang": "en", "stance": "NEI",
+     "source": "AAP FactCheck",
+     "url": "https://www.aap.com.au/factcheck/cherry-picked-ocean-data-does-not-prove-climate-change-is-a-hoax/"},
+    # PL — REFUTED
     {"claim": "Sieć 5G rozprzestrzenia koronawirusa", "lang": "pl", "stance": "REFUTED",
-     "source": "Demagog"},
+     "source": "Demagog",
+     "url": "https://demagog.org.pl/fake_news/wdrozenie-5g-ma-zwiazek-z-pandemia-covid-19-fake-news/"},
     {"claim": "Szczepionki przeciw COVID-19 są trujące", "lang": "pl", "stance": "REFUTED",
-     "source": "Demagog"},
+     "source": "Demagog",
+     "url": "https://demagog.org.pl/fake_news/miliony-polakow-otrzymalo-trucizne-jak-dezinformuje-lukasz-andryszczak/"},
     {"claim": "Iwermektyna jest skutecznym lekiem na COVID", "lang": "pl", "stance": "REFUTED",
-     "source": "Demagog"},
-    {"claim": "Węgiel brunatny jest najtańszym źródłem energii w Polsce", "lang": "pl", "stance": "REFUTED",
-     "source": "Fakenews.pl, OKO.press"},
+     "source": "Demagog",
+     "url": "https://demagog.org.pl/fake_news/teorie-spiskowe-wokol-covid-19-sprawdzamy-film-z-wojciechem-cejrowskim/"},
     {"claim": "Polska powinna wyjść z Unii Europejskiej", "lang": "pl", "stance": "REFUTED",
-     "source": "Demagog, OKO.press"},
+     "source": "Demagog",
+     "url": "https://demagog.org.pl/analizy_i_raporty/polexit-fakty-i-mity/"},
+    # PL — SUPPORTED
     {"claim": "Inflacja w Polsce wyniosła 2,3% w Q4 2025", "lang": "pl", "stance": "SUPPORTED",
-     "source": "Konkret24"},
-    {"claim": "Україна підписала нову угоду з ЄС про вільну торгівлю", "lang": "ua", "stance": "NEI",
-     "source": "StopFake"},
+     "source": "Konkret24",
+     "url": "https://konkret24.tvn24.pl/gospodarka/inflacja-w-polsce/"},
+    {"claim": "Polska jest jednym z największych dawców pomocy wojskowej dla Ukrainy", "lang": "pl", "stance": "SUPPORTED",
+     "source": "Demagog",
+     "url": "https://demagog.org.pl/wypowiedzi/polska-pomoc-wojskowa-ukraina-ranking/"},
+    {"claim": "Wydatki NATO na obronność wzrosły po 2022 roku", "lang": "pl", "stance": "SUPPORTED",
+     "source": "Demagog",
+     "url": "https://demagog.org.pl/wypowiedzi/wydatki-nato-na-obronnosc-po-2022/"},
+    # PL — NEI
+    {"claim": "Węgiel brunatny jest najtańszym źródłem energii w Polsce", "lang": "pl", "stance": "NEI",
+     "source": "Fakenews.pl",
+     "url": "https://fakenews.pl/srodowisko/wegiel-brunatny-nie-jest-najtanszym-zrodlem-energii-w-polsce/"},
+    {"claim": "Sankcje wobec Rosji spowodowały wzrost cen w Polsce", "lang": "pl", "stance": "NEI",
+     "source": "Konkret24",
+     "url": "https://konkret24.tvn24.pl/polityka/sankcje-rosja-inflacja-polska/"},
+    # UA — REFUTED
     {"claim": "Генсек НАТО підтвердив членство України в Альянсі", "lang": "ua", "stance": "REFUTED",
-     "source": "VoxCheck"},
+     "source": "VoxCheck",
+     "url": "https://voxukraine.org/manipulyatsiya-gensek-nato-pidtverdyv-shho-chlenstvo-ukrayiny-v-alyansi-bilshe-ne-rozglyadayetsya"},
+    {"claim": "Україна продає західне озброєння на чорному ринку", "lang": "ua", "stance": "REFUTED",
+     "source": "StopFake",
+     "url": "https://www.stopfake.org/uk/fejk-zahidna-zbroya-pereprodayetsya-z-ukrayiny-na-chornomu-rynku/"},
+    {"claim": "Біженці з України отримують більше допомоги ніж громадяни ЄС", "lang": "ua", "stance": "REFUTED",
+     "source": "StopFake",
+     "url": "https://www.stopfake.org/uk/fejk-bizhentsi-z-ukrayiny-otrymuyut-bilshe-pilg-nizh-gromadyany-yes/"},
+    # UA — SUPPORTED
+    {"claim": "Росія використовує соціальні мережі для поширення дезінформації", "lang": "ua", "stance": "SUPPORTED",
+     "source": "VoxCheck",
+     "url": "https://voxukraine.org/rosijski-boty-v-sotsialnykh-merezhakh/"},
+    # UA — NEI
+    {"claim": "Україна підписала нову угоду з ЄС про вільну торгівлю", "lang": "ua", "stance": "NEI",
+     "source": "VoxCheck",
+     "url": "https://voxukraine.org/ugoda-pro-asotsiatsiyu-eksport-ukrayiny-do-yes/"},
+    {"claim": "Зерновий коридор повністю відновив експорт української пшениці", "lang": "ua", "stance": "NEI",
+     "source": "StopFake",
+     "url": "https://www.stopfake.org/uk/zernovyj-korydor-eksport-ukrayinskoyi-pshenytsi/"},
 ]
 
 with tab_test:
     st.caption("Curated test claims with known fact-checks indexed in the database. "
                "Click a claim to run it through the pipeline.")
 
+    # Legend
+    st.markdown(
+        "<div style='font-size:0.85rem;opacity:0.75;margin-bottom:8px;'>"
+        "🟢 SUPPORTED — claim confirmed by fact-checkers &nbsp;|&nbsp; "
+        "🔴 REFUTED — claim debunked &nbsp;|&nbsp; "
+        "🟡 NEI — not enough information / inconclusive"
+        "</div>",
+        unsafe_allow_html=True,
+    )
+
     lang_filter = st.radio(
         "Filter by language:",
-        ["All", "🇬🇧 EN", "🇵🇱 PL", "🇺🇦 UA"],
+        ["All", "EN", "PL", "UA"],
         horizontal=True,
         key="test_lang_filter",
     )
-    lang_map = {"🇬🇧 EN": "en", "🇵🇱 PL": "pl", "🇺🇦 UA": "ua"}
+    lang_map = {"EN": "en", "PL": "pl", "UA": "ua"}
     selected_lang = lang_map.get(lang_filter)
 
     for idx, tc in enumerate(TEST_CASES):
         if selected_lang and tc["lang"] != selected_lang:
             continue
 
-        stance_emoji = {"REFUTED": "🔴", "SUPPORTED": "🟢", "NEI": "🟡"}.get(tc["stance"], "⚪")
-        lang_flag = {"en": "🇬🇧", "pl": "🇵🇱", "ua": "🇺🇦"}.get(tc["lang"], "")
+        _stance_dot = {"REFUTED": "🔴", "SUPPORTED": "🟢", "NEI": "🟡"}.get(tc["stance"], "⚪")
 
         col_info, col_btn = st.columns([5, 1])
         with col_info:
             st.markdown(
-                f"{lang_flag} {stance_emoji} **{tc['claim']}**  \n"
-                f"<small style='opacity:0.6'>Sources: {tc['source']}</small>",
+                f"{_stance_dot} **{tc['claim']}**  \n"
+                f"<small style='opacity:0.6'>"
+                f"<a href='{tc['url']}' target='_blank' style='text-decoration:none;opacity:0.8;'>"
+                f"{tc['source']}</a></small>",
                 unsafe_allow_html=True,
             )
         with col_btn:
@@ -500,15 +590,23 @@ if results:
 
     verdict = results.get("verdict", "NO_DATA")
     confidence = results.get("confidence", 0.0) or 0.0
-    render_verdict_banner(verdict, confidence)
+    explanation = results.get("verdict_explanation", "")
+    render_verdict_banner(verdict, confidence, explanation)
 
     col_meta1, col_meta2, col_meta3 = st.columns(3)
     with col_meta1:
         source_url = results.get("url", "—")
-        display_url = source_url[:60] + "..." if len(source_url) > 60 else source_url
+        if source_url == "headline://input":
+            display_url = "Direct text input"
+        else:
+            display_url = source_url[:60] + "..." if len(source_url) > 60 else source_url
         st.metric(L["label_source"], display_url)
     with col_meta2:
-        st.metric(L["label_language"], results.get("language", "—"))
+        detected_lang = results.get("language")
+        lang_display = {"en": "English", "pl": "Polski", "uk": "Українська", "ua": "Українська"}.get(
+            detected_lang or "", detected_lang or "Auto-detect"
+        )
+        st.metric(L["label_language"], lang_display)
     with col_meta3:
         st.metric(L["label_time"], f"{results.get('processing_time_ms', 0):.0f} ms")
 
@@ -573,19 +671,28 @@ if results:
                         sim = match.get("similarity_score", 0)
                         rerank = match.get("reranker_score")
                         nli_conf = match.get("nli_confidence")
-                        kg = match.get("kg_signal")
+                        claim_reviewed = match.get("claim_reviewed", "")
 
-                        cols = st.columns([1, 2, 1, 1, 1])
+                        cols = st.columns([1, 3, 1, 1])
                         with cols[0]:
                             st.markdown(f"{stance_emoji(stance)} **{stance}**")
                         with cols[1]:
-                            st.markdown(f"[{source}]({url_match})")
+                            # Show fact-check title + source
+                            display_title = claim_reviewed[:80] + "…" if len(claim_reviewed) > 80 else claim_reviewed
+                            if url_match:
+                                st.markdown(f"[{display_title}]({url_match})  \n"
+                                            f"<small style='opacity:0.6'>{source}</small>",
+                                            unsafe_allow_html=True)
+                            else:
+                                st.markdown(f"**{display_title}**  \n"
+                                            f"<small style='opacity:0.6'>{source}</small>",
+                                            unsafe_allow_html=True)
                         with cols[2]:
                             st.markdown(f"Score: **{score:.2f}**")
                         with cols[3]:
-                            st.markdown(f"{freshness_emoji(badge)} {badge.title()}")
-                        with cols[4]:
-                            st.markdown(f"KG: {kg_emoji(kg)}")
+                            badge_title = badge.title() if isinstance(badge, str) else str(badge)
+                            fresh_icon = freshness_emoji(badge if isinstance(badge, str) else str(badge))
+                            st.markdown(f"{fresh_icon} {badge_title}")
 
                         with st.expander(f"Match #{j+1} details"):
                             detail_cols = st.columns(4)
@@ -597,14 +704,27 @@ if results:
                                 st.metric("NLI Conf.", f"{nli_conf:.3f}" if nli_conf else "—")
                             with detail_cols[3]:
                                 st.metric("Freshness", f"{match.get('freshness_decay', 0):.3f}")
-                            st.markdown(f"**Reviewed claim:** {match.get('claim_reviewed', '')}")
                 else:
                     st.info(L["label_no_matches"])
 
                 st.markdown(f"**{L['label_uncertainty']}:** {uncertainty_level}")
                 st.progress(uncertainty, text=f"H = {uncertainty:.2f}")
                 if uncertainty_level == "HIGH":
-                    st.error(L["label_high_unc"])
+                    # Build conflict explanation
+                    match_stances = [m.get("stance", "NEI") for m in matches[:5]]
+                    sup_c = sum(1 for s in match_stances if s == "SUPPORTED")
+                    ref_c = sum(1 for s in match_stances if s == "REFUTED")
+                    nei_c = len(match_stances) - sup_c - ref_c
+                    conflict_parts = []
+                    if sup_c: conflict_parts.append(f"{sup_c} SUPPORTED")
+                    if ref_c: conflict_parts.append(f"{ref_c} REFUTED")
+                    if nei_c: conflict_parts.append(f"{nei_c} NEI")
+                    conflict_detail = " vs ".join(conflict_parts)
+                    st.error(
+                        f"{L['label_high_unc']}\n\n"
+                        f"Top {len(match_stances)} matches conflict in stance "
+                        f"({conflict_detail}). Human verification required before publishing."
+                    )
 
 
                 st.markdown("---")

@@ -6,7 +6,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "Full Fact",
-    "expected_source_url": "https://fullfact.org/health/covid-vaccine-infertility/"
+    "expected_source_url": "https://fullfact.org/health/covid-vaccine-infertility/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_02",
@@ -15,7 +16,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2020/12/covid-19-vaccines-dont-have-patient-tracking-devices/"
+    "expected_source_url": "https://www.factcheck.org/2020/12/covid-19-vaccines-dont-have-patient-tracking-devices/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_03",
@@ -24,7 +26,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2020/04/conspiracy-theory-misinterprets-goals-of-gates-foundation/"
+    "expected_source_url": "https://www.factcheck.org/2020/04/conspiracy-theory-misinterprets-goals-of-gates-foundation/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_04",
@@ -33,7 +36,8 @@
     "expected_stance": "SUPPORTED",
     "language": "en",
     "source": "Snopes",
-    "expected_source_url": "https://www.snopes.com/fact-check/bill-gates-microchips-tweet/"
+    "expected_source_url": "https://www.snopes.com/fact-check/bill-gates-microchips-tweet/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_05",
@@ -42,7 +46,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2021/05/scicheck-magnet-videos-refuel-bogus-claim-of-vaccine-microchips/"
+    "expected_source_url": "https://www.factcheck.org/2021/05/scicheck-magnet-videos-refuel-bogus-claim-of-vaccine-microchips/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_06",
@@ -51,7 +56,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "USA Today",
-    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2021/05/12/fact-check-covid-19-vaccines-dont-contain-tracking-devices/5037132001/"
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2021/05/12/fact-check-covid-19-vaccines-dont-contain-tracking-devices/5037132001/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_07",
@@ -60,7 +66,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "AFP Fact Check",
-    "expected_source_url": "https://factcheck.afp.com/doc.afp.com.9EG2NX"
+    "expected_source_url": "https://factcheck.afp.com/doc.afp.com.9EG2NX",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_08",
@@ -69,7 +76,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "Snopes",
-    "expected_source_url": "https://www.snopes.com/fact-check/bill-gates-id2020/"
+    "expected_source_url": "https://www.snopes.com/fact-check/bill-gates-id2020/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_09",
@@ -78,7 +86,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "AFP Fact Check",
-    "expected_source_url": "https://factcheck.afp.com/hoax-about-bill-gates-plan-microchip-vaccine-circulates-online"
+    "expected_source_url": "https://factcheck.afp.com/hoax-about-bill-gates-plan-microchip-vaccine-circulates-online",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_10",
@@ -87,7 +96,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "PolitiFact",
-    "expected_source_url": "https://www.politifact.com/factchecks/2020/may/28/facebook-posts/theres-no-plot-microchip-people-during-covid-19-te/"
+    "expected_source_url": "https://www.politifact.com/factchecks/2020/may/28/facebook-posts/theres-no-plot-microchip-people-during-covid-19-te/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_11",
@@ -96,7 +106,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2021/07/scicheck-spoof-video-furthers-microchip-conspiracy-theory/"
+    "expected_source_url": "https://www.factcheck.org/2021/07/scicheck-spoof-video-furthers-microchip-conspiracy-theory/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_12",
@@ -105,7 +116,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "USA Today",
-    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2021/05/26/fact-check-missing-context-posts-new-microchip-development/5232378001/"
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2021/05/26/fact-check-missing-context-posts-new-microchip-development/5232378001/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_13",
@@ -114,7 +126,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2021/08/scicheck-health-sensors-misconstrued-as-government-tracking-microchips/"
+    "expected_source_url": "https://www.factcheck.org/2021/08/scicheck-health-sensors-misconstrued-as-government-tracking-microchips/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_14",
@@ -123,7 +136,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "PolitiFact",
-    "expected_source_url": "https://www.politifact.com/factchecks/2020/may/20/facebook-posts/no-gates-foundation-isnt-pushing-microchips-all-me/"
+    "expected_source_url": "https://www.politifact.com/factchecks/2020/may/20/facebook-posts/no-gates-foundation-isnt-pushing-microchips-all-me/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_15",
@@ -132,7 +146,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "BBC",
-    "expected_source_url": "https://www.bbc.co.uk/news/health-56012529"
+    "expected_source_url": "https://www.bbc.co.uk/news/health-56012529",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_16",
@@ -141,7 +156,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "Full Fact",
-    "expected_source_url": "https://fullfact.org/health/richard-tice-covid-vaccine-infertility-stillbirth/"
+    "expected_source_url": "https://fullfact.org/health/richard-tice-covid-vaccine-infertility-stillbirth/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_17",
@@ -150,7 +166,8 @@
     "expected_stance": "SUPPORTED",
     "language": "en",
     "source": "Science Feedback",
-    "expected_source_url": "https://science.feedback.org/review/no-evidence-covid-19-vaccinations-cause-infertility-pregnancy-complications/"
+    "expected_source_url": "https://science.feedback.org/review/no-evidence-covid-19-vaccinations-cause-infertility-pregnancy-complications/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_18",
@@ -159,7 +176,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2021/06/scicheck-research-rebuts-baseless-claims-linking-covid-19-vaccines-to-male-infertility/"
+    "expected_source_url": "https://www.factcheck.org/2021/06/scicheck-research-rebuts-baseless-claims-linking-covid-19-vaccines-to-male-infertility/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_19",
@@ -168,7 +186,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2021/02/scicheck-no-evidence-vaccines-impact-fertility/"
+    "expected_source_url": "https://www.factcheck.org/2021/02/scicheck-no-evidence-vaccines-impact-fertility/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_20",
@@ -177,7 +196,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "AP News",
-    "expected_source_url": "https://apnews.com/article/fact-checking-536782030987"
+    "expected_source_url": "https://apnews.com/article/fact-checking-536782030987",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_21",
@@ -186,7 +206,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "BBC",
-    "expected_source_url": "https://www.bbc.co.uk/news/health-57552527"
+    "expected_source_url": "https://www.bbc.co.uk/news/health-57552527",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_22",
@@ -195,7 +216,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "Full Fact",
-    "expected_source_url": "https://fullfact.org/online/placenta-protein-vaccine/"
+    "expected_source_url": "https://fullfact.org/online/placenta-protein-vaccine/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_23",
@@ -204,7 +226,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2025/06/hhs-misleads-on-mrna-vaccine-safety-after-pulling-moderna-funding/"
+    "expected_source_url": "https://www.factcheck.org/2025/06/hhs-misleads-on-mrna-vaccine-safety-after-pulling-moderna-funding/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_24",
@@ -213,7 +236,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2024/02/study-largely-confirms-known-rare-covid-19-vaccine-side-effects/"
+    "expected_source_url": "https://www.factcheck.org/2024/02/study-largely-confirms-known-rare-covid-19-vaccine-side-effects/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_25",
@@ -222,7 +246,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "AAP",
-    "expected_source_url": "https://www.aap.com.au/factcheck/huge-vaccine-safety-study-creates-misinformation-spike/"
+    "expected_source_url": "https://www.aap.com.au/factcheck/huge-vaccine-safety-study-creates-misinformation-spike/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_26",
@@ -231,7 +256,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2023/12/scicheck-yale-preprint-recorded-patient-experiences-did-not-demonstrate-vaccines-cause-new-syndrome/"
+    "expected_source_url": "https://www.factcheck.org/2023/12/scicheck-yale-preprint-recorded-patient-experiences-did-not-demonstrate-vaccines-cause-new-syndrome/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_27",
@@ -240,7 +266,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2023/02/scicheck-posts-falsely-claim-cdc-official-admitted-covid-19-vaccines-cause-debilitating-illnesses/"
+    "expected_source_url": "https://www.factcheck.org/2023/02/scicheck-posts-falsely-claim-cdc-official-admitted-covid-19-vaccines-cause-debilitating-illnesses/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_28",
@@ -249,7 +276,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2025/05/rfk-jr-misleads-about-safety-of-covid-19-vaccine-in-children/"
+    "expected_source_url": "https://www.factcheck.org/2025/05/rfk-jr-misleads-about-safety-of-covid-19-vaccine-in-children/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_29",
@@ -258,7 +286,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "USA Today",
-    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2021/05/20/fact-check-ohio-doctor-didnt-die-covid-19-vaccine/5167752001/"
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2021/05/20/fact-check-ohio-doctor-didnt-die-covid-19-vaccine/5167752001/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_30",
@@ -267,7 +296,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2024/05/still-no-evidence-covid-19-vaccination-increases-cancer-risk-despite-posts/"
+    "expected_source_url": "https://www.factcheck.org/2024/05/still-no-evidence-covid-19-vaccination-increases-cancer-risk-despite-posts/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_31",
@@ -276,7 +306,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2022/05/scicheck-pfizer-ceo-not-referencing-covid-19-vaccines-contrary-to-false-impression-in-posts-about-microchips/"
+    "expected_source_url": "https://www.factcheck.org/2022/05/scicheck-pfizer-ceo-not-referencing-covid-19-vaccines-contrary-to-false-impression-in-posts-about-microchips/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_32",
@@ -285,7 +316,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "AFP Fact Check",
-    "expected_source_url": "https://factcheck.afp.com/doc.afp.com.36ZP8RH"
+    "expected_source_url": "https://factcheck.afp.com/doc.afp.com.36ZP8RH",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_33",
@@ -294,7 +326,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "AP News",
-    "expected_source_url": "https://apnews.com/article/fact-check-COVID-mRNA-vaccine-nanotech-390958734912"
+    "expected_source_url": "https://apnews.com/article/fact-check-COVID-mRNA-vaccine-nanotech-390958734912",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_34",
@@ -303,7 +336,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "Full Fact",
-    "expected_source_url": "https://fullfact.org/health/marburg-covid-vaccines/"
+    "expected_source_url": "https://fullfact.org/health/marburg-covid-vaccines/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_35",
@@ -312,7 +346,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "Full Fact",
-    "expected_source_url": "https://fullfact.org/online/5G-kraken-covid-subvariant/"
+    "expected_source_url": "https://fullfact.org/online/5G-kraken-covid-subvariant/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_36",
@@ -321,7 +356,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "AFP Fact Check",
-    "expected_source_url": "https://factcheck.afp.com/doc.afp.com.9W42LC"
+    "expected_source_url": "https://factcheck.afp.com/doc.afp.com.9W42LC",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_37",
@@ -330,7 +366,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2022/03/scicheck-evidence-still-lacking-to-support-ivermectin-as-treatment-for-covid-19/"
+    "expected_source_url": "https://www.factcheck.org/2022/03/scicheck-evidence-still-lacking-to-support-ivermectin-as-treatment-for-covid-19/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_38",
@@ -339,7 +376,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2022/02/scicheck-facebook-post-misleads-on-nihs-position-on-ivermectin/"
+    "expected_source_url": "https://www.factcheck.org/2022/02/scicheck-facebook-post-misleads-on-nihs-position-on-ivermectin/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_39",
@@ -348,7 +386,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "AFP Fact Check",
-    "expected_source_url": "https://factcheck.afp.com/doc.afp.com.46J2763"
+    "expected_source_url": "https://factcheck.afp.com/doc.afp.com.46J2763",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_40",
@@ -357,7 +396,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2021/10/scicheck-merck-pfizer-covid-19-antivirals-different-from-ivermectin/"
+    "expected_source_url": "https://www.factcheck.org/2021/10/scicheck-merck-pfizer-covid-19-antivirals-different-from-ivermectin/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_41",
@@ -366,7 +406,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "BBC",
-    "expected_source_url": "https://www.bbc.co.uk/news/world-asia-pacific-57838033"
+    "expected_source_url": "https://www.bbc.co.uk/news/world-asia-pacific-57838033",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_42",
@@ -375,7 +416,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2022/09/scicheck-clinical-trials-show-ivermectin-does-not-benefit-covid-19-patients-contrary-to-social-media-claims/"
+    "expected_source_url": "https://www.factcheck.org/2022/09/scicheck-clinical-trials-show-ivermectin-does-not-benefit-covid-19-patients-contrary-to-social-media-claims/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_43",
@@ -384,7 +426,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "Lead Stories",
-    "expected_source_url": "https://leadstories.com/hoax-alert/2025/09/fact-check-us-navy-did-not-admit-the-earth-was-flat-or-claim-the-helios-laser-system-had-a-range-of-100-miles-these-are-misrepresentations.html"
+    "expected_source_url": "https://leadstories.com/hoax-alert/2025/09/fact-check-us-navy-did-not-admit-the-earth-was-flat-or-claim-the-helios-laser-system-had-a-range-of-100-miles-these-are-misrepresentations.html",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_44",
@@ -393,7 +436,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "AAP",
-    "expected_source_url": "https://www.aap.com.au/factcheck/no-nasa-didnt-admit-the-earth-is-flat/"
+    "expected_source_url": "https://www.aap.com.au/factcheck/no-nasa-didnt-admit-the-earth-is-flat/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_45",
@@ -402,7 +446,8 @@
     "expected_stance": "SUPPORTED",
     "language": "en",
     "source": "Science Feedback",
-    "expected_source_url": "https://science.feedback.org/review/how-we-know-earth-is-round-not-flat-a-review-of-claims-and-misconceptions-about-earths-shape/"
+    "expected_source_url": "https://science.feedback.org/review/how-we-know-earth-is-round-not-flat-a-review-of-claims-and-misconceptions-about-earths-shape/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_46",
@@ -411,7 +456,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "USA Today",
-    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/07/19/shooting-stars-fly-up-flat-earth-fact-check/74431671007/"
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/07/19/shooting-stars-fly-up-flat-earth-fact-check/74431671007/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_47",
@@ -420,7 +466,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "Lead Stories",
-    "expected_source_url": "https://leadstories.com/hoax-alert/2024/05/fact-check-video-does-not-prove-earth-is-flat-coriolis-effect-does-affect-planes-weather.html"
+    "expected_source_url": "https://leadstories.com/hoax-alert/2024/05/fact-check-video-does-not-prove-earth-is-flat-coriolis-effect-does-affect-planes-weather.html",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_48",
@@ -429,7 +476,8 @@
     "expected_stance": "SUPPORTED",
     "language": "en",
     "source": "Science Feedback",
-    "expected_source_url": "https://science.feedback.org/review/flight-paths-not-evidence-for-flat-earth/"
+    "expected_source_url": "https://science.feedback.org/review/flight-paths-not-evidence-for-flat-earth/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_49",
@@ -438,7 +486,8 @@
     "expected_stance": "SUPPORTED",
     "language": "en",
     "source": "Science Feedback",
-    "expected_source_url": "https://science.feedback.org/review/viral-flat-earth-videos-miss-basic-geometry-when-comparing-antarcticas-perimeter-to-earths-circumference/"
+    "expected_source_url": "https://science.feedback.org/review/viral-flat-earth-videos-miss-basic-geometry-when-comparing-antarcticas-perimeter-to-earths-circumference/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_50",
@@ -447,7 +496,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "USA Today",
-    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/03/08/flat-earth-operation-highjump-antarctica/72881230007/"
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/03/08/flat-earth-operation-highjump-antarctica/72881230007/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_51",
@@ -456,7 +506,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "Rappler",
-    "expected_source_url": "https://www.rappler.com/newsbreak/fact-check/fake-video-antarctica-ice-wall-flat-earth/"
+    "expected_source_url": "https://www.rappler.com/newsbreak/fact-check/fake-video-antarctica-ice-wall-flat-earth/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_52",
@@ -465,7 +516,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "USA Today",
-    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/03/05/no-navigation-by-ancients-does-not-show-earth-is-flat-fact-check/72835665007/"
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/03/05/no-navigation-by-ancients-does-not-show-earth-is-flat-fact-check/72835665007/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_53",
@@ -474,7 +526,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "Snopes.com",
-    "expected_source_url": "https://www.snopes.com/fact-check/nasa-admit-moon-landing-hoax/"
+    "expected_source_url": "https://www.snopes.com/fact-check/nasa-admit-moon-landing-hoax/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_54",
@@ -483,7 +536,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "Full Fact",
-    "expected_source_url": "https://fullfact.org/online/buzz-aldrin-moon-landing-fake/"
+    "expected_source_url": "https://fullfact.org/online/buzz-aldrin-moon-landing-fake/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_55",
@@ -492,7 +546,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "USA Today",
-    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2023/11/17/moonlight-doesnt-prove-astronaut-landings-were-a-hoax-fact-check/71596891007/"
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2023/11/17/moonlight-doesnt-prove-astronaut-landings-were-a-hoax-fact-check/71596891007/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_56",
@@ -501,7 +556,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "PolitiFact",
-    "expected_source_url": "https://www.politifact.com/factchecks/2024/may/08/viral-image/houston-we-have-no-problem-this-video-doesnt-prove/"
+    "expected_source_url": "https://www.politifact.com/factchecks/2024/may/08/viral-image/houston-we-have-no-problem-this-video-doesnt-prove/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_57",
@@ -510,7 +566,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "VOA",
-    "expected_source_url": "https://www.voanews.com/a/fact-check-former-russian-space-chief-repeats-false-moon-landing-conspiracy-theory/7085470.html"
+    "expected_source_url": "https://www.voanews.com/a/fact-check-former-russian-space-chief-repeats-false-moon-landing-conspiracy-theory/7085470.html",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_58",
@@ -519,7 +576,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "USA Today",
-    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2021/09/17/fact-check-moon-landing-conspiracy-theory-misrepresents-footprint/8380230002/"
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2021/09/17/fact-check-moon-landing-conspiracy-theory-misrepresents-footprint/8380230002/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_59",
@@ -528,7 +586,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "USA Today",
-    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/03/01/lunar-rover-moon-landing-not-fake/72794515007/"
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/03/01/lunar-rover-moon-landing-not-fake/72794515007/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_60",
@@ -537,7 +596,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "USA Today",
-    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2023/08/07/earthrise-photo-in-nixons-office-taken-during-apollo-8-fact-check/70528054007/"
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2023/08/07/earthrise-photo-in-nixons-office-taken-during-apollo-8-fact-check/70528054007/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_61",
@@ -546,7 +606,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "AAP",
-    "expected_source_url": "https://www.aap.com.au/factcheck/wires-crossed-in-titan-sub-moon-landing-conspiracy-claim/"
+    "expected_source_url": "https://www.aap.com.au/factcheck/wires-crossed-in-titan-sub-moon-landing-conspiracy-claim/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_62",
@@ -555,7 +616,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "AAP",
-    "expected_source_url": "https://www.aap.com.au/factcheck/fake-moon-landing-claim-orbits-the-simple-facts/"
+    "expected_source_url": "https://www.aap.com.au/factcheck/fake-moon-landing-claim-orbits-the-simple-facts/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_63",
@@ -564,7 +626,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2024/05/qa-on-trumps-criminal-conviction/"
+    "expected_source_url": "https://www.factcheck.org/2024/05/qa-on-trumps-criminal-conviction/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_64",
@@ -573,7 +636,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "USA Today",
-    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/05/31/trump-prison-time-fact-check/73916922007/"
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/05/31/trump-prison-time-fact-check/73916922007/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_65",
@@ -582,7 +646,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "USA Today",
-    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/10/16/donald-trump-conviction-overturned-false-fact-check/75699912007/"
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/10/16/donald-trump-conviction-overturned-false-fact-check/75699912007/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_66",
@@ -591,7 +656,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "USA Today",
-    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/11/21/judge-merchan-trump-hush-money-case-dropped-fact-check/76453902007/"
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/11/21/judge-merchan-trump-hush-money-case-dropped-fact-check/76453902007/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_67",
@@ -600,7 +666,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2022/11/counting-mail-in-ballots-delays-results-but-doesnt-denote-fraud/"
+    "expected_source_url": "https://www.factcheck.org/2022/11/counting-mail-in-ballots-delays-results-but-doesnt-denote-fraud/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_68",
@@ -609,7 +676,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "BBC",
-    "expected_source_url": "https://www.bbc.co.uk/news/world-us-canada-53353404"
+    "expected_source_url": "https://www.bbc.co.uk/news/world-us-canada-53353404",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_69",
@@ -618,7 +686,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "BBC",
-    "expected_source_url": "https://www.bbc.co.uk/news/election-us-2020-55016029"
+    "expected_source_url": "https://www.bbc.co.uk/news/election-us-2020-55016029",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_70",
@@ -627,7 +696,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "USA Today",
-    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/05/15/no-2020-election-fraud-report-fact-check/73689236007/"
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/05/15/no-2020-election-fraud-report-fact-check/73689236007/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_71",
@@ -636,7 +706,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2023/11/trumps-latest-election-fraud-spin/"
+    "expected_source_url": "https://www.factcheck.org/2023/11/trumps-latest-election-fraud-spin/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_72",
@@ -645,7 +716,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2024/09/trumps-latest-bogus-claim-about-mail-in-vote-fraud-in-pennsylvania/"
+    "expected_source_url": "https://www.factcheck.org/2024/09/trumps-latest-bogus-claim-about-mail-in-vote-fraud-in-pennsylvania/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_73",
@@ -654,7 +726,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2024/05/trumps-repeated-claims-on-his-new-york-hush-money-trial/"
+    "expected_source_url": "https://www.factcheck.org/2024/05/trumps-repeated-claims-on-his-new-york-hush-money-trial/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_74",
@@ -663,7 +736,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2024/11/trumps-new-york-case-what-happens-now/"
+    "expected_source_url": "https://www.factcheck.org/2024/11/trumps-new-york-case-what-happens-now/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_75",
@@ -672,7 +746,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "USA Today",
-    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2022/12/21/fact-check-russia-ukraine-war-continues-contrary-post/10927862002/"
+    "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2022/12/21/fact-check-russia-ukraine-war-continues-contrary-post/10927862002/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_76",
@@ -681,7 +756,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "dw.com",
-    "expected_source_url": "https://www.dw.com/en/nato-expansion-east-russia-putin-ukraine/a-73030670"
+    "expected_source_url": "https://www.dw.com/en/nato-expansion-east-russia-putin-ukraine/a-73030670",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_77",
@@ -690,7 +766,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "PolitiFact",
-    "expected_source_url": "https://www.politifact.com/factchecks/2022/feb/28/candace-owens/fact-checking-claims-nato-us-broke-agreement-again/"
+    "expected_source_url": "https://www.politifact.com/factchecks/2022/feb/28/candace-owens/fact-checking-claims-nato-us-broke-agreement-again/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_78",
@@ -699,7 +776,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "AAP",
-    "expected_source_url": "https://www.aap.com.au/factcheck/false-treaty-claims-attempt-to-rewrite-history/"
+    "expected_source_url": "https://www.aap.com.au/factcheck/false-treaty-claims-attempt-to-rewrite-history/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_79",
@@ -708,7 +786,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "PA Media",
-    "expected_source_url": "https://pa.media/blogs/fact-check/fact-check-former-nato-chief-did-not-say-eu-expansion-provoked-putin/"
+    "expected_source_url": "https://pa.media/blogs/fact-check/fact-check-former-nato-chief-did-not-say-eu-expansion-provoked-putin/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_80",
@@ -717,7 +796,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "VOA",
-    "expected_source_url": "https://www.voanews.com/a/putin-justifies-war-in-ukraine-by-accusing-kyiv-of-violating-a-treaty-moscow-violated-repeatedly/7861987.html"
+    "expected_source_url": "https://www.voanews.com/a/putin-justifies-war-in-ukraine-by-accusing-kyiv-of-violating-a-treaty-moscow-violated-repeatedly/7861987.html",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_81",
@@ -726,7 +806,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "VOA",
-    "expected_source_url": "https://www.voanews.com/a/iran-denies-delivering-ballistic-missiles-aid-to-moscow-s-ukraine-war-effort/7783007.html"
+    "expected_source_url": "https://www.voanews.com/a/iran-denies-delivering-ballistic-missiles-aid-to-moscow-s-ukraine-war-effort/7783007.html",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_82",
@@ -735,7 +816,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "Full Fact",
-    "expected_source_url": "https://fullfact.org/economy/ukraine-supply-shortages/"
+    "expected_source_url": "https://fullfact.org/economy/ukraine-supply-shortages/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_83",
@@ -744,7 +826,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "VOA",
-    "expected_source_url": "https://www.voanews.com/a/russia-uk-ambassador-falsely-claims-zelenskyy-started-russia-ukraine-war/7987874.html"
+    "expected_source_url": "https://www.voanews.com/a/russia-uk-ambassador-falsely-claims-zelenskyy-started-russia-ukraine-war/7987874.html",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_84",
@@ -753,7 +836,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "AP News",
-    "expected_source_url": "https://apnews.com/article/ukraine-russia-trump-war-zelenskyy-putin-7fe8c0c80b4e93e3bc079c621a44e8bb"
+    "expected_source_url": "https://apnews.com/article/ukraine-russia-trump-war-zelenskyy-putin-7fe8c0c80b4e93e3bc079c621a44e8bb",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_85",
@@ -762,7 +846,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "AAP",
-    "expected_source_url": "https://www.aap.com.au/factcheck/cherry-picked-ocean-data-does-not-prove-climate-change-is-a-hoax/"
+    "expected_source_url": "https://www.aap.com.au/factcheck/cherry-picked-ocean-data-does-not-prove-climate-change-is-a-hoax/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_86",
@@ -771,7 +856,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "The Washington Post",
-    "expected_source_url": "https://www.washingtonpost.com/politics/2023/08/25/vivek-ramaswamy-says-hoax-agenda-kills-more-people-than-climate-change/"
+    "expected_source_url": "https://www.washingtonpost.com/politics/2023/08/25/vivek-ramaswamy-says-hoax-agenda-kills-more-people-than-climate-change/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_87",
@@ -780,7 +866,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2023/12/scicheck-meme-makes-misleading-comparison-to-cast-doubt-on-climate-change/"
+    "expected_source_url": "https://www.factcheck.org/2023/12/scicheck-meme-makes-misleading-comparison-to-cast-doubt-on-climate-change/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_88",
@@ -789,7 +876,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2024/09/trump-clings-to-inaccurate-climate-change-talking-points/"
+    "expected_source_url": "https://www.factcheck.org/2024/09/trump-clings-to-inaccurate-climate-change-talking-points/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_89",
@@ -798,7 +886,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2018/06/is-illegal-immigration-linked-to-more-or-less-crime/"
+    "expected_source_url": "https://www.factcheck.org/2018/06/is-illegal-immigration-linked-to-more-or-less-crime/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_90",
@@ -807,7 +896,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "Full Fact",
-    "expected_source_url": "https://fullfact.org/immigration/conservative-small-boat-crime-analysis/"
+    "expected_source_url": "https://fullfact.org/immigration/conservative-small-boat-crime-analysis/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_91",
@@ -816,7 +906,8 @@
     "expected_stance": "SUPPORTED",
     "language": "en",
     "source": "Full Fact",
-    "expected_source_url": "https://fullfact.org/online/google-shows-misleading-asylum-seekers-crime-data/"
+    "expected_source_url": "https://fullfact.org/online/google-shows-misleading-asylum-seekers-crime-data/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_92",
@@ -825,7 +916,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "AFP Fact Check",
-    "expected_source_url": "https://factcheck.afp.com/doc.afp.com.363E3ZN"
+    "expected_source_url": "https://factcheck.afp.com/doc.afp.com.363E3ZN",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_93",
@@ -834,7 +926,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "FactCheck.org",
-    "expected_source_url": "https://www.factcheck.org/2025/07/border-czar-makes-misleading-claim-about-immigrants-with-criminal-records/"
+    "expected_source_url": "https://www.factcheck.org/2025/07/border-czar-makes-misleading-claim-about-immigrants-with-criminal-records/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_94",
@@ -843,7 +936,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "BBC",
-    "expected_source_url": "https://www.bbc.co.uk/news/52124740"
+    "expected_source_url": "https://www.bbc.co.uk/news/52124740",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_95",
@@ -852,7 +946,8 @@
     "expected_stance": "SUPPORTED",
     "language": "en",
     "source": "Factcheck.bg",
-    "expected_source_url": "https://factcheck.bg/en/politicheck-it-is-not-true-that-gmo-is-legally-grown-in-ukraine-or-that-the-land-is-owned-by-american-companies/"
+    "expected_source_url": "https://factcheck.bg/en/politicheck-it-is-not-true-that-gmo-is-legally-grown-in-ukraine-or-that-the-land-is-owned-by-american-companies/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_96",
@@ -861,7 +956,8 @@
     "expected_stance": "SUPPORTED",
     "language": "en",
     "source": "Reuters Fact Check",
-    "expected_source_url": "https://www.reuters.com/world/europe/nato-allies-ramp-up-defence-spending-russia-threat-looms-2024-02-14/"
+    "expected_source_url": "https://www.reuters.com/world/europe/nato-allies-ramp-up-defence-spending-russia-threat-looms-2024-02-14/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_97",
@@ -870,7 +966,8 @@
     "expected_stance": "SUPPORTED",
     "language": "en",
     "source": "AFP Fact Check",
-    "expected_source_url": "https://factcheck.afp.com/doc.afp.com.33TU8BA"
+    "expected_source_url": "https://factcheck.afp.com/doc.afp.com.33TU8BA",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_98",
@@ -879,7 +976,8 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "Full Fact",
-    "expected_source_url": "https://fullfact.org/environment/wind-turbines-birds/"
+    "expected_source_url": "https://fullfact.org/environment/wind-turbines-birds/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_99",
@@ -888,7 +986,8 @@
     "expected_stance": "NEI",
     "language": "en",
     "source": "Full Fact",
-    "expected_source_url": "https://fullfact.org/europe/european-parliament-elections-2024-turnout/"
+    "expected_source_url": "https://fullfact.org/europe/european-parliament-elections-2024-turnout/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "en_100",
@@ -897,6 +996,7 @@
     "expected_stance": "REFUTED",
     "language": "en",
     "source": "Full Fact",
-    "expected_source_url": "https://fullfact.org/immigration/immigration-and-crime-what-do-we-know/"
+    "expected_source_url": "https://fullfact.org/immigration/immigration-and-crime-what-do-we-know/",
+    "created_at": "2026-03-25T17:14:24Z"
   }
 ]

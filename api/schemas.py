@@ -88,6 +88,7 @@ class AnalyzeResponse(BaseModel):
     processing_time_ms: float
     verdict: Optional[str] = None  # VERIFIED / UNVERIFIED / LIKELY_FALSE / NO_DATA
     confidence: Optional[float] = None  # 0-1
+    verdict_explanation: Optional[str] = None  # Human-readable one-liner
 
 
 class ClaimReviewRequest(BaseModel):

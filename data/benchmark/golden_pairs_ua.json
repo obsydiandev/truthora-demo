@@ -6,7 +6,8 @@
     "expected_stance": "NEI",
     "language": "ua",
     "source": "Вокс Україна",
-    "expected_source_url": "https://voxukraine.org/manipulyatsiya-gensek-nato-pidtverdyv-shho-chlenstvo-ukrayiny-v-alyansi-bilshe-ne-rozglyadayetsya"
+    "expected_source_url": "https://voxukraine.org/manipulyatsiya-gensek-nato-pidtverdyv-shho-chlenstvo-ukrayiny-v-alyansi-bilshe-ne-rozglyadayetsya",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_02",
@@ -15,7 +16,8 @@
     "expected_stance": "REFUTED",
     "language": "ua",
     "source": "StopFake UA",
-    "expected_source_url": "https://www.stopfake.org/uk/fejk-ukrayina-prodaye-zemlyu-inozemnym-korporatsiyam/"
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-ukrayina-prodaye-zemlyu-inozemnym-korporatsiyam/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_03",
@@ -24,7 +26,8 @@
     "expected_stance": "REFUTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/manipulyatsiya-nato-rozshyryuyetsya-do-kordoniv-rosiyi-ta-otochylo-rosiyu-voyennymy-bazamy"
+    "expected_source_url": "https://voxukraine.org/manipulyatsiya-nato-rozshyryuyetsya-do-kordoniv-rosiyi-ta-otochylo-rosiyu-voyennymy-bazamy",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_04",
@@ -33,7 +36,8 @@
     "expected_stance": "REFUTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/manipulyatsiya-majbutnij-kantsler-nimechchyny-vystupyv-proty-vstupu-ukrayiny-do-nato"
+    "expected_source_url": "https://voxukraine.org/manipulyatsiya-majbutnij-kantsler-nimechchyny-vystupyv-proty-vstupu-ukrayiny-do-nato",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_05",
@@ -42,7 +46,8 @@
     "expected_stance": "REFUTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/manipulyatsiya-krayiny-nato-zobovyazalys-vytrachaty-5-vvp-na-zakupivlyu-zbroyi-ssha"
+    "expected_source_url": "https://voxukraine.org/manipulyatsiya-krayiny-nato-zobovyazalys-vytrachaty-5-vvp-na-zakupivlyu-zbroyi-ssha",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_06",
@@ -51,7 +56,8 @@
     "expected_stance": "REFUTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/ukrayina-ye-zanadto-koruptovanoyu-dlya-vstupu-do-yes-manipulyatsiya"
+    "expected_source_url": "https://voxukraine.org/ukrayina-ye-zanadto-koruptovanoyu-dlya-vstupu-do-yes-manipulyatsiya",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_07",
@@ -60,7 +66,8 @@
     "expected_stance": "REFUTED",
     "language": "ua",
     "source": "StopFake UA",
-    "expected_source_url": "https://www.stopfake.org/uk/fejk-yes-vidmovyvsya-vid-pidtrymky-ukrayiny/"
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-yes-vidmovyvsya-vid-pidtrymky-ukrayiny/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_08",
@@ -69,7 +76,8 @@
     "expected_stance": "NEI",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/bezvizovyj-rezhym-yes-pratsevlashtuvannya-ukrayintsiv"
+    "expected_source_url": "https://voxukraine.org/bezvizovyj-rezhym-yes-pratsevlashtuvannya-ukrayintsiv",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_09",
@@ -78,7 +86,8 @@
     "expected_stance": "NEI",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/manipulyatsiya-zahid-navyazuye-ukrayini-svoyi-tsinnosti"
+    "expected_source_url": "https://voxukraine.org/manipulyatsiya-zahid-navyazuye-ukrayini-svoyi-tsinnosti",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_10",
@@ -87,7 +96,8 @@
     "expected_stance": "SUPPORTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/ukrayina-otrymala-status-kandydata-v-chleny-yes"
+    "expected_source_url": "https://voxukraine.org/ukrayina-otrymala-status-kandydata-v-chleny-yes",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_11",
@@ -96,7 +106,8 @@
     "expected_stance": "SUPPORTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/ugoda-pro-asotsiatsiyu-eksport-ukrayiny-do-yes"
+    "expected_source_url": "https://voxukraine.org/ugoda-pro-asotsiatsiyu-eksport-ukrayiny-do-yes",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_12",
@@ -105,7 +116,8 @@
     "expected_stance": "NEI",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/samit-nato-2008-bukarest-ukrayina-pdch"
+    "expected_source_url": "https://voxukraine.org/samit-nato-2008-bukarest-ukrayina-pdch",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_13",
@@ -114,7 +126,8 @@
     "expected_stance": "SUPPORTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/pidtrymka-ukrayintsiv-vstup-do-yes-opytuvannya"
+    "expected_source_url": "https://voxukraine.org/pidtrymka-ukrayintsiv-vstup-do-yes-opytuvannya",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_14",
@@ -123,7 +136,8 @@
     "expected_stance": "REFUTED",
     "language": "ua",
     "source": "StopFake UA",
-    "expected_source_url": "https://www.stopfake.org/uk/fejk-vstup-ukrayiny-do-nato-avtomatychno-vtyagne-alyans-u-vijnu/"
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-vstup-ukrayiny-do-nato-avtomatychno-vtyagne-alyans-u-vijnu/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_15",
@@ -132,7 +146,8 @@
     "expected_stance": "SUPPORTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/yes-50-mlrd-yevro-makrofinansova-dopomoha-ukrayini"
+    "expected_source_url": "https://voxukraine.org/yes-50-mlrd-yevro-makrofinansova-dopomoha-ukrayini",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_16",
@@ -141,7 +156,8 @@
     "expected_stance": "REFUTED",
     "language": "ua",
     "source": "StopFake UA",
-    "expected_source_url": "https://www.stopfake.org/uk/fejk-rosiya-bula-zmushena-napasty-na-ukrayinu-cherez-nato/"
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-rosiya-bula-zmushena-napasty-na-ukrayinu-cherez-nato/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_17",
@@ -150,7 +166,8 @@
     "expected_stance": "REFUTED",
     "language": "ua",
     "source": "StopFake UA",
-    "expected_source_url": "https://www.stopfake.org/uk/fejk-zsu-masovo-zdayutsya-v-polon/"
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-zsu-masovo-zdayutsya-v-polon/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_18",
@@ -159,7 +176,8 @@
     "expected_stance": "NEI",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/manipulyatsiya-zahid-postachaye-zbroyu-zarady-prodovzhennya-vijny"
+    "expected_source_url": "https://voxukraine.org/manipulyatsiya-zahid-postachaye-zbroyu-zarady-prodovzhennya-vijny",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_19",
@@ -168,7 +186,8 @@
     "expected_stance": "NEI",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/sanktsii-proty-rosiyi-efektyvnist-analiz"
+    "expected_source_url": "https://voxukraine.org/sanktsii-proty-rosiyi-efektyvnist-analiz",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_20",
@@ -177,7 +196,8 @@
     "expected_stance": "REFUTED",
     "language": "ua",
     "source": "StopFake UA",
-    "expected_source_url": "https://www.stopfake.org/uk/fejk-ukrayina-vykorystovuye-kasetni-boyeprypasy-proty-tsyvilnyh/"
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-ukrayina-vykorystovuye-kasetni-boyeprypasy-proty-tsyvilnyh/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_21",
@@ -186,7 +206,8 @@
     "expected_stance": "REFUTED",
     "language": "ua",
     "source": "StopFake UA",
-    "expected_source_url": "https://www.stopfake.org/uk/fejk-v-ukrayini-pracyuyut-sekretni-biolaboratoriyi-pentagonu/"
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-v-ukrayini-pracyuyut-sekretni-biolaboratoriyi-pentagonu/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_22",
@@ -195,7 +216,8 @@
     "expected_stance": "REFUTED",
     "language": "ua",
     "source": "StopFake UA",
-    "expected_source_url": "https://www.stopfake.org/uk/fejk-rosiya-znyshchyla-vsi-rezervy-zsu/"
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-rosiya-znyshchyla-vsi-rezervy-zsu/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_23",
@@ -204,7 +226,8 @@
     "expected_stance": "REFUTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/manipulyatsiya-minski-ugody-porushuvala-lyshe-ukrayina"
+    "expected_source_url": "https://voxukraine.org/manipulyatsiya-minski-ugody-porushuvala-lyshe-ukrayina",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_24",
@@ -213,7 +236,8 @@
     "expected_stance": "REFUTED",
     "language": "ua",
     "source": "StopFake UA",
-    "expected_source_url": "https://www.stopfake.org/uk/fejk-krym-dobrovilno-pryyednavsya-do-rosiyi/"
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-krym-dobrovilno-pryyednavsya-do-rosiyi/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_25",
@@ -222,7 +246,8 @@
     "expected_stance": "REFUTED",
     "language": "ua",
     "source": "StopFake UA",
-    "expected_source_url": "https://www.stopfake.org/uk/fejk-ukrayina-obstrilyuye-vlasni-mista/"
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-ukrayina-obstrilyuye-vlasni-mista/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_26",
@@ -231,7 +256,8 @@
     "expected_stance": "NEI",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/zelenskyj-zaboronyv-opozytsiyu-ta-zmi-manipulyatsiya"
+    "expected_source_url": "https://voxukraine.org/zelenskyj-zaboronyv-opozytsiyu-ta-zmi-manipulyatsiya",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_27",
@@ -240,7 +266,8 @@
     "expected_stance": "REFUTED",
     "language": "ua",
     "source": "StopFake UA",
-    "expected_source_url": "https://www.stopfake.org/uk/fejk-zahidna-zbroya-pereprodayetsya-z-ukrayiny-na-chornomu-rynku/"
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-zahidna-zbroya-pereprodayetsya-z-ukrayiny-na-chornomu-rynku/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_28",
@@ -249,7 +276,8 @@
     "expected_stance": "REFUTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/fejk-rosiya-poperedyla-pro-vtorgnennya"
+    "expected_source_url": "https://voxukraine.org/fejk-rosiya-poperedyla-pro-vtorgnennya",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_29",
@@ -258,7 +286,8 @@
     "expected_stance": "SUPPORTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/skilky-terytoriyi-ukrayiny-okupovano-rosiyeyu"
+    "expected_source_url": "https://voxukraine.org/skilky-terytoriyi-ukrayiny-okupovano-rosiyeyu",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_30",
@@ -267,7 +296,8 @@
     "expected_stance": "SUPPORTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/mks-order-na-aresht-putina-voyenni-zlochyny"
+    "expected_source_url": "https://voxukraine.org/mks-order-na-aresht-putina-voyenni-zlochyny",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_31",
@@ -276,7 +306,8 @@
     "expected_stance": "SUPPORTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/vijna-v-ukrayini-globalna-prodovolcha-kryza"
+    "expected_source_url": "https://voxukraine.org/vijna-v-ukrayini-globalna-prodovolcha-kryza",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_32",
@@ -285,7 +316,8 @@
     "expected_stance": "SUPPORTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/chornomorska-zernova-initsiatyva-efektyvnist"
+    "expected_source_url": "https://voxukraine.org/chornomorska-zernova-initsiatyva-efektyvnist",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_33",
@@ -294,7 +326,8 @@
     "expected_stance": "SUPPORTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/rosiya-energoresursy-geopolitychna-zbroya"
+    "expected_source_url": "https://voxukraine.org/rosiya-energoresursy-geopolitychna-zbroya",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_34",
@@ -303,7 +336,8 @@
     "expected_stance": "SUPPORTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/zhertvy-sered-tsyvilnyh-v-ukrayini-dani-oon"
+    "expected_source_url": "https://voxukraine.org/zhertvy-sered-tsyvilnyh-v-ukrayini-dani-oon",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_35",
@@ -312,7 +346,8 @@
     "expected_stance": "SUPPORTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/rosiya-atakuye-energetychnu-infrastrukturu-ukrayiny"
+    "expected_source_url": "https://voxukraine.org/rosiya-atakuye-energetychnu-infrastrukturu-ukrayiny",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_36",
@@ -321,7 +356,8 @@
     "expected_stance": "SUPPORTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/inflyatsiya-ukrayina-2022-dani-nbu"
+    "expected_source_url": "https://voxukraine.org/inflyatsiya-ukrayina-2022-dani-nbu",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_37",
@@ -330,7 +366,8 @@
     "expected_stance": "NEI",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/ekonomika-ukrayiny-2022-vvp-spadinnya"
+    "expected_source_url": "https://voxukraine.org/ekonomika-ukrayiny-2022-vvp-spadinnya",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_38",
@@ -339,7 +376,8 @@
     "expected_stance": "NEI",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/ukrayina-zalezhna-vid-zahidnoyi-dopomohy-manipulyatsiya"
+    "expected_source_url": "https://voxukraine.org/ukrayina-zalezhna-vid-zahidnoyi-dopomohy-manipulyatsiya",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_39",
@@ -348,7 +386,8 @@
     "expected_stance": "NEI",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/serednya-zarplata-ukrayina-yevropejski-krayiny"
+    "expected_source_url": "https://voxukraine.org/serednya-zarplata-ukrayina-yevropejski-krayiny",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_40",
@@ -357,7 +396,8 @@
     "expected_stance": "SUPPORTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/zapasy-litiyu-v-ukrayini-resurs-dlya-majbutnoho"
+    "expected_source_url": "https://voxukraine.org/zapasy-litiyu-v-ukrayini-resurs-dlya-majbutnoho",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_41",
@@ -366,7 +406,8 @@
     "expected_stance": "NEI",
     "language": "ua",
     "source": "StopFake UA",
-    "expected_source_url": "https://www.stopfake.org/uk/energosystema-ukrayiny-masshtaby-ruynuvan/"
+    "expected_source_url": "https://www.stopfake.org/uk/energosystema-ukrayiny-masshtaby-ruynuvan/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_42",
@@ -375,7 +416,8 @@
     "expected_stance": "NEI",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/vidnovlyuvana-energetyka-zamist-atomnoyi-ukrayina"
+    "expected_source_url": "https://voxukraine.org/vidnovlyuvana-energetyka-zamist-atomnoyi-ukrayina",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_43",
@@ -384,7 +426,8 @@
     "expected_stance": "SUPPORTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/tranzyt-gazu-cherez-ukrayinu-2025"
+    "expected_source_url": "https://voxukraine.org/tranzyt-gazu-cherez-ukrayinu-2025",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_44",
@@ -393,7 +436,8 @@
     "expected_stance": "SUPPORTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/ukrayina-vyrobnytstvo-sonyashnykovoyi-oliyi"
+    "expected_source_url": "https://voxukraine.org/ukrayina-vyrobnytstvo-sonyashnykovoyi-oliyi",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_45",
@@ -402,7 +446,8 @@
     "expected_stance": "NEI",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/koruptsiya-efektyvnist-inozemnoyi-dopomohy-ukrayini"
+    "expected_source_url": "https://voxukraine.org/koruptsiya-efektyvnist-inozemnoyi-dopomohy-ukrayini",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_46",
@@ -411,7 +456,8 @@
     "expected_stance": "NEI",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/ukrayinski-bizhentsi-plany-povernennya"
+    "expected_source_url": "https://voxukraine.org/ukrayinski-bizhentsi-plany-povernennya",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_47",
@@ -420,7 +466,8 @@
     "expected_stance": "NEI",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/demografichna-kryza-ukrayina-vijna-emihratsiya"
+    "expected_source_url": "https://voxukraine.org/demografichna-kryza-ukrayina-vijna-emihratsiya",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_48",
@@ -429,7 +476,8 @@
     "expected_stance": "REFUTED",
     "language": "ua",
     "source": "StopFake UA",
-    "expected_source_url": "https://www.stopfake.org/uk/fejk-ukrayinska-mova-tse-dialekt-rosijskoyi/"
+    "expected_source_url": "https://www.stopfake.org/uk/fejk-ukrayinska-mova-tse-dialekt-rosijskoyi/",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_49",
@@ -438,7 +486,8 @@
     "expected_stance": "SUPPORTED",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/tsyfrovizatsiya-ukrayiny-diya-dosyagnennya"
+    "expected_source_url": "https://voxukraine.org/tsyfrovizatsiya-ukrayiny-diya-dosyagnennya",
+    "created_at": "2026-03-25T17:14:24Z"
   },
   {
     "id": "ua_50",
@@ -447,6 +496,7 @@
     "expected_stance": "NEI",
     "language": "ua",
     "source": "VoxUkraine",
-    "expected_source_url": "https://voxukraine.org/zakon-pro-mobilizatsiyu-prava-lyudyny-analiz"
+    "expected_source_url": "https://voxukraine.org/zakon-pro-mobilizatsiyu-prava-lyudyny-analiz",
+    "created_at": "2026-03-25T17:14:24Z"
   }
 ]

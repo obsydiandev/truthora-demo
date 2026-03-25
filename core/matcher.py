@@ -93,7 +93,7 @@ class ClaimMatcher:
         self._qdrant = qdrant_service or QdrantService()
         self._reranker = Reranker()
 
-    # Map fact-checker verdicts to stance labels
+    # Map fact-checker verdicts to stance labels (exact match, lowercased)
     _RATING_MAP: dict[str, StanceLabel] = {
         # English
         "false": StanceLabel.REFUTED,
@@ -101,12 +101,28 @@ class ClaimMatcher:
         "pants on fire": StanceLabel.REFUTED,
         "fake": StanceLabel.REFUTED,
         "incorrect": StanceLabel.REFUTED,
+        "partly false": StanceLabel.REFUTED,
+        "four pinocchios": StanceLabel.REFUTED,
+        "three pinocchios": StanceLabel.REFUTED,
+        "bottomless pinocchio": StanceLabel.REFUTED,
         "true": StanceLabel.SUPPORTED,
         "mostly true": StanceLabel.SUPPORTED,
         "correct": StanceLabel.SUPPORTED,
+        "one pinocchio": StanceLabel.SUPPORTED,
+        "geppetto checkmark": StanceLabel.SUPPORTED,
         "misleading": StanceLabel.NEI,
         "mixture": StanceLabel.NEI,
         "unproven": StanceLabel.NEI,
+        "missing context": StanceLabel.NEI,
+        "unsupported": StanceLabel.NEI,
+        "not supported": StanceLabel.NEI,
+        "lacks context": StanceLabel.NEI,
+        "out of context": StanceLabel.NEI,
+        "half true": StanceLabel.NEI,
+        "two pinocchios": StanceLabel.NEI,
+        "exaggerated": StanceLabel.NEI,
+        "needs context": StanceLabel.NEI,
+        "outdated": StanceLabel.NEI,
         # Polish
         "fałsz": StanceLabel.REFUTED,
         "nieprawda": StanceLabel.REFUTED,
@@ -114,11 +130,25 @@ class ClaimMatcher:
         "prawda": StanceLabel.SUPPORTED,
         "blisko prawdy": StanceLabel.NEI,
         "półprawda": StanceLabel.NEI,
+        # Ukrainian
+        "брехня": StanceLabel.REFUTED,
+        "маніпуляція": StanceLabel.REFUTED,
+        "правда": StanceLabel.SUPPORTED,
         # Direct stance labels
         "refuted": StanceLabel.REFUTED,
         "supported": StanceLabel.SUPPORTED,
         "nei": StanceLabel.NEI,
     }
+
+    # Keyword-based fallback for long/descriptive ratings (checked in order)
+    _RATING_KEYWORDS: list[tuple[list[str], StanceLabel]] = [
+        (["false", "fake", "fabricat", "debunk", "pinocchio", "scam", "hoax"], StanceLabel.REFUTED),
+        (["true", "correct", "accurate", "confirmed"], StanceLabel.SUPPORTED),
+        (["misleading", "missing context", "no evidence", "unproven",
+          "unsupported", "mixture", "partly", "cherry-pick", "lacks context",
+          "exaggerat", "out of context", "not supported", "needs context",
+          "no proof", "distort"], StanceLabel.NEI),
+    ]
 
     def _resolve_stance(
         self,
@@ -129,8 +159,13 @@ class ClaimMatcher:
         """Determine stance from review_rating if available, else NLI."""
         if review_rating:
             key = review_rating.strip().lower()
+            # Exact match
             if key in self._RATING_MAP:
                 return self._RATING_MAP[key], 0.9
+            # Keyword fallback for descriptive ratings
+            for keywords, stance in self._RATING_KEYWORDS:
+                if any(kw in key for kw in keywords):
+                    return stance, 0.85
         return self._reranker.classify_stance(claim_text, evidence_text)
 
     async def match(self, claim: Claim, top_k: int = 10) -> ClaimResult:
