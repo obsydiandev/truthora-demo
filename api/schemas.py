@@ -86,9 +86,10 @@ class AnalyzeResponse(BaseModel):
     language: Optional[str] = None
     claims: list[ClaimResult] = Field(default_factory=list)
     processing_time_ms: float
-    verdict: Optional[str] = None  # VERIFIED / UNVERIFIED / LIKELY_FALSE / NO_DATA
+    verdict: Optional[str] = None  # VERIFIED / UNVERIFIED / LIKELY_FALSE / INCONCLUSIVE / NO_DATA
     confidence: Optional[float] = None  # 0-1
-    verdict_explanation: Optional[str] = None  # Human-readable one-liner
+    verdict_explanation: Optional[str] = None  # Human-readable one-liner (EN)
+    verdict_details: Optional[dict] = None  # Structured data for localized UI rendering
 
 
 class ClaimReviewRequest(BaseModel):

@@ -2,35 +2,55 @@
 
 from __future__ import annotations
 
+import logging
+import re
 import time
 import uuid
 
 from fastapi import APIRouter, HTTPException
 
-from api.schemas import AnalyzeRequest, AnalyzeResponse, ClaimResult
+from api.schemas import AnalyzeRequest, AnalyzeResponse, CheckworthinessScore, Claim, ClaimResult
 from core.detector import ClaimDetector
 from core.extractor import extract_text
 from core.matcher import ClaimMatcher
 from core.normalizer import normalize_claims
 
+logger = logging.getLogger(__name__)
+
 router = APIRouter()
 
+# Headlines under this char limit are treated as a single claim (skip LLM)
+_HEADLINE_FAST_PATH_LIMIT = 500
 
-def _compute_verdict(results: list[ClaimResult]) -> tuple[str, float, str]:
-    """Derive an overall verdict, confidence, and explanation from claim results.
+_RE_CYRILLIC = re.compile(r"[\u0400-\u04FF]")
+_RE_POLISH = re.compile(r"[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]")
+
+
+def _detect_headline_language(text: str) -> str:
+    """Fast heuristic language detection for short headline text."""
+    if _RE_CYRILLIC.search(text):
+        return "ua"
+    if _RE_POLISH.search(text):
+        return "pl"
+    return "en"
+
+
+def _compute_verdict(results: list[ClaimResult]) -> tuple[str, float, str, dict]:
+    """Derive an overall verdict, confidence, explanation, and structured details.
 
     Confidence = consensus_weight(0.6) × consensus + quality_weight(0.4) × avg_quality
-    - consensus: how strongly the dominant stance dominates (majority/total)
-    - quality: average final_score of matches
 
-    Returns (verdict, confidence, explanation).
+    Returns (verdict, confidence, explanation, details).
     """
+    empty_details: dict = {"supported": 0, "refuted": 0, "nei": 0, "total": 0,
+                           "outdated": 0, "avg_score": 0.0, "quality": "low", "conflicting": False}
+
     if not results:
-        return "NO_DATA", 0.0, "No claims were detected in this content."
+        return "NO_DATA", 0.0, "No claims were detected in this content.", empty_details
 
     all_matches = [m for r in results for m in r.matches]
     if not all_matches:
-        return "NO_DATA", 0.0, "No fact-check matches found for the detected claims."
+        return "NO_DATA", 0.0, "No fact-check matches found for the detected claims.", empty_details
 
     stances = [
         m.stance.value if hasattr(m.stance, "value") else m.stance
@@ -59,27 +79,48 @@ def _compute_verdict(results: list[ClaimResult]) -> tuple[str, float, str]:
         if (m.freshness_badge.value if hasattr(m.freshness_badge, "value") else m.freshness_badge) == "outdated"
     )
 
+    quality_word = "high" if avg_score >= 0.7 else "moderate" if avg_score >= 0.45 else "low"
+    conflicting = consensus < 0.6 and total >= 3
+
     # Determine verdict
     avg_uncertainty = sum(r.uncertainty for r in results) / len(results)
-    if total == 0:
+
+    # INCONCLUSIVE: high uncertainty + low confidence = don't show a colored verdict
+    if avg_uncertainty > 0.7 and confidence < 0.5:
+        verdict = "INCONCLUSIVE"
+    # Conflicting stances: no clear majority → inconclusive, not a strong verdict
+    elif conflicting:
+        verdict = "INCONCLUSIVE"
+    elif total == 0:
         verdict = "NO_DATA"
-    elif refuted / total >= 0.4:
+    elif refuted / total >= 0.6:
         verdict = "LIKELY_FALSE"
-    elif supported / total >= 0.4:
+    elif supported / total >= 0.6:
         verdict = "VERIFIED"
     elif avg_uncertainty > 0.7:
-        verdict = "NO_DATA"
+        verdict = "INCONCLUSIVE"
     else:
         verdict = "UNVERIFIED"
 
-    # Build explanation
+    # Structured details for localized rendering
+    details = {
+        "supported": supported,
+        "refuted": refuted,
+        "nei": nei,
+        "total": total,
+        "outdated": outdated,
+        "avg_score": round(avg_score, 2),
+        "quality": quality_word,
+        "conflicting": conflicting,
+    }
+
+    # Build English explanation (kept for API consumers)
     parts: list[str] = []
     if refuted > 0 or supported > 0:
         dominant_label = "refute" if refuted >= supported else "support"
         dominant_n = refuted if refuted >= supported else supported
         parts.append(f"{dominant_n} of {total} matched fact-checks {dominant_label} this claim")
 
-    quality_word = "high" if avg_score >= 0.7 else "moderate" if avg_score >= 0.45 else "low"
     parts.append(f"Match quality: {quality_word} (avg score {avg_score:.2f})")
 
     if outdated > 0:
@@ -88,7 +129,7 @@ def _compute_verdict(results: list[ClaimResult]) -> tuple[str, float, str]:
             f"outdated — manual review recommended"
         )
 
-    if consensus < 0.6 and total >= 3:
+    if conflicting:
         parts.append(
             f"Matches conflict in stance ({supported} supported vs "
             f"{refuted} refuted vs {nei} NEI). Human verification required"
@@ -96,7 +137,7 @@ def _compute_verdict(results: list[ClaimResult]) -> tuple[str, float, str]:
 
     explanation = ". ".join(parts) + "." if parts else ""
 
-    return verdict, confidence, explanation
+    return verdict, confidence, explanation, details
 
 
 @router.post("/analyze", response_model=AnalyzeResponse)
@@ -107,10 +148,11 @@ async def analyze_url(request: AnalyzeRequest) -> AnalyzeResponse:
         raise HTTPException(status_code=422, detail="Provide either 'url' or 'headline'")
 
     if request.headline:
+        detected_lang = _detect_headline_language(request.headline)
         extraction = {
             "text": request.headline,
             "title": request.headline[:120],
-            "language": None,
+            "language": detected_lang,
             "url": "headline://input",
         }
         source_url = "headline://input"
@@ -120,13 +162,33 @@ async def analyze_url(request: AnalyzeRequest) -> AnalyzeResponse:
         if extraction is None:
             raise HTTPException(status_code=422, detail=f"Could not extract text from {source_url}")
 
-    detector = ClaimDetector()
-    raw_claims = await detector.detect_claims(
-        text=extraction["text"],
-        language=extraction.get("language", "en"),
-    )
+    text = extraction["text"]
 
-    claims = normalize_claims(raw_claims)
+    # Fast path: short headline text → treat as single claim, skip LLM
+    if request.headline and len(text) <= _HEADLINE_FAST_PATH_LIMIT:
+        logger.info("Headline fast-path: skipping LLM for %d-char input", len(text))
+        claims = [Claim(
+            claim_id="",
+            claim_text=text,
+            source_quote=text,
+            char_start=0,
+            char_end=len(text),
+            language=extraction.get("language") or "en",
+            has_negation=False,
+            checkworthiness=CheckworthinessScore(
+                harm_potential=0.5, virality_potential=0.5,
+                verifiability=0.8, specificity=0.7, public_interest=0.5,
+                composite=0.55,
+            ),
+        )]
+        claims = normalize_claims(claims)
+    else:
+        detector = ClaimDetector()
+        raw_claims = await detector.detect_claims(
+            text=text,
+            language=extraction.get("language", "en"),
+        )
+        claims = normalize_claims(raw_claims)
 
     for claim in claims:
         claim.claim_id = uuid.uuid4().hex[:12]
@@ -137,7 +199,7 @@ async def analyze_url(request: AnalyzeRequest) -> AnalyzeResponse:
         match_result = await matcher.match(claim)
         results.append(match_result)
 
-    verdict, confidence, explanation = _compute_verdict(results)
+    verdict, confidence, explanation, details = _compute_verdict(results)
     elapsed_ms = (time.perf_counter() - start) * 1000
 
     # Use detected language from extraction, or infer from first claim
@@ -154,4 +216,5 @@ async def analyze_url(request: AnalyzeRequest) -> AnalyzeResponse:
         verdict=verdict,
         confidence=confidence,
         verdict_explanation=explanation,
+        verdict_details=details,
     )

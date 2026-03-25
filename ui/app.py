@@ -105,6 +105,11 @@ LABELS: dict[str, dict[str, str]] = {
         "verdict_UNVERIFIED": "⚠️ Unverified",
         "verdict_LIKELY_FALSE": "🔴 Likely False",
         "verdict_NO_DATA": "⚪ No Data",
+        "verdict_INCONCLUSIVE": "⚠️ Inconclusive",
+        "verdict_desc_INCONCLUSIVE": (
+            "Fact-check matches conflict with each other and confidence is too low "
+            "to produce a reliable verdict. Manual expert review is strongly recommended."
+        ),
         "verdict_desc_VERIFIED": (
             "At least 40% of matched fact-checks support the claims in this article. "
             "The information is consistent with known verified sources. "
@@ -161,6 +166,11 @@ LABELS: dict[str, dict[str, str]] = {
         "verdict_UNVERIFIED": "⚠️ Niezweryfikowane",
         "verdict_LIKELY_FALSE": "🔴 Prawdopodobnie fałszywe",
         "verdict_NO_DATA": "⚪ Brak danych",
+        "verdict_INCONCLUSIVE": "⚠️ Niejednoznaczne",
+        "verdict_desc_INCONCLUSIVE": (
+            "Dopasowane fact-checki są ze sobą sprzeczne, a pewność jest zbyt niska, "
+            "aby wydać wiarygodny werdykt. Zdecydowanie zalecana jest ręczna weryfikacja eksperta."
+        ),
         "verdict_desc_VERIFIED": (
             "Co najmniej 40% dopasowanych fact-checków potwierdza twierdzenia z tego artykułu. "
             "Informacje są spójne ze zweryfikowanymi źródłami. "
@@ -217,6 +227,11 @@ LABELS: dict[str, dict[str, str]] = {
         "verdict_UNVERIFIED": "⚠️ Не підтверджено",
         "verdict_LIKELY_FALSE": "🔴 Ймовірно хибне",
         "verdict_NO_DATA": "⚪ Немає даних",
+        "verdict_INCONCLUSIVE": "⚠️ Неоднозначно",
+        "verdict_desc_INCONCLUSIVE": (
+            "Відповідні fact-check суперечать один одному, а впевненість надто низька "
+            "для надійного вердикту. Наполегливо рекомендується ручна експертна перевірка."
+        ),
         "verdict_desc_VERIFIED": (
             "Щонайменше 40% відповідних fact-check підтверджують твердження у цій статті. "
             "Інформація відповідає відомим перевіреним джерелам. "
@@ -247,12 +262,15 @@ VERDICT_STYLES: dict[str, dict[str, str]] = {
     "UNVERIFIED": {"bg": "rgba(241,196,15,0.12)", "border": "#f1c40f", "text": "#7a6800"},
     "LIKELY_FALSE": {"bg": "rgba(231,76,60,0.12)", "border": "#e74c3c", "text": "#a01a0a"},
     "NO_DATA": {"bg": "rgba(149,165,166,0.12)", "border": "#95a5a6", "text": "#555555"},
+    "INCONCLUSIVE": {"bg": "rgba(230,126,34,0.12)", "border": "#e67e22", "text": "#7a4400"},
 }
 
 if "lang" not in st.session_state:
     st.session_state.lang = "en"
 if "analysis_results" not in st.session_state:
     st.session_state.analysis_results = None
+if "analysis_query" not in st.session_state:
+    st.session_state.analysis_query = None
 if "audit_log" not in st.session_state:
     st.session_state.audit_log = []
 
@@ -312,7 +330,62 @@ def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
-def render_verdict_banner(verdict: str, confidence: float, explanation: str = "") -> None:
+def _localized_explanation(details: dict | None) -> str:
+    """Build a localized explanation string from structured verdict_details."""
+    if not details or details.get("total", 0) == 0:
+        return ""
+    lang = st.session_state.lang
+    sup = details["supported"]
+    ref = details["refuted"]
+    nei = details["nei"]
+    total = details["total"]
+    outdated = details.get("outdated", 0)
+    quality = details.get("quality", "moderate")
+    avg = details.get("avg_score", 0.0)
+    conflicting = details.get("conflicting", False)
+
+    _T: dict[str, dict[str, str]] = {
+        "dominant_refute": {
+            "en": f"{ref} of {total} matched fact-checks refute this claim",
+            "pl": f"{ref} z {total} dopasowanych fact-checków obala to twierdzenie",
+            "ua": f"{ref} з {total} відповідних fact-check спростовують це твердження",
+        },
+        "dominant_support": {
+            "en": f"{sup} of {total} matched fact-checks support this claim",
+            "pl": f"{sup} z {total} dopasowanych fact-checków potwierdza to twierdzenie",
+            "ua": f"{sup} з {total} відповідних fact-check підтверджують це твердження",
+        },
+        "quality": {
+            "en": f"Match quality: {quality} (avg score {avg:.2f})",
+            "pl": f"Jakość dopasowania: {quality} (śr. wynik {avg:.2f})",
+            "ua": f"Якість збігу: {quality} (сер. оцінка {avg:.2f})",
+        },
+        "outdated": {
+            "en": f"{outdated} of {total} match{'es are' if outdated != 1 else ' is'} outdated — manual review recommended",
+            "pl": f"{outdated} z {total} dopasowań jest nieaktualnych — zalecana ręczna weryfikacja",
+            "ua": f"{outdated} з {total} збігів застарілі — рекомендується ручна перевірка",
+        },
+        "conflict": {
+            "en": f"Matches conflict in stance ({sup} supported vs {ref} refuted vs {nei} NEI). Human verification required",
+            "pl": f"Sprzeczne stanowiska ({sup} potwierdza vs {ref} obala vs {nei} NEI). Wymagana weryfikacja człowieka",
+            "ua": f"Суперечливі позиції ({sup} підтвердж. vs {ref} спростов. vs {nei} NEI). Потрібна перевірка людиною",
+        },
+    }
+
+    parts: list[str] = []
+    if ref > 0 or sup > 0:
+        key = "dominant_refute" if ref >= sup else "dominant_support"
+        parts.append(_T[key][lang])
+    parts.append(_T["quality"][lang])
+    if outdated > 0:
+        parts.append(_T["outdated"][lang])
+    if conflicting:
+        parts.append(_T["conflict"][lang])
+    return ". ".join(parts) + "." if parts else ""
+
+
+def render_verdict_banner(verdict: str, confidence: float,
+                          explanation: str = "", details: dict | None = None) -> None:
     style = VERDICT_STYLES.get(verdict, VERDICT_STYLES["NO_DATA"])
     bg = style["bg"]
     border = style["border"]
@@ -338,13 +411,16 @@ def render_verdict_banner(verdict: str, confidence: float, explanation: str = ""
             f'border-radius:4px;transition:width .4s ease;"></div></div>'
         )
 
-    # Explanation block
+    # Localized explanation from structured details, fallback to English string
+    localized = _localized_explanation(details)
+    display_explanation = localized or explanation
+
     explanation_html = ""
-    if explanation:
+    if display_explanation:
         explanation_html = (
             f'<div style="font-size:0.85rem;opacity:0.85;margin-top:8px;'
             f'border-top:1px solid {border}33;padding-top:8px;">'
-            f'📋 {explanation}</div>'
+            f'📋 {display_explanation}</div>'
         )
 
     st.markdown(
@@ -413,6 +489,7 @@ with tab_url:
                 result = call_analyze_api(url=url_input)
                 if result:
                     st.session_state.analysis_results = result
+                    st.session_state.analysis_query = {"text": url_input}
 
 with tab_headline:
     headline_input = st.text_area(
@@ -430,6 +507,7 @@ with tab_headline:
             result = call_analyze_api(headline=headline_input)
             if result:
                 st.session_state.analysis_results = result
+                st.session_state.analysis_query = {"text": headline_input}
 
 TEST_CASES = [
     # EN — REFUTED
@@ -580,6 +658,11 @@ with tab_test:
                     result = call_analyze_api(headline=tc["claim"])
                     if result:
                         st.session_state.analysis_results = result
+                        st.session_state.analysis_query = {
+                            "text": tc["claim"],
+                            "expected_stance": tc["stance"],
+                            "source": tc.get("source"),
+                        }
                         st.rerun()
 
 
@@ -588,10 +671,25 @@ results = st.session_state.analysis_results
 if results:
     st.divider()
 
+    # Show which query produced these results
+    query_info = st.session_state.get("analysis_query")
+    if query_info:
+        _expected = query_info.get("expected_stance", "")
+        _dot = {"REFUTED": "🔴", "SUPPORTED": "🟢", "NEI": "🟡"}.get(_expected, "")
+        st.markdown(
+            f'<div style="background:rgba(100,100,255,0.08);border-left:4px solid #6366f1;'
+            f'border-radius:6px;padding:12px 16px;margin-bottom:12px;font-size:1.05rem;">'
+            f'🔎 <strong>{query_info["text"]}</strong>'
+            f'{f"  &nbsp; {_dot} expected: {_expected}" if _expected else ""}'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+
     verdict = results.get("verdict", "NO_DATA")
     confidence = results.get("confidence", 0.0) or 0.0
     explanation = results.get("verdict_explanation", "")
-    render_verdict_banner(verdict, confidence, explanation)
+    details = results.get("verdict_details")
+    render_verdict_banner(verdict, confidence, explanation, details)
 
     col_meta1, col_meta2, col_meta3 = st.columns(3)
     with col_meta1:

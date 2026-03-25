@@ -257,6 +257,18 @@ class ClaimMatcher:
 
         matches.sort(key=lambda m: m.final_score, reverse=True)
 
+        # Deduplicate by URL — keep highest-scoring entry per source URL
+        seen_urls: set[str] = set()
+        deduped: list[FactCheckMatch] = []
+        for m in matches:
+            url = m.matched_url
+            if url and url in seen_urls:
+                continue
+            if url:
+                seen_urls.add(url)
+            deduped.append(m)
+        matches = deduped
+
         # Compute entropy-based uncertainty
         top_scores = [m.final_score for m in matches[:5]]
         uncertainty = compute_entropy(top_scores)
