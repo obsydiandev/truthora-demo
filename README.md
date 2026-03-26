@@ -27,6 +27,7 @@ git clone https://github.com/obsydiandev/truthora-demo
 cd truthora-demo
 cp .env.example .env        # fill in GROQ_API_KEY and GOOGLE_FC_API_KEY (see Configuration below)
 
+
 docker compose up --build
 docker compose exec api python3 data/seeds/seed.py           # triggers BGE-M3 download (~2 GB) on first run
 docker compose exec api python3 data/seeds/ingest_google_fc.py  # pull ~500 real fact-checks (recommended)
@@ -59,15 +60,15 @@ Results are written to `data/benchmark/results/baseline_v01.json`.
 
 | Metric | Current | Target |
 |---|---|---|
-| Recall@5 | **0.9840** ✅ | ≥ 0.74 |
-| MRR | **0.9435** ✅ | ≥ 0.60 |
-| Stance F1 (macro) | **0.7914** ✅ | ≥ 0.70 |
+| Recall@5 | **0.9960** ✅ | ≥ 0.74 |
+| MRR | **0.9467** ✅ | ≥ 0.60 |
+| Stance F1 (macro) | **0.8656** ✅ | ≥ 0.70 |
 
 | Language | Recall@5 | MRR | Stance F1 | Pairs |
 |---|---|---|---|---|
-| EN | 0.9600 | 0.9187 | 0.5456 | 100 |
-| PL | 1.0000 | 0.9500 | 0.8782 | 100 |
-| UA | 1.0000 | 0.9800 | 0.9582 | 50 |
+| EN | 0.9900 | 0.9300 | 0.7498 | 100 |
+| PL | 1.0000 | 0.9467 | 0.8674 | 100 |
+| UA | 1.0000 | 0.9800 | 0.9587 | 50 |
 
 > **Note:** The benchmark runs in `--direct` mode by default, which bypasses
 > the LLM (Groq/Ollama) and tests the matching pipeline directly
@@ -76,6 +77,14 @@ Results are written to `data/benchmark/results/baseline_v01.json`.
 > NLI stance classification uses `cross-encoder/nli-deberta-v3-small` and
 > reranking uses `BAAI/bge-reranker-v2-m3` (~1.3 GB combined, downloaded on
 > first request and cached in the `hf_cache` volume).
+
+> **Reproducibility note:** Benchmark results depend on the contents of the Qdrant database
+> at the time of evaluation. Results shown above were measured on **564 fact-checks
+> (EN: 307 / PL: 199 / UK: 55)** indexed on 2026-03-26 via `ingest_google_fc.py`.
+> Re-running after a fresh ingest may yield slightly different metrics as the Google
+> Fact Check API returns a varying number of documents over time.
+> For reproducible results, use a fixed database snapshot.
+
 
 To adjust parameters:
 
