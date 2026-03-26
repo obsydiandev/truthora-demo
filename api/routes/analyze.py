@@ -165,7 +165,8 @@ async def analyze_url(request: AnalyzeRequest) -> AnalyzeResponse:
     text = extraction["text"]
 
     # Fast path: short headline text → treat as single claim, skip LLM
-    if request.headline and len(text) <= _HEADLINE_FAST_PATH_LIMIT:
+    # Bypassed when force_llm=True (used by benchmark --run-pipeline to exercise full path)
+    if request.headline and len(text) <= _HEADLINE_FAST_PATH_LIMIT and not request.force_llm:
         logger.info("Headline fast-path: skipping LLM for %d-char input", len(text))
         claims = [Claim(
             claim_id="",
@@ -193,7 +194,7 @@ async def analyze_url(request: AnalyzeRequest) -> AnalyzeResponse:
     for claim in claims:
         claim.claim_id = uuid.uuid4().hex[:12]
 
-    matcher = ClaimMatcher()
+    matcher = ClaimMatcher(nli_only=request.nli_only)
     results: list[ClaimResult] = []
     for claim in claims:
         match_result = await matcher.match(claim)

@@ -7,7 +7,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/wdrozenie-5g-ma-zwiazek-z-pandemia-covid-19-fake-news/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Czy nadajniki 5G są przyczyną pandemii?! Eksperci biją na alarm!!!"
   },
   {
     "id": "pl_02",
@@ -17,7 +18,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/polska/inflacja-w-styczniu-2025-dane-gus-st8240796",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "BREAKING: Inflacja SPADŁA poniżej celu NBP!! W styczniu 2025!! Morawiecki miał rację?!"
   },
   {
     "id": "pl_03",
@@ -27,7 +29,8 @@
     "language": "pl",
     "source": "Fakenews.pl",
     "expected_source_url": "https://fakenews.pl/srodowisko/wegiel-brunatny-nie-jest-najtanszym-zrodlem-energii-w-polsce/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Węgiel brunatny NAJTAŃSZY prąd w Polsce!! Dlaczego nam nie pozwalają wydobywać?!"
   },
   {
     "id": "pl_04",
@@ -37,7 +40,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/energia-elektryczna-z-wegla-tylko-w-polsce-falsz/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska JEDYNYM krajem w Europie z węglem?! To kłamstwo ekologów!! Czechy Niemcy też palą!!"
   },
   {
     "id": "pl_05",
@@ -47,7 +51,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/jak-duze-jest-poparcie-polakow-dla-wyjscia-z-unii-europejskiej/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Prawie 17% Polaków chce POLEXITU!! To prawie co szósty!! Koniec z Brukselą!!"
   },
   {
     "id": "pl_06",
@@ -57,7 +62,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-na-covid-19-nie-byly-badane-to-nie-slowa-z-europarlamentu/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "SZEFOWA Pfizera przyznała w Parlamencie Europejskim że szczepionki NIE BYŁY BADANE na transmisję!!"
   },
   {
     "id": "pl_07",
@@ -67,7 +73,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/teorie-spiskowe-wokol-covid-19-sprawdzamy-film-z-wojciechem-cejrowskim/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "IWERMEKTYNA LECZY COVID!! Zatwierdzona przez lekarzy!! Big Pharma blokuje bo jest za tania!!"
   },
   {
     "id": "pl_08",
@@ -77,7 +84,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/mentzen-energetyka-wegiel-ets",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Mentzen miał RACJĘ: usuńmy regulacje klimatyczne a polski węgiel będzie za grosze!!"
   },
   {
     "id": "pl_09",
@@ -87,7 +95,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/przestepstwa-obcokrajowcow-ich-liczba-gwaltownie-wzrosla-za-rzadow-po/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "SZOKUJĄCE dane: Przestępczość CUDZOZIEMCÓW w Polsce EKSPLODOWAŁA!! Statystyki nie kłamią!!"
   },
   {
     "id": "pl_10",
@@ -97,7 +106,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/wegiel-tani-minister-wojcik",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska siedzi na GÓRZE węgla a rząd każe nam zamarzać!! Błąd stulecia!!"
   },
   {
     "id": "pl_11",
@@ -107,7 +117,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/witczak-i-placzek-twierdza-ze-szczepienia-zwiekszaja-ryzyko-raka-skad-wzieli-te-dane/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Koreańskie badania POTWIERDZAJĄ: szczepionka COVID zwiększa ryzyko RAKA!! Dane nie kłamią!!"
   },
   {
     "id": "pl_12",
@@ -117,7 +128,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-mrna-wywoluja-raka-szkodliwy-fake-news-powraca/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Szczepionki mRNA INTEGRUJĄ SIĘ z DNA i powodują RAKA!! Naukowcy mówią wprost!!"
   },
   {
     "id": "pl_13",
@@ -127,7 +139,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/przypadek-turbo-raka-po-szczepieniu-na-covid-19-czy-to-prawda/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Dawka przypominająca = TURBO RAK!! Coraz więcej szczepionych zapada na raka po boosterze!!"
   },
   {
     "id": "pl_14",
@@ -137,7 +150,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/polexit-suwerenna-polska",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "UE uznała MARCHEW za owoc a ŚLIMAKA za rybę!! Brukselska biurokracja OSZALAŁA!! 🥕🐌"
   },
   {
     "id": "pl_15",
@@ -147,7 +161,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/miliony-polakow-otrzymalo-trucizne-jak-dezinformuje-lukasz-andryszczak/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "MILIONY Polaków OTRUCI szczepionką na COVID!! Kiedy odpowiedzą za to winni?!"
   },
   {
     "id": "pl_16",
@@ -157,7 +172,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/inflacja-wina-tuska-prad-wina-tuska-pis-znow-stracil-pamiec",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Rachunki za prąd i gaz LECĄ W GÓRĘ!! Inflacja rośnie!! WINA OBECNEGO RZĄDU!!"
   },
   {
     "id": "pl_17",
@@ -167,7 +183,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/tylko-polska-wydobywa-w-europie-wegiel-sytuacja-wyglada-inaczej/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska OSTATNIM krajem w Europie który wydobywa węgiel?! Bzdura!! Sprawdź fakty!!"
   },
   {
     "id": "pl_18",
@@ -177,7 +194,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-niebezpieczniejsze-niz-covid-19-fake-news/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "SZCZEPIONKA na COVID BARDZIEJ NIEBEZPIECZNA niż sam covid!! Dane z VAERS to potwierdzają!!"
   },
   {
     "id": "pl_19",
@@ -187,7 +205,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-przeciw-covid-19-nie-zawieraja-toksyn/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "TOKSYNY w szczepionkach na COVID!! Lista składników przeraża!! Co wstrzykują ludziom?!"
   },
   {
     "id": "pl_20",
@@ -197,7 +216,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/rzady-manipuluja-statystykami-by-ukryc-powiklania-zaszczepionych-falsz/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "RZĄDY FAŁSZUJĄ statystyki żeby UKRYĆ powikłania poszczepienne!! Prawda wychodzi na jaw!!"
   },
   {
     "id": "pl_21",
@@ -207,7 +227,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/szczepionki-przeciw-covid-19-nie-sa-szczepionkami-fake-news/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "To NIE SĄ szczepionki!! Terapia genowa sprzedawana pod fałszywą nazwą!! Oszustwo!!"
   },
   {
     "id": "pl_22",
@@ -217,7 +238,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/szczepienia-na-covid-19-do-2023-roku-uznawano-za-eksperyment-falsz/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Do 2023 roku szczepienia COVID były EKSPERYMENTEM MEDYCZNYM!! Na ludziach!! Bez ich wiedzy!!"
   },
   {
     "id": "pl_23",
@@ -227,7 +249,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/czy-szczepionki-sa-nieprzebadane-i-niebezpieczne-fake-news/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Szczepionki COVID NIEPRZEBADANE i NIEBEZPIECZNE!! Producenci sami przyznają w dokumentach!!"
   },
   {
     "id": "pl_24",
@@ -237,7 +260,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/covid-19-to-zaplanowana-depopulacja-fake-news/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Pandemia COVID = PLANOWANA DEPOPULACJA!! Kto za tym stoi?! Dowody są!!"
   },
   {
     "id": "pl_25",
@@ -247,7 +271,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/oze-rekord-wrzesien-wegiel",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "HISTORYCZNY MOMENT: We wrześniu 2024 mniej niż POŁOWA prądu z węgla!! Transformacja działa?!"
   },
   {
     "id": "pl_26",
@@ -257,7 +282,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/wegiel-energetyka-doplaty-wzrosna",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska NAJSZYBCIEJ odchodzi od węgla w Europie?! Kto by pomyślał!! Dane nie kłamią!!"
   },
   {
     "id": "pl_27",
@@ -267,7 +293,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/polska-od-wegla-juz-w-latach-30",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska MOŻE porzucić węgiel już w LATACH 30!! Eksperci mówią wprost!! Koniec ery węgla!!"
   },
   {
     "id": "pl_28",
@@ -277,7 +304,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/maseczki-nie-chronia-przed-wirusami-to-nieprawda/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Maseczki NIE CHRONIĄ przed wirusami!! Naukowcy POTWIERDZILI!! Cały czas nas oszukiwali!!"
   },
   {
     "id": "pl_29",
@@ -287,7 +315,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/zdrowie/lockdowny-a-covid-skutecznosc-ograniczen-st7894521",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "LOCKDOWNY BEZUŻYTECZNE!! Nie miały ŻADNEGO wpływu na rozprzestrzenianie COVID!! Dane jasne!!"
   },
   {
     "id": "pl_30",
@@ -297,7 +326,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/zdrowie/who-koniec-pandemii-covid-19-maj-2023-st7654320",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "WHO OGŁOSIŁO KONIEC pandemii COVID w maju 2023!! Dlaczego media dalej straszą?!"
   },
   {
     "id": "pl_31",
@@ -307,7 +337,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/nadmiarowe-zgony-polska-pandemia-eurostat",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska miała JEDNE Z NAJWYŻSZYCH nadmiarowych zgonów w UE podczas pandemii!! Co poszło nie tak?!"
   },
   {
     "id": "pl_32",
@@ -317,7 +348,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/zdrowie/szczepienia-covid-polska-statystyki-st7543210",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "22 MILIONY Polaków zaszczepione przeciw COVID!! Rekordowa operacja szczepień!!"
   },
   {
     "id": "pl_33",
@@ -327,7 +359,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/odpornosc-naturalna-lepsza-od-szczepionkowej-to-uproszczenie/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Naturalna odporność LEPSZA i TRWALSZA niż po szczepionce!! Naukowcy to potwierdzają!!"
   },
   {
     "id": "pl_34",
@@ -337,7 +370,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/polska/elektrownia-jadrowa-polska-harmonogram-st8012345",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Pierwsza elektrownia atomowa w Polsce do 2033?! Wierzysz w to?! NIEMOŻLIWE w tym terminie!!"
   },
   {
     "id": "pl_35",
@@ -347,7 +381,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/wiatraki-zabijaja-miliony-ptakow-to-manipulacja/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Turbiny wiatrowe MASAKRUJĄ MILIONY PTAKÓW rocznie!! Ekologiczna KATASTROFA w imię zielonego ładu!!"
   },
   {
     "id": "pl_36",
@@ -357,7 +392,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/fotowoltaika-polska-naslonecznienie-mit",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "FOTOWOLTAIKA w Polsce?! Za MAŁO SŁOŃCA!! Totalna STRATA pieniędzy na panele solarne!!"
   },
   {
     "id": "pl_37",
@@ -367,7 +403,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/oze-tansze-niz-wegiel-koszty-energii",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Energia z OZE DROŻSZA niż z węgla!! Ile jeszcze będziemy dopłacać do wiatraków?!"
   },
   {
     "id": "pl_38",
@@ -377,7 +414,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/swiat/niemcy-wegiel-atom-powrot-st7890123",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "SZOK: Niemcy WRACAJĄ DO WĘGLA po zamknięciu atomówek!! A nam każą odchodzić!! Hipokryci!!"
   },
   {
     "id": "pl_39",
@@ -387,7 +425,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/emisje-co2-per-capita-polska-na-tle-ue/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska emituje NAJWIĘCEJ CO2 na mieszkańca w UE?! Sprawdź PRAWDZIWE dane!! To nieprawda!!"
   },
   {
     "id": "pl_40",
@@ -397,7 +436,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/zielony-lad-rolnictwo-polska-skutki",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "ZIELONY ŁAD ZNISZCZY polskie rolnictwo!! Rolnicy BANKRUTUJĄ przez Brukselę!!"
   },
   {
     "id": "pl_41",
@@ -407,7 +447,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/transformacja-energetyczna-miejsca-pracy",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Transformacja energetyczna STWORZY WIĘCEJ miejsc pracy niż zabierze!! Nowe miejsca czekają!!"
   },
   {
     "id": "pl_42",
@@ -417,7 +458,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/polska/rachunki-za-prad-2024-wzrost-cen-st8123456",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Rachunki za prąd WZROSŁY o 50% w 2024!! Polacy nie stać na ogrzewanie!! KATASTROFA!!"
   },
   {
     "id": "pl_43",
@@ -427,7 +469,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/potencjal-geotermalny-polski-fakty/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska ma NAJWIĘKSZY potencjał GEOTERMALNY w Europie Środkowej!! Dlaczego tego nie wykorzystujemy?!"
   },
   {
     "id": "pl_44",
@@ -437,7 +480,8 @@
     "language": "pl",
     "source": "Fakenews.pl",
     "expected_source_url": "https://fakenews.pl/zdrowie/infra-dzwieki-z-wiatrakow-nie-szkodza-zdrowiu/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Farmy wiatrowe powodują INFRADŹWIĘKI! Ludzie w pobliżu CHORUJĄ!! Udowodnione naukowo!!"
   },
   {
     "id": "pl_45",
@@ -447,7 +491,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/pakt-klimatyczny-spisek-przeciw-polsce-falsz/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Europejski pakt klimatyczny to SPISEK wymierzony SPECJALNIE w Polskę!! Kto za tym stoi?!"
   },
   {
     "id": "pl_46",
@@ -457,7 +502,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/ets-co2-ceny-energii-polska",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Ceny UPRAWNIEŃ CO2 = główna przyczyna drogiego prądu w Polsce!! ETS to haracz na Polaków!!"
   },
   {
     "id": "pl_47",
@@ -467,7 +513,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/polska/baltic-pipe-gaz-norwegia-polska-st8012367",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska sprowadza coraz więcej gazu z NORWEGII!! Dywersyfikacja wreszcie działa!! Koniec z rosyjskim gazem!!"
   },
   {
     "id": "pl_48",
@@ -477,7 +524,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/wiatraki-powoduja-choroby-to-nie-jest-potwierdzone/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Wiatraki powodują CHOROBY u mieszkańców!! Ludzie skarżą się na bóle głowy i bezsenność!!"
   },
   {
     "id": "pl_49",
@@ -487,7 +535,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/polska-samowystarczalnosc-oze-realne",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska SAMOWYSTARCZALNA energetycznie dzięki OZE?! To naprawdę MOŻLIWE!! 🌞🌊💨"
   },
   {
     "id": "pl_50",
@@ -497,7 +546,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/motoryzacja/samochody-elektryczne-zima-polska-st7654321",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Auta elektryczne ZIMĄ nie działają!! W polskich warunkach dojedziesz MOŻE 100km!! Bujda!!"
   },
   {
     "id": "pl_51",
@@ -507,7 +557,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/emisje-co2-polski-udzial-w-swiatowych-emisjach/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska emituje MNIEJ NIŻ 1% światowego CO2!! Dlaczego MY mamy płacić za klimat?!"
   },
   {
     "id": "pl_52",
@@ -517,7 +568,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/analizy_i_raporty/czy-polska-traci-suwerennosc-w-ue/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska TRACI SUWERENNOŚĆ przez UE!! Bruksela przejmuje kontrolę nad naszym państwem!!"
   },
   {
     "id": "pl_53",
@@ -527,7 +579,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/polska/fundusze-europejskie-beneficjenci-ue-st7123456",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Fundusze unijne trafiają do BOGATYCH krajów!! Polska dostaje OCHŁAPY ze stołu Brukseli!!"
   },
   {
     "id": "pl_54",
@@ -537,7 +590,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/polska/polska-beneficjent-funduszy-ue-od-2004-st7234567",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska NAJWIĘKSZYM beneficjentem netto funduszy UE od 2004!! To prawda!! Miliardy popłynęły!!"
   },
   {
     "id": "pl_55",
@@ -547,7 +601,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/tsue-jurysdykcja-nad-polskim-prawem/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "TSUE NIE MA prawa orzekać o polskim prawie krajowym!! Nasza konstytucja jest NAJWYŻSZA!!"
   },
   {
     "id": "pl_56",
@@ -557,7 +612,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/kpo-polska-odblokowanie-2024",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "KPO ODBLOKOWANE w 2024!! Pieniądze na odbudowę wreszcie płyną do Polski!! 💰"
   },
   {
     "id": "pl_57",
@@ -567,7 +623,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/swiat/artykul-50-traktat-lizbon-wystapienie-ue-st7345678",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Traktat lizboński GWARANTUJE prawo do wyjścia z UE!! Art. 50 jest jasny!! Polexit MOŻLIWY!!"
   },
   {
     "id": "pl_58",
@@ -577,7 +634,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/wiekszosc-polakow-chce-referendum-ws-wyjscia-z-ue-falsz/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "WIĘKSZOŚĆ Polaków chce REFERENDUM ws. UE!! Dajcie nam głosować!! Demokracja!!"
   },
   {
     "id": "pl_59",
@@ -587,7 +645,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/obowiazkowe-kwoty-relokacji-uchodzccow-w-ue/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "UE WYMUSZA na Polsce obowiązkowe KWOTY relokacji uchodźców!! Przyjmiecie kogo każą!!"
   },
   {
     "id": "pl_60",
@@ -597,7 +656,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/praworzadnosc-art-7-polska-pretekst",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Praworządność to PRETEKST do karania Polski!! Bruksela używa tego jako bata na nieposłusznych!!"
   },
   {
     "id": "pl_61",
@@ -607,7 +667,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/polska/polska-skladki-do-ue-beneficjent-netto-st7456789",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska WPŁACA DO UE więcej niż DOSTAJE?! Sprawdźcie dane!! Jesteśmy płatnikiem netto?!"
   },
   {
     "id": "pl_62",
@@ -617,7 +678,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/kara-milion-euro-dziennie-tsue-izba-dyscyplinarna/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "TSUE nałożył na Polskę karę MILION EURO DZIENNIE!! Za Izbę Dyscyplinarną!! To SZANTAŻ!!"
   },
   {
     "id": "pl_63",
@@ -627,7 +689,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/bruksela-decyduje-o-podatkach-w-polsce-falsz/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "BRUKSELA decyduje o PODATKACH w Polsce!! Narzucają nam stawki VAT!! Koniec suwerenności!!"
   },
   {
     "id": "pl_64",
@@ -637,7 +700,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/swiat/pakt-migracyjny-ue-polska-obowiazki-st8234567",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Nowy PAKT MIGRACYJNY zmusi Polskę do przyjęcia TYSIĘCY migrantów!! Obowiązkowo!!"
   },
   {
     "id": "pl_65",
@@ -647,7 +711,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/frekwencja-wybory-2023-rekordowa/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "HISTORYCZNA FREKWENCJA w wyborach 2023!! Ponad 74%!! Polacy poszli tłumnie do urn!!"
   },
   {
     "id": "pl_66",
@@ -657,7 +722,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/polska/pkw-sprawozdanie-finansowe-pis-odrzucone-st8345678",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "PKW ODMÓWIŁA zatwierdzenia sprawozdania finansowego PiS!! Konsekwencje będą POWAŻNE!!"
   },
   {
     "id": "pl_67",
@@ -667,7 +733,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/frekwencja-polskich-eurodeputowanych-w-pe/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polscy europosłowie OLALI Parlament Europejski!! Najniższa frekwencja ze wszystkich krajów!!"
   },
   {
     "id": "pl_68",
@@ -677,7 +744,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/skladka-zdrowotna-przedsiebiorcy-obietnice",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Rząd OBIECAŁ obniżkę składki zdrowotnej ale NIC NIE ZROBIŁ!! Kolejne oszustwo Tuska!!"
   },
   {
     "id": "pl_69",
@@ -687,7 +755,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/polska/dezinformacja-instytucje-rzad-tusk-st8456789",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Rząd Tuska ZLIKWIDOWAŁ instytucje walczące z DEZINFORMACJĄ!! Rosja się cieszy!!"
   },
   {
     "id": "pl_70",
@@ -697,7 +766,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/niemcy-migranci-readmisja-do-polski/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Niemcy WYPCHNĘLI do Polski kilkanaście tysięcy NIELEGALNYCH migrantów w 2024!! Bez pytania!!"
   },
   {
     "id": "pl_71",
@@ -707,7 +777,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/granica-polsko-bialoruska-ofiary-kryzys",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Na granicy z Białorusią ZGINĘŁY DZIESIĄTKI osób!! Kto odpowie za te ofiary?!"
   },
   {
     "id": "pl_72",
@@ -717,7 +788,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/migranci-zagrozenie-terrorystyczne-polska-falsz/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Migranci z Bliskiego Wschodu to ZAGROŻENIE TERRORYSTYCZNE dla Polski!! Służby ostrzegają!!"
   },
   {
     "id": "pl_73",
@@ -727,7 +799,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/pushbacki-granica-bialorus-straz-graniczna",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Straż Graniczna PUSHBACKUJE ludzi na granicy z Białorusią!! Wyrzucają ich z powrotem!!"
   },
   {
     "id": "pl_74",
@@ -737,7 +810,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/imigranci-wyzsze-swiadczenia-niz-emeryci-falsz/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "NIELEGALNI imigranci dostają WYŻSZE ŚWIADCZENIA niż polscy emeryci!! SKANDAL!!"
   },
   {
     "id": "pl_75",
@@ -747,7 +821,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/polska/strefa-buforowa-granica-bialorus-miejscowosci-st7567890",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "STREFA BUFOROWA przy granicy z Białorusią: kilkaset miejscowości ODCIĘTYCH!! Ludzie uwięzieni!!"
   },
   {
     "id": "pl_76",
@@ -757,7 +832,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/analizy_i_raporty/kryzys-na-granicy-operacja-hybrydowa-lukaszenki/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Kryzys na granicy = OPERACJA HYBRYDOWA Łukaszenki!! Używa migrantów jak BRONI!!"
   },
   {
     "id": "pl_77",
@@ -767,7 +843,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/polska/uchodzcy-ukraina-polska-milion-pierwszy-miesiac-st7678901",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska przyjęła MILION Ukraińców w PIERWSZY MIESIĄC!! Nikt nie przyjął tylu!!"
   },
   {
     "id": "pl_78",
@@ -777,7 +854,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/uchodzcy-ukraina-opieka-spoleczna-polska/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Ukraińscy uchodźcy MASOWO korzystają z polskiej OPIEKI SPOŁECZNEJ!! Budżet pęka w szwach!!"
   },
   {
     "id": "pl_79",
@@ -787,7 +865,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/imigranci-rynek-pracy-polska-mity",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Imigranci ZABIERAJĄ pracę Polakom i ZANIŻAJĄ PŁACE!! Firmy wolą tańszą siłę roboczą!!"
   },
   {
     "id": "pl_80",
@@ -797,7 +876,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/polska/mur-granica-bialorus-koszt-budowy-st7789012",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Mur na granicy z Białorusią kosztował PONAD 1,6 MILIARDA złotych!! Za co?! A ludzie i tak przechodzą!!"
   },
   {
     "id": "pl_81",
@@ -807,7 +887,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/polska-kraj-tranzytowy-migranci/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska to tylko KORYTARZ TRANZYTOWY!! Migranci jadą dalej na zachód!! Zostawiają nam problemy!!"
   },
   {
     "id": "pl_82",
@@ -817,7 +898,8 @@
     "language": "pl",
     "source": "Fakenews.pl",
     "expected_source_url": "https://fakenews.pl/spoleczenstwo/strefy-no-go-w-polskich-miastach-to-fake-news/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "STREFY NO-GO w polskich miastach ISTNIEJĄ!! Policja boi się tam wchodzić!! Islamizacja!!"
   },
   {
     "id": "pl_83",
@@ -827,7 +909,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/polska/wnioski-azylowe-polska-2024-statystyki-st8567890",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Liczba wniosków o AZYL w Polsce EKSPLODOWAŁA w 2024!! Dramatyczny wzrost!! Kto ich wpuszcza?!"
   },
   {
     "id": "pl_84",
@@ -837,7 +920,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/ukraina-korupcja-pomoc-wojskowa-manipulacja/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Ukraina NAJBARDZIEJ skorumpowany kraj w Europie!! A my im dajemy MILIARDY na broń?!"
   },
   {
     "id": "pl_85",
@@ -847,7 +931,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/polska-pomoc-wojskowa-ukraina-ranking/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska dała Ukrainie WIĘCEJ BRONI niż cała reszta Europy!! A nasza armia?! Goła!!"
   },
   {
     "id": "pl_86",
@@ -857,7 +942,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/polscy-zolnierze-walcza-na-ukrainie-falsz/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "POLSCY ŻOŁNIERZE walczą na froncie w Ukrainie!! To nie jest tajemnica!! Kto ich tam wysłał?!"
   },
   {
     "id": "pl_87",
@@ -867,7 +953,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/wolyn-relacje-polsko-ukrainskie-sojusz",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Spór o WOŁYŃ zagraża sojuszowi z Ukrainą!! Historia może ZNISZCZYĆ przyszłość!!"
   },
   {
     "id": "pl_88",
@@ -877,7 +964,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/rosja-atak-nato-prawdopodobienstwo/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Rosja NIGDY nie zaatakuje kraju NATO!! Artykuł 5 to gwarancja!! Nie bójcie się!!"
   },
   {
     "id": "pl_89",
@@ -887,7 +975,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/ukrainskie-zboze-polski-rynek-rolnicy",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Ukraińskie zboże ZALAŁO polski rynek!! Polscy rolnicy w RUINIE!! Ceny spadły DRAMATYCZNIE!!"
   },
   {
     "id": "pl_90",
@@ -897,7 +986,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/wydatki-obronne-polska-4-procent-pkb/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska wydaje PONAD 4% PKB na obronność!! LIDER NATO!! Więcej niż USA liczbowo!!"
   },
   {
     "id": "pl_91",
@@ -907,7 +997,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/rosyjska-dezinformacja-polska-media-spolecznosciowe",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Rosyjska DEZINFORMACJA działa w polskich mediach społecznościowych!! Trolle i boty MASOWO!!"
   },
   {
     "id": "pl_92",
@@ -917,7 +1008,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/polska/blokada-granicy-z-ukraina-przewoznicy-protest-st8123457",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polscy PRZEWOŹNICY zablokowali przejścia z Ukrainą!! Nie dadzą się ZRUJNOWAĆ!! Protest!!"
   },
   {
     "id": "pl_93",
@@ -927,7 +1019,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/fake_news/banderowcy-wspolczesne-zagrozenie-dla-polski-falsz/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "UPA i BANDEROWCY gloryfikowani na Ukrainie!! To WSPÓŁCZESNE ZAGROŻENIE dla Polski!!"
   },
   {
     "id": "pl_94",
@@ -937,7 +1030,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/polska/ceny-paliw-polska-europa-porownanie-st8234568",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Paliwo w Polsce NAJDROŻSZE w całej Europie!! Dlaczego tu tankujemy najdrożej?!"
   },
   {
     "id": "pl_95",
@@ -947,7 +1041,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/analizy_i_raporty/sztuczna-inteligencja-rynek-pracy-polska/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "AI ZABIERZE PRACĘ większości Polaków w ciągu DEKADY!! Czy jesteś gotowy?! 🤖💼"
   },
   {
     "id": "pl_96",
@@ -957,7 +1052,8 @@
     "language": "pl",
     "source": "Demagog",
     "expected_source_url": "https://demagog.org.pl/wypowiedzi/polska-bezpieczenstwo-przestepczosc-w-europie/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Polska jednym z NAJBEZPIECZNIEJSZYCH krajów w Europie!! Statystyki kryminalne to potwierdzają!!"
   },
   {
     "id": "pl_97",
@@ -967,7 +1063,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/polska/zloty-najslabsza-waluta-regionu-falsz-st8345679",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "ZŁOTY najsłabszą walutą w regionie?! Euro bije po kieszeni!! PLN w dół!! 📉"
   },
   {
     "id": "pl_98",
@@ -977,7 +1074,8 @@
     "language": "pl",
     "source": "OKO.press",
     "expected_source_url": "https://oko.press/800-plus-dzietnosc-polska-skutecznosc",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Program 800+ ZWIĘKSZA dzietność?! Sprawdźmy PRAWDZIWE DANE!! Czy naprawdę działa?!"
   },
   {
     "id": "pl_99",
@@ -987,7 +1085,8 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/zdrowie/kolejki-do-lekarzy-polska-ue-porownanie-st8456790",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "KOLEJKI do specjalistów REKORDOWE!! Polska służba zdrowia NA DNIE!! Najgorzej w UE!!"
   },
   {
     "id": "pl_100",
@@ -997,6 +1096,7 @@
     "language": "pl",
     "source": "Konkret24",
     "expected_source_url": "https://konkret24.tvn24.pl/polska/wynagrodzenie-minimalne-2025-kwota-st8567891",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "MINIMALNA 4600 brutto w 2025!! Ale na rękę ledwo starczy na czynsz!! Ile REALNIE zostaje?!"
   }
 ]

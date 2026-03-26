@@ -88,10 +88,12 @@ class ClaimMatcher:
         self,
         embedding_service: EmbeddingService | None = None,
         qdrant_service: QdrantService | None = None,
+        nli_only: bool = False,
     ) -> None:
         self._embeddings = embedding_service or EmbeddingService()
         self._qdrant = qdrant_service or QdrantService()
         self._reranker = Reranker()
+        self._nli_only = nli_only
 
     # Map fact-checker verdicts to stance labels (exact match, lowercased)
     _RATING_MAP: dict[str, StanceLabel] = {
@@ -156,8 +158,13 @@ class ClaimMatcher:
         evidence_text: str,
         review_rating: str | None,
     ) -> tuple[StanceLabel, float]:
-        """Determine stance from review_rating if available, else NLI."""
-        if review_rating:
+        """Determine stance from review_rating if available, else NLI.
+
+        When self._nli_only is True, always uses NLI model regardless of
+        review_rating availability (benchmark mode to measure real NLI
+        performance).
+        """
+        if not self._nli_only and review_rating:
             key = review_rating.strip().lower()
             # Exact match
             if key in self._RATING_MAP:

@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-"""Seed golden-pair expected_match texts as fact-checks in Qdrant.
+"""Validate golden-pair coverage against fact-checks already in Qdrant.
 
-Guarantees every golden pair has a matching entry in the database.
-Each expected_match is embedded and stored with metadata from the pair.
-Deduplicates by expected_source_url to avoid re-inserting on repeat runs.
+Checks that every golden pair's expected_source_url exists in the database
+(ingested via ingest_google_fc.py or seed.py).  Does NOT insert any data —
+the benchmark must rely on organically ingested fact-checks to avoid
+data-leakage bias.
 """
 
 from __future__ import annotations
 
 import json
 import sys
-import uuid
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
@@ -22,30 +22,31 @@ LANG_MAP = {"ua": "uk"}
 
 
 def main() -> int:
-    from services.embeddings import EmbeddingService
     from services.qdrant import QdrantService
 
     qdrant = QdrantService()
     qdrant.ensure_collections()
-    embedder = EmbeddingService()
 
-    existing = set()
+    # Collect all source URLs currently in Qdrant
+    existing: set[str] = set()
     try:
         points, _ = qdrant._client.scroll(
             collection_name="fact_checks",
-            limit=5000,
+            limit=10000,
             with_payload=["source_url"],
         )
         for p in points:
             url = (p.payload or {}).get("source_url", "")
             if url:
-                existing.add(url)
-        print(f"📊 {len(existing)} existing fact-checks in Qdrant")
-    except Exception:
-        pass
+                existing.add(url.rstrip("/").lower())
+        print(f"📊 {len(existing)} fact-checks currently in Qdrant")
+    except Exception as exc:
+        print(f"❌ Could not read Qdrant: {exc}")
+        return 1
 
-    total_added = 0
-    total_skipped = 0
+    total_found = 0
+    total_missing = 0
+    missing_pairs: list[dict[str, str]] = []
 
     for fname in ["golden_pairs_en.json", "golden_pairs_pl.json", "golden_pairs_ua.json"]:
         path = BENCH_DIR / fname
@@ -54,48 +55,39 @@ def main() -> int:
         with open(path, encoding="utf-8") as f:
             pairs = json.load(f)
 
-        lang_label = fname.split("_")[-1].split(".")[0]
-        added = 0
-        skipped = 0
+        lang_label = fname.split("_")[-1].split(".")[0].upper()
+        found = 0
+        missing = 0
 
         for pair in pairs:
-            url = pair.get("expected_source_url", "")
-            if url in existing:
-                skipped += 1
-                continue
+            url = pair.get("expected_source_url", "").rstrip("/").lower()
+            if url and url in existing:
+                found += 1
+            else:
+                missing += 1
+                missing_pairs.append({"id": pair["id"], "url": pair.get("expected_source_url", "")})
 
-            claim_text = pair.get("expected_match", "").strip()
-            if not claim_text:
-                continue
+        total_found += found
+        total_missing += missing
+        status = "✅" if missing == 0 else "⚠️"
+        print(f"  {status} {lang_label}: {found}/{found + missing} pairs have matching fact-checks")
 
-            qdrant_lang = LANG_MAP.get(pair.get("language", ""), pair.get("language", "en"))
-            payload = {
-                "claim_text": claim_text,
-                "source_url": url,
-                "source_name": pair.get("source", ""),
-                "language": qdrant_lang,
-                "review_rating": pair.get("expected_stance", ""),
-                "review_title": pair.get("claim", ""),
-            }
+    if missing_pairs:
+        print(f"\n⚠️  {total_missing} golden pairs have NO matching fact-check in Qdrant:")
+        for mp in missing_pairs[:20]:
+            print(f"     {mp['id']}: {mp['url']}")
+        if len(missing_pairs) > 20:
+            print(f"     … and {len(missing_pairs) - 20} more")
+        print("\n   These pairs will fail Recall in the benchmark.")
+        print("   Run ingest_google_fc.py first, or update the golden pair URLs.")
+    else:
+        print(f"\n✅ All {total_found} golden pairs have matching fact-checks in the database.")
 
-            try:
-                vector = embedder.embed_single(claim_text)
-                qdrant.upsert_fact_check(str(uuid.uuid4()), vector, payload)
-                existing.add(url)
-                added += 1
-            except Exception as e:
-                print(f"  ⚠️  {pair['id']}: {e}")
-
-        total_added += added
-        total_skipped += skipped
-        print(f"  {lang_label.upper()}: +{added} new, {skipped} already existed")
-
-    print(f"\n✅ Done — {total_added} golden-pair fact-checks added ({total_skipped} skipped)")
     return 0
 
 
 if __name__ == "__main__":
     print("=" * 55)
-    print("  Seed golden-pair expected matches into Qdrant")
+    print("  Validate golden-pair coverage in Qdrant")
     print("=" * 55)
     sys.exit(main())

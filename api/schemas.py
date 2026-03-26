@@ -78,6 +78,8 @@ class ClaimResult(BaseModel):
 class AnalyzeRequest(BaseModel):
     url: Optional[HttpUrl] = None
     headline: Optional[str] = Field(default=None, description="Headline or plain text to analyze instead of fetching a URL")
+    force_llm: bool = Field(default=False, description="Force LLM claim extraction even for short headlines (benchmark use)")
+    nli_only: bool = Field(default=False, description="Skip review_rating lookup, use NLI model only for stance (benchmark use)")
 
 
 class AnalyzeResponse(BaseModel):

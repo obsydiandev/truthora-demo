@@ -7,7 +7,8 @@
     "language": "ua",
     "source": "Вокс Україна",
     "expected_source_url": "https://voxukraine.org/manipulyatsiya-gensek-nato-pidtverdyv-shho-chlenstvo-ukrayiny-v-alyansi-bilshe-ne-rozglyadayetsya",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Генсек НАТО ПІДТВЕРДИВ: членство України більше НЕ РОЗГЛЯДАЄТЬСЯ!! Нас кинули!!"
   },
   {
     "id": "ua_02",
@@ -17,7 +18,8 @@
     "language": "ua",
     "source": "StopFake UA",
     "expected_source_url": "https://www.stopfake.org/uk/fejk-ukrayina-prodaye-zemlyu-inozemnym-korporatsiyam/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Землю РОЗПРОДАЮТЬ іноземним корпораціям!! Скоро нічого СВОГО не залишиться!!"
   },
   {
     "id": "ua_03",
@@ -27,7 +29,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/manipulyatsiya-nato-rozshyryuyetsya-do-kordoniv-rosiyi-ta-otochylo-rosiyu-voyennymy-bazamy",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "НАТО оточило Росію базами НАВМИСНО!! Хто тут справжній АГРЕСОР??"
   },
   {
     "id": "ua_04",
@@ -37,7 +40,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/manipulyatsiya-majbutnij-kantsler-nimechchyny-vystupyv-proty-vstupu-ukrayiny-do-nato",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Новий канцлер Німеччини ПРОТИ вступу України в НАТО!! Меркелізм повертається!!"
   },
   {
     "id": "ua_05",
@@ -47,7 +51,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/manipulyatsiya-krayiny-nato-zobovyazalys-vytrachaty-5-vvp-na-zakupivlyu-zbroyi-ssha",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Країни НАТО зобов'язалися скуповувати ТІЛЬКИ АМЕРИКАНСЬКУ зброю на 5% ВВП!! Рекет!!"
   },
   {
     "id": "ua_06",
@@ -57,7 +62,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/ukrayina-ye-zanadto-koruptovanoyu-dlya-vstupu-do-yes-manipulyatsiya",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Україна НІКОЛИ не вступить до ЄС!! Корупція ВСЕ зруйнувала!! Нереально!!"
   },
   {
     "id": "ua_07",
@@ -67,7 +73,8 @@
     "language": "ua",
     "source": "StopFake UA",
     "expected_source_url": "https://www.stopfake.org/uk/fejk-yes-vidmovyvsya-vid-pidtrymky-ukrayiny/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "ЄС ПОВНІСТЮ ВІДМОВИВСЯ від фінансування України!! Нас залишили НАОДИНЦІ!!"
   },
   {
     "id": "ua_08",
@@ -77,7 +84,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/bezvizovyj-rezhym-yes-pratsevlashtuvannya-ukrayintsiv",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Безвіз = працюй в Європі БЕЗ ОБМЕЖЕНЬ!! Валізи пакуйте!! Нові можливості!!"
   },
   {
     "id": "ua_09",
@@ -87,7 +95,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/manipulyatsiya-zahid-navyazuye-ukrayini-svoyi-tsinnosti",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Захід НАВ'ЯЗУЄ нам свої ЦІННОСТІ за ГРОШІ!! Продали НЕЗАЛЕЖНІСТЬ за долари!!"
   },
   {
     "id": "ua_10",
@@ -97,7 +106,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/ukrayina-otrymala-status-kandydata-v-chleny-yes",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "ОФІЦІЙНО: Україна отримала статус кандидата ЄС у червні 2022!! Історичний момент!! 🇪🇺"
   },
   {
     "id": "ua_11",
@@ -107,7 +117,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/ugoda-pro-asotsiatsiyu-eksport-ukrayiny-do-yes",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Угода про асоціацію з ЄС ЗБІЛЬШИЛА український експорт МАСОВО!! Цифри вражають!!"
   },
   {
     "id": "ua_12",
@@ -117,7 +128,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/samit-nato-2008-bukarest-ukrayina-pdch",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "НАТО ВІДМОВИЛО Україні у ПДЧ у 2008 через тиск РОСІЇ!! Путін тоді вже ДИКТУВАВ!!"
   },
   {
     "id": "ua_13",
@@ -127,7 +139,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/pidtrymka-ukrayintsiv-vstup-do-yes-opytuvannya",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "АБСОЛЮТНабільшість українців ЗА вступ до ЄС!! Рекордна підтримка!! Євроінтеграція!!"
   },
   {
     "id": "ua_14",
@@ -137,7 +150,8 @@
     "language": "ua",
     "source": "StopFake UA",
     "expected_source_url": "https://www.stopfake.org/uk/fejk-vstup-ukrayiny-do-nato-avtomatychno-vtyagne-alyans-u-vijnu/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Вступ України до НАТО = АВТОМАТИЧНА ВІЙНА з Росією!! Альянс буде ЗОБОВ'ЯЗАНИЙ воювати!!"
   },
   {
     "id": "ua_15",
@@ -147,7 +161,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/yes-50-mlrd-yevro-makrofinansova-dopomoha-ukrayini",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "ЄС виділив 50 МІЛЬЯРДІВ євро Україні!! Макрофінансова допомога БЕЗПРЕЦЕДЕНТНА!!"
   },
   {
     "id": "ua_16",
@@ -157,7 +172,8 @@
     "language": "ua",
     "source": "StopFake UA",
     "expected_source_url": "https://www.stopfake.org/uk/fejk-rosiya-bula-zmushena-napasty-na-ukrayinu-cherez-nato/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Росію ЗМУСИЛИ напасти!! НАТО підступало все ближче!! Путін НЕ МАВ ВИБОРУ!!"
   },
   {
     "id": "ua_17",
@@ -167,7 +183,8 @@
     "language": "ua",
     "source": "StopFake UA",
     "expected_source_url": "https://www.stopfake.org/uk/fejk-zsu-masovo-zdayutsya-v-polon/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "ЗСУ МАСОВО здаються в полон!! ТИСЯЧІ відмовляються воювати!! Чому ЗМІ мовчать?!"
   },
   {
     "id": "ua_18",
@@ -177,7 +194,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/manipulyatsiya-zahid-postachaye-zbroyu-zarady-prodovzhennya-vijny",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Захід постачає зброю ЛИШЕ для ПРОДОВЖЕННЯ війни!! Їм вигідний КОНФЛІКТ, не мир!!"
   },
   {
     "id": "ua_19",
@@ -187,7 +205,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/sanktsii-proty-rosiyi-efektyvnist-analiz",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Санкції ВЗАГАЛІ НЕ ПРАЦЮЮТЬ!! Росія заробляє БІЛЬШЕ ніж до війни!! Європа страждає!!"
   },
   {
     "id": "ua_20",
@@ -197,7 +216,8 @@
     "language": "ua",
     "source": "StopFake UA",
     "expected_source_url": "https://www.stopfake.org/uk/fejk-ukrayina-vykorystovuye-kasetni-boyeprypasy-proty-tsyvilnyh/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Україна масово використовує КАСЕТНІ БОЄПРИПАСИ проти ЦИВІЛЬНИХ!! Де МКС?!"
   },
   {
     "id": "ua_21",
@@ -207,7 +227,8 @@
     "language": "ua",
     "source": "StopFake UA",
     "expected_source_url": "https://www.stopfake.org/uk/fejk-v-ukrayini-pracyuyut-sekretni-biolaboratoriyi-pentagonu/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "В Україні 30+ СЕКРЕТНИХ біолабораторій Пентагону!! Вірусну зброю СТВОРЮЮТЬ прямо тут!!"
   },
   {
     "id": "ua_22",
@@ -217,7 +238,8 @@
     "language": "ua",
     "source": "StopFake UA",
     "expected_source_url": "https://www.stopfake.org/uk/fejk-rosiya-znyshchyla-vsi-rezervy-zsu/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Росія ПОВНІСТЮ знищила ВСІ стратегічні резерви ЗСУ!! Армія воює на ОСТАННІХ запасах!!"
   },
   {
     "id": "ua_23",
@@ -227,7 +249,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/manipulyatsiya-minski-ugody-porushuvala-lyshe-ukrayina",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "МІНСЬКІ УГОДИ порушувала ВИКЛЮЧНО Україна!! Росія їх дотримувалась!! Факти говорять!!"
   },
   {
     "id": "ua_24",
@@ -237,7 +260,8 @@
     "language": "ua",
     "source": "StopFake UA",
     "expected_source_url": "https://www.stopfake.org/uk/fejk-krym-dobrovilno-pryyednavsya-do-rosiyi/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Крим ДОБРОВІЛЬНО і ЛЕГІТИМНО приєднався до Росії!! 97% на референдумі!! Чому не визнають?!"
   },
   {
     "id": "ua_25",
@@ -247,7 +271,8 @@
     "language": "ua",
     "source": "StopFake UA",
     "expected_source_url": "https://www.stopfake.org/uk/fejk-ukrayina-obstrilyuye-vlasni-mista/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Україна обстрілює СВОЇ ВЛАСНІ МІСТА і звинувачує Росію!! Провокації задокументовані!!"
   },
   {
     "id": "ua_26",
@@ -257,7 +282,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/zelenskyj-zaboronyv-opozytsiyu-ta-zmi-manipulyatsiya",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Зеленський ЗАБОРОНИВ ВСЮ опозицію і закрив незалежні ЗМІ!! Це ДИКТАТУРА!!"
   },
   {
     "id": "ua_27",
@@ -267,7 +293,8 @@
     "language": "ua",
     "source": "StopFake UA",
     "expected_source_url": "https://www.stopfake.org/uk/fejk-zahidna-zbroya-pereprodayetsya-z-ukrayiny-na-chornomu-rynku/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "80% західної зброї ПРОДАЄТЬСЯ на ЧОРНОМУ РИНКУ!! Гроші платників у кишенях!!"
   },
   {
     "id": "ua_28",
@@ -277,7 +304,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/fejk-rosiya-poperedyla-pro-vtorgnennya",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Росія ЗАЗДАЛЕГІДЬ попередила мирне населення перед вторгненням!! Гуманна операція?!"
   },
   {
     "id": "ua_29",
@@ -287,7 +315,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/skilky-terytoriyi-ukrayiny-okupovano-rosiyeyu",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Україна ВТРАТИЛА 20% ТЕРИТОРІЇ назавжди!! Ці землі НІКОЛИ не повернуть!!"
   },
   {
     "id": "ua_30",
@@ -297,7 +326,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/mks-order-na-aresht-putina-voyenni-zlochyny",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "МКС видав ордер на АРЕШТ ПУТІНА!! За воєнні злочини!! Але хто його арештує?! Ніхто!!"
   },
   {
     "id": "ua_31",
@@ -307,7 +337,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/vijna-v-ukrayini-globalna-prodovolcha-kryza",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Війна в Україні = ГЛОБАЛЬНА ПРОДОВОЛЬЧА КРИЗА!! Мільйони в Африці голодують через це!!"
   },
   {
     "id": "ua_32",
@@ -317,7 +348,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/chornomorska-zernova-initsiatyva-efektyvnist",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "ЗЕРНОВА УГОДА знизила СВІТОВІ ціни на продовольство!! Чорноморський коридор ПРАЦЮЄ!!"
   },
   {
     "id": "ua_33",
@@ -327,7 +359,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/rosiya-energoresursy-geopolitychna-zbroya",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Росія ВИКОРИСТОВУЄ газ і нафту як ЗБРОЮ проти Європи!! Енергетичний шантаж!!"
   },
   {
     "id": "ua_34",
@@ -337,7 +370,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/zhertvy-sered-tsyvilnyh-v-ukrayini-dani-oon",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Серед мирного населення в Україні загинуло ПОНАД 10 ТИСЯЧ осіб!! Страшна статистика!!"
   },
   {
     "id": "ua_35",
@@ -347,7 +381,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/rosiya-atakuye-energetychnu-infrastrukturu-ukrayiny",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Росія СИСТЕМАТИЧНО знищує цивільну ЕНЕРГЕТИКУ України!! Мільйони без світла і тепла!!"
   },
   {
     "id": "ua_36",
@@ -357,7 +392,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/inflyatsiya-ukrayina-2022-dani-nbu",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Інфляція в Україні 26% у 2022!! Ціни ШАЛЕНІ!! Людям не вистачає на ХЛІБ!!"
   },
   {
     "id": "ua_37",
@@ -367,7 +403,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/ekonomika-ukrayiny-2022-vvp-spadinnya",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Економіка України ВПАЛА на ТРЕТИНУ у 2022!! Війна ЗНИЩИЛА все!!"
   },
   {
     "id": "ua_38",
@@ -377,7 +414,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/ukrayina-zalezhna-vid-zahidnoyi-dopomohy-manipulyatsiya",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Україна ПОВНІСТЮ ЗАЛЕЖНА від західної допомоги!! Без неї — КРАХ!! Своїх доходів НУЛЬ!!"
   },
   {
     "id": "ua_39",
@@ -387,7 +425,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/serednya-zarplata-ukrayina-yevropejski-krayiny",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Середня зарплата в Україні НАЙНИЖЧА серед УСІХ європейських країн!! Як людям жити?!"
   },
   {
     "id": "ua_40",
@@ -397,7 +436,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/zapasy-litiyu-v-ukrayini-resurs-dlya-majbutnoho",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Україна сидить на МІЛЬЯРДАХ тонн ЛІТІЮ!! Найбільші запаси в Європі!! Ось чому нас підтримують!!"
   },
   {
     "id": "ua_41",
@@ -407,7 +447,8 @@
     "language": "ua",
     "source": "StopFake UA",
     "expected_source_url": "https://www.stopfake.org/uk/energosystema-ukrayiny-masshtaby-ruynuvan/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Енергосистема зруйнована на 80%  РОСІЙСЬКИМИ обстрілами!! Зима без опалення!!"
   },
   {
     "id": "ua_42",
@@ -417,7 +458,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/vidnovlyuvana-energetyka-zamist-atomnoyi-ukrayina",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "ВІДНОВЛЮВАНА ЕНЕРГЕТИКА може ПОВНІСТЮ замінити атомну в Україні?! Реально чи утопія?!"
   },
   {
     "id": "ua_43",
@@ -427,7 +469,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/tranzyt-gazu-cherez-ukrayinu-2025",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Транзит РОСІЙСЬКОГО ГАЗУ через Україну ПОВНІСТЮ ЗУПИНЕНО з 2025!! Мільярди ВТРАЧЕНО!!"
   },
   {
     "id": "ua_44",
@@ -437,7 +480,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/ukrayina-vyrobnytstvo-sonyashnykovoyi-oliyi",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Україна — НАЙБІЛЬШИЙ виробник СОНЯШНИКОВОЇ олії у СВІТІ!! Факт!! 🌻"
   },
   {
     "id": "ua_45",
@@ -447,7 +491,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/koruptsiya-efektyvnist-inozemnoyi-dopomohy-ukrayini",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "КОРУПЦІЯ знищує ефективність іноземної допомоги!! Гроші ЗНИКАЮТЬ без сліду!!"
   },
   {
     "id": "ua_46",
@@ -457,7 +502,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/ukrayinski-bizhentsi-plany-povernennya",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "БІЛЬШІСТЬ біженців НЕ ХОЧУТЬ повертатися!! Пішли НАЗАВЖДИ!! Демографічна КАТАСТРОФА!!"
   },
   {
     "id": "ua_47",
@@ -467,7 +513,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/demografichna-kryza-ukrayina-vijna-emihratsiya",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Україна переживає ДЕМОГРАФІЧНУ КАТАСТРОФУ!! Війна + еміграція = вимирання!!"
   },
   {
     "id": "ua_48",
@@ -477,7 +524,8 @@
     "language": "ua",
     "source": "StopFake UA",
     "expected_source_url": "https://www.stopfake.org/uk/fejk-ukrayinska-mova-tse-dialekt-rosijskoyi/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Українська мова — лише ДІАЛЕКТ російської?! Мовознавці СПРОСТОВУЮТЬ цю брехню!!"
   },
   {
     "id": "ua_49",
@@ -487,7 +535,8 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/tsyfrovizatsiya-ukrayiny-diya-dosyagnennya",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Україна — ЛІДЕР ЄВРОПИ з цифровізації!! Дія випереджає ВСІ європейські аналоги!!"
   },
   {
     "id": "ua_50",
@@ -497,6 +546,7 @@
     "language": "ua",
     "source": "VoxUkraine",
     "expected_source_url": "https://voxukraine.org/zakon-pro-mobilizatsiyu-prava-lyudyny-analiz",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Закон про МОБІЛІЗАЦІЮ ГРУБО порушує ПРАВА ЛЮДИНИ!! Хапають прямо з вулиці!!"
   }
 ]

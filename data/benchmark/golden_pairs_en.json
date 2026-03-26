@@ -7,7 +7,8 @@
     "language": "en",
     "source": "Full Fact",
     "expected_source_url": "https://fullfact.org/health/covid-vaccine-infertility/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "SHOCKING: Women who took the jab CAN'T GET PREGNANT anymore!!!"
   },
   {
     "id": "en_02",
@@ -17,7 +18,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2020/12/covid-19-vaccines-dont-have-patient-tracking-devices/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "They put a TRACKING CHIP inside the covid shot - your phone is proof!"
   },
   {
     "id": "en_03",
@@ -27,7 +29,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2020/04/conspiracy-theory-misinterprets-goals-of-gates-foundation/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "EXPOSED: Bill Gates' plan to chip everyone through the needle 💉"
   },
   {
     "id": "en_04",
@@ -37,7 +40,8 @@
     "language": "en",
     "source": "Snopes",
     "expected_source_url": "https://www.snopes.com/fact-check/bill-gates-microchips-tweet/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "lmaooo did Bill Gates really tweet about running out of microchips for vaxxes 😂"
   },
   {
     "id": "en_05",
@@ -47,7 +51,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2021/05/scicheck-magnet-videos-refuel-bogus-claim-of-vaccine-microchips/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "WATCH: Magnets STICK to people's arms after getting vaxxed 🧲 PROOF of chips!"
   },
   {
     "id": "en_06",
@@ -57,7 +62,8 @@
     "language": "en",
     "source": "USA Today",
     "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2021/05/12/fact-check-covid-19-vaccines-dont-contain-tracking-devices/5037132001/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "People are becoming MAGNETIC after the shot - tracking devices confirmed???"
   },
   {
     "id": "en_07",
@@ -67,7 +73,8 @@
     "language": "en",
     "source": "AFP Fact Check",
     "expected_source_url": "https://factcheck.afp.com/doc.afp.com.9EG2NX",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "LEAKED video shows microchip pulled from Pfizer vial!! They can't hide this"
   },
   {
     "id": "en_08",
@@ -77,7 +84,8 @@
     "language": "en",
     "source": "Snopes",
     "expected_source_url": "https://www.snopes.com/fact-check/bill-gates-id2020/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Bill Gates + ID2020 = mass chipping through covid jabs. Wake up people!"
   },
   {
     "id": "en_09",
@@ -87,7 +95,8 @@
     "language": "en",
     "source": "AFP Fact Check",
     "expected_source_url": "https://factcheck.afp.com/hoax-about-bill-gates-plan-microchip-vaccine-circulates-online",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Gates' ENDGAME: use covid needles to microchip the entire world!! 😱"
   },
   {
     "id": "en_10",
@@ -97,7 +106,8 @@
     "language": "en",
     "source": "PolitiFact",
     "expected_source_url": "https://www.politifact.com/factchecks/2020/may/28/facebook-posts/theres-no-plot-microchip-people-during-covid-19-te/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Soros and Gates secretly chipping people during covid testing - Dems involved"
   },
   {
     "id": "en_11",
@@ -107,7 +117,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2021/07/scicheck-spoof-video-furthers-microchip-conspiracy-theory/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Woman scanned with PET MICROCHIP READER and it beeped ON HER ARM after the jab!! 🐶📡"
   },
   {
     "id": "en_12",
@@ -117,7 +128,8 @@
     "language": "en",
     "source": "USA Today",
     "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2021/05/26/fact-check-missing-context-posts-new-microchip-development/5232378001/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "NEW TECH: They made microchips small enough to fit INSIDE vaccine needles now!!"
   },
   {
     "id": "en_13",
@@ -127,7 +139,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2021/08/scicheck-health-sensors-misconstrued-as-government-tracking-microchips/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "60 MINUTES exposed government tracking chip hidden in vaccines!! Why is nobody talking about this?!"
   },
   {
     "id": "en_14",
@@ -137,7 +150,8 @@
     "language": "en",
     "source": "PolitiFact",
     "expected_source_url": "https://www.politifact.com/factchecks/2020/may/20/facebook-posts/no-gates-foundation-isnt-pushing-microchips-all-me/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Refuse the shot? They'll FORCE a microchip in you anyway!! This is the plan!!"
   },
   {
     "id": "en_15",
@@ -147,7 +161,8 @@
     "language": "en",
     "source": "BBC",
     "expected_source_url": "https://www.bbc.co.uk/news/health-56012529",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "THE JAB DESTROYS FERTILITY - women losing babies after getting vaccinated!!"
   },
   {
     "id": "en_16",
@@ -157,7 +172,8 @@
     "language": "en",
     "source": "Full Fact",
     "expected_source_url": "https://fullfact.org/health/richard-tice-covid-vaccine-infertility-stillbirth/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "FORCING young girls to take the vax = sterilizing an entire generation!! WAKE UP!!"
   },
   {
     "id": "en_17",
@@ -167,7 +183,8 @@
     "language": "en",
     "source": "Science Feedback",
     "expected_source_url": "https://science.feedback.org/review/no-evidence-covid-19-vaccinations-cause-infertility-pregnancy-complications/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "European Medicines Agency CAUGHT hiding data about vaccines causing INFERTILITY!!"
   },
   {
     "id": "en_18",
@@ -177,7 +194,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2021/06/scicheck-research-rebuts-baseless-claims-linking-covid-19-vaccines-to-male-infertility/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "ALL vaccinated men are now STERILE!! The science is clear but they BURY IT!!"
   },
   {
     "id": "en_19",
@@ -187,7 +205,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2021/02/scicheck-no-evidence-vaccines-impact-fertility/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Pfizer's OWN HEAD OF RESEARCH admitted the jab sterilizes women!! It's on video!!"
   },
   {
     "id": "en_20",
@@ -197,7 +216,8 @@
     "language": "en",
     "source": "AP News",
     "expected_source_url": "https://apnews.com/article/fact-checking-536782030987",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "EXPOSED: Covid vax wrecks male fertility - sperm count CRASHING in vaxxed men!!"
   },
   {
     "id": "en_21",
@@ -207,7 +227,8 @@
     "language": "en",
     "source": "BBC",
     "expected_source_url": "https://www.bbc.co.uk/news/health-57552527",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "The shot ATTACKS the placenta!! Babies dying in the womb from vax spike protein!!"
   },
   {
     "id": "en_22",
@@ -217,7 +238,8 @@
     "language": "en",
     "source": "Full Fact",
     "expected_source_url": "https://fullfact.org/online/placenta-protein-vaccine/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Pfizer jab has syncytin-1 that makes your body ATTACK your own placenta!! Infertility by design!!"
   },
   {
     "id": "en_23",
@@ -227,7 +249,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2025/06/hhs-misleads-on-mrna-vaccine-safety-after-pulling-moderna-funding/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "They KNEW about mRNA dangers and HID IT from us!! Safety data DELIBERATELY buried!!"
   },
   {
     "id": "en_24",
@@ -237,7 +260,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2024/02/study-largely-confirms-known-rare-covid-19-vaccine-side-effects/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "HUNDREDS OF MILLIONS used as guinea pigs!! Now the truth is coming out and it's HORRIFYING!!"
   },
   {
     "id": "en_25",
@@ -247,7 +271,8 @@
     "language": "en",
     "source": "AAP",
     "expected_source_url": "https://www.aap.com.au/factcheck/huge-vaccine-safety-study-creates-misinformation-spike/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Study of 100 MILLION vaxxed people proves covid shots are EXTREMELY DANGEROUS!! 📊"
   },
   {
     "id": "en_26",
@@ -257,7 +282,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2023/12/scicheck-yale-preprint-recorded-patient-experiences-did-not-demonstrate-vaccines-cause-new-syndrome/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Post-Vaccine Syndrome is OFFICIALLY REAL now - they finally admitted it!!"
   },
   {
     "id": "en_27",
@@ -267,7 +293,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2023/02/scicheck-posts-falsely-claim-cdc-official-admitted-covid-19-vaccines-cause-debilitating-illnesses/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "CDC official went on record: THE JAB causes debilitating chronic illness!! 😱"
   },
   {
     "id": "en_28",
@@ -277,7 +304,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2025/05/rfk-jr-misleads-about-safety-of-covid-19-vaccine-in-children/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Kids had ZERO risk from covid!! Why did they jab millions of children?! CRIMINAL!!"
   },
   {
     "id": "en_29",
@@ -287,7 +315,8 @@
     "language": "en",
     "source": "USA Today",
     "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2021/05/20/fact-check-ohio-doctor-didnt-die-covid-19-vaccine/5167752001/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Ohio doctor got the jab and DIED shortly after!! His family is DEVASTATED!! RIP 🙏"
   },
   {
     "id": "en_30",
@@ -297,7 +326,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2024/05/still-no-evidence-covid-19-vaccination-increases-cancer-risk-despite-posts/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "New review CONFIRMS: mRNA shoots CAUSE CANCER!! Turbo cancers exploding!! 📈"
   },
   {
     "id": "en_31",
@@ -307,7 +337,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2022/05/scicheck-pfizer-ceo-not-referencing-covid-19-vaccines-contrary-to-false-impression-in-posts-about-microchips/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Pfizer CEO said something in 2018 that PROVES they planned covid vaxx IN ADVANCE!! Coincidence?!"
   },
   {
     "id": "en_32",
@@ -317,7 +348,8 @@
     "language": "en",
     "source": "AFP Fact Check",
     "expected_source_url": "https://factcheck.afp.com/doc.afp.com.36ZP8RH",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "COURT FORCED Pfizer to release SECRET list of vax side effects - it's 9 PAGES long!! 😱"
   },
   {
     "id": "en_33",
@@ -327,7 +359,8 @@
     "language": "en",
     "source": "AP News",
     "expected_source_url": "https://apnews.com/article/fact-check-COVID-mRNA-vaccine-nanotech-390958734912",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Moderna PATENT proves their covid shot has programmable NANOTECH inside!! Read for yourself!!"
   },
   {
     "id": "en_34",
@@ -337,7 +370,8 @@
     "language": "en",
     "source": "Full Fact",
     "expected_source_url": "https://fullfact.org/health/marburg-covid-vaccines/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "COVID VACCINES contain Marburg virus!! 5G signal will ACTIVATE it!! Not a drill!!"
   },
   {
     "id": "en_35",
@@ -347,7 +381,8 @@
     "language": "en",
     "source": "Full Fact",
     "expected_source_url": "https://fullfact.org/online/5G-kraken-covid-subvariant/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "New Kraken COVID variant is LINKED TO 5G SIGNALS!! They're connected!! Open your eyes!!"
   },
   {
     "id": "en_36",
@@ -357,7 +392,8 @@
     "language": "en",
     "source": "AFP Fact Check",
     "expected_source_url": "https://factcheck.afp.com/doc.afp.com.9W42LC",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "COVID was BACTERIAL all along, NOT a virus!! They lied so they could sell vaccines!!"
   },
   {
     "id": "en_37",
@@ -367,7 +403,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2022/03/scicheck-evidence-still-lacking-to-support-ivermectin-as-treatment-for-covid-19/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "IVERMECTIN CURES COVID and they're hiding it!! Nobel prize winning drug BLOCKED by big pharma!!"
   },
   {
     "id": "en_38",
@@ -377,7 +414,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2022/02/scicheck-facebook-post-misleads-on-nihs-position-on-ivermectin/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Even the NIH website ADMITS ivermectin works against covid!! Why can't we use it?!"
   },
   {
     "id": "en_39",
@@ -387,7 +425,8 @@
     "language": "en",
     "source": "AFP Fact Check",
     "expected_source_url": "https://factcheck.afp.com/doc.afp.com.46J2763",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Ivermectin cures BOTH covid AND cancer!! Cheap miracle drug Big Pharma HATES!!"
   },
   {
     "id": "en_40",
@@ -397,7 +436,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2021/10/scicheck-merck-pfizer-covid-19-antivirals-different-from-ivermectin/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Pfizer's new covid pill is literally just REPACKAGED IVERMECTIN 💊🤡 same molecule!!"
   },
   {
     "id": "en_41",
@@ -407,7 +447,8 @@
     "language": "en",
     "source": "BBC",
     "expected_source_url": "https://www.bbc.co.uk/news/world-asia-pacific-57838033",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Indonesia OFFICIALLY approved ivermectin for covid treatment!! Why won't our countries do the same?!"
   },
   {
     "id": "en_42",
@@ -417,7 +458,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2022/09/scicheck-clinical-trials-show-ivermectin-does-not-benefit-covid-19-patients-contrary-to-social-media-claims/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "NIH quietly ADDED ivermectin to their covid treatment list!! Media BLACKOUT on this!!"
   },
   {
     "id": "en_43",
@@ -427,7 +469,8 @@
     "language": "en",
     "source": "Lead Stories",
     "expected_source_url": "https://leadstories.com/hoax-alert/2025/09/fact-check-us-navy-did-not-admit-the-earth-was-flat-or-claim-the-helios-laser-system-had-a-range-of-100-miles-these-are-misrepresentations.html",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "US NAVY officially admitted the Earth is FLAT!! Classified docs leaked!! 🌍➡️📋"
   },
   {
     "id": "en_44",
@@ -437,7 +480,8 @@
     "language": "en",
     "source": "AAP",
     "expected_source_url": "https://www.aap.com.au/factcheck/no-nasa-didnt-admit-the-earth-is-flat/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "NASA's OWN DOCUMENTS contain proof Earth is FLAT!! They forgot to redact page 47!!"
   },
   {
     "id": "en_45",
@@ -447,7 +491,8 @@
     "language": "en",
     "source": "Science Feedback",
     "expected_source_url": "https://science.feedback.org/review/how-we-know-earth-is-round-not-flat-a-review-of-claims-and-misconceptions-about-earths-shape/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Photographic and observational PROOF the Earth is flat!! Globe believers can't explain THIS!!"
   },
   {
     "id": "en_46",
@@ -457,7 +502,8 @@
     "language": "en",
     "source": "USA Today",
     "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/07/19/shooting-stars-fly-up-flat-earth-fact-check/74431671007/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Shooting stars ALWAYS fly UPWARD!! How is that possible on a spinning globe?! Checkmate!!"
   },
   {
     "id": "en_47",
@@ -467,7 +513,8 @@
     "language": "en",
     "source": "Lead Stories",
     "expected_source_url": "https://leadstories.com/hoax-alert/2024/05/fact-check-video-does-not-prove-earth-is-flat-coriolis-effect-does-affect-planes-weather.html",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Coriolis effect DOESN'T AFFECT PLANES!! If earth was spinning pilots would need to compensate!! FLAT!!"
   },
   {
     "id": "en_48",
@@ -477,7 +524,8 @@
     "language": "en",
     "source": "Science Feedback",
     "expected_source_url": "https://science.feedback.org/review/flight-paths-not-evidence-for-flat-earth/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Flight paths from New Zealand to Argentina make NO SENSE on a globe but PERFECT sense on flat map!!"
   },
   {
     "id": "en_49",
@@ -487,7 +535,8 @@
     "language": "en",
     "source": "Science Feedback",
     "expected_source_url": "https://science.feedback.org/review/viral-flat-earth-videos-miss-basic-geometry-when-comparing-antarcticas-perimeter-to-earths-circumference/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Antarctica's perimeter is BIGGER than Earth's circumference!! Only makes sense if FLAT!! 🗺️"
   },
   {
     "id": "en_50",
@@ -497,7 +546,8 @@
     "language": "en",
     "source": "USA Today",
     "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/03/08/flat-earth-operation-highjump-antarctica/72881230007/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Operation Highjump: military expedition sent to find what's BEYOND Antarctica's ice wall!!"
   },
   {
     "id": "en_51",
@@ -507,7 +557,8 @@
     "language": "en",
     "source": "Rappler",
     "expected_source_url": "https://www.rappler.com/newsbreak/fact-check/fake-video-antarctica-ice-wall-flat-earth/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "LEAKED FOOTAGE: Antarctica is just a massive ICE WALL surrounding our flat Earth!! 🧊"
   },
   {
     "id": "en_52",
@@ -517,7 +568,8 @@
     "language": "en",
     "source": "USA Today",
     "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/03/05/no-navigation-by-ancients-does-not-show-earth-is-flat-fact-check/72835665007/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Ancient navigators used FLAT EARTH maps!! They KNEW - if Earth was round celestial navigation is impossible!!"
   },
   {
     "id": "en_53",
@@ -527,7 +579,8 @@
     "language": "en",
     "source": "Snopes.com",
     "expected_source_url": "https://www.snopes.com/fact-check/nasa-admit-moon-landing-hoax/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "NASA ADMITTED the moon landings were FAKED!! Internal memo leaked!! 🌙🎬"
   },
   {
     "id": "en_54",
@@ -537,7 +590,8 @@
     "language": "en",
     "source": "Full Fact",
     "expected_source_url": "https://fullfact.org/online/buzz-aldrin-moon-landing-fake/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Buzz Aldrin literally CONFESSED on camera: we never went to the Moon!! Video keeps getting deleted!!"
   },
   {
     "id": "en_55",
@@ -547,7 +601,8 @@
     "language": "en",
     "source": "USA Today",
     "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2023/11/17/moonlight-doesnt-prove-astronaut-landings-were-a-hoax-fact-check/71596891007/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "The Moon is TOO BRIGHT for humans to land on!! The light would have BLINDED them!! Science proves it!!"
   },
   {
     "id": "en_56",
@@ -557,7 +612,8 @@
     "language": "en",
     "source": "PolitiFact",
     "expected_source_url": "https://www.politifact.com/factchecks/2024/may/08/viral-image/houston-we-have-no-problem-this-video-doesnt-prove/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Video analysis PROVES moon landing was staged in a studio!! Wires visible in slow-mo!! 🎥"
   },
   {
     "id": "en_57",
@@ -567,7 +623,8 @@
     "language": "en",
     "source": "VOA",
     "expected_source_url": "https://www.voanews.com/a/fact-check-former-russian-space-chief-repeats-false-moon-landing-conspiracy-theory/7085470.html",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Former RUSSIAN SPACE CHIEF: America has NO PROOF they landed on the Moon!! Even Russia doubts it!!"
   },
   {
     "id": "en_58",
@@ -577,7 +634,8 @@
     "language": "en",
     "source": "USA Today",
     "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2021/09/17/fact-check-moon-landing-conspiracy-theory-misrepresents-footprint/8380230002/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Astronaut boot DOESN'T MATCH the footprint on the Moon!! Dead giveaway it was FAKED!!"
   },
   {
     "id": "en_59",
@@ -587,7 +645,8 @@
     "language": "en",
     "source": "USA Today",
     "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/03/01/lunar-rover-moon-landing-not-fake/72794515007/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "The lunar rover couldn't FIT inside the Apollo capsule!! Do the math - it's OBVIOUS fraud!! 🚗🌙"
   },
   {
     "id": "en_60",
@@ -597,7 +656,8 @@
     "language": "en",
     "source": "USA Today",
     "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2023/08/07/earthrise-photo-in-nixons-office-taken-during-apollo-8-fact-check/70528054007/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Photo of Nixon at his desk with Moon footage playing BEFORE the landing happened!! Time travel? Or FAKE!"
   },
   {
     "id": "en_61",
@@ -607,7 +667,8 @@
     "language": "en",
     "source": "AAP",
     "expected_source_url": "https://www.aap.com.au/factcheck/wires-crossed-in-titan-sub-moon-landing-conspiracy-claim/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "We called the MOON in 1969 but can't talk to a submarine underwater in 2024?? Come on people 🤡"
   },
   {
     "id": "en_62",
@@ -617,7 +678,8 @@
     "language": "en",
     "source": "AAP",
     "expected_source_url": "https://www.aap.com.au/factcheck/fake-moon-landing-claim-orbits-the-simple-facts/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Newspapers published Moon landing photos THE SAME DAY!! No internet back then - HOW?! Staged!!"
   },
   {
     "id": "en_63",
@@ -627,7 +689,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2024/05/qa-on-trumps-criminal-conviction/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Trump facing 187 YEARS in prison!! The deep state will stop at nothing!! POLITICAL PERSECUTION!!"
   },
   {
     "id": "en_64",
@@ -637,7 +700,8 @@
     "language": "en",
     "source": "USA Today",
     "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/05/31/trump-prison-time-fact-check/73916922007/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "187 years behind bars for Trump after 34 felony counts!! The LEFT destroyed justice!!"
   },
   {
     "id": "en_65",
@@ -647,7 +711,8 @@
     "language": "en",
     "source": "USA Today",
     "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/10/16/donald-trump-conviction-overturned-false-fact-check/75699912007/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "HUGE W: ALL Trump convictions OVERTURNED!! Court awarded him $500 MILLION in damages!!"
   },
   {
     "id": "en_66",
@@ -657,7 +722,8 @@
     "language": "en",
     "source": "USA Today",
     "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/11/21/judge-merchan-trump-hush-money-case-dropped-fact-check/76453902007/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "ALL CHARGES DROPPED in Trump hush money case!! Total witch hunt EXPOSED!! 🎉"
   },
   {
     "id": "en_67",
@@ -667,7 +733,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2022/11/counting-mail-in-ballots-delays-results-but-doesnt-denote-fraud/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Counting ballots AFTER election day?! That's literally HOW THEY STEAL ELECTIONS!! Common sense!!"
   },
   {
     "id": "en_68",
@@ -677,7 +744,8 @@
     "language": "en",
     "source": "BBC",
     "expected_source_url": "https://www.bbc.co.uk/news/world-us-canada-53353404",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Mail-in ballots = MASSIVE voter fraud!! Everyone knows you can print fake ones at home!!"
   },
   {
     "id": "en_69",
@@ -687,7 +755,8 @@
     "language": "en",
     "source": "BBC",
     "expected_source_url": "https://www.bbc.co.uk/news/election-us-2020-55016029",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Caught on camera!! TRUCK FULL OF BALLOTS delivered to Detroit at 3AM!! Who sent them?!"
   },
   {
     "id": "en_70",
@@ -697,7 +766,8 @@
     "language": "en",
     "source": "USA Today",
     "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2024/05/15/no-2020-election-fraud-report-fact-check/73689236007/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Federal election agency CONFIRMED fraud in 2020!! Why is no one arresting people?!"
   },
   {
     "id": "en_71",
@@ -707,7 +777,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2023/11/trumps-latest-election-fraud-spin/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Georgia ADMITTED 3600 ballots were illegally counted!! Just in ONE county!! How many more?!"
   },
   {
     "id": "en_72",
@@ -717,7 +788,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2024/09/trumps-latest-bogus-claim-about-mail-in-vote-fraud-in-pennsylvania/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Tucker's expert proved with DATA: 20% of mail-in ballots in 2024 are FRAUDULENT!! 📊"
   },
   {
     "id": "en_73",
@@ -727,7 +799,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2024/05/trumps-repeated-claims-on-his-new-york-hush-money-trial/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Judge Merchan REFUSED to let Trump's lawyers present evidence!! Kangaroo court!! ⚖️🦘"
   },
   {
     "id": "en_74",
@@ -737,7 +810,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2024/11/trumps-new-york-case-what-happens-now/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Trump's NY case will be AUTOMATICALLY DISMISSED now that he's president!! It's the LAW!!"
   },
   {
     "id": "en_75",
@@ -747,7 +821,8 @@
     "language": "en",
     "source": "USA Today",
     "expected_source_url": "https://www.usatoday.com/story/news/factcheck/2022/12/21/fact-check-russia-ukraine-war-continues-contrary-post/10927862002/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "MSM won't tell you this: the war in Ukraine is ALREADY OVER!! Russia won MONTHS ago!!"
   },
   {
     "id": "en_76",
@@ -757,7 +832,8 @@
     "language": "en",
     "source": "dw.com",
     "expected_source_url": "https://www.dw.com/en/nato-expansion-east-russia-putin-ukraine/a-73030670",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "NATO PROMISED Russia in 1990 they would NEVER expand eastward!! Documents PROVE IT!!"
   },
   {
     "id": "en_77",
@@ -767,7 +843,8 @@
     "language": "en",
     "source": "PolitiFact",
     "expected_source_url": "https://www.politifact.com/factchecks/2022/feb/28/candace-owens/fact-checking-claims-nato-us-broke-agreement-again/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "NATO VIOLATED every agreement by expanding into former Soviet states!! PROVOCATION!!"
   },
   {
     "id": "en_78",
@@ -777,7 +854,8 @@
     "language": "en",
     "source": "AAP",
     "expected_source_url": "https://www.aap.com.au/factcheck/false-treaty-claims-attempt-to-rewrite-history/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Western nations SIGNED A TREATY guaranteeing NATO would never expand east!! They BROKE it!!"
   },
   {
     "id": "en_79",
@@ -787,7 +865,8 @@
     "language": "en",
     "source": "PA Media",
     "expected_source_url": "https://pa.media/blogs/fact-check/fact-check-former-nato-chief-did-not-say-eu-expansion-provoked-putin/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Former NATO CHIEF admitted EU expansion PROVOKED Putin!! They started this!! 🤯"
   },
   {
     "id": "en_80",
@@ -797,7 +876,8 @@
     "language": "en",
     "source": "VOA",
     "expected_source_url": "https://www.voanews.com/a/putin-justifies-war-in-ukraine-by-accusing-kyiv-of-violating-a-treaty-moscow-violated-repeatedly/7861987.html",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Russia has ALWAYS recognized Ukraine's borders!! Check the treaties!! They respected every one!!"
   },
   {
     "id": "en_81",
@@ -807,7 +887,8 @@
     "language": "en",
     "source": "VOA",
     "expected_source_url": "https://www.voanews.com/a/iran-denies-delivering-ballistic-missiles-aid-to-moscow-s-ukraine-war-effort/7783007.html",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Iran DENIES sending missiles to Russia!! Where's the PROOF?! Western propaganda!!"
   },
   {
     "id": "en_82",
@@ -817,7 +898,8 @@
     "language": "en",
     "source": "Full Fact",
     "expected_source_url": "https://fullfact.org/economy/ukraine-supply-shortages/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Oil, gas, grain shortages - ALL caused by the Ukraine conflict!! Who's really paying the price?! 💰"
   },
   {
     "id": "en_83",
@@ -827,7 +909,8 @@
     "language": "en",
     "source": "VOA",
     "expected_source_url": "https://www.voanews.com/a/russia-uk-ambassador-falsely-claims-zelenskyy-started-russia-ukraine-war/7987874.html",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Zelenskyy STARTED this war!! He promised peace then CHOSE war to get billions from the West!!"
   },
   {
     "id": "en_84",
@@ -837,7 +920,8 @@
     "language": "en",
     "source": "AP News",
     "expected_source_url": "https://apnews.com/article/ukraine-russia-trump-war-zelenskyy-putin-7fe8c0c80b4e93e3bc079c621a44e8bb",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Ukraine should NEVER have started fighting Russia!! Just NEGOTIATE and save lives!! Peace NOW!!"
   },
   {
     "id": "en_85",
@@ -847,7 +931,8 @@
     "language": "en",
     "source": "AAP",
     "expected_source_url": "https://www.aap.com.au/factcheck/cherry-picked-ocean-data-does-not-prove-climate-change-is-a-hoax/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Ocean temps DECLINING between 2013-2022!! Global warming is a COMPLETE HOAX!! 🌊📉"
   },
   {
     "id": "en_86",
@@ -857,7 +942,8 @@
     "language": "en",
     "source": "The Washington Post",
     "expected_source_url": "https://www.washingtonpost.com/politics/2023/08/25/vivek-ramaswamy-says-hoax-agenda-kills-more-people-than-climate-change/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Climate change HOAX exposed!! More people DIE from anti-fossil-fuel policies than from climate!!"
   },
   {
     "id": "en_87",
@@ -867,7 +953,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2023/12/scicheck-meme-makes-misleading-comparison-to-cast-doubt-on-climate-change/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "TOP climate scientist Judith Curry says climate change is a TOTAL HOAX!! She has the data!!"
   },
   {
     "id": "en_88",
@@ -877,7 +964,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2024/09/trump-clings-to-inaccurate-climate-change-talking-points/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "First it was global COOLING, then WARMING, now just 'CHANGE'?? Make up your minds scientists!! 🤡"
   },
   {
     "id": "en_89",
@@ -887,7 +975,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2018/06/is-illegal-immigration-linked-to-more-or-less-crime/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "EXPOSED: Illegal immigrants commit crimes at 5X the rate of citizens!! FBI data proves it!!"
   },
   {
     "id": "en_90",
@@ -897,7 +986,8 @@
     "language": "en",
     "source": "Full Fact",
     "expected_source_url": "https://fullfact.org/immigration/conservative-small-boat-crime-analysis/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Channel migrants 24x MORE LIKELY to end up in JAIL!! Let that sink in!! 🚢➡️🏛️"
   },
   {
     "id": "en_91",
@@ -907,7 +997,8 @@
     "language": "en",
     "source": "Full Fact",
     "expected_source_url": "https://fullfact.org/online/google-shows-misleading-asylum-seekers-crime-data/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Asylum seekers make up 14% of ALL crime suspects in the UK!! But they're only 1% of population!!"
   },
   {
     "id": "en_92",
@@ -917,7 +1008,8 @@
     "language": "en",
     "source": "AFP Fact Check",
     "expected_source_url": "https://factcheck.afp.com/doc.afp.com.363E3ZN",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Immigration DIRECTLY causing crime wave across Canada!! Stats right there but government HIDES them!!"
   },
   {
     "id": "en_93",
@@ -927,7 +1019,8 @@
     "language": "en",
     "source": "FactCheck.org",
     "expected_source_url": "https://www.factcheck.org/2025/07/border-czar-makes-misleading-claim-about-immigrants-with-criminal-records/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Biden let 600,000+ CRIMINAL illegals roam free on American streets!! ICE data confirms!!"
   },
   {
     "id": "en_94",
@@ -937,7 +1030,8 @@
     "language": "en",
     "source": "BBC",
     "expected_source_url": "https://www.bbc.co.uk/news/52124740",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "STAGED: Brooklyn residents singing Biggie from apartments during lockdown was a COMPLETE SETUP!! 🎤🏢"
   },
   {
     "id": "en_95",
@@ -947,7 +1041,8 @@
     "language": "en",
     "source": "Factcheck.bg",
     "expected_source_url": "https://factcheck.bg/en/politicheck-it-is-not-true-that-gmo-is-legally-grown-in-ukraine-or-that-the-land-is-owned-by-american-companies/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Ukrainian grain getting EU SUBSIDIES now?! European farmers being DESTROYED by cheap imports!!"
   },
   {
     "id": "en_96",
@@ -957,7 +1052,8 @@
     "language": "en",
     "source": "Reuters Fact Check",
     "expected_source_url": "https://www.reuters.com/world/europe/nato-allies-ramp-up-defence-spending-russia-threat-looms-2024-02-14/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "NATO allies BOOSTING defense spending since Russia invaded!! Finally waking up!! 💪🪖"
   },
   {
     "id": "en_97",
@@ -967,7 +1063,8 @@
     "language": "en",
     "source": "AFP Fact Check",
     "expected_source_url": "https://factcheck.afp.com/doc.afp.com.33TU8BA",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Russia running MASSIVE bot farms to flood social media with anti-Ukraine propaganda!! Exposed!!"
   },
   {
     "id": "en_98",
@@ -977,7 +1074,8 @@
     "language": "en",
     "source": "Full Fact",
     "expected_source_url": "https://fullfact.org/environment/wind-turbines-birds/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Wind turbines killing MORE BIRDS than fossil fuel plants EVER did!! Green energy = bird MASSACRE!! 🐦💀"
   },
   {
     "id": "en_99",
@@ -987,7 +1085,8 @@
     "language": "en",
     "source": "Full Fact",
     "expected_source_url": "https://fullfact.org/europe/european-parliament-elections-2024-turnout/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "2024 EU elections: HIGHEST youth turnout EVER recorded!! Gen Z showed up BIG!! 🗳️🔥"
   },
   {
     "id": "en_100",
@@ -997,6 +1096,7 @@
     "language": "en",
     "source": "Full Fact",
     "expected_source_url": "https://fullfact.org/immigration/immigration-and-crime-what-do-we-know/",
-    "created_at": "2026-03-25T17:14:24Z"
+    "created_at": "2026-03-25T17:14:24Z",
+    "claim_adversarial": "Immigrants behind MOST violent crime in European capitals!! Police data LEAKED and it's SHOCKING!!"
   }
 ]

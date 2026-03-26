@@ -203,6 +203,8 @@ async def _evaluate_pair(
     pair: dict[str, Any],
     verbose: bool,
     k: int,
+    force_llm: bool = False,
+    nli_only: bool = False,
 ) -> dict[str, Any]:
     """Call /analyze for a single golden pair and score the result."""
     pair_id = pair["id"]
@@ -214,7 +216,11 @@ async def _evaluate_pair(
         try:
             resp = await client.post(
                 f"{api_url}/analyze",
-                json={"headline": pair["claim"]},
+                json={
+                    "headline": pair["claim"],
+                    "force_llm": force_llm,
+                    "nli_only": nli_only,
+                },
                 timeout=60.0,
             )
             resp.raise_for_status()
@@ -269,12 +275,17 @@ async def _run_pipeline_async(
     k: int,
     concurrency: int,
     delay: float,
+    force_llm: bool = False,
+    nli_only: bool = False,
 ) -> list[dict[str, Any]]:
     semaphore = asyncio.Semaphore(concurrency)
     results: list[dict[str, Any]] = []
     async with httpx.AsyncClient() as client:
         for pair in pairs:
-            result = await _evaluate_pair(client, semaphore, api_url, pair, verbose, k)
+            result = await _evaluate_pair(
+                client, semaphore, api_url, pair, verbose, k,
+                force_llm=force_llm, nli_only=nli_only,
+            )
             results.append(result)
             if delay > 0:
                 await asyncio.sleep(delay)
@@ -288,17 +299,26 @@ def run_pipeline_evaluation(
     k: int = 5,
     concurrency: int = 5,
     delay: float = 2.5,
+    force_llm: bool = False,
+    nli_only: bool = False,
 ) -> dict[str, Any]:
     """Run full pipeline evaluation against the live API."""
     if not HAS_HTTPX:
         print("❌ httpx is required for --run-pipeline. Install with: pip install httpx")
         sys.exit(1)
 
-    print(f"🚀 Evaluating {len(pairs)} pairs against {api_url} (k={k}, delay={delay}s)…")
+    mode_parts = []
+    if force_llm:
+        mode_parts.append("force-LLM")
+    if nli_only:
+        mode_parts.append("NLI-only stance")
+    mode_desc = f" ({', '.join(mode_parts)})" if mode_parts else ""
+    print(f"🚀 Evaluating {len(pairs)} pairs against {api_url}{mode_desc} (k={k}, delay={delay}s)…")
     t0 = time.perf_counter()
 
     pair_results = asyncio.run(
-        _run_pipeline_async(pairs, api_url, verbose, k, concurrency, delay)
+        _run_pipeline_async(pairs, api_url, verbose, k, concurrency, delay,
+                            force_llm=force_llm, nli_only=nli_only)
     )
 
     elapsed = time.perf_counter() - t0
@@ -342,6 +362,8 @@ def run_pipeline_evaluation(
             "concurrency": concurrency,
             "elapsed_s": round(elapsed, 2),
             "total_pairs": len(pairs),
+            "force_llm": force_llm,
+            "nli_only": nli_only,
         },
         "targets": targets,
         "overall": overall,
@@ -355,16 +377,20 @@ def run_direct_evaluation(
     pairs: list[dict[str, Any]],
     verbose: bool = False,
     k: int = 5,
+    nli_only: bool = False,
 ) -> dict[str, Any]:
     """Run evaluation directly against the matching pipeline (no LLM/API needed)."""
     if not HAS_DIRECT:
         print("❌ Direct mode requires running inside the app container.")
         sys.exit(1)
 
-    print(f"🚀 Evaluating {len(pairs)} pairs directly (k={k})…")
+    mode_desc = "directly"
+    if nli_only:
+        mode_desc += " (NLI-only stance, no rating lookup)"
+    print(f"🚀 Evaluating {len(pairs)} pairs {mode_desc} (k={k})…")
     t0 = time.perf_counter()
 
-    matcher = ClaimMatcher()
+    matcher = ClaimMatcher(nli_only=nli_only)
     pair_results: list[dict[str, Any]] = []
 
     for pair in pairs:
@@ -465,10 +491,11 @@ def run_direct_evaluation(
         "meta": {
             "version": "v0.1",
             "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
-            "mode": "direct",
+            "mode": "direct" + ("_nli" if nli_only else ""),
             "k": k,
             "elapsed_s": round(elapsed, 2),
             "total_pairs": len(pairs),
+            "nli_only": nli_only,
         },
         "targets": targets,
         "overall": overall,
@@ -491,6 +518,12 @@ def main():
         help="Evaluate only on held-out 20%% split (ids ending in _81-_100 per lang)")
     parser.add_argument("--shuffle-labels", action="store_true",
         help="Shuffle expected stances (sanity check — should yield ~random F1)")
+    parser.add_argument("--nli-only", action="store_true",
+        help="Skip review_rating lookup; use NLI model only for stance classification")
+    parser.add_argument("--adversarial", action="store_true",
+        help="Use claim_adversarial field instead of claim (realistic tabloid headlines)")
+    parser.add_argument("--force-llm", action="store_true",
+        help="Force LLM claim extraction in --run-pipeline (bypass headline fast-path)")
     parser.add_argument(
         "--output",
         default=None,
@@ -507,6 +540,10 @@ def main():
             suffix = "baseline_v01_shuffled"
         if args.held_out_only and args.shuffle_labels:
             suffix = "baseline_v01_heldout_shuffled"
+        if getattr(args, 'nli_only', False):
+            suffix += "_nli"
+        if getattr(args, 'adversarial', False):
+            suffix += "_adversarial"
         args.output = str(Path(__file__).resolve().parent / "results" / f"{suffix}.json")
 
     print("=" * 60)
@@ -534,6 +571,17 @@ def main():
         for p, s in zip(pairs, stances):
             p["expected_stance"] = s
         print("🔀 Shuffled expected stances (sanity check mode)")
+
+    # Adversarial mode: use claim_adversarial field if available
+    if getattr(args, 'adversarial', False):
+        replaced = 0
+        for p in pairs:
+            if p.get("claim_adversarial"):
+                p["claim"] = p["claim_adversarial"]
+                replaced += 1
+        print(f"🎭 Adversarial mode: replaced {replaced}/{len(pairs)} claims with tabloid variants")
+        if replaced == 0:
+            print("   ⚠️  No claim_adversarial fields found — running with original claims")
 
     print()
 
@@ -571,11 +619,15 @@ def main():
 
     # ── Pipeline evaluation ────────────────────────────────────────────────────
     if args.run_pipeline or args.direct:
+        nli_only = getattr(args, 'nli_only', False)
+        force_llm = getattr(args, 'force_llm', False)
+
         if args.direct:
             pipeline_results = run_direct_evaluation(
                 pairs=pairs,
                 verbose=args.verbose,
                 k=args.k,
+                nli_only=nli_only,
             )
         else:
             pipeline_results = run_pipeline_evaluation(
@@ -585,6 +637,8 @@ def main():
                 k=args.k,
                 concurrency=args.concurrency,
                 delay=args.delay,
+                force_llm=force_llm,
+                nli_only=nli_only,
             )
 
         overall = pipeline_results["overall"]

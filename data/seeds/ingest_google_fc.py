@@ -14,7 +14,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 SEED_QUERIES = [
-    # English
+    # ── English: topic-targeted ───────────────────────────────────
     ("covid vaccines safety", "en"),
     ("covid vaccines infertility", "en"),
     ("covid vaccines microchip", "en"),
@@ -30,7 +30,23 @@ SEED_QUERIES = [
     ("immigration crime statistics", "en"),
     ("moon landing hoax", "en"),
     ("flat earth", "en"),
-    # Polish
+    # ── English: distractors (not in golden pairs) ────────────────
+    ("AI deepfake video detection", "en"),
+    ("artificial intelligence job losses", "en"),
+    ("bitcoin cryptocurrency scam", "en"),
+    ("GMO food safety health", "en"),
+    ("water fluoridation conspiracy", "en"),
+    ("celebrity death hoax fake news", "en"),
+    ("UFO aliens government cover up", "en"),
+    ("nuclear energy safety Chernobyl", "en"),
+    ("weight loss supplements fraud", "en"),
+    ("sports doping athletes steroids", "en"),
+    ("chemtrails conspiracy theory", "en"),
+    ("glyphosate Roundup cancer", "en"),
+    ("Elon Musk Twitter misinformation", "en"),
+    ("lab leak Wuhan virus origin", "en"),
+    ("bird flu pandemic avian influenza", "en"),
+    # ── Polish: topic-targeted ────────────────────────────────────
     ("szczepionki covid", "pl"),
     ("szczepionki mRNA bezpieczeństwo", "pl"),
     ("inflacja polska 2024", "pl"),
@@ -45,7 +61,18 @@ SEED_QUERIES = [
     ("dezinformacja rosyjska Polska", "pl"),
     ("KPO Krajowy Plan Odbudowy", "pl"),
     ("elektrownia jądrowa Polska", "pl"),
-    # Ukrainian
+    # ── Polish: distractors ───────────────────────────────────────
+    ("kryptowaluty bitcoin oszustwo polska", "pl"),
+    ("sztuczna inteligencja deepfake", "pl"),
+    ("GMO żywność Polska zdrowie", "pl"),
+    ("suplementy diety niebezpieczne", "pl"),
+    ("smog Polska zanieczyszczenie powietrza", "pl"),
+    ("chemtrails smugi kondensacyjne samoloty", "pl"),
+    ("fluoryzacja wody teoria spiskowa", "pl"),
+    ("glifosat Roundup rak Polska", "pl"),
+    ("ptasia grypa pandemia Polska", "pl"),
+    ("piramidy finansowe amber gold", "pl"),
+    # ── Ukrainian: topic-targeted ─────────────────────────────────
     ("Україна НАТО", "uk"),
     ("зерно Україна експорт", "uk"),
     ("Росія Україна дезінформація", "uk"),
@@ -56,6 +83,14 @@ SEED_QUERIES = [
     ("енергетика Україна обстріли", "uk"),
     ("мобілізація Україна закон", "uk"),
     ("Зеленський опозиція ЗМІ", "uk"),
+    # ── Ukrainian: distractors ────────────────────────────────────
+    ("криптовалюта біткоїн шахрайство", "uk"),
+    ("штучний інтелект дипфейк відео", "uk"),
+    ("ГМО продукти безпека здоров'я", "uk"),
+    ("хімтрейли сліди літаків змова", "uk"),
+    ("пташиний грип пандемія Україна", "uk"),
+    ("вакцинація діти аутизм", "uk"),
+    ("5G вежі здоров'я випромінювання", "uk"),
 ]
 
 BROAD_LANGUAGES = ["en", "pl", "uk"]
