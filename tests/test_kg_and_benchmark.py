@@ -1,4 +1,4 @@
-"""Tests for Faza 4–6 components."""
+"""Unit tests for knowledge graph, scoring pipeline, and benchmark evaluation metrics."""
 
 from __future__ import annotations
 

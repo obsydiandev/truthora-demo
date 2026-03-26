@@ -1,4 +1,4 @@
-"""Critical path tests for Faza 1–3."""
+"""Unit tests for core components: normalizer, scorer, freshness, schemas, API endpoints."""
 
 from __future__ import annotations
 
