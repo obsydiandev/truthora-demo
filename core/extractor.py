@@ -2,12 +2,45 @@
 
 from __future__ import annotations
 
+import ipaddress
 import logging
+import socket
 from typing import Any, Optional
+from urllib.parse import urlparse
 
 import trafilatura
 
 logger = logging.getLogger(__name__)
+
+_BLOCKED_NETWORKS = [
+    ipaddress.ip_network("127.0.0.0/8"),
+    ipaddress.ip_network("10.0.0.0/8"),
+    ipaddress.ip_network("172.16.0.0/12"),
+    ipaddress.ip_network("192.168.0.0/16"),
+    ipaddress.ip_network("169.254.0.0/16"),
+    ipaddress.ip_network("::1/128"),
+    ipaddress.ip_network("fc00::/7"),
+    ipaddress.ip_network("fe80::/10"),
+]
+
+
+def _is_safe_url(url: str) -> bool:
+    """Block requests to private/internal networks (SSRF protection)."""
+    parsed = urlparse(url)
+    if parsed.scheme not in ("http", "https"):
+        return False
+    hostname = parsed.hostname
+    if not hostname:
+        return False
+    try:
+        infos = socket.getaddrinfo(hostname, None)
+        for _, _, _, _, sockaddr in infos:
+            ip = ipaddress.ip_address(sockaddr[0])
+            if any(ip in net for net in _BLOCKED_NETWORKS):
+                return False
+    except (socket.gaierror, ValueError):
+        return False
+    return True
 
 
 async def extract_text(url: str) -> Optional[dict[str, Any]]:
@@ -17,6 +50,10 @@ async def extract_text(url: str) -> Optional[dict[str, Any]]:
     or None if extraction fails.
     """
     try:
+        if not _is_safe_url(url):
+            logger.warning("Blocked URL (SSRF protection): %s", url)
+            return None
+
         downloaded = trafilatura.fetch_url(url)
         if downloaded is None:
             logger.warning("Could not download URL: %s", url)

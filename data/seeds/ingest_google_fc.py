@@ -133,7 +133,8 @@ async def ingest() -> int:
         }
         try:
             vector = embedder.embed_single(claim_text)
-            point_id = hashlib.sha256(review_url.encode()).hexdigest()[:32]
+            normalized_url = review_url.rstrip("/").split("?")[0].split("#")[0]
+            point_id = hashlib.sha256(normalized_url.encode()).hexdigest()[:32]
             qdrant.upsert_fact_check(point_id, vector, payload)
             total += 1
             return True

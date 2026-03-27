@@ -247,6 +247,7 @@ class ClaimMatcher:
                 reranker_score=reranker_score,
                 nli_confidence=nli_confidence,
                 freshness_decay=decay,
+                kg_signal=None,  # TODO: wire KG verification when stable
             )
 
             match = FactCheckMatch(

@@ -50,7 +50,8 @@ def main() -> int:
             vector = embedder.embed_single(text)
             import hashlib
             source_url = entry.get("source_url", text)
-            point_id = hashlib.sha256(source_url.encode()).hexdigest()[:32]
+            normalized_url = source_url.rstrip("/").split("?")[0].split("#")[0]
+            point_id = hashlib.sha256(normalized_url.encode()).hexdigest()[:32]
             qdrant.upsert_fact_check(point_id, vector, entry)
 
         print(f"✅ Seeded {len(entries)} fact-checks into Qdrant")

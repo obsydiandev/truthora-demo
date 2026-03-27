@@ -4,9 +4,11 @@
     "date": "2026-03-27",
     "mode": "direct_nli",
     "k": 5,
-    "elapsed_s": 515.74,
+    "elapsed_s": 731.66,
     "total_pairs": 250,
     "nli_only": true,
+    "adversarial": false,
+    "shuffle_labels": false,
     "no_freshness": true
   },
   "targets": {

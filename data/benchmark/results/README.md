@@ -8,7 +8,7 @@ Each JSON file stores one full evaluation run of the 250 golden-pair suite
 | File | Flags | What it tests |
 |---|---|---|
 | `baseline.json` | `--direct --no-freshness` | Default pipeline: BGE-M3 retrieval → Reranker → rating-lookup stance. Establishes the upper bound (stance is a dictionary lookup, not inference). |
-| `nli_only.json` | `--direct --nli-only --no-freshness` | Same retrieval, but stance resolved solely by DeBERTa-v3-small NLI — no rating lookup. Measures true NLI capability. |
+| `nli_only.json` | `--direct --nli-only --no-freshness` | Stance resolved solely by DeBERTa-v3-small NLI — no rating lookup. NLI confidence affects final score ranking, so retrieval slightly differs from baseline. Measures true NLI capability. |
 | `adversarial.json` | `--direct --adversarial --no-freshness` | Uses tabloid/social-media style claim paraphrases instead of clean claims. Tests retrieval robustness to lexical variation. |
 | `hard_mode.json` | `--direct --nli-only --adversarial --no-freshness` | Combines NLI-only + adversarial claims — the hardest realistic configuration. |
 | `shuffle_sanity.json` | `--direct --shuffle-labels --no-freshness` | Golden-pair expected stances are randomly shuffled before scoring. Sanity check — F1 should be ≈ 0.33 (random). |

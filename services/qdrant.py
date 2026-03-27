@@ -64,7 +64,7 @@ class QdrantService:
                 field_schema=models.PayloadSchemaType.KEYWORD,
             )
         except Exception:
-            pass  # index already exists
+            logger.debug("Payload index 'language' already exists or creation failed")
 
         if AUDIT_LOG_COLLECTION not in existing:
             self._client.create_collection(

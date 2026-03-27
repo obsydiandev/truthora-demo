@@ -1,5 +1,6 @@
 """Streamlit Human-in-the-Loop Review Dashboard."""
 
+import html as html_module
 import os
 from datetime import datetime, timezone
 
@@ -777,13 +778,15 @@ if results:
                         with cols[1]:
                             # Show fact-check title + source
                             display_title = claim_reviewed[:80] + "…" if len(claim_reviewed) > 80 else claim_reviewed
+                            safe_title = html_module.escape(display_title)
+                            safe_source = html_module.escape(source)
                             if url_match:
-                                st.markdown(f"[{display_title}]({url_match})  \n"
-                                            f"<small style='opacity:0.6'>{source}</small>",
+                                st.markdown(f"[{safe_title}]({url_match})  \n"
+                                            f"<small style='opacity:0.6'>{safe_source}</small>",
                                             unsafe_allow_html=True)
                             else:
-                                st.markdown(f"**{display_title}**  \n"
-                                            f"<small style='opacity:0.6'>{source}</small>",
+                                st.markdown(f"**{safe_title}**  \n"
+                                            f"<small style='opacity:0.6'>{safe_source}</small>",
                                             unsafe_allow_html=True)
                         with cols[2]:
                             st.markdown(f"Score: **{score:.2f}**")

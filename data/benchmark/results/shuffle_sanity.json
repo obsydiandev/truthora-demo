@@ -4,9 +4,11 @@
     "date": "2026-03-27",
     "mode": "direct",
     "k": 5,
-    "elapsed_s": 438.95,
+    "elapsed_s": 498.65,
     "total_pairs": 250,
     "nli_only": false,
+    "adversarial": false,
+    "shuffle_labels": true,
     "no_freshness": true
   },
   "targets": {
@@ -19,9 +21,9 @@
     "mrr": 0.9176,
     "stance_f1": {
       "SUPPORTED": 0.1429,
-      "REFUTED": 0.4255,
-      "NEI": 0.2484,
-      "macro_f1": 0.2723
+      "REFUTED": 0.4237,
+      "NEI": 0.25,
+      "macro_f1": 0.2722
     },
     "n": 250,
     "errors": 0
@@ -32,9 +34,9 @@
       "mrr": 0.8873,
       "stance_f1": {
         "SUPPORTED": 0.129,
-        "REFUTED": 0.5688,
-        "NEI": 0.2667,
-        "macro_f1": 0.3215
+        "REFUTED": 0.5636,
+        "NEI": 0.2712,
+        "macro_f1": 0.3213
       },
       "n": 100,
       "errors": 0
@@ -74,7 +76,7 @@
       "id": "en_01",
       "_lang_group": "EN",
       "expected_stance": "SUPPORTED",
-      "predicted_stance": "NEI",
+      "predicted_stance": "REFUTED",
       "found_in_top_k": true,
       "rank": 1
     },

@@ -119,7 +119,7 @@ class Reranker:
         """
         model, tokenizer = _get_nli_model()
         if model is None or tokenizer is None:
-            return StanceLabel.NEI, 0.33
+            return StanceLabel.NEI, 0.0
 
         try:
             import torch
@@ -138,18 +138,31 @@ class Reranker:
             exp_logits = np.exp(logits - np.max(logits))
             probs = exp_logits / exp_logits.sum()
 
-            label_map = {
-                0: StanceLabel.REFUTED,    # contradiction
-                1: StanceLabel.SUPPORTED,  # entailment
-                2: StanceLabel.NEI,        # neutral
+            # Build label map from model config when available
+            _NLI_TO_STANCE = {
+                "contradiction": StanceLabel.REFUTED,
+                "entailment": StanceLabel.SUPPORTED,
+                "neutral": StanceLabel.NEI,
             }
+            if hasattr(model.config, "id2label"):
+                label_map = {}
+                for idx, lbl in model.config.id2label.items():
+                    stance = _NLI_TO_STANCE.get(lbl.lower())
+                    if stance:
+                        label_map[int(idx)] = stance
+            else:
+                label_map = {
+                    0: StanceLabel.REFUTED,
+                    1: StanceLabel.SUPPORTED,
+                    2: StanceLabel.NEI,
+                }
 
             predicted_idx = int(np.argmax(probs))
             confidence = float(probs[predicted_idx])
-            stance = label_map[predicted_idx]
+            stance = label_map.get(predicted_idx, StanceLabel.NEI)
 
             return stance, confidence
 
         except Exception:
             logger.exception("NLI stance classification failed")
-            return StanceLabel.NEI, 0.33
+            return StanceLabel.NEI, 0.0

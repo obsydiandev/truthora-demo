@@ -103,7 +103,15 @@ def _entity_to_dbpedia_uri(entity_text: str) -> str:
 
 
 def _build_one_hop_query(entity_uri: str) -> str:
-    """Build a one-hop SPARQL query to retrieve triples about an entity."""
+    """Build a one-hop SPARQL query to retrieve triples about an entity.
+
+    Uses a whitelist of allowed predicates and validates the URI to prevent
+    SPARQL injection.
+    """
+    # Validate URI: only allow valid DBpedia resource URIs
+    if not re.match(r"^http://dbpedia\.org/resource/[\w_]+$", entity_uri, re.UNICODE):
+        return ""
+
     return f"""
     SELECT ?predicate ?object
     WHERE {{
@@ -136,6 +144,10 @@ async def query_dbpedia(entity_text: str) -> list[KGTriple]:
     """
     entity_uri = _entity_to_dbpedia_uri(entity_text)
     sparql = _build_one_hop_query(entity_uri)
+
+    if not sparql:
+        logger.warning("Rejected entity URI (invalid characters): %s", entity_text)
+        return []
 
     try:
         async with httpx.AsyncClient(timeout=SPARQL_TIMEOUT) as client:

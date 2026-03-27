@@ -383,6 +383,8 @@ def run_direct_evaluation(
     k: int = 5,
     nli_only: bool = False,
     no_freshness: bool = False,
+    adversarial: bool = False,
+    shuffle_labels: bool = False,
 ) -> dict[str, Any]:
     """Run evaluation directly against the matching pipeline (no LLM/API needed)."""
     if not HAS_DIRECT:
@@ -503,6 +505,8 @@ def run_direct_evaluation(
             "elapsed_s": round(elapsed, 2),
             "total_pairs": len(pairs),
             "nli_only": nli_only,
+            "adversarial": adversarial,
+            "shuffle_labels": shuffle_labels,
             "no_freshness": no_freshness,
         },
         "targets": targets,
@@ -641,6 +645,8 @@ def main():
                 k=args.k,
                 nli_only=nli_only,
                 no_freshness=no_freshness,
+                adversarial=getattr(args, 'adversarial', False),
+                shuffle_labels=getattr(args, 'shuffle_labels', False),
             )
         else:
             pipeline_results = run_pipeline_evaluation(
