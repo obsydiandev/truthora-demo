@@ -99,21 +99,37 @@ class ClaimMatcher:
 
     # Map fact-checker verdicts to stance labels (exact match, lowercased)
     _RATING_MAP: dict[str, StanceLabel] = {
-        # English
+        # English – REFUTED
         "false": StanceLabel.REFUTED,
         "mostly false": StanceLabel.REFUTED,
         "pants on fire": StanceLabel.REFUTED,
+        "pants on fire!": StanceLabel.REFUTED,
         "fake": StanceLabel.REFUTED,
         "incorrect": StanceLabel.REFUTED,
+        "inaccurate": StanceLabel.REFUTED,
         "partly false": StanceLabel.REFUTED,
+        "mostly false": StanceLabel.REFUTED,
+        "not true.": StanceLabel.REFUTED,
         "four pinocchios": StanceLabel.REFUTED,
         "three pinocchios": StanceLabel.REFUTED,
         "bottomless pinocchio": StanceLabel.REFUTED,
+        "altered photo/video": StanceLabel.REFUTED,
+        "altered video": StanceLabel.REFUTED,
+        "fake ai voice": StanceLabel.REFUTED,
+        "ai-generated": StanceLabel.REFUTED,
+        "scam": StanceLabel.REFUTED,
+        "cgi satire": StanceLabel.REFUTED,
+        # English – SUPPORTED
         "true": StanceLabel.SUPPORTED,
         "mostly true": StanceLabel.SUPPORTED,
         "correct": StanceLabel.SUPPORTED,
+        "correct attribution": StanceLabel.SUPPORTED,
         "one pinocchio": StanceLabel.SUPPORTED,
         "geppetto checkmark": StanceLabel.SUPPORTED,
+        "well-studied": StanceLabel.SUPPORTED,
+        "earth is round": StanceLabel.SUPPORTED,
+        "contrails": StanceLabel.SUPPORTED,
+        # English – NEI
         "misleading": StanceLabel.NEI,
         "mixture": StanceLabel.NEI,
         "unproven": StanceLabel.NEI,
@@ -121,22 +137,45 @@ class ClaimMatcher:
         "unsupported": StanceLabel.NEI,
         "not supported": StanceLabel.NEI,
         "lacks context": StanceLabel.NEI,
+        "lacks_context": StanceLabel.NEI,
         "out of context": StanceLabel.NEI,
         "half true": StanceLabel.NEI,
         "two pinocchios": StanceLabel.NEI,
         "exaggerated": StanceLabel.NEI,
         "needs context": StanceLabel.NEI,
         "outdated": StanceLabel.NEI,
-        # Polish
+        "no evidence": StanceLabel.NEI,
+        "doubtful": StanceLabel.NEI,
+        "unsubstantiated": StanceLabel.NEI,
+        "distorts the facts": StanceLabel.NEI,
+        "flawed study": StanceLabel.NEI,
+        "study in dispute": StanceLabel.NEI,
+        "probably at high doses": StanceLabel.NEI,
+        "we explain": StanceLabel.NEI,
+        "most research disputes": StanceLabel.NEI,
+        "humor": StanceLabel.NEI,
+        "satire": StanceLabel.NEI,
+        # Polish – REFUTED
         "fałsz": StanceLabel.REFUTED,
+        "fałsz.": StanceLabel.REFUTED,
         "nieprawda": StanceLabel.REFUTED,
         "manipulacja": StanceLabel.REFUTED,
+        "raczej fałsz": StanceLabel.REFUTED,
+        "częściowy fałsz": StanceLabel.REFUTED,
+        "przerobiony film": StanceLabel.REFUTED,
+        # Polish – SUPPORTED
         "prawda": StanceLabel.SUPPORTED,
+        # Polish – NEI
         "blisko prawdy": StanceLabel.NEI,
         "półprawda": StanceLabel.NEI,
-        # Ukrainian
+        "brakujący kontekst": StanceLabel.NEI,
+        "brakujący kontekst.": StanceLabel.NEI,
+        # Ukrainian – REFUTED
         "брехня": StanceLabel.REFUTED,
         "маніпуляція": StanceLabel.REFUTED,
+        "фейк": StanceLabel.REFUTED,
+        "неправда": StanceLabel.REFUTED,
+        # Ukrainian – SUPPORTED
         "правда": StanceLabel.SUPPORTED,
         # Direct stance labels
         "refuted": StanceLabel.REFUTED,
@@ -144,14 +183,19 @@ class ClaimMatcher:
         "nei": StanceLabel.NEI,
     }
 
-    # Keyword-based fallback for long/descriptive ratings (checked in order)
+    # Keyword-based fallback for long/descriptive ratings (checked in order).
+    # REFUTED checked before SUPPORTED to avoid "not true" matching "true".
     _RATING_KEYWORDS: list[tuple[list[str], StanceLabel]] = [
-        (["false", "fake", "fabricat", "debunk", "pinocchio", "scam", "hoax"], StanceLabel.REFUTED),
-        (["true", "correct", "accurate", "confirmed"], StanceLabel.SUPPORTED),
+        (["false", "fake", "fabricat", "debunk", "pinocchio", "scam",
+          "hoax", "inaccurat", "not true", "altered", "fałsz", "nieprawda",
+          "фейк", "неправда", "брехня"], StanceLabel.REFUTED),
         (["misleading", "missing context", "no evidence", "unproven",
           "unsupported", "mixture", "partly", "cherry-pick", "lacks context",
           "exaggerat", "out of context", "not supported", "needs context",
-          "no proof", "distort"], StanceLabel.NEI),
+          "no proof", "distort", "manipul", "brakując", "półprawda",
+          "маніпуляц"], StanceLabel.NEI),
+        (["true", "correct", "accurate", "confirmed", "prawda", "правда",
+          "підтверджено"], StanceLabel.SUPPORTED),
     ]
 
     def _resolve_stance(

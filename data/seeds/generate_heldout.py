@@ -78,25 +78,45 @@ LANG_LABELS = {
 # Stance mapping
 # ---------------------------------------------------------------------------
 
+REFUTED_KEYWORDS = {
+    "refuted", "false", "fake", "wrong", "incorrect", "hoax", "debunked",
+    "inaccurat", "fabricat", "pants on fire", "pinocchio", "scam",
+    "not true", "altered", "ai-generated",
+    # Polish
+    "fałsz", "fałszywe", "nieprawda", "błąd", "manipulacja",
+    "raczej fałsz", "częściowy fałsz", "przerobiony",
+    # Ukrainian
+    "фейк", "неправда", "хибне", "брехня", "маніпуляція",
+}
 SUPPORTED_KEYWORDS = {
-    "true", "correct", "confirmed", "verified", "accurate", "right",
+    "supported", "true", "correct", "confirmed", "verified", "accurate",
+    "right",
+    # Polish
     "prawda", "prawdziwe", "potwierdzone", "poprawne",
+    # Ukrainian
     "правда", "підтверджено",
 }
-REFUTED_KEYWORDS = {
-    "false", "fake", "wrong", "incorrect", "misleading", "hoax", "debunked",
-    "fałsz", "fałszywe", "nieprawda", "błąd",
-    "фейк", "неправда", "хибне",
+NEI_KEYWORDS = {
+    "nei", "misleading", "missing context", "mixture", "unproven",
+    "half true", "unsupported", "lacks context", "out of context",
+    "no evidence", "exaggerat", "needs context", "distort",
+    "partly", "cherry-pick",
+    # Polish
+    "półprawda", "brakujący kontekst", "blisko prawdy",
 }
 
 def infer_stance(rating: str) -> str:
-    r = rating.lower()
-    for kw in SUPPORTED_KEYWORDS:
-        if kw in r:
-            return "SUPPORTED"
+    r = rating.strip().lower()
+    # Check REFUTED first (before SUPPORTED) to avoid "not true" matching "true"
     for kw in REFUTED_KEYWORDS:
         if kw in r:
             return "REFUTED"
+    for kw in NEI_KEYWORDS:
+        if kw in r:
+            return "NEI"
+    for kw in SUPPORTED_KEYWORDS:
+        if kw in r:
+            return "SUPPORTED"
     return "NEI"
 
 
