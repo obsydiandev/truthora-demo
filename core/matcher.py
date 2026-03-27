@@ -89,11 +89,13 @@ class ClaimMatcher:
         embedding_service: EmbeddingService | None = None,
         qdrant_service: QdrantService | None = None,
         nli_only: bool = False,
+        no_freshness: bool = False,
     ) -> None:
         self._embeddings = embedding_service or EmbeddingService()
         self._qdrant = qdrant_service or QdrantService()
         self._reranker = Reranker()
         self._nli_only = nli_only
+        self._no_freshness = no_freshness
 
     # Map fact-checker verdicts to stance labels (exact match, lowercased)
     _RATING_MAP: dict[str, StanceLabel] = {
@@ -231,7 +233,7 @@ class ClaimMatcher:
             payload = hit.get("payload", {})
             similarity = hit.get("score", 0.0)
             published_at = payload.get("published_at")
-            decay = compute_freshness_decay(published_at)
+            decay = 1.0 if self._no_freshness else compute_freshness_decay(published_at)
             badge = get_freshness_badge(published_at)
             claim_reviewed = payload.get("claim_text", "")
 

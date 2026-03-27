@@ -73,34 +73,35 @@ Bypasses the LLM entirely and feeds the raw claim text straight into
 BGE-M3 → Qdrant → BGE-Reranker → stance resolution. This measures
 **retrieval and reranking** in isolation.
 
-| Metric | baseline_v02 | Target |
+| Metric | baseline_v03 | Target |
 |---|---|---|
-| Recall@5 | **0.992** | ≥ 0.74 |
-| MRR | **0.945** | ≥ 0.60 |
-| Stance F1 (macro) | **0.861** | ≥ 0.70 |
+| Recall@5 | **0.988** | ≥ 0.74 |
+| MRR | **0.918** | ≥ 0.60 |
+| Stance F1 (macro) | **0.906** | ≥ 0.70 |
 
 | Language | Recall@5 | MRR | Stance F1 | Pairs |
 |---|---|---|---|---|
-| EN | 0.980 | 0.925 | 0.734 | 100 |
-| PL | 1.000 | 0.947 | 0.867 | 100 |
-| UA | 1.000 | 0.980 | 0.959 | 50 |
+| EN | 0.980 | 0.887 | 0.811 | 100 |
+| PL | 0.990 | 0.922 | 0.931 | 100 |
+| UA | 1.000 | 0.970 | 0.980 | 50 |
 
 > **⚠️ Important caveats about direct mode metrics:**
 >
-> These numbers are **artificially inflated** by several compounding factors
+> These numbers are **inflated** by several compounding factors
 > and should **not** be interpreted as production-ready performance:
 >
-> 1. **Small database (774 fact-checks):** The Qdrant index holds
->    774 documents seeded via targeted queries that mirror the golden pairs
->    topic clusters (plus distractor topics). With so few
+> 1. **Small database (404 fact-checks):** The Qdrant index holds
+>    404 deduplicated documents seeded via targeted queries that mirror the
+>    golden pairs topic clusters (plus distractor topics). With so few
 >    distractors, near-perfect Recall is expected by design.
+>    UA is especially easy (52 docs for 50 pairs — 96% target ratio).
 >
 > 2. **Stance is lookup-based, not NLI:** The `_resolve_stance()` function
 >    resolves stance primarily via a `_RATING_MAP` string lookup on the
 >    fact-check's `review_rating` field. Since golden pairs' `expected_stance`
 >    was derived from the same `review_rating` values during curation, the
->    `baseline_v01_shuffled.json` experiment confirms this: shuffling stances
->    drops F1 from **0.86 → 0.27** (measured), proving the metric measures dictionary
+>    shuffle sanity check confirms this: shuffling stances drops F1 from
+>    **0.91 → 0.27** (measured), proving the metric measures dictionary
 >    consistency, not NLI inference.
 >
 > 3. **Claim–match lexical overlap:** Many golden pair claims are close
@@ -138,46 +139,46 @@ The evaluation script supports flags that stress-test individual components:
 ```bash
 # NLI-only stance: skip rating lookup, force DeBERTa NLI for all stance decisions
 docker compose --profile benchmark run --rm benchmark python3 data/benchmark/evaluate.py \
-  --direct --nli-only --output data/benchmark/results/nli_only.json
+  --direct --nli-only --no-freshness --output data/benchmark/results/nli_only.json
 
 # Adversarial claims: use tabloid/social-media paraphrases instead of clean claims
 docker compose --profile benchmark run --rm benchmark python3 data/benchmark/evaluate.py \
-  --direct --adversarial --output data/benchmark/results/adversarial.json
+  --direct --adversarial --no-freshness --output data/benchmark/results/adversarial.json
 
 # Both: the hardest realistic test
 docker compose --profile benchmark run --rm benchmark python3 data/benchmark/evaluate.py \
-  --direct --nli-only --adversarial --output data/benchmark/results/hard_mode.json
+  --direct --nli-only --adversarial --no-freshness --output data/benchmark/results/hard_mode.json
 
 # True end-to-end pipeline (forces LLM even for short claims):
 docker compose --profile benchmark run --rm benchmark python3 data/benchmark/evaluate.py \
-  --run-pipeline --force-llm --nli-only \
+  --run-pipeline --force-llm --nli-only --no-freshness \
   --api-url http://api:8000 --delay 2.5 \
   --output data/benchmark/results/pipeline_real.json
 ```
 
 ### Measured impact of diagnostic flags
 
-All configurations evaluated on 250 golden pairs against a 774-document
-Qdrant index (expanded with distractor topics not in the golden pairs).
+All configurations evaluated on 250 golden pairs against a 404-document
+deduplicated Qdrant index (with `--no-freshness` to disable freshness decay bias).
 
 | Configuration | Recall@5 | MRR | Stance F1 | Notes |
 |---|---|---|---|---|
-| `--direct` (baseline_v02) | 0.992 | 0.945 | 0.861 | Inflated — see caveats above |
-| `--direct --nli-only` | 0.980 | 0.916 | **0.323** | True NLI stance; F1 drops 62% |
-| `--direct --adversarial` | 0.972 | 0.912 | 0.887 | Tabloid claims; retrieval dips slightly |
-| `--direct --nli-only --adversarial` | 0.964 | 0.870 | **0.343** | Hardest realistic config |
-| `--direct --shuffle-labels` (sanity) | 0.992 | 0.945 | 0.265 | Random baseline ≈ 1/3 ✓ |
+| `--direct` (baseline_v03) | 0.988 | 0.918 | 0.906 | Inflated — see caveats above |
+| `--direct --nli-only` | 0.964 | 0.895 | **0.333** | True NLI stance; F1 drops 63% |
+| `--direct --adversarial` | 0.972 | 0.907 | 0.920 | Tabloid claims; retrieval dips slightly |
+| `--direct --nli-only --adversarial` | 0.920 | 0.811 | **0.351** | Hardest realistic config |
+| `--direct --shuffle-labels` (sanity) | 0.988 | 0.918 | 0.272 | Random baseline ≈ 1/3 ✓ |
 | `--run-pipeline --force-llm` | — | — | — | Pending (requires working LLM) |
 
 **Key findings:**
 
-1. **Retrieval is strong:** BGE-M3 + Reranker achieves Recall@5 > 0.96
+1. **Retrieval is strong:** BGE-M3 + Reranker achieves Recall@5 ≥ 0.92
    across all configurations including adversarial claims. This component
    works well even in a small-corpus setting.
 
 2. **Stance detection is the bottleneck:** When forced to use actual NLI
    inference (DeBERTa-v3-small) instead of the `_RATING_MAP` shortcut,
-   Stance F1 collapses from 0.86 → 0.32 — barely above the 0.27 random
+   Stance F1 collapses from 0.91 → 0.33 — barely above the 0.27 random
    baseline. The current NLI model lacks the multilingual reasoning capacity
    to classify stance reliably.
 

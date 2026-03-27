@@ -4,9 +4,9 @@
 from __future__ import annotations
 
 import asyncio
+import hashlib
 import os
 import sys
-import uuid
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
@@ -133,7 +133,8 @@ async def ingest() -> int:
         }
         try:
             vector = embedder.embed_single(claim_text)
-            qdrant.upsert_fact_check(str(uuid.uuid4()), vector, payload)
+            point_id = hashlib.sha256(review_url.encode()).hexdigest()[:32]
+            qdrant.upsert_fact_check(point_id, vector, payload)
             total += 1
             return True
         except Exception as e:

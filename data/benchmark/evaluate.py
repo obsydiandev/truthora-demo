@@ -187,12 +187,16 @@ def _score_matches(
             rank = i
             break
         overlap = _token_overlap(expected_match, match.get("claim_reviewed", ""))
-        if overlap >= 0.15:
+        if overlap >= 0.50:
             found_in_top_k = True
             rank = i
             break
 
-    predicted_stance = top_k_matches[0].get("stance", "NEI") if top_k_matches else "NEI"
+    # Stance from the matched fact-check (not always rank-1)
+    if found_in_top_k and rank > 0:
+        predicted_stance = top_k_matches[rank - 1].get("stance", "NEI")
+    else:
+        predicted_stance = top_k_matches[0].get("stance", "NEI") if top_k_matches else "NEI"
     return found_in_top_k, rank, predicted_stance
 
 
@@ -378,6 +382,7 @@ def run_direct_evaluation(
     verbose: bool = False,
     k: int = 5,
     nli_only: bool = False,
+    no_freshness: bool = False,
 ) -> dict[str, Any]:
     """Run evaluation directly against the matching pipeline (no LLM/API needed)."""
     if not HAS_DIRECT:
@@ -387,10 +392,12 @@ def run_direct_evaluation(
     mode_desc = "directly"
     if nli_only:
         mode_desc += " (NLI-only stance, no rating lookup)"
+    if no_freshness:
+        mode_desc += " (no freshness decay)"
     print(f"🚀 Evaluating {len(pairs)} pairs {mode_desc} (k={k})…")
     t0 = time.perf_counter()
 
-    matcher = ClaimMatcher(nli_only=nli_only)
+    matcher = ClaimMatcher(nli_only=nli_only, no_freshness=no_freshness)
     pair_results: list[dict[str, Any]] = []
 
     for pair in pairs:
@@ -496,6 +503,7 @@ def run_direct_evaluation(
             "elapsed_s": round(elapsed, 2),
             "total_pairs": len(pairs),
             "nli_only": nli_only,
+            "no_freshness": no_freshness,
         },
         "targets": targets,
         "overall": overall,
@@ -524,6 +532,8 @@ def main():
         help="Use claim_adversarial field instead of claim (realistic tabloid headlines)")
     parser.add_argument("--force-llm", action="store_true",
         help="Force LLM claim extraction in --run-pipeline (bypass headline fast-path)")
+    parser.add_argument("--no-freshness", action="store_true",
+        help="Disable freshness decay in scoring (all items treated as equally fresh)")
     parser.add_argument(
         "--output",
         default=None,
@@ -622,12 +632,15 @@ def main():
         nli_only = getattr(args, 'nli_only', False)
         force_llm = getattr(args, 'force_llm', False)
 
+        no_freshness = getattr(args, 'no_freshness', False)
+
         if args.direct:
             pipeline_results = run_direct_evaluation(
                 pairs=pairs,
                 verbose=args.verbose,
                 k=args.k,
                 nli_only=nli_only,
+                no_freshness=no_freshness,
             )
         else:
             pipeline_results = run_pipeline_evaluation(

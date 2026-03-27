@@ -48,8 +48,9 @@ def main() -> int:
         for i, entry in enumerate(entries):
             text = entry.get("claim_text", "")
             vector = embedder.embed_single(text)
-            import uuid
-            point_id = str(uuid.uuid4())
+            import hashlib
+            source_url = entry.get("source_url", text)
+            point_id = hashlib.sha256(source_url.encode()).hexdigest()[:32]
             qdrant.upsert_fact_check(point_id, vector, entry)
 
         print(f"✅ Seeded {len(entries)} fact-checks into Qdrant")

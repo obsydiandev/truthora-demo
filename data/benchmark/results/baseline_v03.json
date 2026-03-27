@@ -1,0 +1,2074 @@
+{
+  "meta": {
+    "version": "v0.1",
+    "date": "2026-03-27",
+    "mode": "direct",
+    "k": 5,
+    "elapsed_s": 410.94,
+    "total_pairs": 250,
+    "nli_only": false,
+    "no_freshness": true
+  },
+  "targets": {
+    "recall_at_5": 0.74,
+    "mrr": 0.6,
+    "stance_f1": 0.7
+  },
+  "overall": {
+    "recall_at_k": 0.988,
+    "mrr": 0.9176,
+    "stance_f1": {
+      "SUPPORTED": 0.9107,
+      "REFUTED": 0.9191,
+      "NEI": 0.8889,
+      "macro_f1": 0.9063
+    },
+    "n": 250,
+    "errors": 0
+  },
+  "per_language": {
+    "EN": {
+      "recall_at_k": 0.98,
+      "mrr": 0.8873,
+      "stance_f1": {
+        "SUPPORTED": 0.7368,
+        "REFUTED": 0.8966,
+        "NEI": 0.8,
+        "macro_f1": 0.8111
+      },
+      "n": 100,
+      "errors": 0
+    },
+    "PL": {
+      "recall_at_k": 0.99,
+      "mrr": 0.9217,
+      "stance_f1": {
+        "SUPPORTED": 0.918,
+        "REFUTED": 0.9268,
+        "NEI": 0.9474,
+        "macro_f1": 0.9307
+      },
+      "n": 100,
+      "errors": 0
+    },
+    "UA": {
+      "recall_at_k": 1.0,
+      "mrr": 0.97,
+      "stance_f1": {
+        "SUPPORTED": 1.0,
+        "REFUTED": 0.973,
+        "NEI": 0.9677,
+        "macro_f1": 0.9802
+      },
+      "n": 50,
+      "errors": 0
+    }
+  },
+  "targets_passed": {
+    "recall_at_5": true,
+    "mrr": true,
+    "stance_f1": true
+  },
+  "pair_results": [
+    {
+      "id": "en_01",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_02",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_03",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 3
+    },
+    {
+      "id": "en_04",
+      "_lang_group": "EN",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_05",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 3
+    },
+    {
+      "id": "en_06",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_07",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_08",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_09",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 2
+    },
+    {
+      "id": "en_10",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_11",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_12",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_13",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 4
+    },
+    {
+      "id": "en_14",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_15",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_16",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 5
+    },
+    {
+      "id": "en_17",
+      "_lang_group": "EN",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_18",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_19",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_20",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_21",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 2
+    },
+    {
+      "id": "en_22",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_23",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_24",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_25",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_26",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_27",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_28",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_29",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_30",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_31",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_32",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_33",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_34",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_35",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_36",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_37",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_38",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_39",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_40",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_41",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": false,
+      "rank": 0
+    },
+    {
+      "id": "en_42",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 4
+    },
+    {
+      "id": "en_43",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_44",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_45",
+      "_lang_group": "EN",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_46",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 4
+    },
+    {
+      "id": "en_47",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_48",
+      "_lang_group": "EN",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 3
+    },
+    {
+      "id": "en_49",
+      "_lang_group": "EN",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_50",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_51",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_52",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_53",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 5
+    },
+    {
+      "id": "en_54",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_55",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_56",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_57",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_58",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_59",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_60",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_61",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_62",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_63",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 2
+    },
+    {
+      "id": "en_64",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_65",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_66",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_67",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_68",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_69",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_70",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_71",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_72",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_73",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 4
+    },
+    {
+      "id": "en_74",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_75",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_76",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 2
+    },
+    {
+      "id": "en_77",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_78",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_79",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_80",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_81",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_82",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_83",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_84",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_85",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_86",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_87",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_88",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_89",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 3
+    },
+    {
+      "id": "en_90",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_91",
+      "_lang_group": "EN",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_92",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_93",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_94",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": false,
+      "rank": 0
+    },
+    {
+      "id": "en_95",
+      "_lang_group": "EN",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_96",
+      "_lang_group": "EN",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_97",
+      "_lang_group": "EN",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_98",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_99",
+      "_lang_group": "EN",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "en_100",
+      "_lang_group": "EN",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_01",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_02",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_03",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_04",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_05",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_06",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_07",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": false,
+      "rank": 0
+    },
+    {
+      "id": "pl_08",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_09",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_10",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_11",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_12",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_13",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_14",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_15",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_16",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_17",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_18",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 2
+    },
+    {
+      "id": "pl_19",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 2
+    },
+    {
+      "id": "pl_20",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_21",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_22",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_23",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 2
+    },
+    {
+      "id": "pl_24",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_25",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_26",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_27",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_28",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_29",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 2
+    },
+    {
+      "id": "pl_30",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_31",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_32",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_33",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_34",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_35",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_36",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_37",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_38",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_39",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_40",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_41",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_42",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_43",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_44",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_45",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_46",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_47",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_48",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 3
+    },
+    {
+      "id": "pl_49",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_50",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_51",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_52",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_53",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_54",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_55",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_56",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_57",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_58",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_59",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 2
+    },
+    {
+      "id": "pl_60",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_61",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_62",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_63",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_64",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 3
+    },
+    {
+      "id": "pl_65",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_66",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_67",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_68",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_69",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_70",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 2
+    },
+    {
+      "id": "pl_71",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_72",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_73",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_74",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_75",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_76",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_77",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_78",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_79",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_80",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_81",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_82",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_83",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 2
+    },
+    {
+      "id": "pl_84",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_85",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 2
+    },
+    {
+      "id": "pl_86",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 4
+    },
+    {
+      "id": "pl_87",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_88",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_89",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_90",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_91",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_92",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_93",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_94",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_95",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 4
+    },
+    {
+      "id": "pl_96",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_97",
+      "_lang_group": "PL",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_98",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_99",
+      "_lang_group": "PL",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "pl_100",
+      "_lang_group": "PL",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_01",
+      "_lang_group": "UA",
+      "expected_stance": "NEI",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_02",
+      "_lang_group": "UA",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_03",
+      "_lang_group": "UA",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_04",
+      "_lang_group": "UA",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_05",
+      "_lang_group": "UA",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_06",
+      "_lang_group": "UA",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_07",
+      "_lang_group": "UA",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_08",
+      "_lang_group": "UA",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_09",
+      "_lang_group": "UA",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 2
+    },
+    {
+      "id": "ua_10",
+      "_lang_group": "UA",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_11",
+      "_lang_group": "UA",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_12",
+      "_lang_group": "UA",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_13",
+      "_lang_group": "UA",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_14",
+      "_lang_group": "UA",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_15",
+      "_lang_group": "UA",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_16",
+      "_lang_group": "UA",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_17",
+      "_lang_group": "UA",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_18",
+      "_lang_group": "UA",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_19",
+      "_lang_group": "UA",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_20",
+      "_lang_group": "UA",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_21",
+      "_lang_group": "UA",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 2
+    },
+    {
+      "id": "ua_22",
+      "_lang_group": "UA",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_23",
+      "_lang_group": "UA",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_24",
+      "_lang_group": "UA",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_25",
+      "_lang_group": "UA",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_26",
+      "_lang_group": "UA",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_27",
+      "_lang_group": "UA",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_28",
+      "_lang_group": "UA",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_29",
+      "_lang_group": "UA",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_30",
+      "_lang_group": "UA",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_31",
+      "_lang_group": "UA",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_32",
+      "_lang_group": "UA",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_33",
+      "_lang_group": "UA",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_34",
+      "_lang_group": "UA",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_35",
+      "_lang_group": "UA",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_36",
+      "_lang_group": "UA",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_37",
+      "_lang_group": "UA",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_38",
+      "_lang_group": "UA",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_39",
+      "_lang_group": "UA",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_40",
+      "_lang_group": "UA",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_41",
+      "_lang_group": "UA",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 2
+    },
+    {
+      "id": "ua_42",
+      "_lang_group": "UA",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_43",
+      "_lang_group": "UA",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_44",
+      "_lang_group": "UA",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_45",
+      "_lang_group": "UA",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_46",
+      "_lang_group": "UA",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_47",
+      "_lang_group": "UA",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_48",
+      "_lang_group": "UA",
+      "expected_stance": "REFUTED",
+      "predicted_stance": "REFUTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_49",
+      "_lang_group": "UA",
+      "expected_stance": "SUPPORTED",
+      "predicted_stance": "SUPPORTED",
+      "found_in_top_k": true,
+      "rank": 1
+    },
+    {
+      "id": "ua_50",
+      "_lang_group": "UA",
+      "expected_stance": "NEI",
+      "predicted_stance": "NEI",
+      "found_in_top_k": true,
+      "rank": 1
+    }
+  ]
+}
