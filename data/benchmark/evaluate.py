@@ -35,6 +35,7 @@ GOLDEN_PAIRS_FILES = [
     ("PL", BENCHMARK_DIR / "golden_pairs_pl.json"),
     ("UA", BENCHMARK_DIR / "golden_pairs_ua.json"),
 ]
+GOLDEN_PAIRS_HELDOUT = BENCHMARK_DIR / "golden_pairs_heldout.json"
 
 TARGET_RECALL_AT_5 = 0.74
 TARGET_MRR = 0.60
@@ -54,6 +55,22 @@ def load_golden_pairs() -> list[dict[str, Any]]:
                 pair["_lang_group"] = lang
             all_pairs.extend(pairs)
     return all_pairs
+
+
+def load_heldout_pairs() -> list[dict[str, Any]]:
+    """Load held-out golden pairs (LLM-generated from review_title, no claim_text leakage)."""
+    if not GOLDEN_PAIRS_HELDOUT.exists():
+        print(f"❌ Heldout file not found: {GOLDEN_PAIRS_HELDOUT}")
+        sys.exit(1)
+    with open(GOLDEN_PAIRS_HELDOUT, encoding="utf-8") as f:
+        pairs = json.load(f)
+    # Assign _lang_group from language field (normalise ua/uk → UA)
+    for pair in pairs:
+        lang = pair.get("language", "en").upper()
+        if lang == "UK":
+            lang = "UA"
+        pair["_lang_group"] = lang
+    return pairs
 
 
 def compute_recall_at_k(results: list[dict[str, Any]], k: int = 5) -> float:
@@ -385,6 +402,7 @@ def run_direct_evaluation(
     no_freshness: bool = False,
     adversarial: bool = False,
     shuffle_labels: bool = False,
+    heldout: bool = False,
 ) -> dict[str, Any]:
     """Run evaluation directly against the matching pipeline (no LLM/API needed)."""
     if not HAS_DIRECT:
@@ -508,6 +526,7 @@ def run_direct_evaluation(
             "adversarial": adversarial,
             "shuffle_labels": shuffle_labels,
             "no_freshness": no_freshness,
+            "heldout": heldout,
         },
         "targets": targets,
         "overall": overall,
@@ -539,6 +558,10 @@ def main():
     parser.add_argument("--no-freshness", action="store_true",
         help="Disable freshness decay in scoring (all items treated as equally fresh)")
     parser.add_argument(
+        "--heldout", action="store_true",
+        help="Use LLM-generated heldout pairs (golden_pairs_heldout.json) — genuine held-out evaluation"
+    )
+    parser.add_argument(
         "--output",
         default=None,
         help="Output JSON file for pipeline results (auto-generated if not specified)",
@@ -550,6 +573,8 @@ def main():
         suffix = "baseline_v01"
         if args.held_out_only:
             suffix = "baseline_v01_heldout"
+        if getattr(args, 'heldout', False):
+            suffix = "heldout"
         if args.shuffle_labels:
             suffix = "baseline_v01_shuffled"
         if args.held_out_only and args.shuffle_labels:
@@ -566,8 +591,12 @@ def main():
     print()
 
     # Load pairs
-    pairs = load_golden_pairs()
-    print(f"📊 Loaded {len(pairs)} golden pairs")
+    if getattr(args, 'heldout', False):
+        pairs = load_heldout_pairs()
+        print(f"📊 Loaded {len(pairs)} heldout golden pairs (LLM-generated, no claim_text leakage)")
+    else:
+        pairs = load_golden_pairs()
+        print(f"📊 Loaded {len(pairs)} golden pairs")
 
     # Held-out split: keep only pairs with numeric suffix 81–100
     if args.held_out_only:
@@ -647,6 +676,7 @@ def main():
                 no_freshness=no_freshness,
                 adversarial=getattr(args, 'adversarial', False),
                 shuffle_labels=getattr(args, 'shuffle_labels', False),
+                heldout=getattr(args, 'heldout', False),
             )
         else:
             pipeline_results = run_pipeline_evaluation(
