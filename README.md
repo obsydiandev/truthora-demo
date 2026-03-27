@@ -46,6 +46,31 @@ docker compose exec api python3 data/seeds/ingest_google_fc.py  # pull ~500 real
 docker compose exec api python3 data/seeds/seed_golden_pairs.py  # seed golden-pair expected matches
 ```
 
+## Data Source
+
+All fact-checks in the Qdrant index come from the **Google Fact Check Tools API**,
+ingested via 70 topic-based seed queries across three languages (EN, PL, UK).
+After deduplication (deterministic SHA-256 IDs per `review_url`) the database
+holds **404 unique documents** (EN: 185, PL: 166, UK: 53).
+
+This data sourcing strategy directly affects benchmark results:
+
+- **Topic clustering:** Seed queries were chosen to cover the same topic
+  clusters as the golden pairs (vaccines, elections, climate, war in Ukraine, etc.).
+  This means very few off-topic distractors exist — retrieval Recall is high
+  by design, not because the model generalises well to open-domain queries.
+- **UA coverage gap:** Ukrainian has only 53 documents for 50 golden pairs
+  (96% target ratio), making retrieval almost trivial. EN and PL have a
+  healthier ratio (~1.8× and ~1.7× docs-per-pair respectively), but still
+  far below a production-scale index.
+- **Temporal skew:** The Google FC API returns mostly recent fact-checks
+  (2022–2025). Older claims or niche topics are underrepresented, which
+  limits generalisability conclusions.
+
+A production deployment would require continuous ingestion from RSS feeds
+and GDELT (already scaffolded in `services/sources/`) to scale the index
+to tens of thousands of documents and reduce the target-ratio inflation.
+
 ## Benchmark
 
 Truthora ships a Golden Pairs evaluation suite (250 curated pairs: EN 100 / PL 100 / UA 50).
@@ -195,13 +220,13 @@ deduplicated Qdrant index (with `--no-freshness` to disable freshness decay bias
 ```bash
 # Direct mode (no LLM needed):
 docker compose --profile benchmark run --rm benchmark python3 data/benchmark/evaluate.py \
-  --direct --verbose \
+  --direct --no-freshness --verbose \
   --k 10 \
   --output data/benchmark/results/my_run.json
 
 # Full pipeline mode (requires running API + Groq/Ollama):
 docker compose --profile benchmark run --rm benchmark python3 data/benchmark/evaluate.py \
-  --run-pipeline --verbose \
+  --run-pipeline --no-freshness --verbose \
   --api-url http://api:8000 \
   --k 10 \
   --delay 2.5 \
