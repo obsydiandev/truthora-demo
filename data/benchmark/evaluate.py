@@ -31,9 +31,9 @@ except ImportError:
 
 BENCHMARK_DIR = Path(__file__).resolve().parent
 GOLDEN_PAIRS_FILES = [
-    ("EN", BENCHMARK_DIR / "golden_pairs_en.json"),
-    ("PL", BENCHMARK_DIR / "golden_pairs_pl.json"),
-    ("UA", BENCHMARK_DIR / "golden_pairs_ua.json"),
+    ("EN", BENCHMARK_DIR / "golden_pairs_en_v0_sanity.json"),
+    ("PL", BENCHMARK_DIR / "golden_pairs_pl_v0_sanity.json"),
+    ("UA", BENCHMARK_DIR / "golden_pairs_ua_v0_sanity.json"),
 ]
 GOLDEN_PAIRS_HELDOUT = BENCHMARK_DIR / "golden_pairs_heldout.json"
 

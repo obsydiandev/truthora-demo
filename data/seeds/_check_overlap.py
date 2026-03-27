@@ -9,7 +9,7 @@ with open(ROOT / "seeds" / "initial_fact_checks.json") as f:
     seeds = json.load(f)
 
 pairs = []
-for fname in ["golden_pairs_en.json", "golden_pairs_pl.json", "golden_pairs_ua.json"]:
+for fname in ["golden_pairs_en_v0_sanity.json", "golden_pairs_pl_v0_sanity.json", "golden_pairs_ua_v0_sanity.json"]:
     p = ROOT / "benchmark" / fname
     if p.exists():
         with open(p) as f:

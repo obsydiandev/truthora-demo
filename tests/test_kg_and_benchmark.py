@@ -185,19 +185,19 @@ class TestRerankerTypes:
 
 class TestGoldenPairsData:
     def test_en_pairs_exist(self):
-        path = Path(__file__).resolve().parent.parent / "data" / "benchmark" / "golden_pairs_en.json"
+        path = Path(__file__).resolve().parent.parent / "data" / "benchmark" / "golden_pairs_en_v0_sanity.json"
         assert path.exists()
 
     def test_pl_pairs_exist(self):
-        path = Path(__file__).resolve().parent.parent / "data" / "benchmark" / "golden_pairs_pl.json"
+        path = Path(__file__).resolve().parent.parent / "data" / "benchmark" / "golden_pairs_pl_v0_sanity.json"
         assert path.exists()
 
     def test_ua_pairs_exist(self):
-        path = Path(__file__).resolve().parent.parent / "data" / "benchmark" / "golden_pairs_ua.json"
+        path = Path(__file__).resolve().parent.parent / "data" / "benchmark" / "golden_pairs_ua_v0_sanity.json"
         assert path.exists()
 
     def test_en_pairs_valid(self):
-        path = Path(__file__).resolve().parent.parent / "data" / "benchmark" / "golden_pairs_en.json"
+        path = Path(__file__).resolve().parent.parent / "data" / "benchmark" / "golden_pairs_en_v0_sanity.json"
         with open(path, encoding="utf-8") as f:
             pairs = json.load(f)
         assert len(pairs) == 100
@@ -211,7 +211,7 @@ class TestGoldenPairsData:
             assert "created_at" in pair
 
     def test_pl_pairs_valid(self):
-        path = Path(__file__).resolve().parent.parent / "data" / "benchmark" / "golden_pairs_pl.json"
+        path = Path(__file__).resolve().parent.parent / "data" / "benchmark" / "golden_pairs_pl_v0_sanity.json"
         with open(path, encoding="utf-8") as f:
             pairs = json.load(f)
         assert len(pairs) == 100
@@ -221,7 +221,7 @@ class TestGoldenPairsData:
             assert "created_at" in pair
 
     def test_ua_pairs_valid(self):
-        path = Path(__file__).resolve().parent.parent / "data" / "benchmark" / "golden_pairs_ua.json"
+        path = Path(__file__).resolve().parent.parent / "data" / "benchmark" / "golden_pairs_ua_v0_sanity.json"
         with open(path, encoding="utf-8") as f:
             pairs = json.load(f)
         assert len(pairs) == 50

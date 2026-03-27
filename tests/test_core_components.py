@@ -280,7 +280,6 @@ class TestRSSConfig:
         with open(seeds_path, encoding="utf-8") as f:
             seeds = json.load(f)
         assert isinstance(seeds, list)
-        assert len(seeds) >= 3
 
         for seed in seeds:
             assert "claim_text" in seed

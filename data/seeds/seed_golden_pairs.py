@@ -48,7 +48,7 @@ def main() -> int:
     total_missing = 0
     missing_pairs: list[dict[str, str]] = []
 
-    for fname in ["golden_pairs_en.json", "golden_pairs_pl.json", "golden_pairs_ua.json"]:
+    for fname in ["golden_pairs_en_v0_sanity.json", "golden_pairs_pl_v0_sanity.json", "golden_pairs_ua_v0_sanity.json"]:
         path = BENCH_DIR / fname
         if not path.exists():
             continue
