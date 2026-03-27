@@ -98,7 +98,7 @@ Bypasses the LLM entirely and feeds the raw claim text straight into
 BGE-M3 → Qdrant → BGE-Reranker → stance resolution. This measures
 **retrieval and reranking** in isolation.
 
-| Metric | baseline_v03 | Target |
+| Metric | baseline | Target |
 |---|---|---|
 | Recall@5 | **0.988** | ≥ 0.74 |
 | MRR | **0.918** | ≥ 0.60 |
@@ -188,7 +188,7 @@ deduplicated Qdrant index (with `--no-freshness` to disable freshness decay bias
 
 | Configuration | Recall@5 | MRR | Stance F1 | Notes |
 |---|---|---|---|---|
-| `--direct` (baseline_v03) | 0.988 | 0.918 | 0.906 | Inflated — see caveats above |
+| `--direct` (baseline) | 0.988 | 0.918 | 0.906 | Inflated — see caveats above |
 | `--direct --nli-only` | 0.964 | 0.895 | **0.333** | True NLI stance; F1 drops 63% |
 | `--direct --adversarial` | 0.972 | 0.907 | 0.920 | Tabloid claims; retrieval dips slightly |
 | `--direct --nli-only --adversarial` | 0.920 | 0.811 | **0.351** | Hardest realistic config |
