@@ -14,13 +14,13 @@ Every AI result requires human review — Truthora assists, never decides.
 
 ## What it does
 
-1. **Claim Detection** — extracts checkable factual claims from a headline or article text
-2. **Claim Normalization** — standardizes claims across languages for consistent matching
+1. **Claim Detection** - extracts checkable factual claims from a headline or article text
+2. **Claim Normalization** - standardizes claims across languages for consistent matching
 3. **Semantic Matching** — BGE-M3 multilingual embeddings + Qdrant vector search → top-10 candidates
-4. **Reranking** — cross-encoder rescoring of top-10 candidates
-5. **Freshness Scoring** — temporal decay weighting (half-life 180 days) so recent fact-checks rank higher
-6. **Stance Detection** — SUPPORTED / REFUTED / NEI via ClaimReview rating-lookup (NLI bridge planned M3)
-7. **Uncertainty Signalling** — Shannon entropy flags low-confidence matches for mandatory human review
+4. **Reranking** - cross-encoder rescoring of top-10 candidates
+5. **Freshness Scoring** - temporal decay weighting (half-life 180 days) so recent fact-checks rank higher
+6. **Stance Detection** - SUPPORTED / REFUTED / NEI via ClaimReview rating-lookup (NLI bridge planned M3)
+7. **Uncertainty Signalling** - Shannon entropy flags low-confidence matches for mandatory human review
 8. **Streamlit UI** — journalist-facing dashboard with claim list, match scores, source links, freshness badges
 
 > **Human-in-the-loop by design.** Stance labels are provided as signals, not verdicts.  
@@ -136,15 +136,15 @@ SHA-256 IDs per `review_url`) the database holds **404 unique documents**
 
 | Source | Language | Type |
 |---|---|---|
-| [Demagog](https://demagog.org.pl) | 🇵🇱 Polish | Fact-checking NGO |
-| [OKO.press](https://oko.press) | 🇵🇱 Polish | Investigative journalism |
-| [Konkret24 / TVN24](https://konkret24.tvn24.pl) | 🇵🇱 Polish | Newsroom fact-check desk |
-| [Fakenews.pl](https://fakenews.pl) | 🇵🇱 Polish | Fact-checking NGO |
-| [VoxUkraine](https://voxukraine.org) | 🇺🇦 Ukrainian | Fact-checking NGO |
-| [StopFake](https://stopfake.org) | 🇺🇦 Ukrainian | Disinformation monitoring |
-| [Full Fact](https://fullfact.org) | 🇬🇧 English | Fact-checking NGO (UK) |
-| [Reuters Fact Check](https://reuters.com/fact-check) | 🌍 English | Newswire fact-check desk |
-| [ClaimBuster](https://idir.uta.edu/claimbuster/) | 🌍 English | Research / annotated claims |
+| [Demagog](https://demagog.org.pl) | Polish | Fact-checking NGO |
+| [OKO.press](https://oko.press) | Polish | Investigative journalism |
+| [Konkret24 / TVN24](https://konkret24.tvn24.pl) | olish | Newsroom fact-check desk |
+| [Fakenews.pl](https://fakenews.pl) | Polish | Fact-checking NGO |
+| [VoxUkraine](https://voxukraine.org) | Ukrainian | Fact-checking NGO |
+| [StopFake](https://stopfake.org) | Ukrainian | Disinformation monitoring |
+| [Full Fact](https://fullfact.org) | English | Fact-checking NGO (UK) |
+| [Reuters Fact Check](https://reuters.com/fact-check) | English | Newswire fact-check desk |
+| [ClaimBuster](https://idir.uta.edu/claimbuster/) | English | Research / annotated claims |
 
 **Planned integrations (M2):** Native Demagog scraper (PL), VoxCheck scraper (UA),
 IFCN ClaimReview feed (multilingual), EDMO network members (EN/EU).
@@ -249,14 +249,13 @@ Full methodology and result interpretation: [`data/benchmark/results/README.md`]
 
 ## Roadmap
 
-| Milestone | Status | Deliverables |
+| Stage | Status | Deliverables |
 |---|---|---|
-| **M1** — Core pipeline | ✅ Done | BGE-M3 retrieval, reranker, scorer, Streamlit UI, heldout benchmark suite (212 pairs EN/PL/UA) |
-| **M2** — Data & evaluation | 🔄 Planned | Heldout benchmark expansion (500+ pairs), Demagog + VoxCheck native scrapers, annotated NLI training dataset |
-| **M3** — NLI & Knowledge Graph | 🔄 Planned | Opus-MT translation bridge, domain-adapted NLI (target F1 ≥ 0.70), Knowledge Graph wiring, freshness calibration |
-| **M4** — Production | 🔄 Planned | Pilot deployments with media partners, EDMO/IFCN ClaimReview integration, Hugging Face dataset release (CC-BY) |
-
----
+| **v0.1 Demo** — Proof of Concept | ✅ Complete | BGE-M3 retrieval, reranker, scorer, Streamlit UI, heldout benchmark suite (212 pairs EN/PL/UA), 117 automated tests |
+| **M1** — Production Hardening | Security audit (OWASP), 5-category test suite (≥70% coverage), observability (Prometheus + structured logging), ClaimReview JSON-LD output, WCAG 2.1 AA compliance, Ollama-first, public Docker image |
+| **M2** — Data & Benchmark | Heldout benchmark expansion (≥250 pairs, target 500), Demagog + VoxCheck native scrapers, annotated EN/PL/UA dataset published on Hugging Face (CC-BY 4.0, Croissant metadata) |
+| **M3** — NLI & CPU Portability | Opus-MT cross-lingual bridge (PL/UA→EN), domain-adapted NLI (target Stance F1 ≥ 0.70), ONNX export (3 models), CPU benchmark (<30s/article on 4-vCPU), active learning loop, Knowledge Graph wiring |
+| **M4** — Pilots & Community | ≥2 pilot deployments with fact-checking organizations, community foundation (Discord/Matrix, webinars, CONTRIBUTING.md), EDMO/IFCN ClaimReview integration, NLnet final report |
 
 ## License
 
