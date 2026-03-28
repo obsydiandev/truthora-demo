@@ -138,7 +138,7 @@ SHA-256 IDs per `review_url`) the database holds **404 unique documents**
 |---|---|---|
 | [Demagog](https://demagog.org.pl) | Polish | Fact-checking NGO |
 | [OKO.press](https://oko.press) | Polish | Investigative journalism |
-| [Konkret24 / TVN24](https://konkret24.tvn24.pl) | olish | Newsroom fact-check desk |
+| [Konkret24 / TVN24](https://konkret24.tvn24.pl) | Polish | Newsroom fact-check desk |
 | [Fakenews.pl](https://fakenews.pl) | Polish | Fact-checking NGO |
 | [VoxUkraine](https://voxukraine.org) | Ukrainian | Fact-checking NGO |
 | [StopFake](https://stopfake.org) | Ukrainian | Disinformation monitoring |
