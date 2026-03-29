@@ -48,3 +48,4 @@ models/
 htmlcov/
 .coverage
 data/seeds/test_api.py
+docs/
